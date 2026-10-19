@@ -1,6 +1,25 @@
 {
- "maj": "2026-10-19T07:28+00:00",
+ "maj": "2026-10-19T11:55+00:00",
  "offres": [
+  {
+   "id": "debc66fa9d69",
+   "titre": "Technicien QHSE",
+   "entreprise": "Sibelco Group",
+   "lieu": "Balaruc-les-Bains",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-19",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-qhse-at-sibelco-group-4479995035"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
   {
    "id": "3dd40d3fa4f0",
    "titre": "Assistant Qualité et Gestion des Risques - Secteur Santé H/F",
@@ -78,25 +97,6 @@
    "agro": false
   },
   {
-   "id": "1fc58818d867",
-   "titre": "Controleur Qualite H/F",
-   "entreprise": "GIF emploi",
-   "lieu": "Sommières - 30",
-   "contrat": "Intérim",
-   "salaire": "1 900 - 2 150 € / mois",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84034400.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
-   "agro": false
-  },
-  {
    "id": "1cf866e185e2",
    "titre": "Technicien Qualite H/F",
    "entreprise": "GIF emploi",
@@ -109,6 +109,25 @@
     {
      "source": "HelloWork",
      "url": "https://www.hellowork.com/fr-fr/emplois/84034499.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "1fc58818d867",
+   "titre": "Controleur Qualite H/F",
+   "entreprise": "GIF emploi",
+   "lieu": "Sommières - 30",
+   "contrat": "Intérim",
+   "salaire": "1 900 - 2 150 € / mois",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84034400.html"
     }
    ],
    "premiere_vue": "2026-10-19",
