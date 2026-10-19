@@ -55,6 +55,7 @@ jobs:
           git config user.email "robot-offres@users.noreply.github.com"
           git add data/offres.json
           git diff --staged --quiet || git commit -m "Offres du $(date +%F)"
+          git pull --rebase -X theirs
           git push
 
   publier:
