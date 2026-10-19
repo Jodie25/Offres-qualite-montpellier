@@ -1,0 +1,575 @@
+{
+ "maj": "2026-10-19T07:28+00:00",
+ "offres": [
+  {
+   "id": "3dd40d3fa4f0",
+   "titre": "Assistant Qualité et Gestion des Risques - Secteur Santé H/F",
+   "entreprise": "Groupe Adène",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "2 100 - 2 300 € / mois",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83999729.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "600ab38930b0",
+   "titre": "Technicien Qualité H/F",
+   "entreprise": "Evaden",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "30 000 - 35 000 € / an",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83813048.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "d3f199693840",
+   "titre": "Chargé de Qualité Client - CDD H/F",
+   "entreprise": "Le Groupe Septeo",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84333388.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "2e337c2c5edf",
+   "titre": "Technicien Qualité H/F",
+   "entreprise": "Randstad",
+   "lieu": "Lavérune - 34",
+   "contrat": "Intérim",
+   "salaire": "12,31 € / heure",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84118008.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "1fc58818d867",
+   "titre": "Controleur Qualite H/F",
+   "entreprise": "GIF emploi",
+   "lieu": "Sommières - 30",
+   "contrat": "Intérim",
+   "salaire": "1 900 - 2 150 € / mois",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84034400.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "1cf866e185e2",
+   "titre": "Technicien Qualite H/F",
+   "entreprise": "GIF emploi",
+   "lieu": "Saussan - 34",
+   "contrat": "Intérim",
+   "salaire": "2 100 - 2 500 € / mois",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84034499.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "03a0f957ecb8",
+   "titre": "Contrôleur Qualité H/F",
+   "entreprise": "Adecco",
+   "lieu": "Castries - 34",
+   "contrat": "Intérim",
+   "salaire": "",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83604363.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "d87185a31bf1",
+   "titre": "Technicien Mesures Qualité de l'Eau H/F",
+   "entreprise": "Apave",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/82900738.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "e64f45a9ee33",
+   "titre": "Technicien Contrôle Qualité (H/F)",
+   "entreprise": "IDEXX",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-15",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-contr%C3%B4le-qualit%C3%A9-h-f-at-idexx-4469717914"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "4d733dafaeb2",
+   "titre": "Technicien·ne Contrôle Qualité DHR H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-14",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-contr%C3%B4le-qualit%C3%A9-dhr-h-f-x-at-quantum-surgical-4472161823"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "d5fa9a3f1161",
+   "titre": "Chargé-e de mission qualité, suivi des contrats de maintenance",
+   "entreprise": "CNOUS (Centre National des Oeuvres Universitaires et Scolaires)",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-14",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-qualit%C3%A9-suivi-des-contrats-de-maintenance-at-cnous-centre-national-des-oeuvres-universitaires-et-scolaires-4479131662"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "8dedca1abc5e",
+   "titre": "Ingénieur·e Qualité SMQ Dispositifs Médicaux (F/H)",
+   "entreprise": "EFOR",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-13",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur%C2%B7e-qualit%C3%A9-smq-dispositifs-m%C3%A9dicaux-f-h-at-efor-4478126458"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "3753f4018ed4",
+   "titre": "Ingénieur Assurance Qualité Pharmaceutique (H/F)",
+   "entreprise": "EFOR",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-assurance-qualit%C3%A9-pharmaceutique-h-f-at-efor-4454258038"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "4c1cfed62a41",
+   "titre": "Technicien(ne) de laboratoire QC (H/F) – CDD 4 mois",
+   "entreprise": "Syngenta",
+   "lieu": "Aigues-Vives",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-ne-de-laboratoire-qc-h-f-%E2%80%93-cdd-4-mois-at-syngenta-4478505850"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "33134e5ac42d",
+   "titre": "Technicien(ne) de laboratoire qc (h/f) – cdd 4 mois",
+   "entreprise": "Occitanie.jobs",
+   "lieu": "Aigues-Vives",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-ne-de-laboratoire-qc-h-f-%E2%80%93-cdd-4-mois-at-occitanie-jobs-4476604038"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "440c04a0878d",
+   "titre": "Chargé(e) de qualité client / CDD 9 mois",
+   "entreprise": "SEPTEO",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-qualit%C3%A9-client-cdd-9-mois-at-septeo-4477518449"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "0ce9eed6bdfd",
+   "titre": "Stagiaire QHSE (H/F)",
+   "entreprise": "Medincell",
+   "lieu": "Jacou",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stagiaire-qhse-h-f-at-medincell-4476014849"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "422e2b61b208",
+   "titre": "Quality Assurance Engineer",
+   "entreprise": "Matooma",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-09",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/quality-assurance-engineer-at-matooma-4466676189"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "68e13066de12",
+   "titre": "Ingénieure / Ingénieure Assurance Qualité - Industrie Pharmaceutique",
+   "entreprise": "Capgemini Engineering",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-08",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieure-ing%C3%A9nieure-assurance-qualit%C3%A9-industrie-pharmaceutique-at-capgemini-engineering-4468236295"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "4f012de9704e",
+   "titre": "Clinical Data & Quality Manager",
+   "entreprise": "Resilience Care",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-08",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/clinical-data-quality-manager-at-resilience-care-4476972667"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "13aacbe0ed1b",
+   "titre": "Technicien de laboratoire d'analyses médicale H/F",
+   "entreprise": "INOVIE (Groupe)",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-08",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-analyses-m%C3%A9dicale-h-f-at-inovie-groupe-4477482715"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "d538bd86b546",
+   "titre": "Stagiaire Qualité F/H",
+   "entreprise": "RAZEL-BEC | FAYAT Group",
+   "lieu": "Saint-Georges-d'Orques",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-05",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stagiaire-qualit%C3%A9-f-h-at-razel-bec-fayat-group-4475806889"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "9d3b65c8e46a",
+   "titre": "Technicien de Laboratoire Physico-Chimique (Industrie Pharmaceutique)",
+   "entreprise": "Eurofins",
+   "lieu": "Saint-Gély-du-Fesc",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-02",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-physico-chimique-industrie-pharmaceutique-at-eurofins-4474732191"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "d3df2bc1b6ff",
+   "titre": "Responsable qualité H/F",
+   "entreprise": "YellowScan",
+   "lieu": "Saint-Clément-de-Rivière",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-01",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-h-f-at-yellowscan-4474310395"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "51044371664b",
+   "titre": "Responsable Qualité Production H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-30",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-production-h-f-x-at-quantum-surgical-4472175116"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "ea6213a8e477",
+   "titre": "Technicien·ne Qualité – Incoming Inspection H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-30",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-qualit%C3%A9-%E2%80%93-incoming-inspection-h-f-x-at-quantum-surgical-4472161836"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "debfbb5b43c0",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-29",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454479459"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": true
+  },
+  {
+   "id": "910443fb37e3",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Aimargues",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-29",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454464469"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": true
+  },
+  {
+   "id": "7318dd016711",
+   "titre": "Responsable Réglementaire & Qualité (QA/RA)",
+   "entreprise": "Pharma Hiring",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-23",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/responsable-r%C3%A9glementaire-qualit%C3%A9-qa-ra-at-pharma-hiring-4463837323"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  },
+  {
+   "id": "4964f45476d7",
+   "titre": "Ingénieure/Ingénieur Qualification validation d'équipements et qualité",
+   "entreprise": "Capgemini Engineering",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-21",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieure-ing%C3%A9nieur-qualification-validation-d-%C3%A9quipements-et-qualit%C3%A9-at-capgemini-engineering-4468708924"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-19",
+   "agro": false
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+  "ville": "Montpellier",
+  "code_insee": "34172",
+  "rayon_km": 25,
+  "requetes": [
+    "ingénieur qualité agroalimentaire",
+    "responsable qualité agroalimentaire",
+    "assistant qualité",
+    "assistante qualité agroalimentaire",
+    "technicien qualité",
+    "contrôle qualité agroalimentaire",
+    "QHSE agroalimentaire"
+  ],
+  "titre_doit_contenir": [
+    "qualit",
+    "qhse",
+    "qse",
+    "haccp",
+    "hygi",
+    "sécurité des aliments",
+    "securite des aliments",
+    "food safety",
+    "quality",
+    "laboratoire",
+    "qc"
+  ],
+  "titre_exclu": [
+    "qualité de vie",
+    "contrôleur de gestion",
+    "commercial",
+    "chauffeur",
+    "infirmi",
+    "médecin"
+  ],
+  "mots_agro": [
+    "agro",
+    "alimentaire",
+    "food",
+    "haccp",
+    "ifs",
+    "brc",
+    "iso 22000",
+    "fssc",
+    "viande",
+    "laitier",
+    "boulang",
+    "pâtisserie",
+    "patisserie",
+    "boisson",
+    "vin",
+    "brasserie",
+    "conserverie",
+    "traiteur",
+    "biscuit",
+    "fromage",
+    "charcuterie",
+    "poisson",
+    "fruits",
+    "légumes"
+  ],
+  "garder_jours_apres_disparition": 120,
+  "lieux_refuses": [
+    "occitanie france",
+    "occitanie",
+    "france",
+    ""
+  ]
+}

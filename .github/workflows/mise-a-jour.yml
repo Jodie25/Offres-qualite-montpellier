@@ -1,0 +1,80 @@
+name: Mise à jour des offres
+
+on:
+  schedule:
+    # 5h et 6h UTC : une seule des deux tombe à 7h heure de Paris (été/hiver), l'autre est ignorée
+    - cron: "0 5 * * *"
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["index.html", "collecte/config.json"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: offres
+  cancel-in-progress: false
+
+jobs:
+  heure:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.h.outputs.go }}
+    steps:
+      - id: h
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(TZ=Europe/Paris date +%H)" = "07" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  collecte:
+    needs: heure
+    if: needs.heure.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collecter les offres
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python collecte/collecter.py
+      - name: Enregistrer les données
+        run: |
+          git config user.name "robot-offres"
+          git config user.email "robot-offres@users.noreply.github.com"
+          git add data/offres.json
+          git diff --staged --quiet || git commit -m "Offres du $(date +%F)"
+          git push
+
+  publier:
+    needs: [heure, collecte]
+    if: needs.heure.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Préparer le site
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r data _site/data
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
