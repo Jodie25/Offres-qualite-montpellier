@@ -191,6 +191,52 @@ def jsonld_offre(page):
     return None
 
 
+# ---------- Welcome to the Jungle (moteur de recherche public du site, lecture seule) ----------
+WTTJ_CONTRATS = {"full_time": "CDI", "temporary": "CDD", "internship": "Stage", "apprenticeship": "Alternance",
+                 "freelance": "Freelance", "part_time": "Temps partiel", "vie": "VIE", "other": ""}
+
+
+def welcome_to_the_jungle(q, z):
+    """z : {'lat','lon','rayon_km'} pour une recherche autour d'un point, 'filtre' pour un département / une région."""
+    res = []
+    for page in (0, 1):
+        params = {"query": q, "hitsPerPage": 50, "page": page, "filters": 'offices.country_code:FR' + z.get("filtre", "")}
+        if z.get("lat") and z.get("rayon_km"):
+            params["aroundLatLng"] = f"{z['lat']},{z['lon']}"
+            params["aroundRadius"] = int(z["rayon_km"] * 1000)
+        corps = json.dumps({"requests": [{"indexName": "wttj_jobs_production_fr", "params": urllib.parse.urlencode(params)}]}).encode()
+        r = get("https://csekhvms53-dsn.algolia.net/1/indexes/*/queries",
+                {"X-Algolia-Application-Id": "CSEKHVMS53", "X-Algolia-API-Key": "4bd8f6215d0cc52b26430765769e65a0",
+                 "Content-Type": "application/json", "Origin": "https://www.welcometothejungle.com",
+                 "Referer": "https://www.welcometothejungle.com/"}, data=corps, retries=1)
+        try:
+            hits = json.loads(r)["results"][0]["hits"] if r else []
+        except Exception:
+            hits = []
+        for h in hits:
+            org = h.get("organization") or {}
+            bureaux = [b for b in (h.get("offices") or []) if b.get("country_code") == "FR"] or (h.get("offices") or [{}])
+            lieu = bureaux[0].get("city") or ""
+            sal = ""
+            if h.get("salary_minimum") and h.get("salary_maximum"):
+                sal = f"{int(h['salary_minimum'])} - {int(h['salary_maximum'])} {h.get('salary_currency') or '€'} / {h.get('salary_period') or 'an'}"
+            texte = "\n".join(filter(None, [h.get("summary") or "", "\n".join("• " + m for m in (h.get("key_missions") or [])),
+                                            h.get("profile") or ""]))
+            res.append(offre("Welcome to the Jungle", h.get("reference") or h.get("objectID"), h.get("name", ""), org.get("name", ""), lieu,
+                             f"https://www.welcometothejungle.com/fr/companies/{org.get('slug', '')}/jobs/{h.get('slug', '')}",
+                             contrat=WTTJ_CONTRATS.get(h.get("contract_type"), h.get("contract_type") or ""), salaire=sal,
+                             date_pub=h.get("published_at", ""), extrait=texte))
+        if len(hits) < 50:
+            break
+        time.sleep(0.5)
+    return res
+
+
+def wttj(q):
+    c = geocoder(CFG["ville"], (43.5733, 3.8366)) or [43.5733, 3.8366]
+    return welcome_to_the_jungle(q, {"lat": c[0], "lon": c[1], "rayon_km": CFG["rayon_km"]})
+
+
 # ---------- France Travail (API officielle, clé gratuite) ----------
 def france_travail(requetes):
     cid, sec = os.environ.get("FT_CLIENT_ID"), os.environ.get("FT_CLIENT_SECRET")
@@ -348,7 +394,7 @@ def cle(o):
 def main():
     print("Collecte des offres…")
     brut = []
-    for nom, f in (("LinkedIn", linkedin), ("HelloWork", hellowork), ("Meteojob", meteojob)):
+    for nom, f in (("LinkedIn", linkedin), ("HelloWork", hellowork), ("Meteojob", meteojob), ("Welcome to the Jungle", wttj)):
         n = 0
         for q in CFG["requetes"]:
             r = f(q)

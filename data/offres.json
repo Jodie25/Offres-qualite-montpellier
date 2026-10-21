@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-21T15:21+00:00",
+ "maj": "2026-10-21T15:40+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -419,29 +419,6 @@
    "lat": 43.7228,
    "lon": 4.2293,
    "commune": "Codognan"
-  },
-  {
-   "id": "4d733dafaeb2",
-   "titre": "Technicien·ne Contrôle Qualité DHR H/F/X",
-   "entreprise": "Quantum Surgical",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-14",
-   "extrait": "",
-   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 400 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nEn tant que Technicien·ne Contrôle Qualité DHR , vous travaillerez au sein de l’équipe QMS & Qualité Production, aux côtés d’un·e autre Technicien·ne Contrôle Qualité DHR et du Technicien Contrôle Réception, sous la responsabilité du QA Production Manager, au sein d’une équipe QARA de +10 personnes.\n\nVous contribuerez à garantir la conformité des dispositifs avant leur libération, en assurant la revue des Device History Records (DHR) et les activités de contrôle qualité final, conformément à la norme ISO 13485:2016 et aux autres réglementations applicables à l’industrie des dispositifs médicaux.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser la revue des Device History Records (DHR) avant la libération des dispositifs, conformément aux exigences de la norme ISO 13485, de la FDA (QMSR) et du règlement EU 2017/745.\n• Vérifier la conformité et la complétude des dossiers de production (dossiers de lot, enregistrements de contrôle, traçabilité des composants) préalablement à la libération produit.\n• Réaliser les contrôles qualité finaux sur les plateformes robotisées et leurs accessoires avant expédition.\n• Identifier, documenter et escalader les non-conformités détectées lors de la revue DHR ou du contrôle qualité final.\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks).\n• Contribuer au suivi des SCNR (Supplier/Site Corrective Non-conformance Report)détectées lors du processus de fabrication.\n• Renseigner et maintenir à jour les enregistrements qualité associés aux activités de libération produit.\n• Contribuer à l'amélioration continue des processus de contrôle final et de revue DHR (fiabilité, délais, efficacité).\n• Suivre et communiquer les indicateurs de performance qualité liés à la libération produit (taux de conformité, délais de traitement).\n• Participer aux activités d'audit (interne et externe) en lien avec le processus de libération produit.\n• Être l'interlocuteur Qualité des équipes de production : sensibilisation des équipes, support aux actions d'amélioration et accompagnement à la résolution de problèmes.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence).\n• Vous disposez de minimum 5 ans d’expérience sur un poste similaire.\n• Vous maîtrisez la norme ISO 13485 ou ISO 9001.\n• Vous avez un bon niveau d'anglais technique (oral et écrit)\n• Vous avez de l’expérience dans un environnement règlementé CE ou dans un environnement avec un haut niveau d’exigences.\n• Vous êtes rigoureux·se, organisé·e et doté·e d’un esprit de synthèse et d’analyse.\n• Vous êtes capable à communiquer efficacement et d’établir des relations avec les interlocuteurs internes et externes.\n• Vous avez d’excellentes capacités d’organisation et de communication.\n• Vous avez un fort esprit d’équipe.\n\nSouhaitable\n\n• Vous avez des compétences en méthodes de résolution de problèmes.\n• Vous avez une expérience en qualité opérationnelle.\n• Vous avez une expérience dans l’assurance qualité fournisseur.\n• Vous avez une expérience dans l’industrie du dispositif médical ou secteur équivalent.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-contr%C3%B4le-qualit%C3%A9-dhr-h-f-x-at-quantum-surgical-4472161823"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
   },
   {
    "id": "d5fa9a3f1161",
@@ -1102,6 +1079,33 @@
     {
      "source": "LinkedIn",
      "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-production-h-f-x-at-quantum-surgical-4472175116"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "4d733dafaeb2",
+   "titre": "Technicien·ne Contrôle Qualité DHR H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "CDI",
+   "salaire": "32000 - 37000 EUR / yearly",
+   "date_pub": "2026-09-30",
+   "extrait": "Rejoignez Quantum Surgical, une entreprise innovante dans le domaine de la robotique médicale et de l'intelligence artificielle. En tant que Technicien·ne Contrôle Qualité DHR, vous serez responsable de la revue des dossiers d'historique des dispositifs (DHR) et des activités de contrôle qualité final, conformément aux normes ISO 13485:2016 et aux autres réglementations applicables à l'industrie d",
+   "description": "Rejoignez Quantum Surgical, une entreprise innovante dans le domaine de la robotique médicale et de l'intelligence artificielle. En tant que Technicien·ne Contrôle Qualité DHR, vous serez responsable de la revue des dossiers d'historique des dispositifs (DHR) et des activités de contrôle qualité final, conformément aux normes ISO 13485:2016 et aux autres réglementations applicables à l'industrie des dispositifs médicaux. Ce poste est basé à Montpellier.\n• Réaliser la revue des Device History Records (DHR) avant la libération des dispositifs, conformément aux exigences de la norme ISO 13485, de la FDA (QMSR) et du règlement EU 2017/745.\n• Vérifier la conformité et la complétude des dossiers de production (dossiers de lot, enregistrements de contrôle, traçabilité des composants) préalablement à la libération produit.\n• Réaliser les contrôles qualité finaux sur les plateformes robotisées et leurs accessoires avant expédition.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-contr%C3%B4le-qualit%C3%A9-dhr-h-f-x-at-quantum-surgical-4472161823"
+    },
+    {
+     "source": "Welcome to the Jungle",
+     "url": "https://www.welcometothejungle.com/fr/companies/quantum-surgical/jobs/technicien-ne-controle-qualite-dhr-h-f-x_montpellier"
     }
    ],
    "premiere_vue": "2026-10-19",
