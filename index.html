@@ -589,38 +589,75 @@ function lignesDe(t){return (t||"").split(/\n|;/).map(x=>x.trim().replace(/^[-�
 let offreCV=null,extras=new Set(),opts={titreOffre:true,accroche:true};
 const cvVideOK=()=>cvEnTexte(cv).split(/\s+/).filter(Boolean).length>=15;
 
+// Termes exacts employés par l'offre (pour reprendre son vocabulaire à la lettre)
+const eq=t=>[...(t||"")].map(c=>{const b=c.normalize("NFD")[0]||c;return b.toLowerCase().length===1?b.toLowerCase():c}).join("");
+function termesOffre(texte){
+  const t=eq(texte),res={};
+  for(const [lib,vars] of MOTS){
+    for(const v of vars){
+      const re=new RegExp("(?<![a-z0-9])"+v.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"[\\s\\-]+")+(v.length>4?"[a-z]*":"(?![a-z0-9])"));
+      const m=re.exec(t);
+      if(m){const brut=texte.slice(m.index,m.index+m[0].length).replace(/\s+/g," ").trim();
+        if(!res[lib]||m.index<res[lib].i)res[lib]={i:m.index,s:brut};}
+    }
+  }
+  return Object.fromEntries(Object.entries(res).map(([k,v])=>[k,v.s]));
+}
+// Mots-clés trop généraux pour figurer dans une phrase d'accroche
+const GENERIQUES=new Set(["Excel","Anglais","Management d'équipe","Rigueur / autonomie","Production / fabrication","Formation / sensibilisation","Réglementation","Documentation qualité","Validation / qualification","Environnement / RSE","Inspections / réception","Indicateurs / KPI","Laboratoire"]);
+const enPhrase=t=>/[A-Z]{2,}/.test(t)?t:(t?t[0].toLowerCase()+t.slice(1):t);
+const sansParentheses=t=>(t||"").replace(/\s*\([^)]*\)/g,"").trim();
+const commeUn=t=>{const m=enPhrase(sansParentheses(t));return /^[aeiouyàâéèêëîïôöùûh]/i.test(m)?"qu'"+m:"que "+m};
+const majus1=s=>s?s[0].toUpperCase()+s.slice(1):s;
+// Libellé de compétence : le terme de l'offre s'il est précis (plusieurs mots ou sigle), sinon notre libellé
+const libelleOffre=(lib,termes)=>{const s=termes[lib];return s&&(/\s/.test(s)||/^[A-Z0-9]{2,}$/.test(s))?majus1(s):lib};
+
 function adapterCV(o){
   const offreTxt=[o.titre,o.description||"",o.extrait||""].join("\n");
   const dansOffre=motsDe(offreTxt).sort((a,b)=>b.n-a.n);
-  const libOffre=dansOffre.map(m=>m.lib);
+  const libOffre=dansOffre.map(m=>m.lib),termes=termesOffre(offreTxt);
   const base=cvEnTexte(cv),dansBase=motsDe(base).map(x=>x.lib);
   const present=libOffre.filter(l=>dansBase.includes(l)),
         confirmes=libOffre.filter(l=>!dansBase.includes(l)&&extras.has(l)),
         manque=libOffre.filter(l=>!dansBase.includes(l)&&!extras.has(l));
   const poste=nettoyerTitre(o.titre),ent=o.entreprise||"";
   const intitule=(cv.titre||"").trim();
-  // Compétences : celles que demande l'offre d'abord, avec les mots de l'offre
+  // Compétences : mots de l'offre d'abord (avec son vocabulaire), puis le reste de ton CV
   const comps=lignesDe(cv.competences),utilisees=new Set(),sortie=[];
   for(const l of [...present,...confirmes]){
+    const lib=libelleOffre(l,termes);
     const ligne=comps.find(c=>!utilisees.has(c)&&motsDe(c).some(x=>x.lib===l));
-    if(ligne){sortie.push(ligne);utilisees.add(ligne)}else sortie.push(l);
+    if(ligne){utilisees.add(ligne);sortie.push(norm(ligne).includes(norm(lib))?ligne:lib)}else sortie.push(lib);
   }
   for(const c of comps)if(!utilisees.has(c))sortie.push(c);
   const vu=new Set(),competences=sortie.filter(c=>{const k=norm(c);if(vu.has(k))return false;vu.add(k);return true});
-  // Expériences : missions les plus proches de l'offre en premier (ordre chronologique inchangé)
+  // Expériences : missions les plus proches de l'offre en premier ; anciennes expériences raccourcies
   const pertinence=l=>motsDe(l).filter(x=>libOffre.includes(x.lib)).length;
-  const exps=(cv.exps||[]).map(x=>({...x,missions:lignesDe(x.missions).map((m,i)=>({m,i,p:pertinence(m)})).sort((a,b)=>b.p-a.p||a.i-b.i).map(z=>z.m)}));
+  let meilleure=null;
+  const exps=(cv.exps||[]).map((x,idx)=>{
+    const ms=lignesDe(x.missions).map((m,i)=>({m,i,p:pertinence(m)})).sort((a,b)=>b.p-a.p||a.i-b.i);
+    const total=ms.reduce((s,z)=>s+z.p,0);
+    if(total>0&&(!meilleure||total>meilleure.total))meilleure={x,total,top:ms.filter(z=>z.p>0).slice(0,2).map(z=>z.m)};
+    const garde=idx<2?ms:ms.filter((z,i)=>i<3||z.p>0).slice(0,5);
+    return {...x,missions:garde.map(z=>z.m)};
+  });
   // Titre et profil
   const titre=opts.titreOffre&&poste?poste:(intitule||poste);
-  let resume=(cv.resume||"").trim();
-  if(opts.accroche&&poste)resume=`${intitule||"Professionnelle de la qualité"} candidate au poste de ${poste}${ent?` chez ${ent}`:""}.${resume?" "+resume:""}`;
+  const motsCles=[...present,...confirmes].filter(l=>!GENERIQUES.has(l)).slice(0,4).map(l=>enPhrase(libelleOffre(l,termes)));
+  const phrases=[];
+  if(opts.accroche&&poste){
+    phrases.push(`${intitule||"Professionnelle de la qualité"} candidate au poste de ${poste}${ent?` chez ${ent}`:""}.`);
+    if(motsCles.length>=2&&meilleure)phrases.push(`Expérience en ${liste(motsCles)}, notamment en tant ${commeUn(meilleure.x.poste)}${meilleure.x.entreprise?` chez ${meilleure.x.entreprise}`:""}.`);
+  }
+  if((cv.resume||"").trim())phrases.push(cv.resume.trim());
+  const resume=phrases.join(" ");
   const contact=[cv.email,cv.tel,cv.ville,cv.lien].filter(Boolean).join(" | ");
-  const a={nom:(cv.nom||"").trim(),titre,contact,resume,competences,exps,forms:cv.forms||[],langues:lignesDe(cv.langues),certifs:lignesDe(cv.certifs),texte:(cv.texte||"").trim()};
+  const a={nom:(cv.nom||"").trim(),titre,contact,resume,competences,exps,forms:cv.forms||[],langues:lignesDe(cv.langues),certifs:lignesDe(cv.certifs),texte:(cv.texte||"").trim(),meilleure};
   a.texteBrut=cvEnTexte({...cv,nom:a.nom,titre:a.titre,resume,competences:competences.join("\n"),exps:exps.map(x=>({...x,missions:x.missions.join("\n")}))});
   const apres=motsDe(a.texteBrut).map(x=>x.lib).filter(l=>libOffre.includes(l));
   const sc=n=>libOffre.length?Math.round(n/libOffre.length*100):0;
   a.avant=sc(present.length);a.apres=sc(apres.length);a.nb=libOffre.length;
-  a.present=present;a.confirmes=confirmes;a.manque=manque;
+  a.present=present;a.confirmes=confirmes;a.manque=manque;a.motsCles=motsCles;
   const mots=a.texteBrut.split(/\s+/).filter(Boolean).length;
   a.controles=[
     [!!(cv.email&&cv.tel),"Coordonnées complètes (email et téléphone)"],
@@ -633,6 +670,20 @@ function adapterCV(o){
     [mots>=150&&mots<=750,`Longueur adaptée : ${mots} mots (idéal : 1 à 2 pages, 300 à 700 mots)`]
   ];
   return a;
+}
+
+function fabriquerLettre(o,a){
+  const nom=a.nom,poste=nettoyerTitre(o.titre),ent=o.entreprise||"";
+  const intitule=(cv.titre||"").trim()||"Professionnelle de la qualité";
+  const min1=s=>s?s[0].toLowerCase()+s.slice(1):s;
+  const P=[];
+  P.push(`Votre offre de ${poste}${ent?` au sein de ${ent}`:""} a retenu toute mon attention.${a.motsCles.length?` ${intitule}, j'ai l'habitude de travailler sur ${liste(a.motsCles)}, ce qui correspond directement aux missions que vous décrivez.`:` ${intitule}, je souhaite mettre mon expérience au service de votre équipe.`}`);
+  if(a.meilleure){const e=a.meilleure.x;
+    P.push(`Chez ${e.entreprise||"mon employeur"}${e.poste?`, en tant ${commeUn(e.poste)}`:""}, mes missions ont notamment porté sur : ${a.meilleure.top.map(min1).join(" ; ")}. Elles correspondent directement à celles de votre offre.`);
+  }else P.push("[Un exemple concret tiré de ton parcours, le plus proche des missions de l'offre : contexte, ce que tu as fait, résultat.]");
+  const aApprendre=a.manque.filter(l=>!GENERIQUES.has(l)).slice(0,2).map(enPhrase);
+  if(aApprendre.length)P.push(`Je suis par ailleurs motivée pour renforcer mes compétences en ${liste(aApprendre)}.`);
+  return `${nom}${cv.email||cv.tel?"\n"+[cv.email,cv.tel].filter(Boolean).join(" | "):""}\n\nObjet : Candidature au poste de ${poste}\n\nMadame, Monsieur,\n\n${P.join("\n\n")}\n\nJe serais ravie d'échanger avec vous lors d'un entretien pour vous présenter ma motivation et mon parcours.\n\nDans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n${nom}`;
 }
 
 function cvEnHtml(a){
@@ -685,7 +736,7 @@ function rendreCV(){
     $("#go-cv").onclick=()=>{$("#cvdlg").close();onglet("cv")};return;
   }
   const a=adapterCV(o),coul=a.apres>=60?"#12a150":a.apres>=35?"#f5a524":"#ff6b4a",nom=a.nom,poste=nettoyerTitre(o.titre);
-  const lettre=`${nom}\n\nObjet : Candidature au poste de ${poste}\n\nMadame, Monsieur,\n\nVotre offre de ${poste}${o.entreprise?` au sein de ${o.entreprise}`:""} a retenu toute mon attention.${a.present.length?` ${cv.titre||"Professionnelle de la qualité"}, j'ai l'habitude de travailler sur ${liste(a.present.slice(0,4))}, ce qui correspond directement aux missions que vous décrivez.`:""}\n\n[Un exemple concret tiré de ton parcours, le plus proche des missions de l'offre : contexte, ce que tu as fait, résultat.]\n\n${a.manque.length?`[Si c'est vrai, mentionne aussi ton expérience en ${liste(a.manque.slice(0,2))}. Sinon, indique ta motivation à te former.]\n\n`:""}Je serais ravie d'échanger avec vous lors d'un entretien pour vous présenter ma motivation et mon parcours.\n\nDans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n${nom}`;
+  const lettre=fabriquerLettre(o,a);
   cvSortie={prompt:`Voici une offre d'emploi et mon CV de base. Adapte mon CV à cette offre pour qu'il passe les logiciels de recrutement (ATS) : une seule colonne, titres standards, mots-clés de l'offre repris avec leurs termes exacts, missions les plus pertinentes en premier, SANS RIEN INVENTER (ne cite que ce qui est dans mon CV). Puis rédige une lettre de motivation courte et sincère.\n\n=== OFFRE ===\n${o.titre} — ${o.entreprise||""} — ${o.commune||o.lieu}\n${o.description||o.extrait||"(description non disponible, lien : "+o.liens[0].url+")"}\n\n=== MON CV DE BASE ===\n${cvEnTexte(cv)}`,texte:a.texteBrut,a};
   $("#cv-body").innerHTML=`
    <div class="score"><div class="ring" style="background:conic-gradient(${coul} ${a.apres*3.6}deg,#f0e6da 0)"><span style="background:#fff;border-radius:50%;width:56px;height:56px;display:grid;place-items:center">${a.apres}%</span></div>
