@@ -58,8 +58,19 @@ def norm(t):
     return re.sub(r"[^a-z0-9]+", " ", t).strip()
 
 
+def texte_brut(h):
+    """HTML -> texte avec retours à la ligne (pour les descriptions d'offres)."""
+    h = re.sub(r"(?i)<br\s*/?>|</p>|</li>|</div>|</h\d>", "\n", h or "")
+    h = re.sub(r"(?i)<li[^>]*>", "• ", h)
+    t = html.unescape(re.sub(r"<[^>]+>", " ", h))
+    t = re.sub(r"[ \t\xa0]+", " ", t)
+    t = re.sub(r" ?\n ?", "\n", t)
+    return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+
 def offre(source, id_ext, titre, entreprise, lieu, url, contrat="", salaire="", date_pub="", extrait=""):
     return {
+        "description": texte_brut(extrait)[:5000],
         "source": source, "id_ext": str(id_ext), "titre": nettoyer(titre), "entreprise": nettoyer(entreprise),
         "lieu": nettoyer(lieu), "contrat": nettoyer(contrat), "salaire": nettoyer(salaire),
         "url": url, "date_pub": (date_pub or "")[:10], "extrait": nettoyer(extrait)[:400],
@@ -123,9 +134,20 @@ def hellowork(q):
             sal = re.search(r"salaire de (.*?)(?:, en |$)", html.unescape(aria.group(1))) if aria else None
             res.append(offre("HelloWork", idm.group(1), titre, ent, lieu.group(1) if lieu else "",
                              "https://www.hellowork.com" + href if href.startswith("/") else href,
-                             contrat=contrat.group(1) if contrat else "", salaire=sal.group(1) if sal else ""))
+                             contrat=contrat.group(1) if contrat else "", salaire=sal.group(1) if sal else "",
+                             date_pub=date_relative(c)))
         time.sleep(1.5)
     return res
+
+
+def date_relative(bloc):
+    """'il y a 16 jours' -> date ISO (HelloWork n'affiche pas de date exacte)."""
+    m = re.search(r"il y a (\d+)\s*(minute|heure|jour|semaine|mois)", bloc)
+    if not m:
+        return ""
+    n, u = int(m.group(1)), m.group(2)
+    jours = {"minute": 0, "heure": 0, "jour": n, "semaine": 7 * n, "mois": 30 * n}[u]
+    return (date.today() - timedelta(days=jours)).isoformat()
 
 
 # ---------- France Travail (API officielle, clé gratuite) ----------
@@ -204,6 +226,59 @@ def jooble(requetes):
     return res
 
 
+# ---------- Descriptions complètes (LinkedIn, HelloWork) ----------
+def description_detail(source, url):
+    if source == "LinkedIn":
+        m = re.search(r"(\d+)$", url)
+        page = get(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{m.group(1)}") if m else None
+        mm = re.search(r'show-more-less-html__markup[^>]*>(.*?)</div>', page or "", re.S)
+        return texte_brut(mm.group(1))[:5000] if mm else ""
+    if source == "HelloWork":
+        page = get(url)
+        blocs = re.findall(r'data-truncate-text-target="content">(.*?)</div>\s*(?:<div|</div|<button)', page or "", re.S)
+        return "\n\n".join(texte_brut(b) for b in blocs)[:5000]
+    return ""
+
+
+# ---------- Géolocalisation (geo.api.gouv.fr, gratuit, sans clé) ----------
+GEO_FICHIER = RACINE / "data" / "geo.json"
+GEO = json.loads(GEO_FICHIER.read_text(encoding="utf-8")) if GEO_FICHIER.exists() else {}
+
+
+def nom_commune(lieu):
+    lieu = re.sub(r"^\d{2,3}\s*-\s*", "", lieu or "")  # France Travail : « 34 - Béziers »
+    n = re.split(r"\s+-\s+|,|\(", lieu)[0]
+    return re.sub(r"\b\d{5}\b", "", n).strip()
+
+
+def distance_km(a, b):
+    from math import radians, sin, cos, asin, sqrt
+    la1, lo1, la2, lo2 = map(radians, (a[0], a[1], b[0], b[1]))
+    h = sin((la2 - la1) / 2) ** 2 + cos(la1) * cos(la2) * sin((lo2 - lo1) / 2) ** 2
+    return 6371 * 2 * asin(sqrt(h))
+
+
+def geocoder(nom, ref):
+    """Commune la plus proche du centre de recherche portant ce nom."""
+    if not nom or norm(nom) in ("occitanie", "france", "languedoc roussillon"):
+        return None
+    if nom in GEO:
+        return GEO[nom]
+    r = get("https://geo.api.gouv.fr/communes?" + urllib.parse.urlencode({"nom": nom, "fields": "nom,centre", "limit": 8}))
+    pos = None
+    try:
+        cands = [(c["nom"], (c["centre"]["coordinates"][1], c["centre"]["coordinates"][0])) for c in json.loads(r or "[]")]
+        exact = [c for c in cands if norm(c[0]) == norm(nom)] or cands
+        if exact:
+            nom_ok, (la, lo) = min(exact, key=lambda c: distance_km(c[1], ref))
+            pos = [round(la, 4), round(lo, 4), nom_ok]
+    except Exception:
+        pos = None
+    GEO[nom] = pos
+    time.sleep(0.2)
+    return pos
+
+
 # ---------- Filtrage et fusion ----------
 def pertinente(o):
     t = norm(o["titre"])
@@ -258,29 +333,52 @@ def main():
             if all(l["source"] != o["source"] for l in v["liens"]):
                 v["liens"].append(lien)
             v["date_pub"] = min([d for d in (v["date_pub"], o["date_pub"]) if d] or [""])
-            for c in ("contrat", "salaire", "extrait"):
+            for c in ("contrat", "salaire", "extrait", "description"):
                 v[c] = v[c] or o[c]
         else:
             vues[k] = {"id": k, "titre": o["titre"], "entreprise": o["entreprise"], "lieu": o["lieu"],
                        "contrat": o["contrat"], "salaire": o["salaire"], "date_pub": o["date_pub"],
-                       "extrait": o["extrait"], "liens": [lien]}
+                       "extrait": o["extrait"], "description": o["description"], "liens": [lien]}
 
-    limite = (date.today() - timedelta(days=CFG["garder_jours_apres_disparition"])).isoformat()
-    offres = []
+    limite = (date.today() - timedelta(days=CFG["age_max_jours"])).isoformat()
+    offres, nb_detail = [], 0
     for k, v in vues.items():
         ancien = anciennes.pop(k, None)
         v["premiere_vue"] = ancien["premiere_vue"] if ancien else AUJOURDHUI
         v["derniere_vue"] = AUJOURDHUI
+        if not v.get("description") and ancien and ancien.get("description"):
+            v["description"] = ancien["description"]
+        if (v["date_pub"] or v["premiere_vue"]) < limite:
+            continue  # plus d'un mois : supprimée
+        if not v.get("description") and nb_detail < 90:
+            for l in v["liens"]:
+                d = description_detail(l["source"], l["url"])
+                nb_detail += 1
+                time.sleep(0.8)
+                if d:
+                    v["description"] = d
+                    break
         v["agro"] = est_agro(v)
         offres.append(v)
-    for k, v in anciennes.items():  # plus en ligne : on garde un temps pour le suivi
-        if v.get("derniere_vue", "") >= limite:
+    for k, v in anciennes.items():  # plus en ligne : gardée tant qu'elle a moins d'un mois
+        if (v["date_pub"] or v["premiere_vue"]) >= limite:
             offres.append(v)
+
+    centre = geocoder(CFG["ville"], (43.5733, 3.8366)) or [43.5733, 3.8366, CFG["ville"]]
+    gardees = []
+    for v in offres:
+        pos = geocoder(nom_commune(v["lieu"]), centre[:2])
+        v["lat"], v["lon"], v["commune"] = (pos[0], pos[1], pos[2]) if pos else (None, None, "")
+        if pos and distance_km(pos[:2], centre[:2]) > CFG["rayon_km"] * 1.2:
+            continue  # nettement hors du rayon demandé
+        gardees.append(v)
+    offres = gardees
+    GEO_FICHIER.write_text(json.dumps(GEO, ensure_ascii=False, indent=0), encoding="utf-8")
 
     offres.sort(key=lambda o: o["date_pub"] or o["premiere_vue"], reverse=True)
     SORTIE.parent.mkdir(exist_ok=True)
     SORTIE.write_text(json.dumps({"maj": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-                                  "offres": offres}, ensure_ascii=False, indent=1), encoding="utf-8")
+                                  "centre": centre[:2], "rayon_km": CFG["rayon_km"], "offres": offres}, ensure_ascii=False, indent=1), encoding="utf-8")
     actives = sum(o["derniere_vue"] == AUJOURDHUI for o in offres)
     print(f"=> {len(offres)} offres ({actives} en ligne aujourd'hui) -> {SORTIE}")
 

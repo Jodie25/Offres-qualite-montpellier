@@ -1,5 +1,10 @@
 {
- "maj": "2026-10-21T11:53+00:00",
+ "maj": "2026-10-21T12:09+00:00",
+ "centre": [
+  43.5732,
+  3.8329
+ ],
+ "rayon_km": 50,
  "offres": [
   {
    "id": "debfbb5b43c0",
@@ -10,6 +15,7 @@
    "salaire": "",
    "date_pub": "2026-10-21",
    "extrait": "",
+   "description": "Job Description\n\nGlobal Quality and Food Safety Specialist (H/F/X)\n\nLocation: Aimargues (near Montpellier)\n\nType of contract: Permanent (CDI)\n\nJoin Royal Canin as a Global Quality and Food Safety ! Drive excellence in distribution quality and traceability across our global network. In this role, you’ll lead compliance initiatives, standardize processes, and enhance end-to-end traceability capabilities—ensuring our products meet the highest standards from plant to pet.\n\nWhat are we looking for?\n\n• B.S. or M.S. in Food Science, Quality, or Supply Chain.\n• 5-10 years of experience in Quality and Food Safety Management or Supply Chain, with strong knowledge of distribution quality and traceability standards.\n• Familiarity with ISO 9001, ISO 22000/FSSC, or BRC Storage & Distribution standards.\n• Proficiency in IT systems such as WMS, Agnostic, and SAP.\n• Excellent communication skills (oral and written).\n• Proven ability to lead and influence across regions and functions.\n• Strong understanding of business processes, systems, and change management.\n• Excellent networking skills and ability to deliver projects through others remotely.\n\nWhat will be your key responsibilities?\n\n• Act as the global Quality &Food Safety Specialist for standards and procedures related to Distribution Quality Management, Traceability, Hold & Release, and Product Disposal.\n• Lead global compliance roadmaps for these standards across the distribution network and manufacturing sites where applicable.\n• Ensure calibration and efficiency of gap assessments and define concession needs.\n• Facilitate the RC QiD/QiM Community of Practice (COP), driving collaboration, knowledge sharing, training, and continuous improvement.\n• Provide functional expertise in market traceability IT systems (e.g., Agnostic Corp system) and support global deployment.\n• Offer technical guidance for risk assessments, development, evaluation, and validation of new requirements and capabilities.\n• Serve as the key liaison with Petcare and corporate teams on distribution quality and traceability matters.\n• Maintain regular communication with VCO and R&D/QFS leadership teams and manage escalations when necessary.\n\nWhat can you expect from Mars?\n\n• You will work in a unique campus, which gathers more than 800 Associates working for: the international HQ, the French subsidiary, two laboratories, a kennel and a cattery with more than 200 cats & dogs, and finally the most important factory of the Royal Canin group.\n• Flexible working opportunities.\n• Join a purpose driven company, where we’re striving to build the world we want tomorrow, today.\n• Best-in-class learning and development support from day one, including access to our in-house Mars University.\n\n#mars #royalcanin #bettertogether",
    "liens": [
     {
      "source": "LinkedIn",
@@ -18,7 +24,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": true
+   "agro": true,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "910443fb37e3",
@@ -29,6 +38,7 @@
    "salaire": "",
    "date_pub": "2026-10-21",
    "extrait": "",
+   "description": "Job Description\n\nGlobal Quality and Food Safety Specialist (H/F/X)\n\nLocation: Aimargues (near Montpellier)\n\nType of contract: Permanent (CDI)\n\nJoin Royal Canin as a Global Quality and Food Safety ! Drive excellence in distribution quality and traceability across our global network. In this role, you’ll lead compliance initiatives, standardize processes, and enhance end-to-end traceability capabilities—ensuring our products meet the highest standards from plant to pet.\n\nWhat are we looking for?\n\n• B.S. or M.S. in Food Science, Quality, or Supply Chain.\n• 5-10 years of experience in Quality and Food Safety Management or Supply Chain, with strong knowledge of distribution quality and traceability standards.\n• Familiarity with ISO 9001, ISO 22000/FSSC, or BRC Storage & Distribution standards.\n• Proficiency in IT systems such as WMS, Agnostic, and SAP.\n• Excellent communication skills (oral and written).\n• Proven ability to lead and influence across regions and functions.\n• Strong understanding of business processes, systems, and change management.\n• Excellent networking skills and ability to deliver projects through others remotely.\n\nWhat will be your key responsibilities?\n\n• Act as the global Quality &Food Safety Specialist for standards and procedures related to Distribution Quality Management, Traceability, Hold & Release, and Product Disposal.\n• Lead global compliance roadmaps for these standards across the distribution network and manufacturing sites where applicable.\n• Ensure calibration and efficiency of gap assessments and define concession needs.\n• Facilitate the RC QiD/QiM Community of Practice (COP), driving collaboration, knowledge sharing, training, and continuous improvement.\n• Provide functional expertise in market traceability IT systems (e.g., Agnostic Corp system) and support global deployment.\n• Offer technical guidance for risk assessments, development, evaluation, and validation of new requirements and capabilities.\n• Serve as the key liaison with Petcare and corporate teams on distribution quality and traceability matters.\n• Maintain regular communication with VCO and R&D/QFS leadership teams and manage escalations when necessary.\n\nWhat can you expect from Mars?\n\n• You will work in a unique campus, which gathers more than 800 Associates working for: the international HQ, the French subsidiary, two laboratories, a kennel and a cattery with more than 200 cats & dogs, and finally the most important factory of the Royal Canin group.\n• Flexible working opportunities.\n• Join a purpose driven company, where we’re striving to build the world we want tomorrow, today.\n• Best-in-class learning and development support from day one, including access to our in-house Mars University.\n\n#mars #royalcanin #bettertogether",
    "liens": [
     {
      "source": "LinkedIn",
@@ -37,7 +47,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": true
+   "agro": true,
+   "lat": 43.6667,
+   "lon": 4.201,
+   "commune": "Aimargues"
   },
   {
    "id": "8b966e84e61a",
@@ -48,6 +61,7 @@
    "salaire": "",
    "date_pub": "2026-10-21",
    "extrait": "",
+   "description": "Job Description\n\nGlobal Quality and Food Safety Specialist (H/F/X)\n\nLocation: Aimargues (near Montpellier)\n\nType of contract: Permanent (CDI)\n\nJoin Royal Canin as a Global Quality and Food Safety ! Drive excellence in distribution quality and traceability across our global network. In this role, you’ll lead compliance initiatives, standardize processes, and enhance end-to-end traceability capabilities—ensuring our products meet the highest standards from plant to pet.\n\nWhat are we looking for?\n\n• B.S. or M.S. in Food Science, Quality, or Supply Chain.\n• 5-10 years of experience in Quality and Food Safety Management or Supply Chain, with strong knowledge of distribution quality and traceability standards.\n• Familiarity with ISO 9001, ISO 22000/FSSC, or BRC Storage & Distribution standards.\n• Proficiency in IT systems such as WMS, Agnostic, and SAP.\n• Excellent communication skills (oral and written).\n• Proven ability to lead and influence across regions and functions.\n• Strong understanding of business processes, systems, and change management.\n• Excellent networking skills and ability to deliver projects through others remotely.\n\nWhat will be your key responsibilities?\n\n• Act as the global Quality &Food Safety Specialist for standards and procedures related to Distribution Quality Management, Traceability, Hold & Release, and Product Disposal.\n• Lead global compliance roadmaps for these standards across the distribution network and manufacturing sites where applicable.\n• Ensure calibration and efficiency of gap assessments and define concession needs.\n• Facilitate the RC QiD/QiM Community of Practice (COP), driving collaboration, knowledge sharing, training, and continuous improvement.\n• Provide functional expertise in market traceability IT systems (e.g., Agnostic Corp system) and support global deployment.\n• Offer technical guidance for risk assessments, development, evaluation, and validation of new requirements and capabilities.\n• Serve as the key liaison with Petcare and corporate teams on distribution quality and traceability matters.\n• Maintain regular communication with VCO and R&D/QFS leadership teams and manage escalations when necessary.\n\nWhat can you expect from Mars?\n\n• You will work in a unique campus, which gathers more than 800 Associates working for: the international HQ, the French subsidiary, two laboratories, a kennel and a cattery with more than 200 cats & dogs, and finally the most important factory of the Royal Canin group.\n• Flexible working opportunities.\n• Join a purpose driven company, where we’re striving to build the world we want tomorrow, today.\n• Best-in-class learning and development support from day one, including access to our in-house Mars University.\n\n#mars #royalcanin #bettertogether",
    "liens": [
     {
      "source": "LinkedIn",
@@ -56,45 +70,33 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": true
+   "agro": true,
+   "lat": 43.8322,
+   "lon": 4.3429,
+   "commune": "Nîmes"
   },
   {
-   "id": "25fa0f00dc68",
-   "titre": "Agent de Laboratoire - Technicien Controle H/F",
-   "entreprise": "Jubil Intérim",
-   "lieu": "Codognan - 30",
+   "id": "3a82dc23adeb",
+   "titre": "Technicien Laboratoire Qualité Préparation Documentaire H/F",
+   "entreprise": "Randstad",
+   "lieu": "Montpellier - 34",
    "contrat": "Intérim",
-   "salaire": "",
+   "salaire": "2 338,10 € / mois",
    "date_pub": "",
    "extrait": "",
+   "description": "Nous recherchons pour le compte de notre client Sanofi SARD spécialisé dans le secteur des essais cliniques un(e) technicien(ne) supérieur(e) préparation documentaire\n\nSuivi de dossier d'expédition du montage à l'expédition - Assure la préparation documentaire des expéditions vracs et articles de conditionnement vers les sous-traitants de packaging, et de produits pour investigation clinique vers les dépôts et les sites investigateurs\n2 mois d'expériences dans les domaines distribution, export, administratif, logistique, gestion documentaire. - Il faut savoir travailler en respectant les réglementations pharmaceutiques - Une expérience dans le milieu pharma est un plus\nC'est un poste en journée",
    "liens": [
     {
      "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84461111.html"
+     "url": "https://www.hellowork.com/fr-fr/emplois/84654714.html"
     }
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "3f2b7aecd664",
-   "titre": "Assistant Qualité H/F",
-   "entreprise": "Groupe Synergie",
-   "lieu": "Vergèze - 30",
-   "contrat": "Intérim",
-   "salaire": "20 000 - 25 000 € / an",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/83782418.html"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "a1de053a6f23",
@@ -113,26 +115,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "bdda850df514",
-   "titre": "ASSISTANT QUALITE H/F",
-   "entreprise": "",
-   "lieu": "34 - Maureilhan",
-   "contrat": "Intérim - 1 Mois",
-   "salaire": "",
-   "date_pub": "2026-10-21",
-   "extrait": "CRIT recherche pour l'un de ses clients, spécialisé dans le secteur agroalimentaire, un Assistant Qualité H/F dans le cadre d'une mission de 6 mois.Rattaché(e) au coordinateur QHSE, vous participez au suivi et à l'amélioration du système qualité de l'entreprise.Vos principales missions seront :Réaliser les contrôles qualité tout au long du processus de production.Veiller au respect des procédures,",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8130543"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
    "id": "7ca72439f632",
@@ -143,6 +129,7 @@
    "salaire": "",
    "date_pub": "2026-10-20",
    "extrait": "",
+   "description": "A Propos De Nous\n\nRejoignez Maison Johanès Boubée, une entreprise de négoce de vins et spiritueux avec une activité d’embouteillage, de logistique et d’export.\n\nElle a près de 600 collaborateurs et 7 établissements en France. Filiale du groupe Carrefour, elle est le pôle d’expertise pour les vins et les effervescents et s’est donnée pour mission de rendre accessibles à chacun des clients, le meilleur des vins et spiritueux et encourager une démarche responsable.\n\nLe site de Nîmes est un site agroalimentaire de 33 000 m², situé à l'est de Nîmes, regroupant une activité logistique et une activité industrielle d'embouteillage. Il emploie entre 150 et 200 collaborateurs en équipes 2x8 et réalise un chiffre d'affaires de plus de 300 M€ par an.\n\nLe site dispose d'un entrepôt logistique de 24 000 m² accueillant 2 500 références, d'un chai de 26 KHL et de 4 lignes de conditionnement (BIB et bouteilles), permettant de conditionner près de 60 % des 100 millions de cols vendus chaque année.\n\nAu sein du site MJB situé à Nîmes, nous recherchons un(e) :\n\nResponsable QHSE et CHAI (F/H)\n\nVos Missions\n\nRattaché(e) Au Responsable De Site, Vos Missions Consisteront à Piloter, Animer Et Encadrer Le Service QHSSE Du Site Composé Du Laboratoire D’analyse Avec 2 Techniciennes De Laboratoire Et De L’assistant QHSSE Ainsi Que Le Chai Composé De 6 Cavistes Et Un Responsable, Et Être Garant Du Respect De Toutes Les Démarches QHSSE Du Site De Nîmes\n\nEtre garant des démarches Sûreté, sécurité & environnement notamment :\n\n• Piloter la démarche sûreté (TACCP) et sécurité sur le site (DU, POI, Visites Sécurité, ¼h Sécurité, suivi des analyses AT, Veille réglementaire…);\n• Coordonner les activités liées à l’hygiène et l’environnement sur le site (ICPE, gestion des déchets, Station d’épuration...) ;\n• Piloter la démarche de prévention, participer et/ou piloter les groupe de travail et les relations avec les institutions (Carsat, DDPP…)\n\nS’assurer du respect de la qualité et de la sécurité alimentaire :\n\n• Piloter le système qualité, faire vivre et poursuivre le développement de l’utilisation des outils documentaires (M-Files)\n• Diriger les démarches de certifications (IFS Food et Logistic, ECOCERT, BRC) et assurer la conformité et la qualité des produits\n• Etre garant de la conformité des produits, vous serez également l’interlocuteur privilégié des ODG\n• Assurer le traitement des non conformités (blocage, remise en conformité, relations fournisseurs, analyses réclamations consommateurs)\n• Assurer la sécurité du consommateur, piloter l’HACCP et les projets d’amélioration (audits internes, actions correctives…)\n• Veiller à la bonne réalisation des autocontrôles en production et les faire évoluer si nécessaire, tout en garantissant le suivi rigoureux des contrôles analytiques et des dégustations réalisés par vos équipes au laboratoire et au Chai.\n\nManagement & Travail En Équipe\n\n• Encadrer et animer le service QHSSE et Chai dans une démarche rigoureuse et bienveillante, de cohésion et de « travailler ensemble » ;\n• Assurer la fiabilité des livrables de son service\n• Partager et transmettre votre expertise auprès de son équipe, du site et de l’entreprise ;\n• Manager ses équipes (projet de service, polyvalence, plans de formation, entretiens professionnels…) dans une recherche d’efficacité\n• Piloter son budget (heures, consommables, investissement…)\n• Travailler en transverse avec les autres services du site, des autres sites, et du siège, s’intégrer dans un travail d’équipe\n• Gérer les prestataires de nettoyage, de la station d’épuration, des agents de sécurité, de la sanitation, des déchets.\n\nProgrès & Développement\n\n• Coopérer aux évolutions produits et processus notamment en participant aux essais\n• Identifier les pistes de progrès en matière de QHSSE et piloter les études et le déploiement des actions de progrès.\n• Présenter des actions de progrès en tenant compte des préoccupations liées au développement.\n• Utiliser le DMS et le MES (complétion, suivi, reporting) et participer activement à leur développement.\n\nVotre profil\n\n• Nous recherchons un(e) ingénieur(e) en industrie agroalimentaire ou en génie industriel, justifiant d'une première expérience en management opérationnel dans le secteur agroalimentaire (responsable production, qualité, etc.).\n• La détention du Diplôme National d'Œnologue (DNO) serait un atout.\n• Reconnu(e) pour votre rigueur et votre sens de l'organisation, vous faites preuve d'adaptabilité et d'ouverture d'esprit.\n• Vous savez maîtriser vos émotions dans des contextes exigeants, notamment lors d'audits, et vous êtes apprécié(e) pour votre esprit de synthèse, votre pragmatisme ainsi que votre sens des responsabilités et du service.\n• Vous souhaitez évoluer dans un environnement alliant exigence, convivialité et professionnalisme.\n• Enfin, de solides connaissances en œnologie constitueraient un véritable plus.\n\nInformations Complémentaires\n\n• Lieu : Nîmes\n• CDI /Cadre\n\nChez Carrefour, nous avons à cœur de ne passer à ",
    "liens": [
     {
      "source": "LinkedIn",
@@ -151,7 +138,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.8322,
+   "lon": 4.3429,
+   "commune": "Nîmes"
   },
   {
    "id": "18f708244406",
@@ -170,7 +160,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
    "id": "bdd5327d6735",
@@ -181,6 +174,7 @@
    "salaire": "",
    "date_pub": "2026-10-19",
    "extrait": "",
+   "description": "Innovative Diagnostics développe, produit et commercialise des kits de diagnostic, principalement des tests ELISA et PCR, capables de détecter les maladies zoonotiques chez les humains et les animaux, ainsi que les maladies vétérinaires chez les animaux d’élevage. Notre gamme vétérinaire pour le contrôle des maladies infectieuses chez les animaux d’élevage, est commercialisée sous la marque « IDvet », et offre la plus large gamme de tests vétérinaires sur le marché.Nos produits sont utilisés dans le monde entier par des laboratoires publics et privés afin de :détecter les maladies émergentes ;contrôler des maladies dans le cadre de programmes d’éradication et lors des mouvements des animaux ;vérifier l’efficacité des campagnes de vaccination.Cette démarche s’inscrit dans le concept « One Health » (Santé Globale) qui considère la santé humaine, la santé animale et l’environnement comme intimement liés.Tous nos postes sont ouverts aux personnes en situation de handicap. Nous recherchons un employé de production répartition H/F pour un CDD de 12 mois qui exercera ses fonctions sous la supervision de la Responsable répartition.L’employé de production en répartition aura pour missions de :\n\n• Préparer les solutions tampons (pesée des poudres, ajustement et contrôle des PH etc.) ainsi que les milieux de culture\n• Nettoyer et stériliser la verrerie de laboratoire\n• Ranger la verrerie propre et organiser les stocks\n• Collecter la verrerie usagée dans les différents laboratoires et en vérifier l’état",
    "liens": [
     {
      "source": "LinkedIn",
@@ -189,7 +183,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6503,
+   "lon": 3.7894,
+   "commune": "Grabels"
   },
   {
    "id": "debc66fa9d69",
@@ -200,6 +197,7 @@
    "salaire": "",
    "date_pub": "2026-10-19",
    "extrait": "",
+   "description": "Location:\n\nBalaruc\n\nAt Sibelco, we advance life through materials.\n\nFor over 150 years, we’ve been a trusted leader in sourcing, transforming, and distributing specialty industrial minerals. Our work powers progress across industries as diverse as glass, ceramics, construction, coatings, polymers, and water purification. Beyond our materials, we’re proud of our commitment to sustainability, innovation, and empowering people from all walks of life to thrive and make a meaningful impact.\n\nAre We the Perfect Match?\n\nAt Sibelco, we believe building a successful career is a two-way journey. We’re looking for individuals who share our values and vision, just as much as you’re seeking a company that aligns with your aspirations. Together, we can shape the future.\n\nJob Description:\n\nNous recherchons un/une Technicien(ne) QHS pour remettre en conformité notre site de Balaruc. Les missions :\n\n• Relai sur le site de Balaruc de la Responsable sécurité du Cluster à implémentation des Directives Groupe\n• Suivi des indicateurs sécurité\n• Accompagnement du site dans l’amélioration de la Culture Sécurité\n• Remontée et suivi des situations dangereuses et presqu’accident\n• Participation à l’analyse des incidents/accidents\n• Vérification sur le terrain de l’application des règles\n• Sensibilisation du personnel\n• Rédaction des procédures sécurité\n• Mise à jour de la documentation qualité du site\n\nEmployee Type:\n\nTemporary (durée déterminée)\n\nWhy Join Us?\n\nSibelco is more than a workplace—it’s a community that encourages growth, innovation, and collaboration. Here’s what you can look forward to when you join our team:\n\n• Meet Our People: Careers\n• Learn About Our Recruitment Process: Learn More\n• Discover Our Sustainability Goals: Sibelco priorities\n\nWe also welcome applications from all backgrounds and are committed to providing reasonable adjustments to support you through the selection process.\n\nHow To Apply\n\nFollow us on LinkedIn, Instagram, Twitter/X and Facebook to learn more about life at Sibelco. Submit your application in the Apply option.\n\nPlease note: We do not require agency services as we have a dedicated Global Talent Acquisition Team.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -208,159 +206,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "3dd40d3fa4f0",
-   "titre": "Assistant Qualité et Gestion des Risques - Secteur Santé H/F",
-   "entreprise": "Groupe Adène",
-   "lieu": "Montpellier - 34",
-   "contrat": "CDI",
-   "salaire": "2 100 - 2 300 € / mois",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/83999729.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "600ab38930b0",
-   "titre": "Technicien Qualité H/F",
-   "entreprise": "Evaden",
-   "lieu": "Montpellier - 34",
-   "contrat": "CDI",
-   "salaire": "30 000 - 35 000 € / an",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/83813048.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "d3f199693840",
-   "titre": "Chargé de Qualité Client - CDD H/F",
-   "entreprise": "Le Groupe Septeo",
-   "lieu": "Montpellier - 34",
-   "contrat": "CDI",
-   "salaire": "",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84333388.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "2e337c2c5edf",
-   "titre": "Technicien Qualité H/F",
-   "entreprise": "Randstad",
-   "lieu": "Lavérune - 34",
-   "contrat": "Intérim",
-   "salaire": "12,31 € / heure",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84118008.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "1cf866e185e2",
-   "titre": "Technicien Qualite H/F",
-   "entreprise": "GIF emploi",
-   "lieu": "Saussan - 34",
-   "contrat": "Intérim",
-   "salaire": "2 100 - 2 500 € / mois",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84034499.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "1fc58818d867",
-   "titre": "Controleur Qualite H/F",
-   "entreprise": "GIF emploi",
-   "lieu": "Sommières - 30",
-   "contrat": "Intérim",
-   "salaire": "1 900 - 2 150 € / mois",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/84034400.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "03a0f957ecb8",
-   "titre": "Contrôleur Qualité H/F",
-   "entreprise": "Adecco",
-   "lieu": "Castries - 34",
-   "contrat": "Intérim",
-   "salaire": "",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/83604363.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "d87185a31bf1",
-   "titre": "Technicien Mesures Qualité de l'Eau H/F",
-   "entreprise": "Apave",
-   "lieu": "Montpellier - 34",
-   "contrat": "CDI",
-   "salaire": "",
-   "date_pub": "",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "HelloWork",
-     "url": "https://www.hellowork.com/fr-fr/emplois/82900738.html"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.4476,
+   "lon": 3.6922,
+   "commune": "Balaruc-les-Bains"
   },
   {
    "id": "081bb421d747",
@@ -379,7 +228,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
   },
   {
    "id": "9076dbaf1895",
@@ -398,26 +250,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "ec0403ea4cac",
-   "titre": "Technicien (ne) laboratoire matériaux- Bétons, Mortiers",
-   "entreprise": "setec lerm (Laboratoire d'Etudes et de Recherches sur les Matériaux)",
-   "lieu": "Arles",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-16",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-ne-laboratoire-mat%C3%A9riaux-b%C3%A9tons-mortiers-at-setec-lerm-laboratoire-d-etudes-et-de-recherches-sur-les-mat%C3%A9riaux-4471622673"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.7706,
+   "lon": 4.4397,
+   "commune": "Garons"
   },
   {
    "id": "d03536ba337c",
@@ -436,7 +272,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "499e3e2aec41",
@@ -455,7 +294,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
    "id": "e64f45a9ee33",
@@ -466,6 +308,7 @@
    "salaire": "",
    "date_pub": "2026-10-15",
    "extrait": "",
+   "description": "Type de contrat : CDD remplacement congé maternité\n\nTemps de travail : 35 heures\n\nChez IDEXX, nous sommes tous passionnés par notre mission. Chaque jour, nous contribuons à améliorer les standards de soins des animaux, à garantir la qualité de l'eau pour des milliards de personnes et à soutenir la santé des élevages dans le monde entier.\n\nEn tant que Technicien.ne Contrôle Qualité , vous apporterez une contribution essentielle à l'une des plus grandes entreprises mondiales de diagnostic vétérinaire. Vous réaliserez des analyses complexes visant à évaluer la qualité de nos produits à l'aide de techniques telles que PCR et ELISA , dans le respect des exigences réglementaires et des règles d'hygiène et de sécurité en vigueur chez IDEXX.\n\nVous rejoindrez un environnement dynamique favorisant le travail d'équipe, l'autonomie et le développement des compétences.\n\nÀ propos de la division LPD\n\nLa Division Livestock, Poultry And Dairy (LPD) D'IDEXX Développe Des Tests Diagnostiques Et Des Services Destinés à Améliorer La Santé Des Animaux D'élevage à Travers Le Monde. Nous Collaborons Avec Des Laboratoires Publics, Privés Et Gouvernementaux Afin De Fournir Des Résultats Fiables Permettant\n\n• d'améliorer la santé animale,\n• de protéger la santé publique,\n• d'optimiser la productivité des élevages,\n• de garantir la qualité des aliments.\n\nCe poste est basé au sein de notre laboratoire de Montpellier et est à pourvoir dès que possible dans le cadre d'un CDD de remplacement de congé maternité .\n\nVos missions\n\nContrôle qualité aux différents stades de la production\n\n• Contrôle des matières premières, composants, réactifs intermédiaires (semi-finis) et produits finis.\n• Réalisation des inspections (avant libération, échantillonnage, environnement de production).\n• Suivi des études de stabilité des produits finis.\n• Analyse et investigation des anomalies détectées lors des activités de contrôle qualité.\n\nGestion documentaire\n\n• Rédaction des comptes rendus d'analyses de contrôle.\n• Vérification de la traçabilité des dossiers de lots.\n• Archivage de la documentation qualité.\n\nContribution à l'efficacité du système de management\n\n• Participer à la rédaction et à la mise à jour des procédures qualité.\n• Contribuer à l'amélioration continue des activités de contrôle qualité et des processus existants.\n• Mettre en place et suivre des indicateurs qualité.\n• Participer aux démarches QHSE (Qualité, Hygiène, Sécurité et Environnement) du laboratoire.\n\nProfil recherché\n\n• Formation de type BTS (Bac+2) ou Licence (Bac+3) en Biologie, Sciences Biomédicales, Biotechnologies ou Chimie.\n• Première expérience significative en laboratoire d'analyse, de recherche ou de contrôle qualité.\n• Maîtrise des techniques PCR et/ou ELISA.\n• La connaissance des normes ISO 9001, ISO 14001 et/ou des référentiels GMP constitue un atout.\n• Excellentes capacités rédactionnelles et relationnelles en français ; l'anglais est un plus.\n• Rigueur, sens de l'organisation, autonomie, esprit d'équipe et capacité d'adaptation.\n\nPourquoi rejoindre IDEXX ?\n\nEn rejoignant IDEXX, vous intégrerez un environnement de travail stimulant où votre contribution aura un impact direct sur la santé animale et la sécurité alimentaire.\n\nNous Proposons\n\n• Un environnement collaboratif et bienveillant.\n• Des opportunités de développement professionnel.\n• Une culture favorisant l'innovation, la responsabilisation et l'amélioration continue.\n• La possibilité de contribuer à la croissance d'une entreprise leader sur un marché en forte expansion.\n\nRejoignez une équipe engagée, innovante et passionnée, qui œuvre chaque jour à améliorer la santé des animaux et des personnes.\n\nDécouvrez toutes nos opportunités sur : careers.idexx.com\n\nIDEXX valorise la diversité et l'inclusion. Nous encourageons toutes les personnes qualifiées à postuler, quelles que soient leur origine, leur genre, leur orientation sexuelle, leur handicap, leur âge ou toute autre caractéristique protégée par la loi.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -474,45 +317,33 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
-   "id": "95bde04da9d6",
-   "titre": "stage 6 mois amélioration continue contrôle qualité",
-   "entreprise": "Sanofi",
-   "lieu": "Aramon",
-   "contrat": "",
+   "id": "25fa0f00dc68",
+   "titre": "Agent de Laboratoire - Technicien Controle H/F",
+   "entreprise": "Jubil Intérim",
+   "lieu": "Codognan - 30",
+   "contrat": "Intérim",
    "salaire": "",
    "date_pub": "2026-10-15",
    "extrait": "",
+   "description": "L'agent de laboratoire a pour mission de vérifier par des contrôles quotidiens et périodiques la maîtrise du process de fabrication.\nSon contrôle intervient sur des produits finis, sur les matériaux concourrant à l'élaboration du béton d'une part, et sur le respect du manuel d 'assurance qualité dictant les règles devant assurer la conformité des produits.\n\nSous la responsabilité du directeur d'usine, ou du responsable labo, il doit assurer :\n\n- Les analyses granulométriques (granulats et béton)\n- Le contrôle dimensionnel des produits et leur résistance\n- Assurer le contrôle des produits en cours de fabrication\n- L'application de l'ensemble des tâches dictées par les normes et certification\n\nTâches annexes :\n\n- Nettoyage du malaxeur en fin de fabrication. Évacuation des déchets, dépoussiérage plate-forme du malaxeur\n- Nettoyage quotidien du laboratoire\n- Entretien périodique hotte aspirante ( élimination des poussières de soufre)\n- Manutentions diverses",
    "liens": [
     {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-am%C3%A9lioration-continue-contr%C3%B4le-qualit%C3%A9-at-sanofi-4479804813"
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84461111.html"
     }
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "2da490f64694",
-   "titre": "stage 6 mois contrôle qualité biochimie",
-   "entreprise": "Sanofi",
-   "lieu": "Aramon",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-15",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-contr%C3%B4le-qualit%C3%A9-biochimie-at-sanofi-4479808623"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.7228,
+   "lon": 4.2293,
+   "commune": "Codognan"
   },
   {
    "id": "4d733dafaeb2",
@@ -523,6 +354,7 @@
    "salaire": "",
    "date_pub": "2026-10-14",
    "extrait": "",
+   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 400 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nEn tant que Technicien·ne Contrôle Qualité DHR , vous travaillerez au sein de l’équipe QMS & Qualité Production, aux côtés d’un·e autre Technicien·ne Contrôle Qualité DHR et du Technicien Contrôle Réception, sous la responsabilité du QA Production Manager, au sein d’une équipe QARA de +10 personnes.\n\nVous contribuerez à garantir la conformité des dispositifs avant leur libération, en assurant la revue des Device History Records (DHR) et les activités de contrôle qualité final, conformément à la norme ISO 13485:2016 et aux autres réglementations applicables à l’industrie des dispositifs médicaux.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser la revue des Device History Records (DHR) avant la libération des dispositifs, conformément aux exigences de la norme ISO 13485, de la FDA (QMSR) et du règlement EU 2017/745.\n• Vérifier la conformité et la complétude des dossiers de production (dossiers de lot, enregistrements de contrôle, traçabilité des composants) préalablement à la libération produit.\n• Réaliser les contrôles qualité finaux sur les plateformes robotisées et leurs accessoires avant expédition.\n• Identifier, documenter et escalader les non-conformités détectées lors de la revue DHR ou du contrôle qualité final.\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks).\n• Contribuer au suivi des SCNR (Supplier/Site Corrective Non-conformance Report)détectées lors du processus de fabrication.\n• Renseigner et maintenir à jour les enregistrements qualité associés aux activités de libération produit.\n• Contribuer à l'amélioration continue des processus de contrôle final et de revue DHR (fiabilité, délais, efficacité).\n• Suivre et communiquer les indicateurs de performance qualité liés à la libération produit (taux de conformité, délais de traitement).\n• Participer aux activités d'audit (interne et externe) en lien avec le processus de libération produit.\n• Être l'interlocuteur Qualité des équipes de production : sensibilisation des équipes, support aux actions d'amélioration et accompagnement à la résolution de problèmes.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence).\n• Vous disposez de minimum 5 ans d’expérience sur un poste similaire.\n• Vous maîtrisez la norme ISO 13485 ou ISO 9001.\n• Vous avez un bon niveau d'anglais technique (oral et écrit)\n• Vous avez de l’expérience dans un environnement règlementé CE ou dans un environnement avec un haut niveau d’exigences.\n• Vous êtes rigoureux·se, organisé·e et doté·e d’un esprit de synthèse et d’analyse.\n• Vous êtes capable à communiquer efficacement et d’établir des relations avec les interlocuteurs internes et externes.\n• Vous avez d’excellentes capacités d’organisation et de communication.\n• Vous avez un fort esprit d’équipe.\n\nSouhaitable\n\n• Vous avez des compétences en méthodes de résolution de problèmes.\n• Vous avez une expérience en qualité opérationnelle.\n• Vous avez une expérience dans l’assurance qualité fournisseur.\n• Vous avez une expérience dans l’industrie du dispositif médical ou secteur équivalent.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant",
    "liens": [
     {
      "source": "LinkedIn",
@@ -531,7 +363,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "d5fa9a3f1161",
@@ -542,6 +377,7 @@
    "salaire": "",
    "date_pub": "2026-10-14",
    "extrait": "",
+   "description": "Le Centre Régional des Oeuvres Universitaires et Scolaires (Crous) de Montpellier est un établissement public administratif placé sous la tutelle du ministère chargé de l'Enseignement supérieur, de la Recherche et de l'Innovation (MESR). Il est régi par les décrets n°87-155 du 5 mars 1987 et n°2016-1042 du 29 juillet 2016 relatifs aux missions et à l'organisation des œuvres universitaires. Il a pour mission d'améliorer les conditions de vie et d'étude des étudiants de l'académie de Montpellier. Le budget de l'établissement s'élève à 70 M€ (crédits de paiement). 600 personnes sont au service de près de 110 000 étudiants dans les domaines de l'hébergement de la restauration, de l'action sociale et l'action culturelle. Le parc de logement mis à la disposition des étudiants comprend plus de 10 354 lits au sein de 7 cités et 33 résidences universitaires. 3 millions de repas sont servis au sein des 37 structures de restaurations que compte l'établissement (restaurants, cafétérias, brasseries…) Plus de 130 M€ sont versés annuellement sous forme de bourses à 38 000 boursiers. Le Crous de Montpellier-Occitanie couvre les 5 départements de l'académie de Montpellier : l'Aude (11), le Gard (30), l'Hérault (34), la Lozère (48) et les Pyrénées Orientales (66). Il est principalement présent dans trois grandes villes : Montpellier, Nîmes et Perpignan et dispose de plusieurs relais vie étudiante : Mende, Carcassonne, Narbonne, Sète et Béziers. Le Crous de Montpellier-Occitanie travaille en réseau sous l'impulsion du Centre national des œuvres universitaires (Cnous) en charge de coordonner et de piloter leurs actions.\n\nPositionnement du poste dans l'organigramme : rattaché au chef de service MEBGE Autorité hiérarchique : Service MEBGE Autorités fonctionnelles : Service MEBGE (50%) / Service achats-marchés publics SAMP (50%)\n\nLe Service MEBGE Intervient Dans Un Rôle D'appui Technique Aux UG Qui Demeurent Responsables De La Mise En Œuvre Opérationnelle Des Marchés (planification Des Interventions, Passation Des Commandes, Suivi Local Des Prestations). A Ce Titre, Il Assure\n\n• le recensement des besoins pour la passation de nouveaux marchés et renouvellement des marchés existants ;* le montage technique des dossiers de consultations des entreprises, l'analyse des offres et l'appui à la notification des marchés* des missions de conseils aux UG pour leurs besoins de maintenance curative ou petits travaux* la mission de suivi des différents contrats, de leur qualité d'exécution et gestion des non-conformité (voir « description et mission du poste »)\n\nLe Service MEBGE Assure Par Ailleurs Le Pilotage Et La Mise En Œuvre D'opérations De GER (gros Entretien Rénovation) - Missions Assurées Par Les Chargés D'opération Immobilière Du Service. Le Service MEBGE Travaille En Étroite Collaboration Avec Le Service Achat - Marchés Publics, Qui Assure La Gestion Des Marchés Publics De L'établissement, De Leur Élaboration à Leur Exécution, Incluant Le Suivi Administratif Et Contractuel. Compétences Techniques\n\n• Maîtrise des règles de la commande publique\n• Connaissance du fonctionnement d'un contrat de maintenance, d'un marché de prestations de services et d'un accord-cadre de travaux.\n• Connaissance des principes de maintenance des bâtiments et équipements techniques (CVC, portes et portails automatiques, ascenseurs, équipements de restauration, etc.).\n• Maîtrise des outils informatiques et bureautiques\n• Une connaissance des outils de suivi patrimonial et de gestion de données techniques seraient appréciées (ORION, EPONA, BNA ou outils équivalents).\n\nCompétences Organisationnelles\n\n• Capacité à suivre simultanément plusieurs dossiers, polyvalence* Capacité à structurer et formaliser des procédures.* Capacité à recueillir, consolider et exploiter des retours d'expérience.\n• Rigueur dans le suivi administratif et documentaire des dossiers.* Capacité à identifier les priorités et à hiérarchiser les actions.* Esprit d'analyse et de synthèse\n\nCompétences Comportementales\n\n• Curiosité et sens pratique* Aptitude à travailler avec de nombreux interlocuteurs internes ou externes* Capacité à animer des réunions de suivi et de pilotage.* Capacité à expliquer et faire appliquer des procédures, pédagogie* Capacité à gérer des situations de désaccord ou de non-conformité en s'appuyant sur le cadre réglementaire* Qualités rédactionnelles et de communication orale.* Sens de l'écoute et du service aux utilisateurs.* Savoir alerter\n\nL'activité s'exerce sur l'ensemble du patrimoine immobilier du Crous de Montpellier Occitanie sur les cités, les résidences et la restauration,Déplacements fréquents (Nîmes, Montpellier, Perpignan).\n\nEncadrement : x Non ? Oui",
    "liens": [
     {
      "source": "LinkedIn",
@@ -550,26 +386,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "675518432696",
-   "titre": "Technicien de laboratoire d'analyses médicales H/F",
-   "entreprise": "INOVIE (Groupe)",
-   "lieu": "Arles",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-14",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-analyses-m%C3%A9dicales-h-f-at-inovie-groupe-4479563710"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "8dedca1abc5e",
@@ -580,6 +400,7 @@
    "salaire": "",
    "date_pub": "2026-10-13",
    "extrait": "",
+   "description": "Pour accompagner notre croissance et le développement de nouveaux projets, nous recherchons un profil SMQ (F/H) pour notre client du secteur des Dispositifs Médicaux.\n\nVos Missions :\n\n• Déployer, maintenir et améliorer le Système de Management de la Qualité (SMQ) selon ISO 13485 / ISO 9001\n• Garantir la conformité aux exigences FDA 21 CFR 820 et préparer/supporter les inspections\n• Participer aux analyses de risques, gestion des CAPA, Change Control et réclamations clients • Élaborer et mettre à jour la documentation qualité (procédures, instructions, enregistrements)\n• Former et sensibiliser les équipes projet aux bonnes pratiques qualité et réglementaires\n• Contribuer aux audits internes/externes et au suivi d’indicateurs qualité (KPIs)\n\nVotre Profil :\n\n• Diplômé·e Bac +5 (ingénieur·e ou master) en Qualité, Génie biomédical ou équivalent\n• 2 à 3 ans d’expérience en assurance qualité ou SMQ dans les dispositifs médicaux\n• Connaissance requise des référentiels ISO 13485, ISO 9001 et FDA 21 CFR 820\n• Anglais professionnel courant (échanges réguliers avec des équipes internationales)\n• Esprit analytique, rigueur, curiosité et excellent relationnel\n\nCette offre d'emploi est ouverte à tous les profils.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -588,7 +409,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "3753f4018ed4",
@@ -599,6 +423,7 @@
    "salaire": "",
    "date_pub": "2026-10-12",
    "extrait": "",
+   "description": "Nous recrutons un Ingénieur Assurance Qualité Opérationnelle (H/F) pour intervenir auprès d’industries pharmaceutiques & de biotechnologies.\n\nVous serez chargé(e) de garantir la conformité des opérations au sein des sites de production, en veillant à l'application des normes et réglementations (GMP, ICH, FDA, etc.).\n\nMissions principales :\nSupport opérationnel qualité :\n• Veiller à la conformité des processus de fabrication et des flux de production aux réglementations.\n• Réaliser la revue et la gestion des documents opérationnels (protocoles, rapports, dossiers de lot).\n• Apporter un support qualité auprès des équipes de production pour résoudre les non-conformités.\n• Garantir la gestion de l’intégrité et la traçabilité des données.\n\nGestion des déviations et CAPA :\n• Investiguer les déviations en collaboration avec les équipes terrain.\n• Identifier les actions correctives et préventives (CAPA) et en suivre la mise en œuvre.\n\nAudits internes et externes :\n• Préparer, participer, et accompagner les audits qualité (internes, clients, autorités).\n• Assurer le suivi et la mise en œuvre des actions correctives suite aux observations.\n\n👀🔎\nFormation : Bac+5 : Ingénieur ou Master spécialisé en chimie, biologie, biotechnologie, pharmacie, ou équivalent.\n\nExpérience : Première expérience ou expérience significative en assurance qualité opérationnelle dans un contexte pharmaceutique ou biotechnologique.\n\nCompétences techniques :\n• Bonne connaissance des Bonnes Pratiques de Fabrication (GMP), des normes internationales (ICH, FDA), et des processus qualité pharmaceutiques.\n• Expérience dans la gestion des déviations, CAPA, et la documentation qualité.\n• Maitrise des outils informatiques et des logiciels liés à la gestion qualité (ERP, Trackwise, etc.).\n• Anglais professionnel requis.\n\nAptitudes personnelles :\n• Organisation et rigueur dans l’application des processus qualité.\n• Esprit analytique et capacité à résoudre les problématiques qualité.\n• Bon relationnel et aptitude à collaborer avec des équipes pluridisciplinaires (production, engineering, supply chain, etc.).\n\nCette offre d'emploi est ouverte à tous les profils.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -607,7 +432,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "4c1cfed62a41",
@@ -618,6 +446,7 @@
    "salaire": "",
    "date_pub": "2026-10-12",
    "extrait": "",
+   "description": "Description De L'entreprise\n\nChez Syngenta Crop Protection, nous développons des solutions pionnières qui protègent la sécurité alimentaire mondiale tout en défendant une agriculture durable. En tant que leader mondial du marché dont le siège est en Suisse, nous donnons aux agriculteurs les moyens d'agir grâce à des technologies innovantes de protection des cultures qui les défendent contre les défis les plus difficiles de la nature. Nous associons la science de pointe aux solutions numériques pour développer une protection des cultures intelligente qui maximise les rendements tout en minimisant l'impact environnemental. Rejoignez notre mission de révolutionner la protection des plantes, de la semence à la récolte.\n\nDescription Du Poste\n\nRattaché(e) au Responsable Contrôle Qualité, vous assurez le contrôle qualité des produits formulés sur le site et contribuez à la fiabilité des résultats analytiques du laboratoire.\n\nDans le respect des procédures qualité, des exigences HSES et des délais définis, vous réalisez les analyses nécessaires à la libération des produits conformes et participez au bon fonctionnement du laboratoire.\n\nVos principales missions\n\n• Réaliser les analyses chimiques et physiques des matières premières et des produits phytosanitaires, selon les méthodes et fréquences définies ;\n• Rechercher les informations nécessaires dans les documents de référence : gammes, méthodes et limites de contrôle ;\n• Enregistrer, interpréter et communiquer les résultats d’analyses ;\n• Participer à la libération des produits conformes et signaler toute dérive ou tout résultat hors spécification ;\n• Assurer le réglage, le paramétrage et la maintenance de premier niveau des appareils de laboratoire;\n• Participer à la gestion des consommables, des dossiers et des échantillons ;\n• Contribuer à l’amélioration des méthodes analytiques, des procédures et des indicateurs de performance ;\n• Veiller au respect strict des règles de sécurité, d’hygiène, d’environnement et de qualité ;\n• Participer à la mise à jour du système documentaire et à la vie quotidienne du laboratoire.\n\nQualifications\n\n• Formation Bac+2 en chimie ou équivalent, idéalement avec une spécialisation en chimie / laboratoire ;\n• Première expérience réussie en laboratoire, idéalement dans un environnement industriel ;\n• Connaissance des techniques d’analyses chimiques (LC-UV et GC-FID) et physiques (densité, viscosité, Karl Fisher, granulométrie, pH,..);\n• Maîtrise des outils bureautiques, notamment Excel et Word ;\n• La connaissance du logiciel SAP et Chromeleon constitue un atout ;\n• Anglais niveau A2 apprécié.\n\nRigoureux(se), organisé(e) et fiable, vous savez analyser les résultats avec précision et réagir avec calme face aux imprévus. Vous appréciez le travail en équipe, communiquez avec clarté et êtes attentif(ve) au respect des exigences qualité et sécurité.\n\nInformations supplémentaires\n\n• Type de contrat : CDD de 4 mois\n• Localisation : Aigues-Vives (30)\n• Poste : sur site\n\nSyngenta est un employeur qui souscrit au principe de l'égalité d'accès à l'emploi et ne pratique aucune discrimination dans le recrutement, l'embauche, la formation, la promotion ou toute autre pratique d'emploi pour des raisons de race, couleur, religion, sexe, origine nationale, âge, orientation sexuelle, état matrimonial ou statut d'ancien combattant, handicap ou tout autre statut légalement protégé.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -626,7 +455,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.7343,
+   "lon": 4.193,
+   "commune": "Aigues-Vives"
   },
   {
    "id": "0ce9eed6bdfd",
@@ -637,6 +469,7 @@
    "salaire": "",
    "date_pub": "2026-10-12",
    "extrait": "",
+   "description": "Medincell® est une société biopharmaceutique innovante en phase clinique et commerciale, qui développe et commercialise sous licence des traitements injectables à action prolongée dans de multiples domaines thérapeutiques. Ces traitements visent à garantir le respect des prescriptions médicales, à améliorer l'efficacité et l'accessibilité des médicaments et à réduire leur empreinte environnementale.\n\nNous recherchons un(e) stagiaire QHSE qui intégrera notre équipe basée à Montpellier (Jacou).\n\nVos missions\nRattaché(e) au département QHSE, vous serez amené à supporter l’activité QHSE au sein du Laboratoire.\nVos objectifs durant ce stage seront notamment :\n• Participer à l'extension du logiciel de gestion documentaire pour intégrer d'autres types de documents afin d'harmoniser et de centraliser les pratiques à l'échelle de l'entreprise.\n• Contribuer à l'optimisation de notre processus d'archivage documentaire, tant sur les aspects organisationnels que réglementaires (refonte de la procédure, organisation physique des archives QHSE, alignement de pratiques par rapport à l'extension de la gestion documentaire).\n• Mettre à jour des évaluation du risque chimiques en prenant en compte les nouveaux produits, les évolutions des pratiques et des quantités dans le logiciel SEIRICH.\n• Apporter du support pour les audits QHSE (audits processus, audits de zones) en exécutant notamment des activités de préparation, de vérification et de suivi.\n• Participer aux activités opérationnelles quotidiennes du service QHSE afin d'assurer le déploiement, la coordination, la communication et le suivi des actions et de la feuille de route QHSE.\n\nVotre profil\n• Étudiant(e) en Master 1 ou Master 2 avec une spécialisation en Qualité, Assurance Qualité, QHSE ou domaine équivalent.\n• À l'aise avec les outils informatiques (Pack Office) et curieux(se) des outils digitaux\n• Une première expérience en Qualité ou QHSE, idéalement dans un environnement laboratoire, serait un plus.\n• Niveau d'anglais intermédiaire (écrit et oral)\n\nSoft-skills\nRigueur, Communication, Autonomie, Organisation, Adaptabilité, Esprit Critique, Curieux\n\nMedincell est un employeur permettant l'égalité des chances et accueille les candidatures de toutes les personnes et tous les horizons, y compris celles en situation de handicap.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -645,7 +478,33 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6648,
+   "lon": 3.9138,
+   "commune": "Jacou"
+  },
+  {
+   "id": "d3f199693840",
+   "titre": "Chargé de Qualité Client - CDD H/F",
+   "entreprise": "Le Groupe Septeo",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "description": "Nous recrutons un(e) Chargé(e) de qualité client en CDD pour une durée de 9 mois pour notre entité Septeo Solutions Notaire à Lattes, près de Montpellier.\nCe que nous pouvons accomplir ensemble :\nRattaché(e) à la Responsable satisfaction client, vous jouez un rôle un rôle central dans l'amélioration continue de nos produits et services en assurant le suivi qualitatif de nos clients tout au long de leur contrat.\nVotre objectif et celui de l'équipe qualité est de permettre à l'entreprise d'évaluer la satisfaction client et de mener des action en vue de l'augmenter.\nVos missions principales :\n• Mettre en place des actions qualitatives auprès de nos clients\n• Réaliser des appels sortants auprès de nos clients notaires afin d'assurer le suivi de nos actions qualité, mesurer leur satisfaction et contribuer à l'amélioration continue de leur expérience.\n• Mesurer la satisfaction client\n• Analyser la récurrence des réclamations/dysfonctionnements et proposer des actions dans un soucis d'optimisation de la qualité de service\n• Collaborer avec les autres service (technique, commerce, adv, formation, support, produit, facturation...)\n• Coordonner des actions clients transversales au sein de la société pour résoudre efficacement les réclamations clients",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84333388.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "33134e5ac42d",
@@ -664,7 +523,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-19",
-   "agro": false
+   "agro": false,
+   "lat": 43.7343,
+   "lon": 4.193,
+   "commune": "Aigues-Vives"
   },
   {
    "id": "440c04a0878d",
@@ -683,7 +545,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-19",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "3bf6f53fde4f",
@@ -694,6 +559,7 @@
    "salaire": "",
    "date_pub": "2026-10-10",
    "extrait": "",
+   "description": "Curium est le leader mondial de la médecine nucléaire, acteur intégré du diagnostic et de la thérapie, présent dans plus de 70 pays et jouant un rôle stratégique dans l’accès des patients à des solutions génériques et innovantes en oncologie, neurologie et cardiologie.\n\nRejoindre Curium, c’est intégrer un acteur industriel en pleine transformation, avec des enjeux scientifiques, opérationnels et technologiques de premier plan.\n\nLa Business Unit CURIUM PET France est spécialisée dans la production et la distribution de radiopharmaceutiques à courte demi-vie pour l’imagerie en oncologie et neurologie. Avec notre réseau de 12 sites en France et plus de 200 collaborateurs, nous garantissons une couverture optimale pour répondre aux besoins des professionnels de santé. Rattaché(e) au Pharmacien Délégué du site, votre rôle au sein de la production quotidienne de doses radiopharmaceutiques sur le terrain est essentiel tout en garantissant le respect des normes pharmaceutiques et réglementaires en place.\n\nVous aurez en charge de :\n\n• Produire des doses radiopharmaceutiques en coordination avec l’équipe.\n• Réaliser le Contrôle Qualité des produits et gérer les matières premières et articles de conditionnement.\n• Assurer les expéditions et l’entretien des équipements.\n• Documenter chaque étape en respectant les procédures qualité.\n• Participer aux inspections et aux audits internes.\n• Contribuer à la formation des nouveaux collaborateurs et aux qualifications du matériel.\n• Soutenir la maintenance courante (selon l’organisation du site).\n\nVous êtes diplômé d’un Bac +2 dans un domaine scientifique ou industriel (production, microbiologie, chimie analytique…).\n\nVous disposez d’une première expérience en production industrielle est requise, idéalement en Contrôle Qualité analytique.\n\nVous avez déjà fait preuve de polyvalence dans un environnement sur site de production précédemment (procédure, traçabilité…).\n\nEn complément, vous disposez des compétences clés suivantes :\n\n• Esprit d’équipe,\n• Flexibilité et autonomie,\n• Réactivité et rigueur,\n• Capacité à gérer les imprévus.\n• Postes basés sur les sites de production de Rennes et Tours.\n• Postes non-cadre, 35h hebdomadaires. Horaires en 2x8, incluant le travail en décalé :\n• Cycle 1 : Horaire du matin,\n• Cycle 2 : Horaire de nuit selon l’organisation d’équipe.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -702,7 +568,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.8322,
+   "lon": 4.3429,
+   "commune": "Nîmes"
   },
   {
    "id": "422e2b61b208",
@@ -713,6 +582,7 @@
    "salaire": "",
    "date_pub": "2026-10-09",
    "extrait": "",
+   "description": "QA Engineer\n\nWho are we?\n\n👋 Founded in June 2012, Matooma is a company based in Montpellier that provides SIM card connectivity services and IoT (Internet of Things) management solutions.\n\nToday, we serve over 10,000 customers worldwide and manage more than one million SIM cards.\n\nSince July 2019, we have been part of the Wireless Logic Ltd group, forming the European market leader.\n\nWith 60 employees, Matooma places great importance on customer and employee satisfaction, teamwork, and embraces values such as simplicity, integrity, and collaboration.\n\nMatooma is an equal opportunity employer and actively encourages applications from qualified candidates regardless of gender, ethnicity, disability, age, marital status, or pregnancy and maternity.\n\nJoining Matooma Means\n\n🤝 Joining Matooma means:\n\n• Becoming part of a supportive and caring team that listens and believes in you\n• Working with clear processes and a variety of digital tools\n• Enjoying hybrid remote work options\n• Taking part in regular after-work events and team-building activities\n• Benefiting from a pleasant working environment with great office spaces\n\n👉 Meet the team → https://www.matooma.com/fr/qui-sommes-nous/matooteam\n\nThe Role\n\n🎯 You will join a 20-person IT team and be part of the QA (testing) team, currently composed of two testers.\n\nOur information system is composed of around ten microservices using different programming languages, high-volume databases (ElasticSearch and PostgreSQL), two front-end applications (Angular), and an API available to our clients. Each microservice is deployed using a continuous integration process (CI/CD, automated testing) on an AWS-based ecosystem (Terraform, K8S).\n\nAs a QA Engineer, you will be responsible for ensuring the quality and reliability of our applications. You will work closely with the development and product teams to design, execute, and automate tests while ensuring an optimal user experience.\n\nMain Responsibilities\n\n📌 Main Responsibilities\n\n• Design and execute test plans (manual and automated) for web applications\n• Identify, document, and track bugs through to resolution\n• Develop and maintain automated test scripts (Playwright and Claude AI)\n• Contribute to the continuous improvement of QA processes and testing methodologies\n• Collaborate with developers to embed quality best practices from the earliest stages of development\n\nDesired Profile\n\n• Education: Ideally a Bachelor's or Master's degree in Computer Science or equivalent (Bac+3 to Bac+5)\n• Experience: Ideally 2 years in software quality assurance or a similar position\n\nTechnical Skills\n\n🔧 Technical Skills\n\n• Knowledge of Agile/Scrum methodologies\n• Familiarity with test management tools (JIRA or similar)\n• Proficiency with Playwright and Claude AI automated testing tools\n• Scripting skills (JavaScript, or another relevant language)\n• Knowledge of databases (SQL) and APIs (Postman, REST, etc.)\n• Professional working proficiency in English\n\nSoft Skills\n\n💡 Soft Skills\n\n• Detail-oriented, rigorous, and analytical mindset\n• Strong communication and teamwork skills\n• Adaptability to a fast-paced environment\n• Eagerness to learn and share knowledge\n• Proactive and open to constructive feedback\n• Team spirit: ready to support your colleagues and be supported in return\n• Comfortable taking initiatives and executing independently\n\nWhat We Offer\n\n🔥 What We Offer\n\n• A collaborative and innovative work environment\n• Ongoing training and professional development opportunities\n• Company profit-sharing\n• Meal vouchers (SWILE)\n• Health insurance (ALAN)\n• Sustainable mobility allowance\n• Employee perks via Leeto\n\nJob Details\n\n💼 Job Details\n\n• Contract Type: Permanent (CDI)\n• Location: Montpellier, France\n• Start Date: As soon as possible\n\nJoin us and help shape the future of technology!\n\nWe value diversity and encourage all qualified candidates to apply, regardless of background, gender, or disability.\n\nSee you soon? 😁",
    "liens": [
     {
      "source": "LinkedIn",
@@ -721,7 +591,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "68e13066de12",
@@ -732,6 +605,7 @@
    "salaire": "",
    "date_pub": "2026-10-08",
    "extrait": "",
+   "description": "Capgemini Engineering, leader mondial des services d'ingénierie, rassemble des équipes d'ingénieurs, de scientifiques et d'architectes pour aider les entreprises les plus innovantes dans le monde à libérer leur potentiel. Des voitures autonomes aux robots qui sauvent des vies, nos experts en technologies digitales et logicielles sortent des sentiers battus en fournissant des services uniques de R&D et d'ingénierie dans tous les secteurs d'activité. Rejoignez-nous pour une carrière pleine d'opportunités, où vous pouvez faire la différence et où aucun jour ne se ressemble.\n\nVos missions\n\nVous faites partie d’une équipe composée d’ingénieures/ingénieurs qualité, vous interviendrez dans le déploiement des processus et outils, afin de garantir la conformité avec le Système de Management de la Qualité (SMQ) en vigueur et vos responsabilités principales seront les suivantes\n\n• Recueillir et analyser les données qualité sur les sites de production.\n• Préparer et suivre les audits et auto-inspections de conformité aux BPF et normes applicables.\n• Prendre en charge les déviations, mettre en place les CAPA et assurer les change control.\n• Effectuer la revue des dossiers de lot, vérifier les protocoles et participer à la libération des lots.\n• Résoudre toutes les non conformités et préparer le suivi des audits clients.\n\nVotre profil :\n\n• Diplôme d’ingénieur ou Bac + 5 dans le domaine de la qualité en santé.\n• Expérience professionnelle de 3 ans minimum dans le domaine de la santé.\n• Maitrise des normes réglementaires (FDA CFR, GAMP 5, BPF, ICH, ISPE Baseline guide vol 5…)\n• Maitrise des outils de la qualité.\n• Anglais niveau courant/B2\n\nQuelques raisons de nous rejoindre :\n\nExpertise de pointe : contribuez des projets stratégiques aux côtés des plus grands innovateurs mondiaux dans des secteurs à fort impact (énergies du futur, biotechnologies, IA, 5G/6G, véhicules autonomes). Grâce à l’ingénierie augmentée, vous concevez des solutions plus intelligentes, durables et connectées à la croisée des technologies digitales et physiques. L’innovation et la R&D sont au cœur des missions vous offrant l’opportunité de contribuer à des avancées technologiques majeures.\n\nEnvironnement inclusif : rejoignez des réseaux engagés comme Women@Capgemini, Parents@Capgemini, OUTfront ou CapAbility, et évoluez dans un cadre certifié EDGE+ et reconnu par le Bloomberg Gender Equality Index.\n\nDéveloppement de carrière : construisez votre parcours grâce à de nombreux leviers pensés pour vous (parcours de formations, certifications, mobilité, masterclasses, etc..)\n\narifs préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel\n\nNos engagements et priorités :\n\nLe groupe Capgemini encourage une culture inclusive dans un cadre multiculturel et handi-accueillant. En nous rejoignant, vous intégrez un collectif qui valorise la diversité, développe le potentiel de ses talents, s’engage dans des initiatives solidaires avec ses partenaires, et se mobilise pour réduire son impact environnemental sur tous ses sites et auprès de ses clients.\n\nCapgemini est un leader mondial, responsable et multiculturel, regroupant près de 350 000 personnes dans plus de 50 pays. Fort de 55 ans d’expérience, nous sommes un partenaire stratégique des entreprises pour la transformation de leurs activités en tirant profit de toute la puissance de la technologie et des innovations dans les domaines en perpétuelle évolution tels que le cloud, la data, l’Intelligence Artificielle, la connectivité, les logiciels, l’ingénierie digitale ou les plateformes.",
    "liens": [
     {
      "source": "LinkedIn",
@@ -740,26 +614,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "7791edb6671c",
-   "titre": "Stage - Ingénieur Qualité - Déploiement des basiques qualité - H/F",
-   "entreprise": "Schneider Electric",
-   "lieu": "Gard",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-08",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-d%C3%A9ploiement-des-basiques-qualit%C3%A9-h-f-at-schneider-electric-4475981622"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "13aacbe0ed1b",
@@ -770,6 +628,7 @@
    "salaire": "",
    "date_pub": "2026-10-08",
    "extrait": "",
+   "description": "Pourquoi nous rejoindre / choisir INOVIE LABOSUD ?\n\nINOVIE LABOSUD, créé en 2010, par des biologistes médicaux indépendants, c’est près de 100 laboratoires de proximité, 15 000 patients accueillis chaque jour, et plus de 900 collaborateurs engagés. Issu de la fusion de plusieurs laboratoires du sud de la France, INOVIE Labosud est devenu l'un des principaux laboratoires multi-sites grâce à un développement rapide et innovant.\n\nEn rejoignant nos équipes, vous participerez à plus de 70% des diagnostics médicaux, en répondant efficacement aux besoins des patients et des professionnels de santé. Vous bénéficierez d’un environnement de travail dynamique et collaboratif, équipé des dernières innovations technologiques pour assurer la meilleure qualité de soins.\n\nTous nos postes sont ouverts aux candidats en situation de handicap. Des référents handicap sont présents au sein de l'entreprise et joignables via l'adresse: ls.referents-handicap@inovie.fr .\n\nDe plus, nous sommes engagés en faveur de l’égalité des chances et de la diversité. Toutes les candidatures sont étudiées sans distinction d’origine, de genre, d’âge, de situation de handicap ou de toute autre caractéristique protégée par la loi.\n\nDans le cadre d'un CDI à temps complet , le laboratoire de Garosud recherche un technicien de laboratoire H/F\n\nPoste de soirée et de nuit\n\nHoraires : 14h à 21h ou 19h à 06h ou 20h à 07h\n\nTravail les week end et jours fériés\n\nAvantages\n\n• Mutuelle\n• Remboursement frais de transport 60%\n• Intéressement\n• Annualisation du temps de travail\n• Congé supplémentaire pour ancienneté et évènements familiaux\n• Plan d'épargne retraite\n• Avantages CSE\n• Tickets restaurants\n\nVos Missions\n\n• Effectuer les prélèvements sanguins et autres prélèvements médicaux tout en respectant les normes d’hygiène et de sécurité\n• Participer au tri\n• Assurer la traçabilité et la gestion des échantillons prélevés\n• Collaborer avec l'équipe médicale pour assurer la confidentialité des données et résultats\n\nProfil Recherché\n\n• Titulaire d’un BTS Analyses de Biologie Médicale ou d’un diplôme d’Etat de Technicien de laboratoire Médical, ou équivalent permettant l’exercice de la fonction de technicien de laboratoire\n• Disposer du certificat de capacité à effectuer des prélèvements sanguins\n• Disposer d'un N°ADELI\n• Minutie et précision dans l'exécution des prélèvements\n• Polyvalence et rigueur\n• Esprit d'analyse pour interpréter correctement les résultats des prélèvements",
    "liens": [
     {
      "source": "LinkedIn",
@@ -778,7 +637,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "4f012de9704e",
@@ -797,7 +659,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-19",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "71b12db1b9de",
@@ -816,7 +681,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": true
+   "agro": true,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
    "id": "7d0ee31daf1b",
@@ -835,7 +703,33 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6624,
+   "lon": 3.9657,
+   "commune": "Vendargues"
+  },
+  {
+   "id": "2e337c2c5edf",
+   "titre": "Technicien Qualité H/F",
+   "entreprise": "Randstad",
+   "lieu": "Lavérune - 34",
+   "contrat": "Intérim",
+   "salaire": "12,31 € / heure",
+   "date_pub": "2026-10-06",
+   "extrait": "",
+   "description": "Notre client, situé à LAVERUNE, est une entreprise de fabrication et de distribution de produits chimiques pour le secteur industriel.\n\nSouhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante ?\nVous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue\n- Vous contrôlez les matières premières et les produits finis au sein des ateliers\n- Vous gérez les non-conformités et analysez leurs causes profondes afin de définir des actions correctives\n- Vous rédigez les documents de suivi qualité et veillez au respect des normes de production\n\nEt voici les modalités de l'offre :\n- Contrat: Intérim\n\n- Durée: 2/mois\n\n- Salaire: 12.31 euros/heure\n\nDe plus, nous offrons un ensemble complet d'avantages aux intérimaires, y compris Fast TT, pour assurer leur succès professionnel et personnel.",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84118008.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.5848,
+   "lon": 3.8003,
+   "commune": "Lavérune"
   },
   {
    "id": "d538bd86b546",
@@ -846,6 +740,7 @@
    "salaire": "",
    "date_pub": "2026-10-05",
    "extrait": "",
+   "description": "Razel-Bec, filiale du Groupe FAYAT, 1er groupe français indépendant de construction et leader mondial du matériel routier, est un expert reconnu dans tous les domaines des travaux publics : ouvrages d'art, infrastructures linéaires et terrassement, travaux souterrains, génie civil industriel et nucléaire, barrages, environnement et génie urbain et écologique.\n\nSes 5 000 collaborateurs et collaboratrices oeuvrent en France et à l'international pour proposer des réponses clairvoyantes et inventives aux enjeux actuels et spécifiques des travaux publics.\n\nGEObio est spécialisée dans l'étanchéité et le biogaz depuis près de 30 ans. Présente sur toute la France métropolitaine et dans les Départements et Régions d'Outre-Mer, elle met en oeuvre les solutions de protection et d'imperméabilisation les plus adaptées aux chantiers de travaux publics, de génie civil et de génie civil industriel.\n\nGeobio est une filiale de l'entreprise de Travaux Publics\n\nRazel-Bec.Ce stage se déroulera à Saint-Georges-d'Orques (34).\n\nL'entreprise dispose d'un système de management intégré certifié ISO 9001, ISO 14001, ISO 45001 et référentiel ASQUAL Entreprise.Dans le cadre du renouvellement de sa certification ASQUAL Entreprise et de sa démarche d'amélioration continue, nous recherchons un stagiaire qui contribuera au pilotage de la qualité, à l'optimisation des processus et à la préparation des audits de certification tout en renforçant la maitrise des exigences qualité liées aux procédés de soudage de géomembranes. Le stage s'inscrit dans une démarche d'aide au pilotage de la qualité, d'amélioration des processus et de préparation des audits de certification.\n\nSous la supervision de la responsable QSE et dans le cadre du renouvellement de sa certification ASQUAL Entreprise, vos missions seront les suivantes :\n- Étudier le référentiel ASQUAL Entreprise Réaliser un état des lieux documentaire Identifier les écarts entre les pratiques actuelles et les exigences de renouvellement\n- Mettre à jour la documentation qualité\n- Vérifier la traçabilité des contrôles et des enregistrements\n- Accompagner les équipes de production dans l'application des standards qualité\n- Évaluer la conformité documentaire et opérationnelle des procédures de pose et d'assemblage de géomembrane\n- Préparer l'entreprise à l'audit de renouvellement (audit blanc, audit interne, plan d'actions, suivi des non-conformités) Analyser les risques qualité liés aux opérations de soudage\n\nDe formation Master 2 ou Ingénieur en dernière année d'études, vous avez déjà effectué un ou plusieurs stages dans le domaine de la qualité.\n\nCurieux, adaptable et motivé, vous avez le sens du terrain et un réel intérêt pour les métiers liés à la qualité.\n\nInformations pratiques :\n- Date de début : premier semestre 2027\n- Adresse du stage :1111 avenue Justin Bec, 34680 Saint-Georges-d'Orques\n- Permis B recommandé\n\nAprès un premier contact avec notre service des Ressources Humaines, vous aurez l'occasion de vous entretenir avec un opérationnel qui vous présentera plus en détail le sujet du stage.\n\nPlus de 84% de nos jeunes (stagiaires, alternants et VIE) recommandent leur expérience chez Razel-Bec (source Happy Trainees).\nEt si notre futur stagiaire c'était vous ?\n\n5 raisons de rejoindre Razel-Bec :\n- Une entreprise engagée avec de fortes valeurs\n- Des managers proches et à l'écoute\n- Des métiers qui font sens avec des équipes passionnées\n- Des temps forts favorisant l'esprit d'équipe\n- Des possibilités d'évolution pour toutes et tous\n\nVisez juste et rejoignez RAZEL-BEC !\nRef 31150485",
    "liens": [
     {
      "source": "LinkedIn",
@@ -854,26 +749,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "085e0b72506e",
-   "titre": "Technicien de Laboratoire Contrôle Qualité H/F",
-   "entreprise": "LFB",
-   "lieu": "Alès",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-05",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-contr%C3%B4le-qualit%C3%A9-h-f-at-lfb-4439991972"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6167,
+   "lon": 3.775,
+   "commune": "Saint-Georges-d'Orques"
   },
   {
    "id": "7739cacddf4f",
@@ -884,6 +763,7 @@
    "salaire": "",
    "date_pub": "2026-10-05",
    "extrait": "",
+   "description": "La force d'un Groupe, la souplesse d'une PME... pour construire votre avenir.\nFort d'un siècle d'expérience, le Groupe ROGER MARTIN (CA 55 MEUR, 2 650 collaborateurs) est spécialisé dans les activités de Travaux Publics (Routes, Terrassement, V.R.D., Génie Civil), Bâtiment, Industries et Environnement.\nNotre forte culture d'entreprise résolument tournée vers les hommes et les femmes nous permet de vous offrir un réel plan de carrière.\n\nNous recherchons pour notre filiale\nBUESA TP basé à Béziers (34) :\nCoordonnateur Assurance Qualité chantier TP H/F\nSous l'autorité de la Directrice QSE de la filiale, vous aurez la charge de l'animation de notre Système Qualité Chantiers de notre filiale BUESA TP comprenant 4 sites.\nVos missions seront les suivantes :\nTravailler en lien fonctionnel avec les responsables d'agence, avec les organismes de prévention et les institutionnels\nÊtre force de proposition dans la démarche Qualité\nAccueil Qualité des nouveaux embauchés\nMise en place et suivi du système Qualité chantier :\nRéalisation des réunions Qualité, d'audits internes, de visites de chantier Qualité, d'analyses de non-conformité d'exécution ....\nSuivi du plan d'action Qualité et des tableaux de bord Qualité\nAnimation et sensibilisation Qualité (quart heure, formation interne, ...)\nAccompagnement des équipes travaux pour l'établissement des dossiers chantiers (PPSPS, PAQ, PAE, SOGED...)\nChargé du suivi Qualité de certains chantiers\nListe non exhaustive\nSelon vos compétences, vous pourrez également être Chargé des Ouvrages Provisoires. Il assure les missions de coordination, d'évaluation des risques et de prévention en matière d'ouvrage provisoires sur les chantiers.\nIl assure le contrôle externe à la chaine de production sur les phases de conception, planification, mise en oeuvre et le suivi des ouvrages provisoires nécessaires à la réalisation des chantiers de travaux publics, dans le respect des exigences techniques, réglementaires, contractuelles et de qualité.\nDes déplacements sur nos agences ci-dessous seront à prévoir :\nVilleneuve les Béziers (34) : agence et siège social\nTauriac (33) proche de Bordeaux\nSaint Jory (31) proche de Toulouse\nRoquemaure (30) proche d'Avignon\n\nDe formation Bac+2 à Bac+5 avec expérience souhaitée dans le milieu des Travaux Publics de minimums 2 ans sur un poste similaire.\nVous êtes titulaire du permis B, détenir d'autres qualifications serait un plus.\nDurée du contrat : CDI à pourvoir dès que possible à temps plein\nRémunération : selon profil\nLieu d'embauche : Béziers (34) avec mobilité",
    "liens": [
     {
      "source": "LinkedIn",
@@ -892,26 +772,56 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
-   "id": "b03907d214df",
-   "titre": "Technicien qualité (F/H)",
-   "entreprise": "RANDSTAD",
-   "lieu": "34 - Colombiers",
-   "contrat": "Intérim - 6 Mois",
-   "salaire": "Horaire de 14.97 Euros",
-   "date_pub": "2026-10-05",
-   "extrait": "Souhaitez-vous contribuer aux exigences qualité en tant que Coordinateur QSE (F/H) ? Vous pilotez la démarche santé, sécurité et environnement du site afin de prévenir les risques, garantir la conformité et développer une culture de prévention durable - Vous déployez la politique sécurité, suivez les indicateurs, animez les comités et pilotez les plans d'actions liés aux événements et risques maje",
+   "id": "1cf866e185e2",
+   "titre": "Technicien Qualite H/F",
+   "entreprise": "GIF emploi",
+   "lieu": "Saussan - 34",
+   "contrat": "Intérim",
+   "salaire": "2 100 - 2 500 € / mois",
+   "date_pub": "2026-10-03",
+   "extrait": "",
+   "description": "Envie de donner un nouvel élan à votre carrière en qualité industrielle ?\nNotre client fabricant de pompes à chaleur recherche un Technicien qualité.\n\nVos Missions:\nContrôler la qualité des produits finis et s'assurer que les dossiers de fabrication sont conformes\n• Faire respecter les procédures, consignes et nomenclatures critiques, et soutenir la production sur ces sujets\n• Assurer le suivi qualité des fournisseurs, en lien avec le service achats\n• Veiller à ce que les moyens de contrôle soient disponibles, étalonnés et en bon état de marche\n• Prendre part aux audits internes et suivre le traitement des non-conformités (écarts, actions correctives, etc.)\n• Élaborer et tenir à jour les documents de contrôle, de traçabilité et de suivi qualité\n• Faire appliquer les procédures, consignes et nomenclatures critiques, et apporter un soutien aux équipes de production\n\nGIF Emploi, société socialement responsable, s'engage au quotidien pour l'emploi des personnes en situation de handicap.",
    "liens": [
     {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/215CCRH"
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84034499.html"
     }
    ],
-   "premiere_vue": "2026-10-21",
+   "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.5685,
+   "lon": 3.7829,
+   "commune": "Saussan"
+  },
+  {
+   "id": "1fc58818d867",
+   "titre": "Controleur Qualite H/F",
+   "entreprise": "GIF emploi",
+   "lieu": "Sommières - 30",
+   "contrat": "Intérim",
+   "salaire": "1 900 - 2 150 € / mois",
+   "date_pub": "2026-10-03",
+   "extrait": "",
+   "description": "Envie de relever un nouveau défi dans le contrôle qualité industriel ?\nNotre client, acteur du secteur aéronautique, renforce ses équipes et recherche un Contrôleur Qualité afin de garantir la conformité et la qualité de ses productions.\nVos missions :\n• Préparer et vérifier les documents techniques nécessaires aux opérations de contrôle et s'assurer de la validité des moyens de contrôle.\n• Réaliser les contrôles des pièces : visuels, cosmétiques, dimensionnels et tridimensionnels.\n• Créer et mettre à jour les programmes de MMT ainsi que les EASA Form 1 (Part 21G) et autres documents de dérogation.\n• Établir les rapports de contrôle et assurer la traçabilité des opérations réalisées.\n• Identifier et gérer les non-conformités, notamment en assurant le marquage et l'isolement des pièces concernées.\n• Être force de proposition et contribuer à la mise en place d'actions d'amélioration.\n• Veiller au maintien d'un poste de travail propre, organisé et conforme aux exigences qualité.\n• Assurer la transmission des informations nécessaires auprès des différents services internes et, si besoin, auprès des fournisseurs.\n\nGIF Emploi, société socialement responsable, s'engage au quotidien pour l'emploi des personnes en situation de handicap.",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84034400.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.7706,
+   "lon": 4.0812,
+   "commune": "Sommières"
   },
   {
    "id": "7d08d16d3e61",
@@ -930,7 +840,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.5685,
+   "lon": 3.7829,
+   "commune": "Saussan"
   },
   {
    "id": "0f20e8af70ea",
@@ -941,6 +854,7 @@
    "salaire": "",
    "date_pub": "2026-10-02",
    "extrait": "",
+   "description": "Sous la responsabilité de la responsable qualité, vous êtes amené.e à coordonner et à mettre en œuvre les actions qualité ainsi qu’à contribuer à la vérification de la bonne application du système qualité, proposer des pistes d'amélioration et accompagner leur déploiement.\n\nDans le cadre de votre projet de fin d'études, vous aurez notamment pour missions de :\n\n• Implanter un système et une plateforme de contrôle des données produites (plans, notes de calcul, rapport) par les 5 bureaux d'étude sur la France.\n• Permettre le suivi des contrôles qualité pour chaque plan/projet.\n• Mettre en place des KPI qualité sur l'activité des 5 bureaux d'étude.\n• Proposer des pistes d'amélioration suggérées sur la base d'analyse de ces Kpi par IA\n\nNiveau de qualification :\n\n• Vous êtes en formation BAC+5 types diplôme d’ingénieur, avec un intérêt marqué pour la qualité.\n• Vous cherchez un stage de fin d’études.\n\nQualités / Compétences spécifiques / Logiciels :\n\n• Norme relative à la qualité ISO 9001/14001/45001\n• Capacité de fédérer autour du projet\n• Tourné vers l'extérieur\n• Capacité de présentation forte\n\nContexte / environnement de travail :\n\nPoste basé à Caissargues\n\nAttachés à l’égalité professionnelle, à la mixité et à la diversité, nous accueillons tous les\n\ntalents et nous engageons notamment dans le recrutement de personnes en situation de\n\nhandicap.\n\nRejoignez une entreprise animée d'un esprit de famille unique.\n\n#Espritdefamille\n\nRejoignez-nous !",
    "liens": [
     {
      "source": "LinkedIn",
@@ -949,7 +863,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.7924,
+   "lon": 4.3919,
+   "commune": "Caissargues"
   },
   {
    "id": "9d3b65c8e46a",
@@ -960,6 +877,7 @@
    "salaire": "",
    "date_pub": "2026-10-02",
    "extrait": "",
+   "description": "Description de l'entreprise\n\nAu sein de la branche biopharmaceutique du groupe, la division Eurofins CDMO, acteur majeur dans la sous-traitance pharmaceutique en Europe, compte 7 Business Units en France et en Belgique.\n\nNotre objectif est d’accompagner nos clients depuis les premières étapes de développement de leur substance médicamenteuse jusqu’à la production de lots cliniques ou commerciaux.\n\nNous développons, formulons et fabriquons des produits biologiques et chimiques — stériles et non stériles —, nous assurons également le conditionnement et la distribution clinique GMP.\n\nNous proposons par ailleurs des programmes complets de développement et de validation de méthodes analytiques, ainsi que l’évaluation de la stabilité des substances actives et des produits finis.\n\nDescription du poste\n\nVous serez rattaché(e) à notre société EUROFINS AMATSIGROUP, sur notre site de Saint-Gély-Du-Fesc (en périphérie de Montpellier). Ce site de 24 collaborateurs est spécialisé dans la fabrication, principalement de formes solides, le contrôle qualité, et la logistique de médicaments non stériles pour essais cliniques et commerciaux.\n\nNous cherchons un(e) Technicien(ne) de laboratoire physico-chimie pour renforcer l’équipe du Laboratoire Contrôle Qualité qui compte 9 collaborateurs.\n\nRattaché(e) au Responsable du laboratoire vous aurez la charge de :\n\n• Participer aux activités analytiques du laboratoire physico-chimiques ;\n• Contrôler les matières premières, produits en cours de fabrication, produits finis selon des méthodes analytiques validées ;\n• Réaliser des analyses en chromatographie liquide ;\n• Réaliser des analyses en physico-chimie et pharmacotechnie ;\n• Réaliser la synthèse des résultats et reporter auprès des responsables des différentes activités ;\n• Effectuer les calibrations et maintenances des équipements du laboratoire selon les procédures en vigueur ;\n• Participer aux investigations en rapport avec les problèmes analytiques rencontrés ;\n• Respecter les délais de réalisation de ses actions conformément à la programmation établie par le responsable de service ;\n• Apporter une expertise technique sur les résultats générés en lien avec les exigences clients, qualité et réglementaire.\n\nQualifications\n\n• Bac+2/3 Chimie avec expérience en laboratoire pharmaceutique (CQ, développement analytique ou stabilité).\n• Maîtrise des techniques d’analyses physico-chimiques, HPLC et Empower.\n• Profil technique, concret et pragmatique, curieux, rigoureux, autonome, réactif, doté d'un bon esprit d'analyse, d'une forte orientation résultats et d'une aptitude au travail en équipe.\n\nInformations complémentaires\n\n• CDI à temps plein\n• A pourvoir dès que possible\n• Salaire selon niveau d'expérience et de diplôme\n• Mutuelle prise en charge à 100% par l’entreprise\n• Carte Restaurant (10€ par jour avec prise en charge de l’employeur à hauteur de 60%)\n• 25 CP + 12 RTT",
    "liens": [
     {
      "source": "LinkedIn",
@@ -968,7 +886,56 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6897,
+   "lon": 3.81,
+   "commune": "Saint-Gély-du-Fesc"
+  },
+  {
+   "id": "3dd40d3fa4f0",
+   "titre": "Assistant Qualité et Gestion des Risques - Secteur Santé H/F",
+   "entreprise": "Groupe Adène",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "2 100 - 2 300 € / mois",
+   "date_pub": "2026-10-02",
+   "extrait": "",
+   "description": "Les référentiels de la Haute Autorité de Santé n'ont plus de secret pour vous ? Vous souhaitez contribuer concrètement à la sécurité des patients et à l'amélioration continue des pratiques dans un secteur porteur de sens ?\n\nRejoignez le groupe Adène en tant que Assistant(e) Qualité et Gestion des Risques !\n\nVos missions :\n\nRattaché(e) à la Direction de l'Amélioration Continue et RSE, vous intervenez en appui opérationnel pour déployer et faire vivre la démarche qualité et gestion des risques au sein du groupe.\nÀ ce titre, vous assurez les missions suivantes :\n\n• animer la démarche qualité et gestion des risques : organisation des instances, rédaction des comptes rendus, suivi du plan d'actions et de la cartographie des risques, coordination des enquêtes et participation aux audits internes ;\n• assurer le suivi des événements indésirables et réclamations : organisation des réunions de suivi, analyse des signalements et animation des retours d'expérience ;\n• contribuer au suivi des indicateurs qualité : appui à la responsable de l'amélioration continue pour le suivi des indicateurs obligatoires et spécifiques aux différentes activités du groupe ;\n• accompagner les équipes : sensibilisation aux démarches qualité, appui à la rédaction documentaire et diffusion des bonnes pratiques ;\n\nInfos pratiques\n\n• Localisation : Montpellier (déplacement ponctuel à prévoir)\n• Contrat : CDI - Temps plein\n• Rythme de travail : 35h\n• Télétravail : possible après une période d'intégration\n• Salaire : Evolutif selon profil et expérience",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83999729.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "d87185a31bf1",
+   "titre": "Technicien Mesures Qualité de l'Eau H/F",
+   "entreprise": "Apave",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "2026-10-02",
+   "extrait": "",
+   "description": "Développer vos compétences au sein d'une équipe humaine et dynamique, contribuer à des missions passionnantes permettant de prévenir et de maîtriser les risques, ça vous tente ?\n\nApave exploitation recherche un-e Technicien(e) Mesures en Eaux H/F en CDI !\n\nAu sein de l'agence de Montpellier, l'équipe technique assure un rôle majeur : permettre à nos clients d'exercer leur métier en toute sécurité et contribuer ainsi au développement du Groupe Apave au coeur des territoires.\n\nConcrètement, en quoi va consister votre quotidien ?\nAprès votre parcours d'intégration, vous serez amené(e) à réaliser plusieurs missions :\nProduction / Terrain :\n- Vous intervenez en milieux industriels, tertiaires, collectivités et secteur de la santé.\n- Dans le respect des normes et de nos procédures vous réalisez des mesures, prélèvements, analyses et contrôles d'eaux sur sites (eaux usées : eaux résiduaires et pluviales, eaux propres : potabilité et gestion du risque légionelle, eaux souterraines),\n- A l'issue de vos interventions, vous gérez les échantillons, exploitez les résultats d'analyse, rédigez les rapports d'essais et apporter un avis technique sur le respect de l'environnement,\n- Vous participez au suivi métrologique du matériel.\n\nRelation Client :\n- Véritable représentant(e) Apave, vous faites preuve d'écoute et d'accompagnement de nos clients que vous contribuez à fidéliser sur le territoire.\n- Vous assurez le suivi opérationnel et commercial des clients.",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/82900738.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "d3df2bc1b6ff",
@@ -979,6 +946,7 @@
    "salaire": "",
    "date_pub": "2026-10-01",
    "extrait": "",
+   "description": "La société YellowScan conçoit, développe et produit des capteurs de cartographie pour les applications de drones professionnels. Entièrement intégrés, ultralégers et faciles à utiliser, ces capteurs hautement automatisés sont utilisés par les clients du monde entier dans diverses domaines : topographie, recherche environnementale, archéologie, génie civil, mines…\n\nRésolument orientés vers la satisfaction de nos clients, nous nous engageons à fournir la plus haute performance, qualité et fiabilité de nos produits et services. Pour développer rapidement notre activité dans le monde entier, nous recherchons activement les meilleurs talents pour renforcer notre équipe.\n\nAujourd'hui, nous souhaitons intégrer un.e Responsable Qualité , pour renforcer l’équipe et accompagner la structuration ainsi que l'amélioration continue de nos processus et de notre système qualité.\n\nPoste basé à Saint-Clément-de-Rivière, près de Montpellier, à pourvoir dès que possible.\n\nLes missions du poste :\n\nEn lien avec la politique qualité de YellowScan, le/la Responsable Qualité définit, pilote et déploie le système de management de la qualité afin de garantir la conformité, la fiabilité et la performance de nos produits et processus.\nAu sein des équipes opérationnelles et en étroite collaboration avec les différents services de l'entreprise, il/elle contribue à l'amélioration continue de l'organisation, à la satisfaction des clients et à la maîtrise des risques qualité.\n\nVos missions seront notamment de :\n\nManagement du Système Qualité\n• Définir, maintenir et faire évoluer le Système de Management de la Qualité (SMQ)\n• Structurer et animer la démarche qualité dans l'ensemble des services de l'entreprise\n• Garantir la conformité aux référentiels applicables (ISO 9001 et autres normes pertinentes)\n• Formaliser et maintenir les procédures, processus et instructions de travail\n• Préparer, organiser et piloter les audits internes et externes\n• Assurer la veille réglementaire et garantir la conformité de l'entreprise et de ses produits aux exigences réglementaires applicables (FDA, marquage CE, FCC, NDAA, Dual Use et autres réglementations pertinentes selon les marchés visés)\n• Coordonner et participer aux démarches de certification et maintenir les homologations nécessaires à la commercialisation des produits sur les différents marchés\n• Coordonner l'organisation, la préparation et le bon déroulement des Revues de Direction, assurer le suivi des plans d'actions associés et contribuer au pilotage de la performance de l'entreprise\n\nAssurance Qualité Produit\n• Définir les critères qualité applicables aux produits et composants\n• Participer aux revues de conception et d'industrialisation\n• Piloter les plans de contrôle qualité en production\n• Veiller à la traçabilité des équipements et composants critiques\n• Assurer l'analyse et le traitement des non-conformités produit\n• Participer à l'amélioration continue de l'ERP et des outils de gestion documentaire en lien avec les exigences qualité\n\nGestion des fournisseurs\n• Évaluer et qualifier les fournisseurs stratégiques\n• Mettre en place des indicateurs de performance fournisseurs\n• Conduire les audits fournisseurs lorsque nécessaire\n• Piloter les plans d'actions correctifs avec les partenaires industriels\n\nAmélioration Continue\n• Mettre en œuvre les démarches Lean et d'amélioration continue\n• Analyser les indicateurs clés de performance (KPI)\n• Animer les analyses de causes racines (8D, 5 Pourquoi, Ishikawa, etc.)\n• Piloter les actions correctives et préventives\n\nQualité Client\n• Suivre les réclamations clients et les retours terrain\n• Déployer les actions d'amélioration visant à augmenter la satisfaction client\n• Participer à l'analyse des incidents qualité et aux retours d'expérience\n\nManagement et animation\n• Sensibiliser et former les équipes aux bonnes pratiques qualité\n• Promouvoir une culture qualité à tous les niveaux de l'entreprise\n• Coordonner les interlocuteurs qualité des différents services\n\nFormation et Profil\n• Diplômé(e) d'une école d'ingénieur ou d'un Master spécialisé en Qualité, Management des Organisations ou équivalent\n• Minimum 5 ans d'expérience sur des fonctions similaires dans un environnement industriel ou de haute technologie\n• Expérience significative dans la mise en œuvre et l'animation d'un système qualité\n• Maîtrise des méthodes de résolution de problèmes et des outils qualité\n• Connaissance des référentiels qualité applicables (ISO 9001 notamment)\n• Maîtrise d'un ERP indispensable (Odoo serait un plus)\n• Anglais niveau C2\n\nVotre profil\n• Excellent relationnel : capacité à écouter, comprendre et interagir dans une démarche constructive avec l'ensemble des services de l'entreprise\n• Grande rigueur, sens de l'organisation et de la méthode\n• Esprit d'analyse et capacité à résoudre des problématiques complexes\n• Force de proposition et orientation amélioration continue\n• Capacité à fédérer les équipes autour des enjeux qualité\n• Savoir contribuer à la création d'un env",
    "liens": [
     {
      "source": "LinkedIn",
@@ -987,7 +955,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6831,
+   "lon": 3.8447,
+   "commune": "Saint-Clément-de-Rivière"
   },
   {
    "id": "51044371664b",
@@ -998,6 +969,7 @@
    "salaire": "",
    "date_pub": "2026-09-30",
    "extrait": "",
+   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 800 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nPour accompagner la montée en cadence de la production d’Epione®, nous recherchons notre Responsable Qualité Production .\n\nRattaché·e au Quality Manager QMS & Production, vous êtes garant·e de la conformité de ce qui sort de nos lignes et le point d’appui quotidien des équipes industrielles.\n\nVous encadrerez une équipe de Technicien·ne·s Qualité.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Superviser la qualité des opérations de production d'Epione® et de ses consommables, du contrôle à réception jusqu'à la libération finale : contrôle à réception, contrôles en cours de process, revue des dossiers de lot (DHR) et libération avant expédition.\n• Valider la mise en œuvre effective des DMR (Device Master Record) en Production avant leur application\n• Piloter le traitement des non-conformités de production : investigation, analyse de cause racine,, dérogations, retouches et animation des CAPA associées.\n• Participer aux boards mensuels relatifs aux CAPA et non-conformités produits ;\n• Encadrer, former et faire monter en compétences l’équipe de technicien·ne·s qualité (contrôle à réception et contrôle en production).\n• Participer aux activités de sélection/qualification, réévaluation des fournisseurs.\n• Être l’interlocuteur·rice qualité au quotidien de la Production, du Design Transfer et de la Supply Chain : arbitrer les blocages, sécuriser les décisions et tenir la ligne quand c’est nécessaire.\n• Contribuer aux activités de validation des procédés et des équipements de production (IQ/OQ/PQ) ainsi que la qualification des moyens de contrôle, en lien avec le Design Transfer et la R&D.\n• Assurer la maîtrise de l’environnement de production et le respect des bonnes pratiques documentaires.\n• Définir, suivre et animer les indicateurs qualité production (taux de non-conformité, rebut, rendement première passe, délai de traitement des NC) et en faire un levier d’amélioration continue.\n• Accompagner la Production dans la mise en œuvre des actions d’amélioration.\n• Sensibiliser les équipes opérationnelles aux exigences Qualité à travers des activités d’inspection et de formation\n• Représenter la qualité production lors des audits internes et externes (ISO 13485, MDSAP, organisme notifié, FDA) et lors des transferts en production de nouveaux produits.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes diplômé·e d’une école d’ingénieur ou titulaire d’un Master (généraliste, mécanique, qualité ou biomédical).\n• Vous disposez de minimum 5 ans d’expérience en qualité opérationnelle dans un environnement industriel réglementé (dispositif médical, pharmaceutique, aéronautique), dont une première expérience d’encadrement ou d’animation d’équipe.\n• Vous maîtrisez les outils qualité du terrain : analyse de cause racine (8D, Ishikawa, 5 Pourquoi), gestion des non-conformités, CAPA, validation de procédés.\n• Vous connaissez les exigences de l’ISO 13485 et du 21 CFR Part 820 (QMSR) appliquées à la production, et vous avez déjà été en première ligne lors d’un audit.\n• Vous savez tenir une décision qualité face à la pression du planning, et l’expliquer sans braquer vos interlocuteurs.\n• Vous maîtrisez l’anglais professionnel à l’écrit comme à l’oral : vous échangez au quotidien avec nos équipes aux États-Unis.\n\nSouhaitable\n\n• Vous avez travaillé sur des dispositifs médicaux de classe IIb ou III, ou en robotique médicale.\n• Vous connaissez les exigences du règlement (UE) 2017/745 (MDR) et/ou la validation du logiciel dispositif médical (IEC 62304).\n• Vous avez déjà accompagné un transfert industriel de nouveau produit (NPI) de la R&D vers la production.\n• Vous pratiquez les méthodes Lean / Six Sigma (Green Belt ou équivalent).\n• Vous êtes à l’aise avec un eQMS et un ERP.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de",
    "liens": [
     {
      "source": "LinkedIn",
@@ -1006,26 +978,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "09d5455b2551",
-   "titre": "Chargé Qualité et Administrateur LIMS (F/M)",
-   "entreprise": "Axens",
-   "lieu": "Salindres",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-09-30",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-qualit%C3%A9-et-administrateur-lims-f-m-at-axens-4473951565"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "ea6213a8e477",
@@ -1036,6 +992,7 @@
    "salaire": "",
    "date_pub": "2026-09-30",
    "extrait": "",
+   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 800 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nPour accompagner la montée en cadence de la production d’ Epione® , nous renforçons notre équipe Qualité.\n\nRattaché·e au QA Production Manager, en tant que Technicien·ne Qualité – Incoming Inspection , vous êtes le premier filtre qualité de notre chaîne : aucun composant n’entre en production sans votre validation. Au quotidien, vous travaillez avec la Production, la Supply Chain, la Qualité Fournisseurs et la R&D.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser les contrôles à réception (visuels, dimensionnels et documentaires) des composants, sous-ensembles et consommables, conformément aux plans et aux gammes de contrôle.\n• Prononcer l’acceptation, la mise en quarantaine ou le refus des lots, et enregistrer les résultats dans notre système qualité et notre ERP.\n• Vérifier la conformité documentaire des livraisons fournisseurs : certificats de conformité, certificats matière, rapports de contrôle, traçabilité des lots et numéros de série.\n• Déclarer et assurer le suivi des non-conformités fournisseurs (SNCR)\n• Participer au suivi des actions correctives des fournisseurs (SCAR)\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks) sur les pièces livrées à réception.\n• Contribuer à la création et à la mise à jour des gammes et plans de contrôle à réception, en lien avec la R&D et le Design Transfer, notamment lors de l’introduction de nouveaux composants.\n• Participer à l’amélioration continue du processus de contrôle à réception et à la préparation des audits (ISO 13485, MDSAP, organisme notifié).\n• Être l'interlocuteur Qualité des fournisseurs pour les sujets liés au contrôle à réception et aux non-conformités.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence)\n• Vous disposez de minimum 2 ans d’expérience en contrôle qualité, idéalement en contrôle à réception, dans un environnement industriel exigeant (dispositif médical, aéronautique, automobile, pharmaceutique).\n• Vous êtes rigoureux·se et méthodique dans vos enregistrements : dans notre métier, ce qui n’est pas tracé n’existe pas.\n• Vous savez tenir votre position et bloquer un lot non conforme, même sous pression de délai.\n• Vous avez un niveau d’anglais suffisant pour lire des spécifications techniques et échanger par écrit avec nos fournisseurs et nos collègues aux États-Unis.\n\nSouhaitable\n\n• Vous connaissez les exigences de l’ISO 13485 et/ou du 21 CFR Part 820 appliquées au contrôle à réception.\n• Vous avez déjà travaillé sur des dispositifs médicaux ou en environnement à atmosphère contrôlée.\n• Vous êtes à l’aise avec un ERP et avec la gestion documentaire électronique.\n• Vous connaissez les plans d’échantillonnage (ISO 2859-1) et les bases du contrôle statistique.\n• Vous savez lire un plan et interpréter une cotation fonctionnelle (tolérancement GPS / ISO 1101), et vous maîtrisez les instruments de métrologie dimensionnelle (pied à coulisse, micromètre, comparateur, colonne de mesure).\n• Vous avez pratiqué la mesure sur MMT ou sur machine de mesure optique.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant être liée à une caractéristique physiq",
    "liens": [
     {
      "source": "LinkedIn",
@@ -1044,7 +1001,56 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "600ab38930b0",
+   "titre": "Technicien Qualité H/F",
+   "entreprise": "Evaden",
+   "lieu": "Montpellier - 34",
+   "contrat": "CDI",
+   "salaire": "30 000 - 35 000 € / an",
+   "date_pub": "2026-09-27",
+   "extrait": "",
+   "description": "L'entreprise\nEVADEN recrute pour une entreprise industrielle française qui conçoit et fabrique des équipements techniques.\nDans le cadre du renforcement de son organisation, notre client souhaite intégrer un Technicien Qualité H/F au sein de son équipe.\nVous rejoindrez un environnement de production où les enjeux liés à la fiabilité des produits, au respect des exigences techniques et à la progression des méthodes de travail sont au quotidien.\nLe poste\nAu sein du service Qualité, vous êtes un véritable relais entre le terrain et les fonctions support.\nVotre quotidien consiste à vérifier la conformité des produits et des pratiques, identifier les anomalies et accompagner leur résolution.\nVous travaillez en proximité avec la production, mais également avec les achats et les autres services de l'entreprise.\nVos responsabilités\nVotre activité s'articulera notamment autour des sujets suivants :\n• Examiner les produits fabriqués et effectuer les vérifications nécessaires avant leur validation.\n• S'assurer que les documents associés aux fabrications sont complets et correctement renseignés.\n• Vérifier sur le terrain le respect des instructions et des standards définis.\n• Participer au traitement des problématiques rencontrées avec les fournisseurs et transmettre les éléments nécessaires au service Achats.\n• Administrer le parc d'instruments de mesure et veiller à leur disponibilité ainsi qu'au respect des échéances d'étalonnage.\n• Contribuer à la préparation et à la réalisation des audits qualité internes.\n• Enregistrer les anomalies détectées et assurer leur suivi jusqu'à leur résolution.\n• Exploiter les résultats des contrôles afin de repérer les écarts récurrents ou les points de vigilance.\n• Participer à la recherche des causes des problèmes rencontrés.\n• Proposer, avec les équipes concernées, des solutions permettant de limiter la réapparition des défauts.\n• Vérifier dans le temps l'avancement et l'efficacité des mesures mises en place.\n• Faire évoluer les documents, formulaires et supports utilisés pour assurer le suivi des contrôles et la traçabilité.\n• Être présent auprès des équipes de fabrication pour répondre à leurs questions et favoriser l'application des bonnes pratiques qualité.\nVotre Profil\nVous avez une formation Bac +2 orientée qualité, génie industriel ou technique.\nUne première expérience professionnelle d'environ 1 à 2 ans en qualité dans un contexte industriel vous permettra de prendre rapidement vos marques sur le poste.\nVous souhaitez évoluer dans une fonction concrète, avec une présence au contact de la production et une diversité de sujets à traiter.\nVos connaissances\nVous maîtrisez ou connaissez :\n• Les méthodes de contrôle qualité en production.\n• Les principes de gestion des non-conformités.\n• Les démarches d'amélioration continue.\n• Les exigences liées à la traçabilité des produits.\n• Les principaux référentiels et normes applicables en qualité industrielle.\n• Les méthodes de recherche et d'analyse des écarts.\n• Le suivi des actions correctives et préventives.\n• Les outils bureautiques courants.\nVotre personnalité\nNous recherchons avant tout une personne qui apprécie le travail concret et sait être attentive aux détails.\nVous êtes :\n• Organisé et structuré dans votre façon de travailler.\n• À l'aise pour analyser une situation et en tirer des conclusions.\n• Capable de faire respecter un cadre tout en conservant un bon relationnel.\n• À l'écoute des équipes de terrain.\n• À l'aise pour échanger avec différents interlocuteurs.\n• Curieux et désireux de comprendre les problématiques techniques.\n• Capable de travailler de manière autonome tout en sollicitant les bons interlocuteurs lorsque nécessaire.\nLes conditions\n• CDI\n• 35 heures par semaine\n• Poste basé à Saussan (34)\n• Rémunération en fonction du parcours et des compétences\n• Poste sédentaire au sein d'un environnement industriel technique\nPourquoi rejoindre ce projet ?\nVous cherchez une première ou une nouvelle expérience en qualité qui vous permette de voir concrètement l'impact de votre travail sur la production ?\nIci, pas de fonction qualité uniquement administrative : vous serez régulièrement en lien avec les équipes qui fabriquent les produits et interviendrez sur des sujets variés, du contrôle à l'analyse des anomalies en passant par le suivi des actions d'amélioration.\nLe poste offre également la possibilité de développer progressivement votre autonomie et votre expertise dans un environnement industriel à taille humaine.\nVous vous reconnaissez dans ce poste ? Envoyez-nous votre CV.\nEVADEN étudiera votre candidature avec attention et vous accompagnera tout au long du processus de recrutement.",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83813048.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "3f2b7aecd664",
+   "titre": "Assistant Qualité H/F",
+   "entreprise": "Groupe Synergie",
+   "lieu": "Vergèze - 30",
+   "contrat": "Intérim",
+   "salaire": "20 000 - 25 000 € / an",
+   "date_pub": "2026-09-26",
+   "extrait": "",
+   "description": "Notre agence SYNERGIE recrute pour son client, acteur reconnu dans le domaine des analyses et de la bioanalyse, un(e) Auditeur(rice) Qualité pour renforcer son équipe à Vergèze.\n\nRattaché(e) à la Responsable Assurance Qualité, vous jouerez un rôle clé dans le respect des Bonnes Pratiques de Laboratoire (BPL) et dans l'amélioration continue du système qualité.\n\nVOS MISSIONS\n\nAu quotidien, vous serez notamment amené(e) à :\n\nAccompagner la Responsable Assurance Qualité dans l'application des BPL et des référentiels réglementaires français, européens et internationaux.\nRéaliser des audits de dossiers d'études, de procédés et d'installations.\nSensibiliser et accompagner les équipes aux bonnes pratiques qualité.\nParticiper activement au maintien et à l'amélioration du système de management de la qualité.\nIdentifier et signaler les éventuelles déviations et assurer leur suivi.\nParticiper à la création et à l'évolution des procédures et modes opératoires en collaboration avec la Responsable Assurance Qualité.",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83782418.html"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
   },
   {
    "id": "eacf0d12473c",
@@ -1055,6 +1061,7 @@
    "salaire": "",
    "date_pub": "2026-09-24",
    "extrait": "",
+   "description": "Winncare est le leader français dans les solutions pour l’amélioration de la prise en charge des personnes en perte d’autonomie et à risque d’escarres. L’entreprise dispose de plusieurs unités de production en France, ainsi qu’au Danemark, Pologne, Espagne, Tunisie, et Royaume Uni.\nEn tant qu’acteur majeur du marché Européen de l’équipement médical, nos équipes s’engagent avec détermination à créer les meilleures conditions de vie aux personnes prises en soin à domicile, en établissements médico-social et de santé, et à leurs aidants.\nNotre entreprise est en pleine mutation et croissance avec la très forte ambition de poursuivre son développement dans les années à venir. Nous sommes désormais plus de 850 collaborateurs en Europe\nL’une des particularités de Winncare est son engagement fort en termes de Responsabilité Sociétale des Entreprises (RSE) avec notamment son statut d’Entreprise à mission à travers des objectifs sociaux et environnementaux.\nVous avez de l'ambition, partagez nos valeurs, avez envie d’avoir de l’impact dans le secteur de la santé, et de grandir dans un environnement stimulant ? Alors rejoignez-nous !\nAu sein de notre site de production basé à Nîmes, nous recherchons un(e) Technicien(enne) Qualité.\n\nVotre mission\nAu cœur de notre système qualité, vous contribuez à garantir la conformité de nos produits et de nos processus aux exigences réglementaires et normatives, avec pour boussole la sécurité du patient et de l'utilisateur final .\n\nVos responsabilités\n• Contrôle qualité : Réalisation des contrôles en réception, en cours et en fin de production (dimensionnels, visuels, fonctionnels), rédaction des rapports de lot, décisions de libération ou de blocage.\n• Gestion des non-conformités : Détection, enregistrement et analyse des causes racines (5M, Ishikawa, 5 Pourquoi), suivi des CAPA, traitement des produits non conformes.\n• Gestion documentaire : Rédaction et mise à jour des procédures, instructions et plans de contrôle, maîtrise des enregistrements qualité conformément à l'ISO 13485 .\n• Métrologie : Suivi du parc d'équipements de mesure et de contrôle, planification des étalonnages, gestion des équipements hors tolérance.\n• Audits : Participation aux audits internes et préparation des audits externes (organismes notifiés, clients, autorités compétentes).\n• Amélioration continue : Contribution aux qualifications de procédés (IQ/OQ/PQ), aux revues qualité et aux indicateurs de performance (KPI).\n\nVotre profil\n• Formation : Bac +2 à Bac +3 en Qualité, Génie industriel, Mesures physiques ou Génie mécanique (BTS CPI, DUT QLIO, Licence Pro Qualité ou équivalent)\n• Expérience : 2 à 5 ans dans un environnement industriel réglementé (dispositifs médicaux, pharmaceutique, aéronautique)\n• Compétences techniques :\n• ISO 13485 et Règlement MDR 2017/745\n• Outils qualité : AMDEC, 8D, Ishikawa, 5 Pourquoi\n• Métrologie dimensionnelle et techniques de contrôle\n• Notions de statistiques appliquées : MSA, Cpk, cartes de contrôle\n• Pack Office, ERP/logiciel qualité\n• Bonnes pratiques de documentation, traçabilité, UDI\n• Langues : Français courant – Anglais technique (normes, documentation)\n• Certifications appréciées : Auditeur interne ISO 13485 – Formation MDR\n\nNous recherchons avant tout une personne rigoureuse, réactive et avec des capacités analytique, capable de travailler en équipe pluridisciplinaire avec un sens fort des responsabilités vis-à-vis de la sécurité des patients.\n\nDivers :\n• Poste basé à Nîmes.\n• Tickets Restaurants.\n• Éligibilité aux primes d’intéressement et de participation.\n\nEn rejoignant Winncare, vous ferez partie d'une entreprise diversifiée, dynamique, flexible et en pleine croissance, avec de nombreux défis passionnants et des opportunités de développement. Vous travaillerez dans un environnement de développement stimulant, avec la liberté de mener vos projets et de créer un impact visible.\nNotre engagement à montrer la voie avec un modèle d'entreprise durable signifie que vous contribuerez également à rendre le monde meilleur.\nChez Winncare, nous offrons des opportunités égales à tous, indépendamment de la couleur, de l'ascendance, de la religion, du sexe, de l'origine nationale, de l'orientation sexuelle, de l'âge, de la citoyenneté, de l'état civil, du handicap ou de l'identité de genre.\n\nPrêt à saisir les opportunités qui s'offrent à vous ? Rejoignez nos équipes WINNCARE !",
    "liens": [
     {
      "source": "LinkedIn",
@@ -1063,7 +1070,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.8322,
+   "lon": 4.3429,
+   "commune": "Nîmes"
   },
   {
    "id": "7318dd016711",
@@ -1082,7 +1092,33 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-19",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "03a0f957ecb8",
+   "titre": "Contrôleur Qualité H/F",
+   "entreprise": "Adecco",
+   "lieu": "Castries - 34",
+   "contrat": "Intérim",
+   "salaire": "",
+   "date_pub": "2026-09-22",
+   "extrait": "",
+   "description": "Votre mission\n\nAdecco Leader Mondial des ressources humaines recherches pour l'un de ses clients un contrôleur qualité visuel (H/F) à Castries.\n\nVous intégrez une entreprise de fabrication de matériel de distribution et de commande électrique, reconnue pour la fiabilité de ses produits.\n\nVos principales missions seront :\n\n- Garantir la conformité des pièces\n- Contribuer à l'amélioration continue des process.\n- Réaliser les contrôles dimensionnels et visuels\n- Participer à l'analyse des non-conformités et aux actions correctives avec la production et le service qualité.\n\nVotre profil\n\nProfils:\n\n- Vous êtes rigoureux·se, appliqué·e et intéressé·e par le contrôle qualité en milieu industriel.\n- Vous aimez le travail méthodique, savez suivre des consignes écrites et orales et êtes à l'aise avec la lecture de documents techniques.\n\nUne première expérience en salle blanche ou industrie est un plus, mais non indispensable si vous faites preuve de motivation, de sérieux et d'envie d'apprendre.\n\nCe poste vous intéresse ? Merci de postuler en ligne avec un CV à jour.\nA propos de nous\n\nVous cherchez un job pour quelques heures, quelques jours ou pour toujours ?\nUn CDI ? Une formation pour préparer votre avenir ? Une alternance pour apprendre durablement un métier ? Chez Adecco, on sait que derrière chaque CV, il y a une vraie vie qui mérite un vrai job. Avec 850 agences partout en France, nos recruteurs sont là pour vous écouter, vous conseiller et vous aider à trouver l'emploi qui vous correspond vraiment. En agence ou via nos applications Adecco & Moi et QAPA, vous gardez la main sur votre parcours, selon vos envies et les étapes de votre vie. Parce qu'un job, ce n'est pas seulement un contrat. C'est une expérience réelle, faite de rencontres, parfois un vrai tournant. Avec Adecco, vous bénéficiez d'un accompagnement personnalisé, d'avantages exclusifs et d'opportunités qui peuvent vraiment compter dans votre parcours. Intérim, CDD, CDI ou formation : à chacun sa voie, à chacun son rythme. Adecco, toujours à vos côtés !",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83604363.html"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.6905,
+   "lon": 3.9853,
+   "commune": "Castries"
   },
   {
    "id": "db139dd186bc",
@@ -1101,7 +1137,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.6905,
+   "lon": 3.9853,
+   "commune": "Castries"
   },
   {
    "id": "a5c1afc1da03",
@@ -1120,7 +1159,10 @@
    ],
    "premiere_vue": "2026-10-21",
    "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "4964f45476d7",
@@ -1139,45 +1181,10 @@
    ],
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-10-19",
-   "agro": false
-  },
-  {
-   "id": "aaf6ab6cbfb7",
-   "titre": "E.Leclerc - Assistant(e) Qualité - H/F",
-   "entreprise": "LEVANDIS",
-   "lieu": "34 - Lunel",
-   "contrat": "CDD - 2 Mois",
-   "salaire": "",
-   "date_pub": "2026-08-28",
-   "extrait": "DESCRIPTIF DE L'OFFRE E. LECLERC EST UN ACTEUR MILITANT DE L'APPRENTISSAGE. NOUS SOMMES ATTACHÉS À LA TRANSMISSION DES SAVOIR-FAIRE, ET L'ALTERNANCE EST UN BON MOYEN DE RÉUSSIR SON ENTRÉE DANS LA VIE ACTIVE. CHAQUE ANNÉE, PLUS DE 4.000 ALTERNANTS SONT ACCUEILLIS DANS L'ENSEIGNE. NOUS RECHERCHONS UN(E) ASSISTANT(E) QUALITÉ. AUX CÔTÉS DE LA RESPONSABLE QUALITÉ, VOUS PARTICIPEREZ AUX MISSIONS DE CONT",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6391306"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
-  },
-  {
-   "id": "d8cad7e93201",
-   "titre": "Technicien en qualité et découpe en produits congelés (THON (H/F)",
-   "entreprise": "SUD MER",
-   "lieu": "34 - FRONTIGNAN",
-   "contrat": "CDI",
-   "salaire": "Horaire de 12.31 Euros",
-   "date_pub": "2026-08-12",
-   "extrait": "Vous travaillerez dans un environnement froid (6°c) et procéderez à la découpe de thons congelés à une température de -60°C . Vous aurez également comme mission le chargement et déchargement de marchandises",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212KGLW"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-21",
-   "agro": false
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   }
  ]
 }

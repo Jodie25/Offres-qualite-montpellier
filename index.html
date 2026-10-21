@@ -4,100 +4,181 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Offres Qualité Montpellier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
 :root{
-  --bg:#f6f7fb;--card:#fff;--ink:#1c2233;--mute:#667088;--line:#e3e6ef;--accent:#3a4fd7;--accent-ink:#fff;
-  --ok:#17803d;--warn:#b45309;--bad:#b91c1c;--chip:#eef0fa;
+  --bg:#fff9f2;--card:#fff;--ink:#1e2a44;--mute:#6b7690;--line:#f0e6da;
+  --coral:#ff6b4a;--coral-d:#e8512f;--orange:#ffa24c;--sun:#ffd166;--teal:#17b8a6;--teal-d:#0e9486;--sky:#e6f7f5;--peach:#fff1e6;
+  --ok:#12a150;--bad:#d64545;--shadow:0 6px 24px rgba(255,107,74,.10),0 1px 3px rgba(30,42,68,.06);
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#12141c;--card:#1b1e29;--ink:#e8eaf2;--mute:#9aa2b8;--line:#2b3042;--accent:#7b8cff;--accent-ink:#10121a;
-  --ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--chip:#262b3d;}}
-:root[data-theme="dark"]{--bg:#12141c;--card:#1b1e29;--ink:#e8eaf2;--mute:#9aa2b8;--line:#2b3042;--accent:#7b8cff;--accent-ink:#10121a;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--chip:#262b3d}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
-.top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 0}
-h1{font-size:18px;margin:0;font-weight:700}
-.maj{color:var(--mute);font-size:13px}
-nav{display:flex;gap:4px;margin-left:auto}
-nav button{border:0;background:none;color:var(--mute);padding:8px 14px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer}
-nav button.on{background:var(--chip);color:var(--accent)}
-nav .n{background:var(--accent);color:var(--accent-ink);border-radius:99px;padding:0 7px;font-size:12px;margin-left:4px}
-main{padding:20px 0 60px}
+html{color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* ---------- Bandeau ---------- */
+.hero{background:linear-gradient(120deg,#ff6b4a 0%,#ff9a56 48%,#ffd166 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.14)}
+.hero::before{width:380px;height:380px;right:-90px;top:-150px}.hero::after{width:220px;height:220px;left:-60px;bottom:-110px}
+.hero .wrap{position:relative;padding-top:26px;padding-bottom:30px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;opacity:.95}
+.brand i{width:28px;height:28px;border-radius:9px;background:#fff;color:var(--coral);display:grid;place-items:center;font-style:normal}
+.hero h1{margin:16px 0 6px;font-size:clamp(26px,4.4vw,40px);line-height:1.12;font-weight:800;letter-spacing:-.02em;max-width:720px}
+.hero p{margin:0;font-size:16px;opacity:.95;max-width:640px}
+.hstats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hs{background:rgba(255,255,255,.22);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.4);border-radius:14px;padding:8px 16px;min-width:108px}
+.hs b{display:block;font-size:24px;line-height:1.1}.hs span{font-size:12.5px;opacity:.95}
+.maj{font-size:12.5px;opacity:.9;margin-top:14px}
+
+/* ---------- Onglets ---------- */
+nav.tabs{background:rgba(255,249,242,.92);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav.tabs button{border:0;background:none;color:var(--mute);padding:9px 16px;border-radius:99px;font:inherit;font-weight:700;cursor:pointer;white-space:nowrap}
+nav.tabs button:hover{background:var(--peach)}
+nav.tabs button.on{background:var(--coral);color:#fff;box-shadow:0 4px 12px rgba(255,107,74,.35)}
+nav.tabs .n{background:#fff;color:var(--coral);border-radius:99px;padding:0 7px;font-size:12px;margin-left:5px}
+main{padding:22px 0 70px}
+
+/* ---------- Champs / boutons ---------- */
+input,select,textarea{font:inherit;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:9px 12px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--coral);box-shadow:0 0 0 3px rgba(255,107,74,.15)}
 .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
-input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
-input[type=search]{flex:1;min-width:200px}
-label.ck{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:14px}
-.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:8px;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}
-.btn:hover{border-color:var(--accent)}
-.btn.pri{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-.btn.sm{padding:4px 9px;font-size:13px}
-.count{color:var(--mute);font-size:14px;margin:0 0 10px}
-.list{display:grid;gap:10px}
-.offre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:8px 16px}
-.offre.suivi{border-left:4px solid var(--accent)}
-.offre.old{opacity:.6}
-.offre h3{margin:0;font-size:16px}
-.offre h3 a{color:inherit;text-decoration:none}.offre h3 a:hover{color:var(--accent)}
-.meta{color:var(--mute);font-size:14px;display:flex;gap:6px 14px;flex-wrap:wrap;margin-top:2px}
-.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.tag{background:var(--chip);border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600;color:var(--mute)}
-.tag.new{background:var(--ok);color:#fff}.tag.agro{background:#d1f1de;color:#0b5a2b}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag.agro{background:#14452a;color:#9ef0bf}}
-.tag.src{background:transparent;border:1px solid var(--line)}
-.acts{display:flex;flex-direction:column;gap:6px;align-items:flex-end;justify-content:center}
-.search-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
-.search-box h2{font-size:15px;margin:0 0 4px}
-.search-box p{margin:0 0 10px;color:var(--mute);font-size:14px}
-.sites{display:flex;gap:6px;flex-wrap:wrap}
-.stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;min-width:96px}
-.stat.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
-.stat b{display:block;font-size:20px}.stat span{font-size:12px;color:var(--mute)}
-.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
-table{border-collapse:collapse;width:100%;min-width:980px}
-th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
-th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);background:var(--bg);position:sticky;top:0}
-td input,td select,td textarea{width:100%;padding:4px 6px;border-radius:6px;border-color:transparent;background:transparent}
-td input:hover,td select:hover,td textarea:hover,td input:focus,td select:focus,td textarea:focus{border-color:var(--line);background:var(--card)}
+input[type=search]{flex:1;min-width:220px}
+label.ck{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:14px;font-weight:600}
+.btn{border:1.5px solid var(--line);background:#fff;color:var(--ink);padding:9px 16px;border-radius:12px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+.btn:hover{border-color:var(--coral);color:var(--coral-d);transform:translateY(-1px)}
+.btn.pri{background:linear-gradient(135deg,var(--coral),var(--orange));color:#fff;border:0;box-shadow:0 6px 16px rgba(255,107,74,.35)}
+.btn.pri:hover{color:#fff;box-shadow:0 8px 20px rgba(255,107,74,.45)}
+.btn.teal{background:var(--teal);color:#fff;border:0}.btn.teal:hover{background:var(--teal-d);color:#fff}
+.btn.sm{padding:6px 12px;font-size:13px;border-radius:10px}
+.btn.ghost{border-color:transparent;background:none;color:var(--mute);font-weight:600}
+.count{color:var(--mute);font-size:14px;margin:0 0 12px;font-weight:600}
+.search-box{background:var(--card);border:1.5px dashed #ffcfb8;border-radius:16px;padding:14px 18px;margin-bottom:16px}
+.search-box summary{cursor:pointer;font-weight:800;list-style:none}
+.search-box summary::before{content:"🔎 "}
+.search-box p{margin:8px 0;color:var(--mute);font-size:14px}
+.sites{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+
+/* ---------- Cartes d'offres ---------- */
+.list{display:grid;gap:14px}
+.offre{background:var(--card);border-radius:18px;padding:18px 20px;box-shadow:var(--shadow);border:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;gap:6px 16px;transition:.15s}
+.offre:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,107,74,.16)}
+.offre.suivi{border-color:var(--teal);background:linear-gradient(180deg,#fff,var(--sky))}
+.offre.old{opacity:.7}
+.logo{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;grid-row:span 2}
+.offre h3{margin:0;font-size:17px;line-height:1.3}
+.offre h3 a{color:inherit;text-decoration:none}.offre h3 a:hover{color:var(--coral-d)}
+.meta{color:var(--mute);font-size:14px;display:flex;gap:4px 14px;flex-wrap:wrap;margin-top:2px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;grid-column:2/3;margin-top:4px}
+.tag{background:var(--peach);color:#b4532e;border-radius:99px;padding:2px 10px;font-size:12px;font-weight:700}
+.tag.new{background:var(--ok);color:#fff}.tag.agro{background:#dcf6e6;color:#0b6b36}.tag.cont{background:#e8edff;color:#3a4fd7}.tag.sal{background:#fff4cf;color:#8a6200}
+.tag.src{background:#fff;border:1px solid var(--line);color:var(--mute);text-decoration:none}
+.snip{grid-column:2/4;color:#3d4863;font-size:14px;margin-top:4px}
+.snip details summary{cursor:pointer;color:var(--coral-d);font-weight:700;font-size:13px;margin-top:4px}
+.snip .full{white-space:pre-line;margin-top:8px;max-height:340px;overflow:auto;background:var(--bg);border-radius:12px;padding:12px 14px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;grid-column:2/4;margin-top:8px;align-items:center}
+.cvdone{font-size:12.5px;color:var(--ok);font-weight:700}
+@media (max-width:640px){.offre{grid-template-columns:auto 1fr}.snip,.acts,.tags{grid-column:1/3}}
+
+/* ---------- Carte ---------- */
+.mapgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;align-items:start}
+#map{height:560px;border-radius:20px;box-shadow:var(--shadow);border:1px solid var(--line);z-index:1}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.pill{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:4px 12px;font-weight:700;font-size:13px;cursor:pointer}
+.pill b{color:var(--coral-d)}.pill.on{background:var(--coral);color:#fff;border-color:var(--coral)}.pill.on b{color:#fff}
+.bub{background:var(--coral);color:#fff;border:3px solid #fff;border-radius:50%;display:grid;place-items:center;font-weight:800;box-shadow:0 4px 12px rgba(255,107,74,.5)}
+.bub.on{background:var(--teal);box-shadow:0 4px 14px rgba(23,184,166,.6)}
+.mapside .list{gap:10px;max-height:480px;overflow:auto;padding:4px}
+.mapside .offre{padding:12px 14px}
+@media (max-width:860px){.mapgrid{grid-template-columns:1fr}#map{height:380px}}
+
+/* ---------- Suivi ---------- */
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.stat{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:8px 16px;cursor:pointer;min-width:104px;box-shadow:var(--shadow)}
+.stat.on{border-color:var(--coral);background:var(--peach)}
+.stat b{display:block;font-size:22px}.stat span{font-size:12px;color:var(--mute);font-weight:600}
+.tw{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:1040px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);background:var(--bg)}
+td input,td select,td textarea{width:100%;padding:5px 7px;border-radius:8px;border-color:transparent;background:transparent}
+td input:hover,td select:hover,td textarea:hover,td input:focus,td select:focus,td textarea:focus{border-color:var(--line);background:#fff}
 td textarea{resize:vertical;min-height:34px}
-td.poste{min-width:200px}td.poste a{color:inherit;font-weight:600}
-select.st{font-weight:600;border-radius:99px;min-width:165px}
-td input[type=date]{min-width:128px}
-.s-a-postuler{color:var(--warn)}.s-envoyee,.s-relance{color:var(--accent)}.s-entretien{color:var(--ok)}.s-offre{color:var(--ok)}.s-refus,.s-silence{color:var(--bad)}
-.empty{text-align:center;color:var(--mute);padding:40px 16px}
-.row-late td:first-child{box-shadow:inset 3px 0 0 var(--bad)}
-dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);padding:20px;max-width:480px;width:calc(100% - 32px)}
-dialog::backdrop{background:#0008}
-dialog label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute)}dialog input,dialog select{width:100%}
-.foot{color:var(--mute);font-size:13px;margin-top:24px}
-@media (max-width:640px){.offre{grid-template-columns:1fr}.acts{flex-direction:row;justify-content:flex-start}nav{margin-left:0;width:100%}}
+td.poste{min-width:210px}td.poste a{color:inherit;font-weight:700}
+select.st{font-weight:700;border-radius:99px;min-width:165px}
+td input[type=date]{min-width:130px}
+.s-a-postuler{color:#b4532e}.s-envoyee,.s-relance{color:#3a4fd7}.s-entretien,.s-offre{color:var(--ok)}.s-refus,.s-silence{color:var(--bad)}
+.row-late td:first-child{box-shadow:inset 4px 0 0 var(--bad)}
+.empty{text-align:center;color:var(--mute);padding:44px 16px;background:#fff;border-radius:18px;border:1px dashed var(--line)}
+
+/* ---------- Mon CV / modale ---------- */
+.panel{background:#fff;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line);padding:20px 22px;margin-bottom:16px}
+.panel h2{margin:0 0 6px;font-size:18px}
+.panel p.h{margin:0 0 12px;color:var(--mute);font-size:14px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.panel label{display:block;font-size:13px;font-weight:700;color:var(--mute);margin:10px 0 4px}
+.panel input,.panel textarea{width:100%}
+textarea.big{min-height:300px;font-size:14px;line-height:1.5}
+dialog.cv{border:0;border-radius:22px;padding:0;max-width:880px;width:calc(100% - 24px);max-height:92vh;box-shadow:0 30px 80px rgba(30,42,68,.35);color:var(--ink)}
+dialog::backdrop{background:rgba(30,42,68,.55)}
+.cvh{background:linear-gradient(120deg,var(--teal),#5fd8c8);color:#fff;padding:18px 24px;position:sticky;top:0;z-index:2;display:flex;gap:12px;align-items:flex-start}
+.cvh h2{margin:0;font-size:19px;line-height:1.25}.cvh small{opacity:.95}
+.cvh .x{margin-left:auto;background:rgba(255,255,255,.25);border:0;color:#fff;border-radius:10px;width:34px;height:34px;font-size:18px;cursor:pointer;flex:none}
+.cvb{padding:18px 24px 26px;overflow:auto;max-height:calc(92vh - 80px)}
+.score{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.ring{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:19px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 12px}
+.chip{border-radius:99px;padding:3px 11px;font-size:13px;font-weight:700}
+.chip.y{background:#dcf6e6;color:#0b6b36}.chip.n{background:#fff4cf;color:#8a6200}
+.cvb h3{margin:18px 0 6px;font-size:15px}
+.cvb textarea{width:100%;min-height:120px;font-size:14px;line-height:1.5}
+.cvb .row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.note{background:var(--sky);border-radius:12px;padding:10px 14px;font-size:13.5px;color:#0b5f56}
+mark{background:#ffe9a6;border-radius:4px;padding:0 2px}
+.prev{white-space:pre-wrap;background:var(--bg);border-radius:12px;padding:12px 14px;max-height:260px;overflow:auto;font-size:14px}
+.foot{color:var(--mute);font-size:13px;margin-top:28px;text-align:center}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;font-weight:700;z-index:99;opacity:0;pointer-events:none;transition:.25s}
+.toast.on{opacity:1}
+dialog.add{border:0;border-radius:20px;max-width:480px;width:calc(100% - 32px);padding:22px}
+dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;font-size:13px;font-weight:700;color:var(--mute)}
 </style>
 </head>
 <body>
-<header><div class="wrap top">
-  <h1>Offres Qualité · Montpellier (50 km)</h1>
-  <span class="maj" id="maj"></span>
-  <nav>
-    <button id="t-offres" class="on">Offres</button>
-    <button id="t-suivi">Mon suivi <span class="n" id="nb-suivi">0</span></button>
-  </nav>
+
+<header class="hero"><div class="wrap">
+  <div class="brand"><i>★</i> Offres Qualité · Agroalimentaire</div>
+  <h1>Ton prochain poste en qualité t'attend près de chez toi</h1>
+  <p id="sous">Les offres autour de Saint-Jean-de-Védas, rassemblées pour toi chaque matin. Choisis, adapte ton CV, postule&nbsp;!</p>
+  <div class="hstats">
+    <div class="hs"><b id="h-total">–</b><span>offres à découvrir</span></div>
+    <div class="hs"><b id="h-new">–</b><span>nouvelles cette semaine</span></div>
+    <div class="hs"><b id="h-suivi">0</b><span>dans mon suivi</span></div>
+    <div class="hs"><b id="h-env">0</b><span>candidatures envoyées</span></div>
+  </div>
+  <div class="maj" id="maj"></div>
 </div></header>
 
-<main class="wrap">
-<section id="v-offres">
-  <div class="search-box">
-    <h2>Chercher sur les autres sites</h2>
-    <p>Indeed, Welcome to the Jungle et l'APEC bloquent la collecte automatique : ces boutons ouvrent la recherche déjà remplie. Une offre trouvée se rajoute à la main dans « Mon suivi ».</p>
-    <div class="bar" style="margin-bottom:8px">
-      <select id="req"></select>
-    </div>
-    <div class="sites" id="sites"></div>
-  </div>
+<nav class="tabs"><div class="wrap">
+  <button id="t-offres" class="on">Offres</button>
+  <button id="t-carte">Carte</button>
+  <button id="t-suivi">Mon suivi <span class="n" id="nb-suivi">0</span></button>
+  <button id="t-cv">Mon CV</button>
+</div></nav>
 
+<main class="wrap">
+
+<section id="v-offres">
+  <details class="search-box">
+    <summary>Chercher sur d'autres sites (Indeed, Welcome to the Jungle, APEC…)</summary>
+    <p>Ces sites bloquent la collecte automatique : ces boutons ouvrent la recherche déjà remplie. Une offre trouvée s'ajoute à la main dans « Mon suivi ».</p>
+    <select id="req"></select>
+    <div class="sites" id="sites"></div>
+  </details>
   <div class="bar">
     <input type="search" id="q" placeholder="Rechercher un poste, une entreprise…">
+    <select id="f-com"><option value="">Toutes les villes</option></select>
     <select id="f-src"><option value="">Toutes les sources</option></select>
     <select id="f-ct"><option value="">Tous contrats</option></select>
     <label class="ck"><input type="checkbox" id="f-agro"> Agroalimentaire</label>
@@ -108,6 +189,17 @@ dialog label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute)}di
   <div class="list" id="list"></div>
 </section>
 
+<section id="v-carte" hidden>
+  <div class="mapgrid">
+    <div><div id="map"></div></div>
+    <div class="mapside">
+      <div class="pills" id="pills"></div>
+      <p class="count" id="map-count">Clique sur une ville de la carte pour voir ses offres.</p>
+      <div class="list" id="map-list"></div>
+    </div>
+  </div>
+</section>
+
 <section id="v-suivi" hidden>
   <div class="stats" id="stats"></div>
   <div class="bar">
@@ -116,120 +208,207 @@ dialog label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute)}di
     <button class="btn" id="exp-json">Sauvegarde</button>
     <button class="btn" id="imp-json">Restaurer</button>
     <input type="file" id="imp-file" accept=".json" hidden>
-    <span class="maj">Le suivi est enregistré dans ce navigateur.</span>
+    <span class="count" style="margin:0">Ton suivi est enregistré dans ce navigateur.</span>
   </div>
   <div class="tw"><table>
     <thead><tr><th>Poste</th><th>Entreprise</th><th>Lieu</th><th>Statut</th><th>Candidature</th><th>Relance</th><th>Contact</th><th>Notes</th><th></th></tr></thead>
     <tbody id="tb"></tbody>
   </table></div>
-  <div class="empty" id="empty-suivi" hidden>Aucune offre suivie. Clique sur « Suivre » depuis une offre, ou ajoute-en une à la main.</div>
+  <div class="empty" id="empty-suivi" hidden>Aucune offre suivie pour l'instant. Clique sur « Suivre » sur une offre qui te plaît !</div>
 </section>
 
-<p class="foot">Sources automatiques : LinkedIn, HelloWork (+ France Travail et Adzuna si les clés gratuites sont configurées). Mise à jour tous les matins à 7h.</p>
+<section id="v-cv" hidden>
+  <div class="panel">
+    <h2>Mon CV</h2>
+    <p class="h">Colle ici le texte de ton CV une seule fois. Il reste dans ton navigateur (jamais envoyé nulle part) et sert à l'adapter à chaque offre via le bouton « Adapter mon CV ».</p>
+    <div class="f2">
+      <div><label for="cv-nom">Prénom et nom</label><input id="cv-nom" placeholder="Prénom Nom"></div>
+      <div><label for="cv-titre">Mon intitulé de poste</label><input id="cv-titre" placeholder="Ingénieure qualité agroalimentaire"></div>
+    </div>
+    <label for="cv-texte">Texte de mon CV</label>
+    <textarea class="big" id="cv-texte" placeholder="Copie-colle ton CV : expériences, formation, compétences, outils, langues…"></textarea>
+    <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+      <button class="btn" id="cv-file-btn">Importer un fichier .txt</button>
+      <input type="file" id="cv-file" accept=".txt,.md" hidden>
+      <span class="count" id="cv-etat" style="margin:0;align-self:center"></span>
+    </div>
+  </div>
+  <div class="note">Astuce : dans Word, ouvre ton CV, fais « Ctrl+A » puis « Ctrl+C », et colle ici avec « Ctrl+V ».</div>
+</section>
+
+<p class="foot">Sources : LinkedIn, HelloWork, France Travail (+ Adzuna selon configuration) · Offres de moins d'un mois · Mise à jour tous les matins à 7h</p>
 </main>
 
-<dialog id="dlg">
+<dialog class="add" id="dlg">
   <form method="dialog" id="frm">
-    <h2 style="margin:0 0 4px;font-size:17px">Ajouter une offre</h2>
+    <h2 style="margin:0 0 4px;font-size:18px">Ajouter une offre</h2>
     <label>Poste *</label><input name="titre" required>
     <label>Entreprise</label><input name="entreprise">
     <label>Lieu</label><input name="lieu" value="Montpellier">
     <label>Lien de l'annonce</label><input name="url" type="url" placeholder="https://…">
     <label>Site</label><input name="source" placeholder="Indeed, WTTJ, APEC…">
-    <div style="display:flex;gap:8px;margin-top:16px;justify-content:flex-end">
+    <div style="display:flex;gap:8px;margin-top:18px;justify-content:flex-end">
       <button type="button" class="btn" id="dlg-x">Annuler</button><button class="btn pri" value="ok">Ajouter</button>
     </div>
   </form>
 </dialog>
 
+<dialog class="cv" id="cvdlg">
+  <div class="cvh"><div><h2 id="cv-h">Adapter mon CV</h2><small id="cv-sh"></small></div><button class="x" id="cv-x" aria-label="Fermer">✕</button></div>
+  <div class="cvb" id="cv-body"></div>
+</dialog>
+<div class="toast" id="toast"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
+/* ================= Données et constantes ================= */
 const STATUTS=[["a-postuler","À postuler"],["envoyee","Candidature envoyée"],["relance","Relancé"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refusé"],["silence","Sans réponse"]];
+const LIEU="Saint-Jean-de-V%C3%A9das";
 const SITES=[
- ["LinkedIn",q=>`https://www.linkedin.com/jobs/search/?keywords=${q}&location=Saint-Jean-de-V%C3%A9das%2C%20Occitanie%2C%20France&distance=50&f_TPR=r2592000`],
- ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=Saint-Jean-de-V%C3%A9das&radius=50&fromage=30`],
- ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=Saint-Jean-de-V%C3%A9das`],
+ ["LinkedIn",q=>`https://www.linkedin.com/jobs/search/?keywords=${q}&location=${LIEU}%2C%20Occitanie%2C%20France&distance=50&f_TPR=r2592000`],
+ ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=${LIEU}&radius=50&fromage=30`],
+ ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=${LIEU}`],
  ["APEC",q=>`https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=${q}&lieux=599030`],
- ["HelloWork",q=>`https://www.hellowork.com/fr-fr/emploi/recherche.html?k=${q}&l=Saint-Jean-de-V%C3%A9das&ray=50`],
+ ["HelloWork",q=>`https://www.hellowork.com/fr-fr/emploi/recherche.html?k=${q}&l=${LIEU}&ray=50`],
  ["France Travail",q=>`https://candidat.francetravail.fr/offres/recherche?motsCles=${q}&lieux=34270&rayon=50`],
- ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/Saint-Jean-de-V%C3%A9das`],
- ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=Saint-Jean-de-V%C3%A9das`],
- ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=Saint-Jean-de-V%C3%A9das`],
- ["Indeed Alternance",q=>`https://fr.indeed.com/jobs?q=${q}+alternance&l=Saint-Jean-de-V%C3%A9das&radius=50`]
+ ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/${LIEU}`],
+ ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=${LIEU}`],
+ ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=${LIEU}`]
 ];
+const REQS=["ingénieur qualité agroalimentaire","assistante qualité agroalimentaire","responsable qualité agroalimentaire","technicien qualité agroalimentaire","assistant qualité","QHSE agroalimentaire"];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const KS="emplois_suivi_v1",KI="emplois_ignores_v1";
-let offres=[],maj="",suivi=load(KS,[]),ignores=new Set(load(KI,[])),filtreStatut="";
+const KS="emplois_suivi_v1",KI="emplois_ignores_v1",KC="emplois_cv_v1",KD="emplois_cvfait_v1";
 function load(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}}
-function save(){try{localStorage.setItem(KS,JSON.stringify(suivi));localStorage.setItem(KI,JSON.stringify([...ignores]))}catch(e){}}
+function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+let offres=[],maj="",centre=[43.573,3.833],rayon=50;
+let suivi=load(KS,[]),ignores=new Set(load(KI,[])),cv=load(KC,{nom:"",titre:"",texte:""}),cvFaits=new Set(load(KD,[]));
+let filtreStatut="",communeSel="";
+const save=()=>{put(KS,suivi);put(KI,[...ignores])};
 const jours=d=>d?Math.floor((Date.now()-new Date(d))/864e5):9999;
+const dateRef=o=>o.date_pub||o.premiere_vue;
+const ilya=d=>{const j=jours(d);return j<=0?"aujourd'hui":j===1?"hier":`il y a ${j} jours`};
 const fmt=d=>d?new Date(d).toLocaleDateString("fr-FR",{day:"numeric",month:"short"}):"";
 const today=()=>new Date().toISOString().slice(0,10);
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2200)}
+const COULEURS=["#ff6b4a","#17b8a6","#6c7bff","#f5a524","#e0569c","#3aa0ff","#7aa62d"];
+const couleur=s=>COULEURS[[...String(s)].reduce((a,c)=>a+c.charCodeAt(0),0)%COULEURS.length];
 
-/* ---------- Onglets ---------- */
+/* ================= Onglets ================= */
 function onglet(n){
-  $("#v-offres").hidden=n!=="offres";$("#v-suivi").hidden=n!=="suivi";
-  $("#t-offres").classList.toggle("on",n==="offres");$("#t-suivi").classList.toggle("on",n==="suivi");
+  for(const k of ["offres","carte","suivi","cv"]){$("#v-"+k).hidden=k!==n;$("#t-"+k).classList.toggle("on",k===n)}
   history.replaceState(null,"","#"+n);
-  n==="suivi"?renderSuivi():renderOffres();
+  if(n==="offres")renderOffres();
+  if(n==="carte"){renderCarte();setTimeout(()=>map&&map.invalidateSize(),60)}
+  if(n==="suivi")renderSuivi();
+  if(n==="cv")renderCV();
 }
-$("#t-offres").onclick=()=>onglet("offres");$("#t-suivi").onclick=()=>onglet("suivi");
+for(const k of ["offres","carte","suivi","cv"])$("#t-"+k).onclick=()=>onglet(k);
 
-/* ---------- Recherche externe ---------- */
-const REQS=["ingénieur qualité agroalimentaire","assistante qualité agroalimentaire","responsable qualité agroalimentaire","technicien qualité agroalimentaire","assistant qualité","QHSE agroalimentaire"];
+/* ================= Recherche sur d'autres sites ================= */
 $("#req").innerHTML=REQS.map(r=>`<option>${esc(r)}</option>`).join("");
 function sites(){const q=encodeURIComponent($("#req").value);
   $("#sites").innerHTML=SITES.map(([n,f])=>`<a class="btn sm" target="_blank" rel="noopener" href="${esc(f(q))}">${esc(n)} ↗</a>`).join("")}
 $("#req").onchange=sites;sites();
 
-/* ---------- Offres ---------- */
+/* ================= Cartes d'offres ================= */
 const suiviIds=()=>new Set(suivi.map(s=>s.offreId).filter(Boolean));
-function renderOffres(){
-  const q=$("#q").value.toLowerCase(),src=$("#f-src").value,ct=$("#f-ct").value,
+function carteOffre(o,sv,compact){
+  const enLigne=o.derniere_vue>=maj.slice(0,10),suit=sv.has(o.id),desc=(o.description||"").trim();
+  const lim=compact?140:230;
+  const snip=desc?desc.replace(/\s+/g," ").slice(0,lim)+(desc.length>lim?"…":""):"";
+  return `<article class="offre${suit?" suivi":""}${enLigne?"":" old"}">
+   <div class="logo" style="background:${couleur(o.entreprise||o.titre)}">${esc((o.entreprise||o.titre)[0]||"?").toUpperCase()}</div>
+   <div><h3><a href="${esc(o.liens[0].url)}" target="_blank" rel="noopener">${esc(o.titre)}</a></h3>
+    <div class="meta"><span>🏢 ${esc(o.entreprise)||"Entreprise non précisée"}</span><span>📍 ${esc(o.commune||o.lieu)}</span><span>🕒 ${esc(ilya(dateRef(o)))}</span></div></div>
+   <div></div>
+   <div class="tags">
+     ${jours(dateRef(o))<=3?'<span class="tag new">Nouveau</span>':""}${o.agro?'<span class="tag agro">Agro</span>':""}
+     ${o.contrat?`<span class="tag cont">${esc(o.contrat)}</span>`:""}${o.salaire?`<span class="tag sal">💶 ${esc(o.salaire)}</span>`:""}
+     ${enLigne?"":'<span class="tag">Plus en ligne ?</span>'}
+     ${o.liens.map(l=>`<a class="tag src" target="_blank" rel="noopener" href="${esc(l.url)}">${esc(l.source)} ↗</a>`).join("")}</div>
+   ${snip?`<div class="snip">${esc(snip)}${compact?"":`<details><summary>Lire toute l'offre</summary><div class="full">${esc(desc)}</div></details>`}</div>`:""}
+   <div class="acts">
+     <a class="btn pri sm" target="_blank" rel="noopener" href="${esc(o.liens[0].url)}">Je postule ↗</a>
+     <button class="btn teal sm" data-cv="${o.id}">✨ Adapter mon CV</button>
+     ${suit?'<span class="cvdone">✓ Dans mon suivi</span>':`<button class="btn sm" data-suivre="${o.id}">+ Suivre</button><button class="btn ghost sm" data-ignorer="${o.id}">Ignorer</button>`}
+     ${cvFaits.has(o.id)?'<span class="cvdone">CV adapté ✓</span>':""}
+   </div></article>`;
+}
+function actionsOffre(e){
+  const t=e.target.closest("button");if(!t)return;
+  const s=t.dataset.suivre,i=t.dataset.ignorer,c=t.dataset.cv;
+  if(s){const o=offres.find(x=>x.id===s);
+    suivi.unshift({id:"s"+Date.now(),offreId:o.id,titre:o.titre,entreprise:o.entreprise,lieu:o.commune||o.lieu,url:o.liens[0].url,
+      source:o.liens.map(l=>l.source).join(", "),statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});
+    save();majCompteurs();rafraichir();toast("Ajoutée à ton suivi ✓")}
+  if(i){ignores.add(i);save();rafraichir()}
+  if(c)ouvrirCV(c);
+}
+const rafraichir=()=>{renderOffres();if(!$("#v-carte").hidden)renderCarte()};
+function filtrees(){
+  const q=$("#q").value.toLowerCase(),src=$("#f-src").value,ct=$("#f-ct").value,com=$("#f-com").value,
     agro=$("#f-agro").checked,nw=$("#f-new").checked,hide=$("#f-hide").checked,sv=suiviIds();
-  const L=offres.filter(o=>
+  return offres.filter(o=>
     (!q||(o.titre+" "+o.entreprise+" "+o.lieu).toLowerCase().includes(q))&&
     (!src||o.liens.some(l=>l.source===src))&&(!ct||o.contrat.toLowerCase().includes(ct.toLowerCase()))&&
-    (!agro||o.agro)&&(!nw||jours(o.premiere_vue)<=7)&&(!hide||!(sv.has(o.id)||ignores.has(o.id))));
-  $("#count").textContent=`${L.length} offre${L.length>1?"s":""} sur ${offres.length}`;
-  $("#list").innerHTML=L.length?L.map(o=>{
-    const enLigne=o.derniere_vue>=maj.slice(0,10),suit=sv.has(o.id);
-    return `<article class="offre${suit?" suivi":""}${enLigne?"":" old"}">
-     <div><h3><a href="${esc(o.liens[0].url)}" target="_blank" rel="noopener">${esc(o.titre)}</a></h3>
-      <div class="meta"><span>${esc(o.entreprise)||"Entreprise non précisée"}</span><span>📍 ${esc(o.lieu)}</span>
-       ${o.date_pub?`<span>Publiée le ${fmt(o.date_pub)}</span>`:`<span>Vue le ${fmt(o.premiere_vue)}</span>`}</div>
-      <div class="tags">
-       ${jours(o.premiere_vue)<=3?'<span class="tag new">Nouveau</span>':""}${o.agro?'<span class="tag agro">Agro</span>':""}
-       ${o.contrat?`<span class="tag">${esc(o.contrat)}</span>`:""}${o.salaire?`<span class="tag">${esc(o.salaire)}</span>`:""}
-       ${enLigne?"":'<span class="tag">Plus en ligne ?</span>'}
-       ${o.liens.map(l=>`<a class="tag src" style="text-decoration:none" target="_blank" rel="noopener" href="${esc(l.url)}">${esc(l.source)} ↗</a>`).join("")}</div></div>
-     <div class="acts">${suit?'<span class="tag">Dans mon suivi ✓</span>':`<button class="btn pri sm" data-suivre="${o.id}">Suivre</button>`}
-      ${suit?"":`<button class="btn sm" data-ignorer="${o.id}">Ignorer</button>`}</div></article>`}).join("")
-   :'<div class="empty">Aucune offre ne correspond aux filtres.</div>';
+    (!com||o.commune===com)&&(!agro||o.agro)&&(!nw||jours(dateRef(o))<=7)&&(!hide||!(sv.has(o.id)||ignores.has(o.id))));
 }
-$("#list").onclick=e=>{
-  const s=e.target.dataset.suivre,i=e.target.dataset.ignorer;
-  if(s){const o=offres.find(x=>x.id===s);
-    suivi.unshift({id:"s"+Date.now(),offreId:o.id,titre:o.titre,entreprise:o.entreprise,lieu:o.lieu,url:o.liens[0].url,
-      source:o.liens.map(l=>l.source).join(", "),statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});
-    save();majCompteur();renderOffres()}
-  if(i){ignores.add(i);save();renderOffres()}
-};
-["q","f-src","f-ct","f-agro","f-new","f-hide"].forEach(id=>$("#"+id).addEventListener("input",renderOffres));
+function renderOffres(){
+  const liste=filtrees(),sv=suiviIds();
+  $("#count").textContent=`${liste.length} offre${liste.length>1?"s":""} sur ${offres.length}`;
+  $("#list").innerHTML=liste.length?liste.map(o=>carteOffre(o,sv)).join(""):'<div class="empty">Aucune offre ne correspond à ces filtres.</div>';
+}
+$("#list").onclick=actionsOffre;$("#map-list").onclick=actionsOffre;
+["q","f-src","f-ct","f-com","f-agro","f-new","f-hide"].forEach(id=>$("#"+id).addEventListener("input",renderOffres));
 
-/* ---------- Suivi ---------- */
-function majCompteur(){$("#nb-suivi").textContent=suivi.length}
+/* ================= Carte ================= */
+let map=null,couche=null;
+function creerCarte(){
+  const m=L.map("map",{scrollWheelZoom:false}).setView(centre,9);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© les contributeurs d'OpenStreetMap"}).addTo(m);
+  const cercle=L.circle(centre,{radius:rayon*1000,color:"#ff6b4a",weight:2,dashArray:"6 6",fillColor:"#ffd166",fillOpacity:.08}).addTo(m);
+  L.marker(centre,{icon:L.divIcon({className:"",html:'<div style="font-size:26px;filter:drop-shadow(0 2px 4px #0006)">📍</div>',iconSize:[26,26],iconAnchor:[13,26]}),title:"Saint-Jean-de-Védas"}).addTo(m);
+  couche=L.layerGroup().addTo(m);
+  m.fitBounds(cercle.getBounds());
+  return m;
+}
+function renderCarte(){
+  const sv=suiviIds();
+  const loc=offres.filter(o=>o.lat!=null&&!ignores.has(o.id));
+  const par={};for(const o of loc){(par[o.commune]??={lat:o.lat,lon:o.lon,items:[]}).items.push(o)}
+  const villes=Object.entries(par).sort((a,b)=>b[1].items.length-a[1].items.length);
+  if(!map)map=creerCarte();
+  couche.clearLayers();
+  for(const [nom,v] of villes){
+    const n=v.items.length,taille=Math.min(26+n*3,58),on=nom===communeSel;
+    const ic=L.divIcon({className:"",html:`<div class="bub${on?" on":""}" style="width:${taille}px;height:${taille}px;font-size:${taille>36?16:14}px">${n}</div>`,iconSize:[taille,taille]});
+    L.marker([v.lat,v.lon],{icon:ic,title:nom+" : "+n+" offre(s)"}).addTo(couche).on("click",()=>{communeSel=nom;renderCarte()});
+  }
+  $("#pills").innerHTML=villes.map(([nom,v])=>`<button class="pill${nom===communeSel?" on":""}" data-c="${esc(nom)}">${esc(nom)} <b>${v.items.length}</b></button>`).join("");
+  const sel=par[communeSel];
+  $("#map-count").textContent=sel?`${sel.items.length} offre${sel.items.length>1?"s":""} à ${communeSel}`:`${loc.length} offres localisées sur la carte · clique sur une ville`;
+  $("#map-list").innerHTML=(sel?sel.items:[]).map(o=>carteOffre(o,sv,true)).join("");
+}
+$("#pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;communeSel=communeSel===b.dataset.c?"":b.dataset.c;renderCarte()};
+
+/* ================= Suivi ================= */
+function majCompteurs(){
+  $("#nb-suivi").textContent=suivi.length;$("#h-suivi").textContent=suivi.length;
+  $("#h-env").textContent=suivi.filter(s=>["envoyee","relance","entretien","offre"].includes(s.statut)).length;
+}
 function renderSuivi(){
   const cnt=Object.fromEntries(STATUTS.map(([k])=>[k,0]));suivi.forEach(s=>cnt[s.statut]=(cnt[s.statut]||0)+1);
   $("#stats").innerHTML=`<div class="stat${filtreStatut?"":" on"}" data-st=""><b>${suivi.length}</b><span>Toutes</span></div>`+
     STATUTS.map(([k,n])=>`<div class="stat${filtreStatut===k?" on":""}" data-st="${k}"><b>${cnt[k]}</b><span>${n}</span></div>`).join("");
-  const L=suivi.filter(s=>!filtreStatut||s.statut===filtreStatut);
-  $("#empty-suivi").hidden=L.length>0;
-  $("#tb").innerHTML=L.map(s=>{
+  const liste=suivi.filter(s=>!filtreStatut||s.statut===filtreStatut);
+  $("#empty-suivi").hidden=liste.length>0;
+  $("#tb").innerHTML=liste.map(s=>{
     const retard=s.relance&&s.relance<=today()&&!["entretien","offre","refus"].includes(s.statut);
+    const dispo=s.offreId&&offres.some(o=>o.id===s.offreId);
     return `<tr data-id="${s.id}" class="${retard?"row-late":""}">
      <td class="poste">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<input data-k="titre" value="${esc(s.titre)}">`}
-       <div class="maj">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}</div></td>
+       <div class="count" style="margin:0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}</div></td>
      <td><input data-k="entreprise" value="${esc(s.entreprise)}"></td>
      <td><input data-k="lieu" value="${esc(s.lieu)}"></td>
      <td><select class="st s-${s.statut}" data-k="statut">${STATUTS.map(([k,n])=>`<option value="${k}"${k===s.statut?" selected":""}>${n}</option>`).join("")}</select></td>
@@ -237,7 +416,7 @@ function renderSuivi(){
      <td><input type="date" data-k="relance" value="${esc(s.relance)}" title="${retard?"Relance à faire":""}"></td>
      <td><input data-k="contact" value="${esc(s.contact)}" placeholder="Nom, email…"></td>
      <td><textarea data-k="notes" rows="1">${esc(s.notes)}</textarea></td>
-     <td><button class="btn sm" data-del="1" title="Retirer du suivi">✕</button></td></tr>`}).join("");
+     <td style="white-space:nowrap">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId)}" title="Adapter mon CV">✨ CV</button> `:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕</button></td></tr>`}).join("");
 }
 $("#stats").onclick=e=>{const c=e.target.closest(".stat");if(c){filtreStatut=c.dataset.st;renderSuivi()}};
 $("#tb").addEventListener("change",e=>{
@@ -245,43 +424,157 @@ $("#tb").addEventListener("change",e=>{
   const s=suivi.find(x=>x.id===tr.dataset.id);s[k]=e.target.value;
   if(k==="statut"&&e.target.value==="envoyee"&&!s.dateCandidature){s.dateCandidature=today();
     const d=new Date();d.setDate(d.getDate()+10);s.relance=d.toISOString().slice(0,10)}
-  save();renderSuivi()});
+  save();majCompteurs();renderSuivi()});
 $("#tb").addEventListener("click",e=>{
-  if(!e.target.dataset.del)return;const id=e.target.closest("tr").dataset.id;
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.cv)return ouvrirCV(b.dataset.cv);
+  if(!b.dataset.del)return;const id=b.closest("tr").dataset.id;
   const s=suivi.find(x=>x.id===id);if(!confirm(`Retirer « ${s.titre} » du suivi ?`))return;
-  suivi=suivi.filter(x=>x.id!==id);save();majCompteur();renderSuivi()});
-
-/* ---------- Ajout manuel ---------- */
+  suivi=suivi.filter(x=>x.id!==id);save();majCompteurs();renderSuivi()});
 $("#add").onclick=()=>{$("#frm").reset();$("#dlg").showModal()};
 $("#dlg-x").onclick=()=>$("#dlg").close();
 $("#frm").onsubmit=()=>{const f=Object.fromEntries(new FormData($("#frm")));
   suivi.unshift({id:"s"+Date.now(),offreId:null,titre:f.titre,entreprise:f.entreprise,lieu:f.lieu,url:f.url,source:f.source,
     statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});
-  save();majCompteur();renderSuivi()};
-
-/* ---------- Export / import ---------- */
+  save();majCompteurs();renderSuivi()};
 function telecharger(nom,txt,type){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([txt],{type}));a.download=nom;a.click();URL.revokeObjectURL(a.href)}
 $("#exp-csv").onclick=()=>{
   const cols=[["Poste","titre"],["Entreprise","entreprise"],["Lieu","lieu"],["Site","source"],["Statut","statut"],["Date candidature","dateCandidature"],["Relance","relance"],["Contact","contact"],["Notes","notes"],["Lien","url"]];
-  const lab=Object.fromEntries(STATUTS);
-  const c=v=>`"${String(v??"").replace(/"/g,'""')}"`;
+  const lab=Object.fromEntries(STATUTS),c=v=>`"${String(v??"").replace(/"/g,'""')}"`;
   const lignes=[cols.map(x=>c(x[0])).join(";"),...suivi.map(s=>cols.map(([,k])=>c(k==="statut"?lab[s.statut]:s[k])).join(";"))];
-  telecharger("suivi-candidatures.csv","﻿"+lignes.join("\r\n"),"text/csv;charset=utf-8")};
-$("#exp-json").onclick=()=>telecharger("suivi-sauvegarde.json",JSON.stringify({suivi,ignores:[...ignores]},null,1),"application/json");
+  telecharger("suivi-candidatures.csv","\ufeff"+lignes.join("\r\n"),"text/csv;charset=utf-8")};
+$("#exp-json").onclick=()=>telecharger("suivi-sauvegarde.json",JSON.stringify({suivi,ignores:[...ignores],cv},null,1),"application/json");
 $("#imp-json").onclick=()=>$("#imp-file").click();
 $("#imp-file").onchange=async e=>{try{const d=JSON.parse(await e.target.files[0].text());
   if(!Array.isArray(d.suivi))throw 0;if(!confirm("Remplacer le suivi actuel par cette sauvegarde ?"))return;
-  suivi=d.suivi;ignores=new Set(d.ignores||[]);save();majCompteur();renderSuivi()}catch(_){alert("Fichier de sauvegarde non valide.")}e.target.value=""};
+  suivi=d.suivi;ignores=new Set(d.ignores||[]);if(d.cv){cv=d.cv;put(KC,cv)}save();majCompteurs();renderSuivi()}catch(_){alert("Fichier de sauvegarde non valide.")}e.target.value=""};
 
-/* ---------- Démarrage ---------- */
+/* ================= Mon CV ================= */
+const etatCV=()=>$("#cv-etat").textContent=cv.texte?`${cv.texte.split(/\s+/).length} mots enregistrés ✓`:"Aucun CV enregistré";
+function renderCV(){$("#cv-nom").value=cv.nom||"";$("#cv-titre").value=cv.titre||"";$("#cv-texte").value=cv.texte||"";etatCV()}
+["cv-nom","cv-titre","cv-texte"].forEach(id=>$("#"+id).addEventListener("input",()=>{
+  cv={nom:$("#cv-nom").value,titre:$("#cv-titre").value,texte:$("#cv-texte").value};put(KC,cv);etatCV()}));
+$("#cv-file-btn").onclick=()=>$("#cv-file").click();
+$("#cv-file").onchange=async e=>{const f=e.target.files[0];if(!f)return;$("#cv-texte").value=await f.text();$("#cv-texte").dispatchEvent(new Event("input"));e.target.value=""};
+
+/* ================= Adapter le CV à une offre ================= */
+const norm=t=>(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+// [libellé affiché, [variantes à reconnaître]]
+const MOTS=[
+ ["HACCP",["haccp"]],["IFS",["ifs"]],["BRC",["brc","brcgs"]],["ISO 22000",["iso 22000","iso22000"]],["FSSC 22000",["fssc"]],
+ ["ISO 9001",["iso 9001","iso9001"]],["ISO 17025",["iso 17025"]],["ISO 13485",["13485"]],["ISO 14001",["iso 14001"]],["ISO 45001",["45001"]],
+ ["BPF / GMP",["bpf","gmp","bonnes pratiques de fabrication"]],["Audits",["audit"]],
+ ["Audits fournisseurs",["audits fournisseurs","audit fournisseur"]],["Non-conformités",["non conformit","non-conformit"]],
+ ["Actions correctives",["action corrective","actions correctives","capa"]],
+ ["Traçabilité",["tracabilit"]],["Rappel / retrait produit",["rappel produit","retrait","gestion de crise"]],
+ ["Allergènes",["allergene"]],["Nettoyage et désinfection",["nettoyage","desinfection"]],
+ ["Plan de maîtrise sanitaire",["plan de maitrise sanitaire","pms"]],["Plan de contrôle",["plan de controle","plans de controle"]],
+ ["Analyses microbiologiques",["microbiolog"]],["Laboratoire",["laboratoire"]],["Analyses physico-chimiques",["physico"]],
+ ["Cahier des charges",["cahier des charges","cahiers des charges"]],["Réclamations clients",["reclamation"]],
+ ["Amélioration continue",["amelioration continue","kaizen"]],["Lean",["lean"]],["5S",["5s"]],["Six Sigma",["six sigma"]],
+ ["Indicateurs / KPI",["indicateur","kpi","tableau de bord","tableaux de bord"]],["Formation / sensibilisation",["formation","sensibilis"]],
+ ["Qualification fournisseurs",["qualification des fournisseurs","qualification fournisseur","evaluation des fournisseurs","fournisseurs"]],
+ ["Réglementation",["reglementation","reglementaire","dgccrf","ddpp","paquet hygiene"]],["Système de management qualité",["smq","systeme de management","management de la qualite"]],
+ ["Documentation qualité",["documentation","procedure","mode operatoire"]],["Gestion des risques",["gestion des risques","analyse de risque","analyse des risques","amdec","fmea"]],
+ ["Validation / qualification",["validation","qualification"]],["Métrologie / étalonnage",["metrolog","etalonnage"]],["Sécurité des aliments",["securite des aliments","securite alimentaire","food safety"]],
+ ["QHSE",["qhse","qse"]],["Environnement / RSE",["rse","environnement"]],["Contrôle qualité",["controle qualite","controle de la qualite"]],
+ ["Assurance qualité",["assurance qualite"]],["Statistiques / SPC",["statistique","spc"]],
+ ["Excel",["excel"]],["ERP / SAP",["sap","erp"]],["Anglais",["anglais","english"]],["Management d'équipe",["manager","encadrement","management"]],
+ ["Rigueur / autonomie",["rigueur","autonomie","autonome","rigoureu"]],["Cosmétique (ISO 22716)",["22716","cosmetique"]],["Pharmaceutique",["pharmaceutique","pharma"]],
+ ["Dispositifs médicaux",["dispositifs medicaux","dispositif medical"]],["Production / fabrication",["production","fabrication"]],
+ ["PRP / CCP",["prp","oprp","ccp"]],["Inspections / réception",["inspection","reception"]]
+];
+function motsDe(texte){
+  const t=" "+norm(texte).replace(/\s+/g," ")+" ";const res=[];
+  for(const [lib,vars] of MOTS){
+    let n=0;
+    for(const v of vars){
+      const re=new RegExp("(?<![a-z0-9])"+v.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"[ \\-]")+(v.length>4?"[a-z]*":"(?![a-z0-9])"),"g");
+      n+=(t.match(re)||[]).length;
+    }
+    if(n)res.push({lib,n,vars});
+  }
+  return res;
+}
+const nettoyerTitre=t=>t.replace(/\s*[\(\[]?\s*[HF]\s*[\/\-]\s*[FHX](?:\s*[\/\-]\s*[HFX])?\s*[\)\]]?/gi,"").replace(/\(e\)|·e\b/gi,"").replace(/[\s\-–]+$/,"").trim();
+const liste=a=>a.length<=1?a.join(""):a.slice(0,-1).join(", ")+" et "+a[a.length-1];
+
+let offreCV=null,cvSortie={};
+function ouvrirCV(id){
+  const o=offres.find(x=>x.id===id);if(!o)return;
+  offreCV=o;
+  $("#cv-h").textContent="Adapter mon CV · "+nettoyerTitre(o.titre);
+  $("#cv-sh").textContent=(o.entreprise||"Entreprise non précisée")+" · "+(o.commune||o.lieu);
+  if(!(cv.texte||"").trim()){
+    $("#cv-body").innerHTML=`<div class="note"><b>Il me faut d'abord ton CV.</b> Colle-le une seule fois dans l'onglet « Mon CV » : il reste dans ton navigateur et sert ensuite pour toutes les offres.</div>
+      <div class="row"><button class="btn pri" id="go-cv">Aller à « Mon CV »</button></div>`;
+    $("#go-cv").onclick=()=>{$("#cvdlg").close();onglet("cv")};
+    $("#cvdlg").showModal();return;
+  }
+  const offreTxt=[o.titre,o.description||"",o.extrait||""].join("\n");
+  const dansOffre=motsDe(offreTxt).sort((a,b)=>b.n-a.n);
+  const dansCV=motsDe(cv.texte).map(x=>x.lib);
+  const present=[],manque=[];
+  for(const m of dansOffre)(dansCV.includes(m.lib)?present:manque).push(m.lib);
+  const score=dansOffre.length?Math.round(present.length/dansOffre.length*100):0;
+  const coul=score>=60?"#12a150":score>=35?"#f5a524":"#ff6b4a";
+  const intitule=(cv.titre||"").trim()||"Professionnelle de la qualité";
+  const poste=nettoyerTitre(o.titre),ent=o.entreprise||"votre entreprise";
+  const top=present.slice(0,4);
+  const accroche=`${intitule} | ${top.slice(0,3).join(" · ")||poste}`;
+  const profil=`${intitule}${top.length?`, j'ai pratiqué ${liste(top)}`:""} et je souhaite mettre ces compétences au service de ${ent} sur le poste de ${poste}.`
+    +(manque.length?`\n[À compléter si c'est vrai : une réalisation concrète liée à ${liste(manque.slice(0,3))}.]`:"")
+    +"\n[Ajoute ici un résultat chiffré : taux de non-conformités réduit, nombre d'audits menés, certification obtenue…]";
+  const competences=present.map(x=>"• "+x).join("\n")||"• (aucun mot-clé de l'offre trouvé dans ton CV : vérifie qu'il est bien collé en entier)";
+  const nom=(cv.nom||"").trim();
+  const cvAdapte=`${nom?nom+"\n":""}${accroche}\n\nPROFIL\n${profil}\n\nCOMPÉTENCES CLÉS POUR CE POSTE\n${competences}\n\n— MON PARCOURS (ton CV d'origine, à garder ou raccourcir) —\n${cv.texte.trim()}`;
+  const lettre=`${nom}\n\nObjet : Candidature au poste de ${poste}\n\nMadame, Monsieur,\n\nVotre offre de ${poste}${o.entreprise?` au sein de ${o.entreprise}`:""} a retenu toute mon attention.${top.length?` ${intitule}, j'ai l'habitude de travailler sur ${liste(top)}, ce qui correspond directement aux missions que vous décrivez.`:""}\n\n[Un exemple concret tiré de ton parcours, le plus proche des missions de l'offre : contexte, ce que tu as fait, résultat.]\n\n${manque.length?`[Si c'est vrai, mentionne aussi ton expérience en ${liste(manque.slice(0,2))}. Sinon, indique ta motivation à te former.]\n\n`:""}Je serais ravie d'échanger avec vous lors d'un entretien pour vous présenter ma motivation et mon parcours.\n\nDans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n${nom}`;
+  const prompt=`Voici une offre d'emploi et mon CV. Adapte mon CV à cette offre : reformule l'accroche et le profil, mets en avant en premier mes expériences les plus pertinentes et reprends les mots-clés de l'offre, SANS RIEN INVENTER (ne cite que ce qui est dans mon CV). Puis rédige une lettre de motivation courte et sincère.\n\n=== OFFRE ===\n${o.titre} — ${o.entreprise||""} — ${o.commune||o.lieu}\n${o.description||o.extrait||"(description non disponible, lien : "+o.liens[0].url+")"}\n\n=== MON CV ===\n${cv.texte.trim()}`;
+  cvSortie={prompt};
+  const surligne=esc(cv.texte).split("\n").map(l=>{const n=norm(l);return dansOffre.some(m=>m.vars.some(v=>n.includes(v)))?`<mark>${l}</mark>`:l}).join("\n");
+  $("#cv-body").innerHTML=`
+   <div class="score"><div class="ring" style="background:conic-gradient(${coul} ${score*3.6}deg,#f0e6da 0)"><span style="background:#fff;border-radius:50%;width:56px;height:56px;display:grid;place-items:center">${score}%</span></div>
+     <div><b>Ton CV correspond à ${score}% des mots-clés de l'offre.</b><div class="count" style="margin:2px 0 0">${present.length} sur ${dansOffre.length} mots-clés de l'offre se retrouvent dans ton CV.</div></div></div>
+   <div class="chips">${present.map(x=>`<span class="chip y">✓ ${esc(x)}</span>`).join("")}${manque.map(x=>`<span class="chip n">+ ${esc(x)}</span>`).join("")}</div>
+   ${manque.length?`<div class="note">Les mots-clés en jaune (+) sont demandés par l'offre mais absents de ton CV. <b>Ajoute-les seulement si tu as vraiment cette expérience</b> (même en formation ou en stage).</div>`:""}
+   ${dansOffre.length?"":`<div class="note">La description complète de cette offre n'est pas disponible : l'analyse est limitée. Ouvre l'offre, copie son texte et utilise le bouton « Copier la demande pour Claude » ci-dessous.</div>`}
+   <h3>1. Accroche du CV</h3><textarea id="o-acc" style="min-height:50px">${esc(accroche)}</textarea><div class="row"><button class="btn sm" data-copie="o-acc">Copier</button></div>
+   <h3>2. Profil / résumé</h3><textarea id="o-pro">${esc(profil)}</textarea><div class="row"><button class="btn sm" data-copie="o-pro">Copier</button></div>
+   <h3>3. CV adapté (à relire et personnaliser)</h3><textarea id="o-cv" style="min-height:260px">${esc(cvAdapte)}</textarea>
+   <div class="row"><button class="btn sm" data-copie="o-cv">Copier</button><button class="btn teal sm" id="dl-doc">Télécharger en Word</button></div>
+   <h3>4. Lettre de motivation (brouillon)</h3><textarea id="o-let" style="min-height:260px">${esc(lettre)}</textarea>
+   <div class="row"><button class="btn sm" data-copie="o-let">Copier</button><button class="btn sm" id="dl-let">Télécharger en Word</button></div>
+   <h3>Aller plus loin avec Claude</h3>
+   <div class="note">Cet outil réorganise ton CV avec des règles simples. Pour une vraie réécriture, copie la demande ci-dessous et colle-la dans une conversation Claude : elle contient l'offre et ton CV.</div>
+   <div class="row"><button class="btn pri sm" id="cp-claude">Copier la demande pour Claude</button><a class="btn sm" href="https://claude.ai/new" target="_blank" rel="noopener">Ouvrir Claude ↗</a></div>
+   <h3>Ton CV : lignes qui parlent à l'offre</h3><div class="prev">${surligne}</div>`;
+  $("#cvdlg").showModal();
+  cvFaits.add(o.id);put(KD,[...cvFaits]);rafraichir();
+}
+$("#cv-x").onclick=()=>$("#cvdlg").close();
+$("#cv-body").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.copie){navigator.clipboard.writeText($("#"+b.dataset.copie).value).then(()=>toast("Copié ✓"));return}
+  if(b.id==="cp-claude"){navigator.clipboard.writeText(cvSortie.prompt).then(()=>toast("Demande copiée : colle-la dans Claude ✓"));return}
+  const doc=(titre,txt)=>telecharger(titre+".doc",`<html xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><style>body{font-family:Calibri,Arial;font-size:11pt;line-height:1.35}</style></head><body>${esc(txt).replace(/\n/g,"<br>")}</body></html>`,"application/msword");
+  const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40);
+  if(b.id==="dl-doc")doc("CV-"+slug,$("#o-cv").value);
+  if(b.id==="dl-let")doc("Lettre-"+slug,$("#o-let").value);
+});
+
+/* ================= Démarrage ================= */
 fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
-  offres=d.offres;maj=d.maj;
+  offres=d.offres;maj=d.maj;if(d.centre)centre=d.centre;if(d.rayon_km)rayon=d.rayon_km;
   $("#maj").textContent="Mis à jour le "+new Date(maj).toLocaleString("fr-FR",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"});
-  const uniq=a=>[...new Set(a)].filter(Boolean).sort();
+  $("#h-total").textContent=offres.length;$("#h-new").textContent=offres.filter(o=>jours(dateRef(o))<=7).length;
+  $("#sous").textContent=`${offres.length} offres autour de Saint-Jean-de-Védas (${rayon} km), rassemblées pour toi chaque matin. Choisis, adapte ton CV, postule !`;
+  const uniq=a=>[...new Set(a)].filter(Boolean).sort((x,y)=>x.localeCompare(y,"fr"));
   $("#f-src").innerHTML+=uniq(offres.flatMap(o=>o.liens.map(l=>l.source))).map(s=>`<option>${esc(s)}</option>`).join("");
   $("#f-ct").innerHTML+=uniq(offres.map(o=>o.contrat)).map(s=>`<option>${esc(s)}</option>`).join("");
-  majCompteur();onglet(location.hash==="#suivi"?"suivi":"offres");
-}).catch(()=>{$("#list").innerHTML='<div class="empty">Impossible de charger les offres. En local, ouvre le site avec <b>lancer.bat</b> (et non en double-cliquant sur index.html).</div>';majCompteur()});
+  $("#f-com").innerHTML+=uniq(offres.map(o=>o.commune)).map(s=>`<option>${esc(s)}</option>`).join("");
+  majCompteurs();
+  const h=location.hash.slice(1);onglet(["carte","suivi","cv"].includes(h)?h:"offres");
+}).catch(err=>{console.error(err);$("#list").innerHTML='<div class="empty">Impossible de charger les offres. En local, ouvre le site avec <b>lancer.bat</b> (et non en double-cliquant sur index.html).</div>';majCompteurs()});
 </script>
 </body>
 </html>

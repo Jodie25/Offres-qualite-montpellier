@@ -58,11 +58,11 @@
     "fruits",
     "légumes"
   ],
-  "garder_jours_apres_disparition": 120,
   "lieux_refuses": [
     "occitanie france",
     "occitanie",
     "france",
     ""
-  ]
+  ],
+  "age_max_jours": 30
 }
