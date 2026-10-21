@@ -194,7 +194,7 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 <section class="sources"><div class="wrap">
   <div class="srcrow"><b>📡 Offres récupérées automatiquement sur :</b> <span id="src-auto" class="sites"></span></div>
   <div class="srcrow"><b>🔎 Autres sites à consulter (non récupérés automatiquement) :</b> <select id="req"></select> <span id="sites" class="sites"></span></div>
-  <div class="srcnote">Une offre vue sur l'un de ces sites ? Enregistre-la en PDF et glisse-la dans « Tu as une offre en PDF ou en texte ? » (onglet Offres) : elle est ajoutée automatiquement à ton suivi.</div>
+  <div class="srcnote">Pourquoi pas récupérés ? Indeed, APEC, Welcome to the Jungle et Jooble bloquent les logiciels de collecte (protection anti-robot) ; Cadremploi n'affiche ses résultats que dans le navigateur. Une offre vue sur l'un de ces sites ? Enregistre-la en PDF et glisse-la dans « Tu as une offre en PDF ou en texte ? » (onglet Offres) : elle est ajoutée automatiquement à ton suivi.</div>
 </div></section>
 
 <nav class="tabs"><div class="wrap">
@@ -304,13 +304,12 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 /* ================= Données et constantes ================= */
 const STATUTS=[["a-postuler","À postuler"],["envoyee","Candidature envoyée"],["relance","Relancé"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refusé"],["silence","Sans réponse"]];
 const LIEU="Saint-Jean-de-V%C3%A9das";
-// Sites NON récupérés automatiquement (LinkedIn, HelloWork et France Travail le sont déjà)
+// Sites NON récupérés automatiquement (LinkedIn, HelloWork, Meteojob et France Travail le sont déjà)
 const SITES=[
  ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=${LIEU}&radius=50&fromage=30`],
  ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=${LIEU}`],
  ["APEC",q=>`https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=${q}&lieux=599030`],
  ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/${LIEU}`],
- ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=${LIEU}`],
  ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=${LIEU}`]
 ];
 const REQS=["ingénieur qualité agroalimentaire","assistante qualité agroalimentaire","responsable qualité agroalimentaire","technicien qualité agroalimentaire","assistant qualité","QHSE agroalimentaire"];
@@ -1123,7 +1122,7 @@ fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
   $("#f-ct").innerHTML+=uniq(offres.map(o=>o.contrat)).map(s=>`<option>${esc(s)}</option>`).join("");
   $("#f-com").innerHTML+=uniq(offres.map(o=>o.commune)).map(s=>`<option>${esc(s)}</option>`).join("");
   const nb={};offres.forEach(o=>o.liens.forEach(l=>nb[l.source]=(nb[l.source]||0)+1));
-  $("#src-auto").innerHTML=["LinkedIn","HelloWork","France Travail"].map(n=>`<span class="chipsrc">${n}${nb[n]?` <small>· ${nb[n]} offres</small>`:""}</span>`).join("");
+  $("#src-auto").innerHTML=["LinkedIn","HelloWork","Meteojob","France Travail"].map(n=>`<span class="chipsrc">${n}${nb[n]?` <small>· ${nb[n]} offres</small>`:""}</span>`).join("");
   majCompteurs();
   const h=location.hash.slice(1);onglet(["carte","suivi","cv"].includes(h)?h:"offres");
 }).catch(err=>{console.error(err);$("#list").innerHTML='<div class="empty">Impossible de charger les offres. En local, ouvre le site avec <b>lancer.bat</b> (et non en double-cliquant sur index.html).</div>';majCompteurs()});

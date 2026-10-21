@@ -150,6 +150,47 @@ def date_relative(bloc):
     return (date.today() - timedelta(days=jours)).isoformat()
 
 
+# ---------- Meteojob (pages lisibles sans compte) ----------
+def meteojob(q):
+    res = []
+    for p in (1, 2):
+        u = "https://www.meteojob.com/jobs?" + urllib.parse.urlencode(
+            {"what": q, "where": CFG["ville"], "radius": CFG["rayon_km"], "page": p})
+        page = get(u)
+        cartes = (page or "").split('id="job-offer-')[1:]
+        if not cartes:
+            break
+        for c in cartes:
+            idm = re.match(r"(\d+)", c)
+            if not idm:
+                continue
+            i = idm.group(1)
+            t = re.search(r'href="/jobs/' + i + r'"[^>]*>(.*?)</a>', c, re.S)
+            ent = re.search(r'id="' + i + r'-company-name">(.*?)</p>', c, re.S)
+            lieu = re.search(r'id="' + i + r'-job-locations">.*?</mat-icon>(.*?)</div>', c, re.S)
+            ct = re.search(r'id="' + i + r'-contract-types">(.*?)</div>', c, re.S)
+            sal = re.search(r'id="' + i + r'-salary">(.*?)</div>', c, re.S)
+            if not t:
+                continue
+            res.append(offre("Meteojob", i, t.group(1), ent.group(1) if ent else "", lieu.group(1) if lieu else "",
+                             f"https://www.meteojob.com/jobs/{i}", contrat=ct.group(1) if ct else "",
+                             salaire=sal.group(1) if sal else "", date_pub=date_relative(c.lower())))
+        time.sleep(1.5)
+    return res
+
+
+def jsonld_offre(page):
+    for m in re.finditer(r'application/ld\+json[^>]*>(.*?)</script>', page or "", re.S):
+        try:
+            d = json.loads(m.group(1))
+        except Exception:
+            continue
+        for x in (d if isinstance(d, list) else d.get("@graph", [d])):
+            if isinstance(x, dict) and x.get("@type") == "JobPosting":
+                return x
+    return None
+
+
 # ---------- France Travail (API officielle, clé gratuite) ----------
 def france_travail(requetes):
     cid, sec = os.environ.get("FT_CLIENT_ID"), os.environ.get("FT_CLIENT_SECRET")
@@ -228,6 +269,9 @@ def jooble(requetes):
 
 # ---------- Descriptions complètes (LinkedIn, HelloWork) ----------
 def description_detail(source, url):
+    if source == "Meteojob":
+        jp = jsonld_offre(get(url))
+        return texte_brut(jp.get("description", ""))[:5000] if jp else ""
     if source == "LinkedIn":
         m = re.search(r"(\d+)$", url)
         page = get(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{m.group(1)}") if m else None
@@ -304,7 +348,7 @@ def cle(o):
 def main():
     print("Collecte des offres…")
     brut = []
-    for nom, f in (("LinkedIn", linkedin), ("HelloWork", hellowork)):
+    for nom, f in (("LinkedIn", linkedin), ("HelloWork", hellowork), ("Meteojob", meteojob)):
         n = 0
         for q in CFG["requetes"]:
             r = f(q)

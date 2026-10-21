@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-21T15:04+00:00",
+ "maj": "2026-10-21T15:18+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -112,6 +112,29 @@
     {
      "source": "HelloWork",
      "url": "https://www.hellowork.com/fr-fr/emplois/84654714.html"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "bf343971a15b",
+   "titre": "TECHNICIEN LABORATOIRE QUALITÉ PRÉPARATION DOCUMENTAIRE F/H)",
+   "entreprise": "Randstad",
+   "lieu": "Montpellier (34)",
+   "contrat": "Intérim",
+   "salaire": "À partir de 2 338,1 € par mois",
+   "date_pub": "2026-10-21",
+   "extrait": "",
+   "description": "Description du poste\nSuivi de dossier d'expédition du montage à l'expédition - Assure la préparation documentaire des expéditions vracs et articles de conditionnement vers les sous-traitants de packaging, et de produits pour investigation clinique vers les dépôts et les sites investigateurs\n\n2 mois d'expériences dans les domaines distribution, export, administratif, logistique, gestion documentaire. - Il faut savoir travailler en respectant les réglementations pharmaceutiques - Une expérience dans le milieu pharma est un plus\n\nC'est un poste en journée Date de début : 08/11/2026\nDurée du contrat : 1 mois\nDescription du profil\nbac +2 en qualité de préférence . - Capacité à gérer plusieurs tâches en parallèle - Anglais scolaire Pré requis indispensables : - Réactivité, multitâches et rigueur. - C'est un poste en journée sur horaires variables L'entreprise : Randstad\nRandstad Inhouse, est un concept unique en France d'agence intérim hébergée au cœur du site de production de nos clients. Forte de plus de 250 agences, nous accompagnons chaque année plus de 65 000 intérimaires.\n\nL'esprit de famille incarne notre ADN : étant chez nos clients aux côtés de nos intérimaires, nous \"travaillons en famille\"!\n\nNous rejoindre, c'est également bénéficier de nombreux avantages proposés par notre CE et nos partenaires. Nous recherchons pour le compte de notre client Sanofi SARD spécialisé dans le secteur des essais cliniques un(e) technicien(ne) supérieur(e) préparation documentaire",
+   "liens": [
+    {
+     "source": "Meteojob",
+     "url": "https://www.meteojob.com/jobs/57625551"
     }
    ],
    "premiere_vue": "2026-10-21",
@@ -832,6 +855,29 @@
    "commune": "Béziers"
   },
   {
+   "id": "92b67fc43820",
+   "titre": "TECHNICIEN QUALITÉ (F/H)",
+   "entreprise": "Randstad",
+   "lieu": "Lavérune (34)",
+   "contrat": "Intérim",
+   "salaire": "À partir de 12,31 € par heure",
+   "date_pub": "2026-10-05",
+   "extrait": "",
+   "description": "Description du poste\nSouhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante ?\n\nVous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue\n\n- Vous contrôlez les matières premières et les produits finis au sein des ateliers\n\n- Vous gérez les non-conformités et analysez leurs causes profondes afin de définir des actions correctives\n\n- Vous rédigez les documents de suivi qualité et veillez au respect des normes de production\n\nEt voici les modalités de l'offre :\n\n- Contrat: Intérim\n\n- Durée: 2/mois\n\n- Salaire: 12.31 euros/heure\n\nDe plus, nous offrons un ensemble complet d'avantages aux intérimaires, y compris Fast TT, pour assurer leur succès professionnel et personnel. Date de début : 29/10/2026\nDurée du contrat : 2 mois\nDescription du profil\nVous êtes une technicienne ou un technicien qualité rigoureux, justifiant d'une première expérience en environnement industriel\n\n- Vous maîtrisez le contrôle des matières premières et des produits finis en usine\n\nProcessus de recrutement\n\nVous êtes intéressé(e) par cette offre d'emploi ? C'est très simple, postulez en quelques clics ! Notre équipe de consultant(e)s prendra contact avec vous pour valider vos compétences et objectifs de carrière. Si votre candidature est acceptée, nous vous fournirons tous les éléments nécessaires pour votre mission. À très bientôt ! L'entreprise : Randstad\nRandstad vous ouvre toutes les portes de l'emploi : intérim, CDD, CDI. Chaque année, 330 000 collaborateurs (f/h) travaillent dans nos 60 000 entreprises clientes. Rejoignez-nous ! Notre client, situé à LAVERUNE, est une entreprise de fabrication et de distribution de produits chimiques pour le secteur industriel.",
+   "liens": [
+    {
+     "source": "Meteojob",
+     "url": "https://www.meteojob.com/jobs/57294152"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.5848,
+   "lon": 3.8003,
+   "commune": "Lavérune"
+  },
+  {
    "id": "1cf866e185e2",
    "titre": "Technicien Qualite H/F",
    "entreprise": "GIF emploi",
@@ -975,7 +1021,7 @@
    "entreprise": "Apave",
    "lieu": "Montpellier - 34",
    "contrat": "CDI",
-   "salaire": "",
+   "salaire": "Salaire non précisé",
    "date_pub": "2026-10-02",
    "extrait": "",
    "description": "Développer vos compétences au sein d'une équipe humaine et dynamique, contribuer à des missions passionnantes permettant de prévenir et de maîtriser les risques, ça vous tente ?\n\nApave exploitation recherche un-e Technicien(e) Mesures en Eaux H/F en CDI !\n\nAu sein de l'agence de Montpellier, l'équipe technique assure un rôle majeur : permettre à nos clients d'exercer leur métier en toute sécurité et contribuer ainsi au développement du Groupe Apave au coeur des territoires.\n\nConcrètement, en quoi va consister votre quotidien ?\nAprès votre parcours d'intégration, vous serez amené(e) à réaliser plusieurs missions :\nProduction / Terrain :\n- Vous intervenez en milieux industriels, tertiaires, collectivités et secteur de la santé.\n- Dans le respect des normes et de nos procédures vous réalisez des mesures, prélèvements, analyses et contrôles d'eaux sur sites (eaux usées : eaux résiduaires et pluviales, eaux propres : potabilité et gestion du risque légionelle, eaux souterraines),\n- A l'issue de vos interventions, vous gérez les échantillons, exploitez les résultats d'analyse, rédigez les rapports d'essais et apporter un avis technique sur le respect de l'environnement,\n- Vous participez au suivi métrologique du matériel.\n\nRelation Client :\n- Véritable représentant(e) Apave, vous faites preuve d'écoute et d'accompagnement de nos clients que vous contribuez à fidéliser sur le territoire.\n- Vous assurez le suivi opérationnel et commercial des clients.",
@@ -983,6 +1029,10 @@
     {
      "source": "HelloWork",
      "url": "https://www.hellowork.com/fr-fr/emplois/82900738.html"
+    },
+    {
+     "source": "Meteojob",
+     "url": "https://www.meteojob.com/jobs/56473829"
     }
    ],
    "premiere_vue": "2026-10-19",
@@ -991,6 +1041,29 @@
    "lat": 43.61,
    "lon": 3.8742,
    "commune": "Montpellier"
+  },
+  {
+   "id": "c3dd18196f3c",
+   "titre": "TECHNICIEN QUALITE (H/F/D)",
+   "entreprise": "Gif",
+   "lieu": "Pignan (34)",
+   "contrat": "Intérim",
+   "salaire": "Salaire non précisé",
+   "date_pub": "2026-10-02",
+   "extrait": "",
+   "description": "Description du poste\nEnvie de donner un nouvel élan à votre carrière en qualité industrielle ?\n\nNotre client fabricant de pompes à chaleur recherche un Technicien qualité.\n\nVos Missions:\n\nContrôler la qualité des produits finis et s'assurer que les dossiers de fabrication sont conformes\n\n• Faire respecter les procédures, consignes et nomenclatures critiques, et soutenir la production sur ces sujets\n\n• Assurer le suivi qualité des fournisseurs, en lien avec le service achats\n\n• Veiller à ce que les moyens de contrôle soient disponibles, étalonnés et en bon état de marche\n\n• Prendre part aux audits internes et suivre le traitement des non-conformités (écarts, actions correctives, etc.)\n\n• Élaborer et tenir à jour les documents de contrôle, de traçabilité et de suivi qualité\n\n• Faire appliquer les procédures, consignes et nomenclatures critiques, et apporter un soutien aux équipes de production\n\nGIF Emploi, société socialement responsable, s'engage au quotidien pour l'emploi des personnes en situation de handicap.\n\nDate de début : 01/11/2026\nDurée du contrat : 6 mois\nDescription du profil\nTitulaire d'un BAC +2 en qualité, génie industriel ou un domaine technique équivalent , avec au moins 2 ans d'expérience sur un poste similaire en industrie.\n\nCompétences attendues pour ce poste :\n\n- Connaissances requises des normes qualité et des outils d'amélioration continue\n\n- Bonne maîtrise des processus de contrôle qualité, de traçabilité et de traitement des non-conformités\n\n- Aisance relationnelle et aptitude à travailler en équipe\n\n- Organisation, esprit d'analyse et synthétique\n\nInformation complémentaire : CDI à la clé\n\nPourquoi rejoindre GIF SUD EST ?\n\nGIF SUD EST (groupe GIF EMPLOI) un acteur du recrutement en intérim et CDI, référent sur les métiers techniques, cultive la proximité avec ses candidats, ses clients et les acteurs de la formation pour un accompagnement long-terme.\n\nSi vous avez envie de rejoindre une équipe qui met en avant vos compétences techniques, ne tardez pas à postuler!\n\nÀ compétences égales, toutes les candidatures sont étudiées sans aucune distinction.\n\nProcessus de recrutement :\n\n> Préqualification téléphonique avec un collaborateur GIF\n\n> Si le profil est compatible, il est transmis à notre client\n\n> Suivi d'un entretien avec ce dernier (Visio ou présentiel)\nL'entreprise : Gif\nDepuis plus de 50 ans, GIF Emploi est spécialisé en délégation de compétences techniques.\n\nNotre réseau de 19 agences, accompagne les projets de nos clients en BTP, mécanique, ingénierie, électronique et informatique industrielle, en France et dans le monde entier au travers de nos 1000 collaborateurs délégués, experts dans leurs domaines.\n\nNous proposons à nos candidats des missions longues et des CDI, sur des postes allant de la conception à la réalisation du projet.\n\nNos atouts : Animation d'un réseau d'entreprises partenaires. Suivi personnalisé par un interlocuteur unique expert des métiers techniques. Process de sélection en lien direct avec les décideurs, délégation rapide, suivi de la mission et coaching durant tout le contrat.\n\nEn résumé, la force de GIF Emploi : un groupe solide et uni disposant de moyens communs à toutes les agences, et des équipes permettant à chaque entreprise ou candidat de trouver réponse à ses besoins. Rejoignez -nous !",
+   "liens": [
+    {
+     "source": "Meteojob",
+     "url": "https://www.meteojob.com/jobs/57242843"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.5819,
+   "lon": 3.742,
+   "commune": "Pignan"
   },
   {
    "id": "d3df2bc1b6ff",
@@ -1052,6 +1125,10 @@
     {
      "source": "HelloWork",
      "url": "https://www.hellowork.com/fr-fr/emplois/83813048.html"
+    },
+    {
+     "source": "Meteojob",
+     "url": "https://www.meteojob.com/jobs/57103407"
     }
    ],
    "premiere_vue": "2026-10-19",
