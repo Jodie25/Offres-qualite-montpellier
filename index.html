@@ -125,7 +125,7 @@ dialog.cv{border:0;border-radius:22px;padding:0;max-width:880px;width:calc(100% 
 dialog::backdrop{background:rgba(30,42,68,.55)}
 .cvh{background:linear-gradient(120deg,var(--teal),#5fd8c8);color:#fff;padding:18px 24px;position:sticky;top:0;z-index:2;display:flex;gap:12px;align-items:flex-start}
 .cvh h2{margin:0;font-size:19px;line-height:1.25}.cvh small{opacity:.95}
-.cvh .x{margin-left:auto;background:rgba(255,255,255,.25);border:0;color:#fff;border-radius:10px;width:34px;height:34px;font-size:18px;cursor:pointer;flex:none}
+.cvh .x{background:rgba(255,255,255,.25);border:0;color:#fff;border-radius:10px;width:34px;height:34px;font-size:18px;cursor:pointer;flex:none}
 .cvb{padding:18px 24px 26px;overflow:auto;max-height:calc(92vh - 80px)}
 .score{display:flex;align-items:center;gap:14px;margin-bottom:10px}
 .ring{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:19px;flex:none}
@@ -256,12 +256,11 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
   <div class="note" style="margin-bottom:16px"><b>Ton CV de base.</b> Remplis-le une seule fois : il reste dans ton navigateur (jamais envoyé nulle part). Pour chaque offre, le bouton « ✨ Adapter mon CV » le réorganise et le met au format lu par les logiciels de recrutement (ATS), sans rien inventer.</div>
   <label class="drop" id="cv-drop" for="cv-impfile">
     <b>📄 Glisse ici ton CV (PDF) ou clique pour le choisir</b>
-    <span>Le PDF est lu directement dans ton navigateur (il n'est envoyé nulle part) et remplit le formulaire : vérifie ensuite chaque champ. Le fichier .json de sauvegarde marche aussi.</span>
+    <span>Le PDF est lu directement dans ton navigateur (il n'est envoyé nulle part) et remplit le formulaire : vérifie ensuite chaque champ.</span>
   </label>
   <div id="cv-form"></div>
   <div class="bar">
-    <button class="btn" id="cv-exp">Exporter mon CV (.json)</button>
-    <button class="btn" id="cv-imp">Importer un CV (PDF ou .json)</button>
+    <button class="btn pri" id="cv-pdf">⬇ Télécharger mon CV en PDF</button>
     <input type="file" id="cv-impfile" accept=".json,.pdf" hidden>
     <span class="count" id="cv-etat" style="margin:0"></span>
   </div>
@@ -285,7 +284,7 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 </dialog>
 
 <dialog class="cv" id="cvdlg">
-  <div class="cvh"><div><h2 id="cv-h">Adapter mon CV</h2><small id="cv-sh"></small></div><button class="x" id="cv-x" aria-label="Fermer">✕</button></div>
+  <div class="cvh"><div><h2 id="cv-h">Adapter mon CV</h2><small id="cv-sh"></small></div><button class="btn sm" id="cv-pdf-top" style="margin-left:auto;display:none;background:#fff;color:var(--teal-d);border:0">⬇ PDF</button><button class="x" id="cv-x" aria-label="Fermer" style="margin-left:8px">✕</button></div>
   <div class="cvb" id="cv-body"></div>
 </dialog>
 <div class="toast" id="toast"></div>
@@ -566,8 +565,6 @@ $("#cv-form").addEventListener("click",e=>{
   else return;
   put(KC,cv);renderCV();
 });
-$("#cv-exp").onclick=()=>telecharger("mon-cv-de-base.json",JSON.stringify(cv,null,1),"application/json");
-$("#cv-imp").onclick=()=>$("#cv-impfile").click();
 async function importerCV(f){
   if(!f)return;
   if(/\.pdf$/i.test(f.name)){
@@ -949,11 +946,13 @@ function majControles(){
 }
 function rendreCV(){
   const o=offreCV;
+  $("#cv-pdf-top").style.display="none";
   if(!cvVideOK()){
     $("#cv-body").innerHTML=`<div class="note"><b>Il me faut d'abord ton CV de base.</b> Dans l'onglet « Mon CV », glisse ton CV (PDF ou .json) ou remplis le formulaire. Il reste dans ton navigateur et sert ensuite pour toutes les offres.</div>
       <div class="row"><button class="btn pri" id="go-cv">Aller à « Mon CV »</button></div>`;
     $("#go-cv").onclick=()=>{$("#cvdlg").close();onglet("cv")};return;
   }
+  $("#cv-pdf-top").style.display="";
   const a=construire(),poste=nettoyerTitre(o.titre);
   cvSortie={prompt:`Voici une offre d'emploi et mon CV de base. Adapte mon CV à cette offre pour qu'il passe les logiciels de recrutement (ATS) : une seule colonne, titres standards, mots-clés de l'offre repris avec leurs termes exacts, missions les plus pertinentes en premier, SANS RIEN INVENTER (ne cite que ce qui est dans mon CV). Puis rédige une lettre de motivation courte et sincère.\n\n=== OFFRE ===\n${o.titre} — ${o.entreprise||""} — ${o.commune||o.lieu||""}\n${o.description||o.extrait||"(description non disponible)"}\n\n=== MON CV DE BASE ===\n${cvEnTexte(cv)}`};
   const ta=(cle,val,rows,i)=>`<textarea data-ed="${cle}"${i!=null?` data-i="${i}"`:""} rows="${rows}">${esc(val)}</textarea>`;
@@ -1051,6 +1050,26 @@ function cvEnPdf(a){
   if(a.texte){titre("Autres informations");a.texte.split("\n").forEach(l=>ligne(l))}
   return d;
 }
+
+function cvDeBaseEnA(){
+  return {nom:(cv.nom||"").trim(),titre:(cv.titre||"").trim(),contact:[cv.email,cv.tel,cv.ville,cv.lien].filter(Boolean).join(" | "),
+    resume:(cv.resume||"").trim(),competences:lignesDe(cv.competences),
+    exps:(cv.exps||[]).map(x=>({...x,missions:lignesDe(x.missions)})),forms:cv.forms||[],
+    langues:lignesDe(cv.langues),certifs:lignesDe(cv.certifs),texte:(cv.texte||"").trim()};
+}
+function telechargerPDF(a,nomFichier){
+  if(!window.jspdf){toast("Module PDF non chargé : vérifie ta connexion");return}
+  try{cvEnPdf(a).save(nomFichier);toast("PDF téléchargé ✓")}catch(err){console.error(err);toast("Erreur lors de la création du PDF")}
+}
+$("#cv-pdf").onclick=()=>{
+  if(!cvVideOK()){alert("Ton CV est vide : importe-le ou remplis le formulaire d'abord.");return}
+  telechargerPDF(cvDeBaseEnA(),`CV-${(cv.nom||"").trim().replace(/\s+/g,"-")||"base"}.pdf`);
+};
+$("#cv-pdf-top").onclick=()=>{
+  if(!aCourant)return;
+  const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40),qui=(cv.nom||"").trim().replace(/\s+/g,"-")||"candidature";
+  telechargerPDF(aCourant,`CV-${qui}-${slug}.pdf`);
+};
 
 /* ---------- Offre en PDF ou en texte ---------- */
 async function offreDepuisPDF(f){
