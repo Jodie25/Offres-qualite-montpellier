@@ -26,5 +26,8 @@ Site qui rassemble chaque jour les offres d'ingénieure qualité agroalimentaire
 ## Réglages
 `collecte/config.json` : requêtes, rayon, mots exigés / exclus dans les titres.
 
+## CV adapté (ATS)
+Onglet « Mon CV » : CV de base saisi une fois (navigateur uniquement). Bouton « Adapter mon CV » sur chaque offre : mots-clés, ordre des missions, contrôles ATS, export .docx / PDF.
+
 ## Suivi
 Enregistré dans le navigateur (localStorage). Boutons « Sauvegarde » / « Restaurer » pour changer d'appareil, et « Exporter Excel (CSV) ».
