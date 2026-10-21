@@ -164,6 +164,9 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 .atsprev h4{margin:0;font-size:22px;text-align:center}.atsprev .ti{text-align:center;font-size:15px;margin:2px 0}.atsprev .co{text-align:center;font-size:12.5px;color:#444;margin-bottom:8px}
 .atsprev h5{margin:14px 0 4px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid #999;padding-bottom:2px}
 .atsprev ul{margin:2px 0 6px;padding-left:20px}.atsprev p{margin:2px 0}
+.drop.small{padding:14px 16px;margin-bottom:6px}.drop.small b{font-size:14.5px}
+.ed input{width:100%}.ed label{display:block;font-size:13px;font-weight:700;color:var(--mute);margin:12px 0 4px}
+#offre-pdf textarea{width:100%}
 </style>
 </head>
 <body>
@@ -191,6 +194,17 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 <main class="wrap">
 
 <section id="v-offres">
+  <div class="panel" id="offre-pdf">
+    <h2>📎 Tu as une offre en PDF ou en texte ?</h2>
+    <p class="h">Glisse le PDF de l'offre (ou colle son texte) : j'analyse l'offre et j'adapte ton CV, même si elle ne vient pas de ce site.</p>
+    <label class="drop small" id="op-drop" for="op-file"><b>Glisse le PDF de l'offre ici ou clique pour le choisir</b></label>
+    <input type="file" id="op-file" accept=".pdf" hidden>
+    <div class="f2"><div><label for="op-titre-in">Poste *</label><input id="op-titre-in" placeholder="Assistante qualité"></div>
+      <div><label for="op-ent">Entreprise</label><input id="op-ent" placeholder="Nom de l'entreprise"></div></div>
+    <label for="op-texte">Texte de l'offre</label>
+    <textarea id="op-texte" rows="5" placeholder="Le texte de l'offre apparaît ici après la lecture du PDF, ou colle-le toi-même."></textarea>
+    <div style="margin-top:10px"><button class="btn pri" id="op-go">✨ Adapter mon CV à cette offre</button></div>
+  </div>
   <details class="search-box">
     <summary>Chercher sur d'autres sites (Indeed, Welcome to the Jungle, APEC…)</summary>
     <p>Ces sites bloquent la collecte automatique : ces boutons ouvrent la recherche déjà remplie. Une offre trouvée s'ajoute à la main dans « Mon suivi ».</p>
@@ -241,14 +255,14 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 <section id="v-cv" hidden>
   <div class="note" style="margin-bottom:16px"><b>Ton CV de base.</b> Remplis-le une seule fois : il reste dans ton navigateur (jamais envoyé nulle part). Pour chaque offre, le bouton « ✨ Adapter mon CV » le réorganise et le met au format lu par les logiciels de recrutement (ATS), sans rien inventer.</div>
   <label class="drop" id="cv-drop" for="cv-impfile">
-    <b>📄 Glisse ici ton fichier CV (.json) ou clique pour le choisir</b>
-    <span>Le fichier reste sur ton appareil et se charge dans ce navigateur uniquement. Il remplit tout le formulaire en une fois.</span>
+    <b>📄 Glisse ici ton CV (PDF) ou clique pour le choisir</b>
+    <span>Le PDF est lu directement dans ton navigateur (il n'est envoyé nulle part) et remplit le formulaire : vérifie ensuite chaque champ. Le fichier .json de sauvegarde marche aussi.</span>
   </label>
   <div id="cv-form"></div>
   <div class="bar">
     <button class="btn" id="cv-exp">Exporter mon CV (.json)</button>
-    <button class="btn" id="cv-imp">Importer un CV (.json)</button>
-    <input type="file" id="cv-impfile" accept=".json" hidden>
+    <button class="btn" id="cv-imp">Importer un CV (PDF ou .json)</button>
+    <input type="file" id="cv-impfile" accept=".json,.pdf" hidden>
     <span class="count" id="cv-etat" style="margin:0"></span>
   </div>
 </section>
@@ -278,6 +292,8 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
 /* ================= Données et constantes ================= */
 const STATUTS=[["a-postuler","À postuler"],["envoyee","Candidature envoyée"],["relance","Relancé"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refusé"],["silence","Sans réponse"]];
@@ -554,7 +570,17 @@ $("#cv-exp").onclick=()=>telecharger("mon-cv-de-base.json",JSON.stringify(cv,nul
 $("#cv-imp").onclick=()=>$("#cv-impfile").click();
 async function importerCV(f){
   if(!f)return;
-  if(!/\.json$/i.test(f.name)){alert("Il faut le fichier « mon-cv-de-base.json ». Pour un PDF ou un Word, demande à Claude de le convertir en .json.");return}
+  if(/\.pdf$/i.test(f.name)){
+    try{
+      toast("Lecture du PDF…");
+      const c=await lireCVpdf(f);
+      if(cvEnTexte(cv).split(/\s+/).filter(Boolean).length>20&&!confirm("Remplacer le CV déjà enregistré par ce PDF ?"))return;
+      cv=Object.assign(cvVide(),c);put(KC,cv);renderCV();
+      toast("CV lu ✓ Vérifie chaque champ ci-dessous");window.scrollTo({top:document.querySelector("#cv-form").offsetTop-80,behavior:"smooth"});
+    }catch(err){console.error(err);alert(err.message||"Impossible de lire ce PDF.")}
+    return;
+  }
+  if(!/\.json$/i.test(f.name)){alert("Choisis ton CV en PDF ou le fichier « mon-cv-de-base.json ».");return}
   try{
     const d=JSON.parse(await f.text());
     if(typeof d!=="object"||d===null||Array.isArray(d)||!("exps" in d||"nom" in d))throw 0;
@@ -585,6 +611,159 @@ function cvEnTexte(c){
 }
 function lignesDe(t){return (t||"").split(/\n|;/).map(x=>x.trim().replace(/^[-•*]\s*/,"")).filter(Boolean)}
 
+/* ================= Lecture de PDF (CV et offre) ================= */
+async function pdfPages(file){
+  if(typeof pdfjsLib==="undefined")throw new Error("Module PDF non chargé : vérifie ta connexion.");
+  pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  const pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise,pages=[];
+  for(let p=1;p<=pdf.numPages;p++){
+    const page=await pdf.getPage(p),tc=await page.getTextContent();
+    const items=tc.items.filter(i=>i.str.trim()).map(i=>({s:i.str,x:i.transform[4],y:i.transform[5],h:Math.abs(i.transform[3])||i.height||10,w:i.width||0}));
+    pages.push({items,largeur:page.view[2]});
+  }
+  return pages;
+}
+// Regroupe des morceaux de texte en lignes (haut vers bas)
+function enLignes(items){
+  const tri=[...items].sort((a,b)=>b.y-a.y||a.x-b.x),lignes=[];
+  for(const it of tri){
+    const l=lignes.find(L=>Math.abs(L.y-it.y)<2.8);
+    if(l){l.items.push(it);l.y=(l.y+it.y)/2}else lignes.push({y:it.y,items:[it]});
+  }
+  return lignes.sort((a,b)=>b.y-a.y).map(L=>{
+    const its=L.items.sort((a,b)=>a.x-b.x);let t="",fin=null;
+    for(const i of its){if(fin!==null){const g=i.x-fin;t+=g>9?"   ":g>1.2?" ":""}t+=i.s;fin=i.x+i.w}
+    return {t:t.replace(/\s+$/,""),h:Math.max(...its.map(i=>i.h)),x:its[0].x};
+  }).filter(l=>l.t.trim());
+}
+// Détecte une mise en page à deux colonnes (bandeau latéral) et renvoie les colonnes
+function colonnes(page){
+  const xs=[...new Set(page.items.map(i=>Math.round(i.x)))].sort((a,b)=>a-b),W=page.largeur;
+  let best=null;
+  for(let k=1;k<xs.length;k++){
+    const g=xs[k]-xs[k-1];
+    if(xs[k-1]>W*.12&&xs[k]<W*.62&&g>35&&(!best||g>best.g))best={g,c:(xs[k]+xs[k-1])/2};
+  }
+  if(best){
+    const G=page.items.filter(i=>i.x<best.c),D=page.items.filter(i=>i.x>=best.c);
+    if(G.length>=8&&D.length>=8)return [G,D];
+  }
+  return [page.items];
+}
+async function pdfEnLignes(file){
+  const pages=await pdfPages(file),cols=[];
+  for(const p of pages)for(const c of colonnes(p))cols.push(enLignes(c));
+  return cols;   // un tableau de lignes par colonne
+}
+async function pdfEnTexte(file){return (await pdfEnLignes(file)).map(c=>c.map(l=>l.t.replace(/ {3,}/g,"  ")).join("\n")).join("\n")}
+
+const SECTIONS=[["ponct",/^exp[ée]riences?\s+ponctuelles?$/i],["exp",/^exp[ée]riences?(\s+professionnelles?)?$/i],["form",/^formations?(\s+et\s+dipl[oô]mes?)?$/i],
+  ["comp",/^comp[ée]tences?(\s+cl[ée]s)?$/i],["lang",/^langues?$/i],["outils",/^(outils|logiciels|informatique)(\s+informatiques?)?$/i],
+  ["interets",/^(centres?\s+d.int[ée]r[êe]ts?|loisirs)$/i],["projets",/^projets?(\s+acad[ée]miques?)?$/i],["profil",/^(profil|r[ée]sum[ée]|[àa]\s+propos)$/i],["certs",/^(certifications?|habilitations?)$/i]];
+const MOIS_RE="janv|f[ée]vr?|mars|avr|mai|juin|juil|ao[uû]t|sept|oct|nov|d[ée]c";
+const RE_DATE=new RegExp(`((?:${MOIS_RE})[a-zéû]*\\.?\\s*(?:\\d{4})?|\\d{1,2}/\\d{4}|\\d{4})\\s*[–—-]\\s*((?:${MOIS_RE})[a-zéû]*\\.?\\s*\\d{4}|aujourd.hui|pr[ée]sent|actuel|\\d{1,2}/\\d{4}|\\d{4})`,"i");
+const RE_PUCE=/^[^\p{L}\p{N}\s(\[]\s*/u;
+const titreSection=t=>{const s=t.trim();if(s.length>45)return null;for(const [k,re] of SECTIONS)if(re.test(s))return k;return null};
+
+function dateEtReste(ligne){
+  const m=RE_DATE.exec(ligne);if(!m)return null;
+  let d=m[1].trim(),f=m[2].trim();
+  const annee=(f.match(/\d{4}/)||[])[0];
+  if(annee&&!/\d{4}/.test(d)&&/[a-zé]/i.test(d))d+=" "+annee;
+  const reste=(ligne.slice(0,m.index)+"   "+ligne.slice(m.index+m[0].length)).trim().split(/\s{2,}/).filter(Boolean);
+  const cap=s=>s.replace(/^([a-zéû])/,c=>c.toUpperCase());
+  return {debut:cap(d),fin:/aujourd|pr[ée]sent|actuel/i.test(f)?"Présent":cap(f),reste};
+}
+function puces(lignes){ // regroupe les lignes en puces (les lignes sans puce prolongent la précédente)
+  const res=[];
+  for(const l of lignes){
+    if(RE_PUCE.test(l)){const t=l.replace(RE_PUCE,"").trim();if(t)res.push(t)}
+    else if(res.length)res[res.length-1]+=" "+l.trim();
+    else res.push(l.trim());
+  }
+  return res;
+}
+function parserCV(cols){
+  const cv=cvVide(),sec={entete:[],exp:[],form:[],comp:[],lang:[],outils:[],interets:[],projets:[],profil:[],certs:[],ponct:[]},tailles=[];
+  const entetes=[];
+  for(const lignes of cols){
+    let cur="entete";const enteteCol=[];
+    for(const l of lignes){
+      const s=titreSection(l.t);
+      if(s){cur=s;continue}
+      if(cur==="entete"){enteteCol.push(l);tailles.push(l.h)}else sec[cur].push(l.t);
+    }
+    entetes.push(enteteCol);
+  }
+  const med=[...tailles].sort((a,b)=>a-b)[Math.floor(tailles.length/2)]||10;
+  const email=/[\w.+-]+@[\w-]+(\.[\w-]+)+/,tel=/(\+?\d[\d .]{8,}\d)/,ville=/[A-ZÉ][\w' -]+\s*\(\d{2,3}\)|\b\d{5}\s+[A-Z]/;
+  const reste=[],divers=[];
+  for(const col of entetes)for(const l of col){
+    const t=l.t.trim();
+    if(email.test(t)){cv.email=t.match(email)[0];continue}
+    if(tel.test(t)&&t.replace(/\D/g,"").length>=9){cv.tel=t.match(tel)[0].trim();continue}
+    if(ville.test(t)&&t.length<40){cv.ville=cv.ville||t;continue}
+    if(/permis|v[ée]hicule/i.test(t)){divers.push(t);continue}
+    reste.push(l);
+  }
+  if(reste.length){
+    const maxH=Math.max(...reste.map(l=>l.h));
+    const iNom=reste.findIndex(l=>l.h>med*1.12&&l.t.trim().split(/\s+/).length<=4&&/^[\p{L}'’.-]+(\s+[\p{L}'’.-]+){1,3}$/u.test(l.t.trim()));
+    if(iNom>=0){cv.nom=reste[iNom].t.trim();reste.splice(iNom,1)}
+    for(let i=reste.length-1;i>=0;i--){
+      if(norm(reste[i].t)===norm(cv.nom)){reste.splice(i,1);continue}
+      if(cv.nom&&norm(reste[i].t).startsWith(norm(cv.nom)+" "))reste[i]={...reste[i],t:reste[i].t.slice(cv.nom.length).trim()};
+    }
+    const grands=reste.filter(l=>l.h>med*1.12&&l.t.length<90);
+    cv.titre=grands.map(l=>l.t.trim()).join(" ");
+    cv.resume=reste.filter(l=>!grands.includes(l)).map(l=>l.t.trim()).join(" ");
+  }
+  if(!cv.nom&&reste.length)cv.nom=reste[0].t;
+  cv.competences=puces(sec.comp).join("\n");
+  cv.langues=puces(sec.lang).join("\n");
+  cv.certifs=[...puces(sec.outils),...puces(sec.certs),...divers].filter(Boolean).join("\n");
+  // expériences
+  const L=sec.exp;let cur=null,titre=null,dansPuces=false;
+  for(let i=0;i<L.length;i++){
+    const t=L[i],dr=dateEtReste(t);
+    if(dr&&!RE_PUCE.test(t)){
+      if(cur)cv.exps.push(cur);
+      const tout=dr.reste.join(" ").replace(/\s+/g," ").trim();
+      const m=tout.match(/^(.*?)\s*(\S+\s*\(\d{2,3}\))$/u);
+      cur={poste:(titre||"").trim(),entreprise:m?m[1].trim():tout,lieu:m?m[2].trim():"",debut:dr.debut,fin:dr.fin,missions:[]};
+      titre=null;dansPuces=false;continue;
+    }
+    if(RE_PUCE.test(t)){if(cur){cur.missions.push(t.replace(RE_PUCE,"").trim());dansPuces=true}continue}
+    const suivIsDate=L[i+1]&&dateEtReste(L[i+1])&&!RE_PUCE.test(L[i+1]);
+    if(!cur||!dansPuces||suivIsDate){
+      if(cur&&dansPuces&&suivIsDate){titre=t}
+      else if(!cur||suivIsDate)titre=(titre?titre+" ":"")+t;
+      else if(cur&&cur.missions.length)cur.missions[cur.missions.length-1]+=" "+t.trim();
+    }else if(cur.missions.length)cur.missions[cur.missions.length-1]+=" "+t.trim();
+  }
+  if(cur)cv.exps.push(cur);
+  cv.exps=cv.exps.map(x=>({...x,missions:x.missions.join("\n")}));
+  // formations
+  const F=sec.form;let dipl=[];
+  for(const t of F){
+    const m=t.match(/(\d{4})\s*[–—-]\s*(\d{4})|\b(\d{4})\b/);
+    if(m&&dipl.length){
+      const reste=t.replace(m[0],"").trim();
+      cv.forms.push({diplome:dipl.join(" "),ecole:reste.replace(/^[|–—-]\s*/,""),annee:m[0]});dipl=[];
+    }else dipl.push(t.trim());
+  }
+  const autres=[];
+  const bloc=(titre,l)=>{const p=puces(l);if(p.length)autres.push(`${titre} : ${p.join(" ; ")}`)};
+  bloc("Projets académiques",sec.projets);bloc("Expérience ponctuelle",sec.ponct);bloc("Centres d'intérêt",sec.interets);
+  if(sec.profil.length)cv.resume=(cv.resume?cv.resume+" ":"")+sec.profil.join(" ");
+  cv.texte=autres.join("\n");
+  return cv;
+}
+async function lireCVpdf(file){
+  const cols=await pdfEnLignes(file),c=parserCV(cols);
+  if(!c.exps.length&&!c.competences){c.texte=(await pdfEnTexte(file)).slice(0,6000)}
+  return c;
+}
 /* ---------- Adaptation du CV à une offre (format ATS) ---------- */
 let offreCV=null,extras=new Set(),opts={titreOffre:true,accroche:true};
 const cvVideOK=()=>cvEnTexte(cv).split(/\s+/).filter(Boolean).length>=15;
@@ -720,61 +899,120 @@ function imprimerCV(a){
   f.contentDocument.close();setTimeout(()=>{f.contentWindow.focus();f.contentWindow.print();setTimeout(()=>f.remove(),2000)},300);
 }
 
-function ouvrirCV(id){
-  const o=offres.find(x=>x.id===id);if(!o)return;
-  offreCV=o;extras=new Set();
+/* ---------- CV final : modifications puis PDF ---------- */
+let aCourant=null,edits={},offrePerso=false;
+function recalculer(a,o){
+  const libOffre=motsDe([o.titre,o.description||"",o.extrait||""].join("\n")).map(m=>m.lib),poste=nettoyerTitre(o.titre);
+  a.texteBrut=cvEnTexte({...cv,nom:a.nom,titre:a.titre,resume:a.resume,competences:a.competences.join("\n"),exps:a.exps.map(x=>({...x,missions:x.missions.join("\n")})),langues:a.langues.join("\n"),certifs:a.certifs.join("\n"),texte:a.texte});
+  const trouves=motsDe(a.texteBrut).map(x=>x.lib).filter(l=>libOffre.includes(l));
+  a.apres=libOffre.length?Math.round(trouves.length/libOffre.length*100):0;
+  const mots=a.texteBrut.split(/\s+/).filter(Boolean).length;
+  a.controles=[
+    [!!(cv.email&&cv.tel),"Coordonnées complètes (email et téléphone)"],
+    [true,"Mise en page sur une seule colonne, sans tableau ni image : lisible par les logiciels de recrutement"],
+    [true,"Titres de rubriques standards (Profil, Compétences, Expérience professionnelle, Formation)"],
+    [!!poste&&norm(a.titre).includes(norm(poste).slice(0,12)),"Intitulé du poste de l'offre repris en tête"],
+    [a.apres>=60,`Mots-clés de l'offre repris : ${a.apres}% (visé : 60% ou plus)`],
+    [a.exps.length>0&&a.exps.every(x=>x.debut),"Dates renseignées pour chaque expérience"],
+    [!!a.resume,"Résumé de profil présent"],
+    [mots>=150&&mots<=750,`Longueur adaptée : ${mots} mots (idéal : 1 à 2 pages, 300 à 700 mots)`]
+  ];
+}
+function construire(){
+  const a=adapterCV(offreCV);
+  if(edits.titre!==undefined)a.titre=edits.titre;
+  if(edits.resume!==undefined)a.resume=edits.resume;
+  if(edits.competences!==undefined)a.competences=lignesDe(edits.competences);
+  a.exps.forEach((x,i)=>{if(edits.mis&&edits.mis[i]!==undefined)x.missions=lignesDe(edits.mis[i])});
+  if(edits.langues!==undefined)a.langues=lignesDe(edits.langues);
+  if(edits.certifs!==undefined)a.certifs=lignesDe(edits.certifs);
+  if(edits.texte!==undefined)a.texte=edits.texte.trim();
+  recalculer(a,offreCV);
+  aCourant=a;return a;
+}
+function ouvrirCV(id){const o=offres.find(x=>x.id===id);if(o)ouvrirCVOffre(o,false)}
+function ouvrirCVOffre(o,perso){
+  offreCV=o;extras=new Set();edits={};offrePerso=!!perso;
   $("#cv-h").textContent="Adapter mon CV · "+nettoyerTitre(o.titre);
-  $("#cv-sh").textContent=(o.entreprise||"Entreprise non précisée")+" · "+(o.commune||o.lieu);
-  cvFaits.add(o.id);put(KD,[...cvFaits]);
-  rendreCV();$("#cvdlg").showModal();rafraichir();
+  $("#cv-sh").textContent=(o.entreprise||"Entreprise non précisée")+(o.commune||o.lieu?" · "+(o.commune||o.lieu):"");
+  if(!perso){cvFaits.add(o.id);put(KD,[...cvFaits])}
+  rendreCV();$("#cvdlg").showModal();if(!perso)rafraichir();
+}
+const coulScore=n=>n>=60?"#12a150":n>=35?"#f5a524":"#ff6b4a";
+function majControles(){
+  const a=construire();
+  $("#ring").style.background=`conic-gradient(${coulScore(a.apres)} ${a.apres*3.6}deg,#f0e6da 0)`;
+  $("#ring-val").textContent=a.apres+"%";
+  $("#score-t").textContent=`CV final : ${a.apres}% des mots-clés de l'offre repris.`;
+  $("#ats-list").innerHTML=a.controles.map(([ok,t])=>`<li class="${ok?"ok":"ko"}">${esc(t)}</li>`).join("");
+  if($("#apercu-d")?.open)$("#apercu-c").innerHTML=cvEnHtml(a);
 }
 function rendreCV(){
   const o=offreCV;
   if(!cvVideOK()){
-    $("#cv-body").innerHTML=`<div class="note"><b>Il me faut d'abord ton CV de base.</b> Remplis-le une seule fois dans l'onglet « Mon CV » (informations, compétences, expériences, formation) : il reste dans ton navigateur et sert ensuite pour toutes les offres.</div>
+    $("#cv-body").innerHTML=`<div class="note"><b>Il me faut d'abord ton CV de base.</b> Dans l'onglet « Mon CV », glisse ton CV (PDF ou .json) ou remplis le formulaire. Il reste dans ton navigateur et sert ensuite pour toutes les offres.</div>
       <div class="row"><button class="btn pri" id="go-cv">Aller à « Mon CV »</button></div>`;
     $("#go-cv").onclick=()=>{$("#cvdlg").close();onglet("cv")};return;
   }
-  const a=adapterCV(o),coul=a.apres>=60?"#12a150":a.apres>=35?"#f5a524":"#ff6b4a",nom=a.nom,poste=nettoyerTitre(o.titre);
-  const lettre=fabriquerLettre(o,a);
-  cvSortie={prompt:`Voici une offre d'emploi et mon CV de base. Adapte mon CV à cette offre pour qu'il passe les logiciels de recrutement (ATS) : une seule colonne, titres standards, mots-clés de l'offre repris avec leurs termes exacts, missions les plus pertinentes en premier, SANS RIEN INVENTER (ne cite que ce qui est dans mon CV). Puis rédige une lettre de motivation courte et sincère.\n\n=== OFFRE ===\n${o.titre} — ${o.entreprise||""} — ${o.commune||o.lieu}\n${o.description||o.extrait||"(description non disponible, lien : "+o.liens[0].url+")"}\n\n=== MON CV DE BASE ===\n${cvEnTexte(cv)}`,texte:a.texteBrut,a};
+  const a=construire(),poste=nettoyerTitre(o.titre);
+  cvSortie={prompt:`Voici une offre d'emploi et mon CV de base. Adapte mon CV à cette offre pour qu'il passe les logiciels de recrutement (ATS) : une seule colonne, titres standards, mots-clés de l'offre repris avec leurs termes exacts, missions les plus pertinentes en premier, SANS RIEN INVENTER (ne cite que ce qui est dans mon CV). Puis rédige une lettre de motivation courte et sincère.\n\n=== OFFRE ===\n${o.titre} — ${o.entreprise||""} — ${o.commune||o.lieu||""}\n${o.description||o.extrait||"(description non disponible)"}\n\n=== MON CV DE BASE ===\n${cvEnTexte(cv)}`};
+  const ta=(cle,val,rows,i)=>`<textarea data-ed="${cle}"${i!=null?` data-i="${i}"`:""} rows="${rows}">${esc(val)}</textarea>`;
   $("#cv-body").innerHTML=`
-   <div class="score"><div class="ring" style="background:conic-gradient(${coul} ${a.apres*3.6}deg,#f0e6da 0)"><span style="background:#fff;border-radius:50%;width:56px;height:56px;display:grid;place-items:center">${a.apres}%</span></div>
-     <div><b>CV adapté : ${a.apres}% des mots-clés de l'offre repris.</b>
-     <div class="avap">Avant adaptation : ${a.avant}% · ${a.present.length+a.confirmes.length} mots-clés sur ${a.nb} présents</div></div></div>
+   <div class="score"><div class="ring" id="ring" style="background:conic-gradient(${coulScore(a.apres)} ${a.apres*3.6}deg,#f0e6da 0)"><span id="ring-val" style="background:#fff;border-radius:50%;width:56px;height:56px;display:grid;place-items:center">${a.apres}%</span></div>
+     <div><b id="score-t">CV final : ${a.apres}% des mots-clés de l'offre repris.</b>
+     <div class="avap">Avant adaptation : ${a.avant}% · ${a.present.length+a.confirmes.length} mots-clés sur ${a.nb} déjà dans ton CV</div></div></div>
    <div class="chips">${a.present.map(x=>`<span class="chip y">✓ ${esc(x)}</span>`).join("")}${a.confirmes.map(x=>`<span class="chip conf">✓ ${esc(x)} (ajouté)</span>`).join("")}${a.manque.map(x=>`<button class="chip add" data-add="${esc(x)}" title="Clique si tu as vraiment cette compétence">+ ${esc(x)}</button>`).join("")}</div>
    ${a.manque.length?`<div class="note"><b>Les mots-clés jaunes sont demandés par l'offre mais absents de ton CV.</b> Si tu maîtrises vraiment l'un d'eux (même en stage, en formation ou en projet), clique dessus : il sera ajouté à tes compétences. N'ajoute jamais ce que tu ne sais pas faire : les recruteurs le vérifient en entretien.</div>`:""}
-   ${a.nb?"":`<div class="note">La description complète de cette offre n'est pas disponible : l'analyse est limitée. Ouvre l'offre et utilise « Copier la demande pour Claude » plus bas.</div>`}
+   ${a.nb?"":`<div class="note">La description de cette offre est trop courte ou absente : l'analyse est limitée. Colle le texte complet de l'offre dans le champ prévu sur la page des offres.</div>`}
    <h3>Contrôles « logiciels de recrutement »</h3>
-   <ul class="ats">${a.controles.map(([ok,t])=>`<li class="${ok?"ok":"ko"}">${esc(t)}</li>`).join("")}</ul>
+   <ul class="ats" id="ats-list">${a.controles.map(([ok,t])=>`<li class="${ok?"ok":"ko"}">${esc(t)}</li>`).join("")}</ul>
    <div class="opts"><label><input type="checkbox" id="op-titre"${opts.titreOffre?" checked":""}> Reprendre l'intitulé du poste de l'offre</label>
      <label><input type="checkbox" id="op-acc"${opts.accroche?" checked":""}> Phrase d'accroche personnalisée</label></div>
-   <h3>Ton CV adapté (aperçu, format ATS)</h3>
-   <div class="atsprev">${cvEnHtml(a)}</div>
-   <div class="row"><button class="btn pri sm" id="dl-docx">⬇ Télécharger en Word (.docx)</button><button class="btn sm" id="dl-pdf">Imprimer / PDF</button><button class="btn sm" id="cp-cv">Copier le texte</button></div>
-   <div class="note">Les logiciels de recrutement lisent mieux un fichier Word ou un PDF avec du vrai texte, en une colonne. Envoie ce fichier tel quel, sans le retoucher dans un modèle graphique.</div>
-   <h3>Lettre de motivation (brouillon)</h3><textarea id="o-let" style="min-height:240px">${esc(lettre)}</textarea>
+   <h3>Vérifie et modifie ton CV</h3>
+   <div class="note">Relis chaque partie et corrige ce que tu veux. Le fichier téléchargé sera exactement ce que tu vois ici.</div>
+   <div class="ed"><label>Titre en tête du CV</label><input data-ed="titre" value="${esc(a.titre)}">
+   <label>Profil</label>${ta("resume",a.resume,5)}
+   <label>Compétences clés (une par ligne)</label>${ta("competences",a.competences.join("\n"),8)}
+   ${a.exps.map((x,i)=>`<label>${esc(x.poste)}${x.entreprise?" — "+esc(x.entreprise):""} <small>(${esc(x.debut)} – ${esc(x.fin)})</small></label>${ta("mis",x.missions.join("\n"),Math.min(8,x.missions.length+1),i)}`).join("")}
+   <label>Langues</label>${ta("langues",a.langues.join("\n"),2)}
+   <label>Certifications et outils</label>${ta("certifs",a.certifs.join("\n"),3)}
+   <label>Autres informations</label>${ta("texte",a.texte,3)}</div>
+   <div class="note" style="margin-top:8px">La formation et tes coordonnées se modifient dans l'onglet « Mon CV ».</div>
+   <details id="apercu-d"><summary>Voir l'aperçu du CV final</summary><div class="atsprev" id="apercu-c"></div></details>
+   <div class="row" style="margin-top:14px"><button class="btn pri" id="dl-pdf">✓ Valider et télécharger en PDF</button><button class="btn teal sm" id="dl-docx">Télécharger en Word (.docx)</button><button class="btn sm" id="cp-cv">Copier le texte</button>${offrePerso?'<button class="btn sm" id="add-suivi">+ Ajouter l\'offre à mon suivi</button>':""}</div>
+   <div class="note">Le PDF contient du vrai texte (pas une image), en une seule colonne : c'est ce que lisent les logiciels de recrutement. Envoie-le tel quel.</div>
+   <h3>Lettre de motivation (brouillon)</h3><textarea id="o-let" style="min-height:240px">${esc(fabriquerLettre(o,a))}</textarea>
    <div class="row"><button class="btn sm" data-copie="o-let">Copier</button><button class="btn sm" id="dl-let">Télécharger en Word</button></div>
    <h3>Aller plus loin avec Claude</h3>
-   <div class="note">Pour une vraie réécriture, copie la demande ci-dessous et colle-la dans une conversation Claude : elle contient l'offre et ton CV de base.</div>
+   <div class="note">Pour une réécriture complète, copie la demande ci-dessous et colle-la dans une conversation Claude : elle contient l'offre et ton CV de base.</div>
    <div class="row"><button class="btn pri sm" id="cp-claude">Copier la demande pour Claude</button><a class="btn sm" href="https://claude.ai/new" target="_blank" rel="noopener">Ouvrir Claude ↗</a></div>`;
 }
 $("#cv-x").onclick=()=>$("#cvdlg").close();
+$("#cv-body").addEventListener("input",e=>{
+  const t=e.target,k=t.dataset.ed;if(!k)return;
+  if(k==="mis"){edits.mis=edits.mis||{};edits.mis[t.dataset.i]=t.value}else edits[k]=t.value;
+  majControles();
+});
+$("#cv-body").addEventListener("toggle",e=>{if(e.target.id==="apercu-d"&&e.target.open)$("#apercu-c").innerHTML=cvEnHtml(aCourant)},true);
 $("#cv-body").addEventListener("change",e=>{
-  if(e.target.id==="op-titre"){opts.titreOffre=e.target.checked;rendreCV()}
-  if(e.target.id==="op-acc"){opts.accroche=e.target.checked;rendreCV()}
+  if(e.target.id==="op-titre"){opts.titreOffre=e.target.checked;delete edits.titre;rendreCV()}
+  if(e.target.id==="op-acc"){opts.accroche=e.target.checked;delete edits.resume;rendreCV()}
 });
 $("#cv-body").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;
-  if(b.dataset.add){extras.add(b.dataset.add);const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
+  if(b.dataset.add){extras.add(b.dataset.add);delete edits.competences;const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.copie){navigator.clipboard.writeText($("#"+b.dataset.copie).value).then(()=>toast("Copié ✓"));return}
   if(b.id==="cp-claude"){navigator.clipboard.writeText(cvSortie.prompt).then(()=>toast("Demande copiée : colle-la dans Claude ✓"));return}
-  if(b.id==="cp-cv"){navigator.clipboard.writeText(cvSortie.texte).then(()=>toast("CV copié ✓"));return}
-  if(b.id==="dl-pdf"){imprimerCV(cvSortie.a);return}
-  const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40);
+  if(b.id==="cp-cv"){navigator.clipboard.writeText(aCourant.texteBrut).then(()=>toast("CV copié ✓"));return}
+  if(b.id==="add-suivi"){suivi.unshift({id:"s"+Date.now(),offreId:null,titre:offreCV.titre,entreprise:offreCV.entreprise,lieu:offreCV.lieu||"",url:"",source:"PDF / texte",statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});save();majCompteurs();toast("Ajoutée à ton suivi ✓");return}
+  const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40),qui=(cv.nom||"").trim().replace(/\s+/g,"-")||"candidature";
+  if(b.id==="dl-pdf"){
+    if(!window.jspdf){toast("Module PDF non chargé : vérifie ta connexion");return}
+    try{cvEnPdf(aCourant).save(`CV-${qui}-${slug}.pdf`);toast("PDF téléchargé ✓")}catch(err){console.error(err);toast("Erreur lors de la création du PDF")}
+    return}
   if(b.id==="dl-docx"){
     if(typeof docx==="undefined"){toast("Module Word non chargé : vérifie ta connexion");return}
-    docx.Packer.toBlob(cvEnDocx(cvSortie.a)).then(bl=>{const l=document.createElement("a");l.href=URL.createObjectURL(bl);l.download=`CV-${(cv.nom||"").trim().replace(/\s+/g,"-")||"candidature"}-${slug}.docx`;l.click();URL.revokeObjectURL(l.href)});
+    docx.Packer.toBlob(cvEnDocx(aCourant)).then(bl=>{const l=document.createElement("a");l.href=URL.createObjectURL(bl);l.download=`CV-${qui}-${slug}.docx`;l.click();URL.revokeObjectURL(l.href)});
   }
   if(b.id==="dl-let"){
     if(typeof docx==="undefined"){toast("Module Word non chargé : vérifie ta connexion");return}
@@ -783,6 +1021,60 @@ $("#cv-body").addEventListener("click",e=>{
     Packer.toBlob(d).then(bl=>{const l=document.createElement("a");l.href=URL.createObjectURL(bl);l.download=`Lettre-${slug}.docx`;l.click();URL.revokeObjectURL(l.href)});
   }
 });
+
+// PDF avec texte sélectionnable, une seule colonne
+function cvEnPdf(a){
+  const {jsPDF}=window.jspdf,d=new jsPDF({unit:"mm",format:"a4"}),W=210,M=17,TW=W-2*M;let y=M;
+  d.setProperties({title:`CV ${a.nom}`,author:a.nom});
+  const lh=s=>s*0.3528*1.32;
+  const saut=h=>{if(y+h>297-M){d.addPage();y=M}};
+  const ligne=(t,o={})=>{
+    d.setFont("helvetica",o.b?"bold":"normal");d.setFontSize(o.s||10.5);
+    const x=o.x??M,larg=o.w??TW;
+    for(const l of d.splitTextToSize(String(t),larg)){saut(lh(o.s||10.5));
+      if(o.c)d.text(l,W/2,y,{align:"center"});else d.text(l,x,y);y+=lh(o.s||10.5)}
+    y+=o.apres??0.8;
+  };
+  const titre=t=>{y+=2.5;saut(10);ligne(t.toUpperCase(),{b:1,s:11,apres:0});d.setDrawColor(120);d.setLineWidth(.25);d.line(M,y-1.6,W-M,y-1.6);y+=1.2};
+  const puce=t=>{saut(lh(10.5));d.setFont("helvetica","normal");d.setFontSize(10.5);d.text("•",M+1.5,y);ligne(t,{x:M+5.5,w:TW-5.5,apres:0.5})};
+  ligne(a.nom||"",{b:1,s:19,c:1,apres:1});
+  if(a.titre)ligne(a.titre,{s:12.5,c:1,apres:1});
+  if(a.contact)ligne(a.contact,{s:9.5,c:1,apres:2});
+  if(a.resume){titre("Profil");ligne(a.resume)}
+  if(a.competences.length){titre("Compétences clés");a.competences.forEach(puce)}
+  if(a.exps.length){titre("Expérience professionnelle");
+    for(const x of a.exps){y+=1.2;ligne(`${x.poste}${x.entreprise?" — "+x.entreprise:""}`,{b:1,apres:0});
+      ligne([x.lieu,[x.debut,x.fin].filter(Boolean).join(" – ")].filter(Boolean).join(" | "),{s:9.5,apres:1});x.missions.forEach(puce)}}
+  if(a.forms.length){titre("Formation");for(const x of a.forms)ligne(`${x.diplome}${x.ecole?" — "+x.ecole:""}${x.annee?" ("+x.annee+")":""}`,{apres:1.2})}
+  if(a.langues.length){titre("Langues");a.langues.forEach(puce)}
+  if(a.certifs.length){titre("Certifications et outils");a.certifs.forEach(puce)}
+  if(a.texte){titre("Autres informations");a.texte.split("\n").forEach(l=>ligne(l))}
+  return d;
+}
+
+/* ---------- Offre en PDF ou en texte ---------- */
+async function offreDepuisPDF(f){
+  if(!f)return;
+  if(!/\.pdf$/i.test(f.name)){toast("Choisis un fichier PDF");return}
+  try{
+    toast("Lecture du PDF…");
+    const t=await pdfEnTexte(f);
+    $("#op-texte").value=t.trim();
+    const premiere=t.split("\n").map(l=>l.trim()).find(l=>l.length>=8&&l.length<=110&&!/^https?:/i.test(l));
+    if(premiere&&!$("#op-titre-in").value)$("#op-titre-in").value=premiere.replace(/\s{2,}/g," ");
+    toast("Offre lue ✓ Vérifie le titre puis clique sur « Adapter mon CV »");
+  }catch(err){console.error(err);alert(err.message||"Impossible de lire ce PDF.")}
+}
+$("#op-file").onchange=async e=>{await offreDepuisPDF(e.target.files[0]);e.target.value=""};
+const zOp=$("#op-drop");
+["dragenter","dragover"].forEach(ev=>zOp.addEventListener(ev,e=>{e.preventDefault();zOp.classList.add("on")}));
+["dragleave","drop"].forEach(ev=>zOp.addEventListener(ev,e=>{e.preventDefault();zOp.classList.remove("on")}));
+zOp.addEventListener("drop",e=>offreDepuisPDF(e.dataTransfer.files[0]));
+$("#op-go").onclick=()=>{
+  const titre=$("#op-titre-in").value.trim(),texte=$("#op-texte").value.trim();
+  if(!titre||texte.length<40){alert("Indique le titre du poste et colle (ou charge) le texte de l'offre.");return}
+  ouvrirCVOffre({id:"perso-"+Date.now(),titre,entreprise:$("#op-ent").value.trim(),lieu:"",commune:"",description:texte,extrait:"",liens:[{source:"PDF",url:""}],date_pub:today(),premiere_vue:today(),derniere_vue:today()},true);
+};
 
 /* ================= Démarrage ================= */
 fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
