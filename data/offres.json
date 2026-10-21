@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-21T12:28+00:00",
+ "maj": "2026-10-21T13:56+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -76,13 +76,36 @@
    "commune": "Nîmes"
   },
   {
+   "id": "ea6213a8e477",
+   "titre": "Technicien·ne Qualité – Incoming Inspection H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-21",
+   "extrait": "",
+   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 800 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nPour accompagner la montée en cadence de la production d’ Epione® , nous renforçons notre équipe Qualité.\n\nRattaché·e au QA Production Manager, en tant que Technicien·ne Qualité – Incoming Inspection , vous êtes le premier filtre qualité de notre chaîne : aucun composant n’entre en production sans votre validation. Au quotidien, vous travaillez avec la Production, la Supply Chain, la Qualité Fournisseurs et la R&D.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser les contrôles à réception (visuels, dimensionnels et documentaires) des composants, sous-ensembles et consommables, conformément aux plans et aux gammes de contrôle.\n• Prononcer l’acceptation, la mise en quarantaine ou le refus des lots, et enregistrer les résultats dans notre système qualité et notre ERP.\n• Vérifier la conformité documentaire des livraisons fournisseurs : certificats de conformité, certificats matière, rapports de contrôle, traçabilité des lots et numéros de série.\n• Déclarer et assurer le suivi des non-conformités fournisseurs (SNCR)\n• Participer au suivi des actions correctives des fournisseurs (SCAR)\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks) sur les pièces livrées à réception.\n• Contribuer à la création et à la mise à jour des gammes et plans de contrôle à réception, en lien avec la R&D et le Design Transfer, notamment lors de l’introduction de nouveaux composants.\n• Participer à l’amélioration continue du processus de contrôle à réception et à la préparation des audits (ISO 13485, MDSAP, organisme notifié).\n• Être l'interlocuteur Qualité des fournisseurs pour les sujets liés au contrôle à réception et aux non-conformités.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence)\n• Vous disposez de minimum 2 ans d’expérience en contrôle qualité, idéalement en contrôle à réception, dans un environnement industriel exigeant (dispositif médical, aéronautique, automobile, pharmaceutique).\n• Vous êtes rigoureux·se et méthodique dans vos enregistrements : dans notre métier, ce qui n’est pas tracé n’existe pas.\n• Vous savez tenir votre position et bloquer un lot non conforme, même sous pression de délai.\n• Vous avez un niveau d’anglais suffisant pour lire des spécifications techniques et échanger par écrit avec nos fournisseurs et nos collègues aux États-Unis.\n\nSouhaitable\n\n• Vous connaissez les exigences de l’ISO 13485 et/ou du 21 CFR Part 820 appliquées au contrôle à réception.\n• Vous avez déjà travaillé sur des dispositifs médicaux ou en environnement à atmosphère contrôlée.\n• Vous êtes à l’aise avec un ERP et avec la gestion documentaire électronique.\n• Vous connaissez les plans d’échantillonnage (ISO 2859-1) et les bases du contrôle statistique.\n• Vous savez lire un plan et interpréter une cotation fonctionnelle (tolérancement GPS / ISO 1101), et vous maîtrisez les instruments de métrologie dimensionnelle (pied à coulisse, micromètre, comparateur, colonne de mesure).\n• Vous avez pratiqué la mesure sur MMT ou sur machine de mesure optique.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant être liée à une caractéristique physiq",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-qualit%C3%A9-%E2%80%93-incoming-inspection-h-f-x-at-quantum-surgical-4472161836"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
    "id": "3a82dc23adeb",
    "titre": "Technicien Laboratoire Qualité Préparation Documentaire H/F",
    "entreprise": "Randstad",
    "lieu": "Montpellier - 34",
    "contrat": "Intérim",
    "salaire": "2 338,10 € / mois",
-   "date_pub": "",
+   "date_pub": "2026-10-21",
    "extrait": "",
    "description": "Nous recherchons pour le compte de notre client Sanofi SARD spécialisé dans le secteur des essais cliniques un(e) technicien(ne) supérieur(e) préparation documentaire\n\nSuivi de dossier d'expédition du montage à l'expédition - Assure la préparation documentaire des expéditions vracs et articles de conditionnement vers les sous-traitants de packaging, et de produits pour investigation clinique vers les dépôts et les sites investigateurs\n2 mois d'expériences dans les domaines distribution, export, administratif, logistique, gestion documentaire. - Il faut savoir travailler en respectant les réglementations pharmaceutiques - Une expérience dans le milieu pharma est un plus\nC'est un poste en journée",
    "liens": [
@@ -982,7 +1005,7 @@
    "liens": [
     {
      "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-h-f-at-yellowscan-4474310395"
+     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-h-f-at-yellowscan-4474310248"
     }
    ],
    "premiere_vue": "2026-10-19",
@@ -1006,29 +1029,6 @@
     {
      "source": "LinkedIn",
      "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-production-h-f-x-at-quantum-surgical-4472175116"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-21",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "ea6213a8e477",
-   "titre": "Technicien·ne Qualité – Incoming Inspection H/F/X",
-   "entreprise": "Quantum Surgical",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-09-30",
-   "extrait": "",
-   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 800 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nPour accompagner la montée en cadence de la production d’ Epione® , nous renforçons notre équipe Qualité.\n\nRattaché·e au QA Production Manager, en tant que Technicien·ne Qualité – Incoming Inspection , vous êtes le premier filtre qualité de notre chaîne : aucun composant n’entre en production sans votre validation. Au quotidien, vous travaillez avec la Production, la Supply Chain, la Qualité Fournisseurs et la R&D.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser les contrôles à réception (visuels, dimensionnels et documentaires) des composants, sous-ensembles et consommables, conformément aux plans et aux gammes de contrôle.\n• Prononcer l’acceptation, la mise en quarantaine ou le refus des lots, et enregistrer les résultats dans notre système qualité et notre ERP.\n• Vérifier la conformité documentaire des livraisons fournisseurs : certificats de conformité, certificats matière, rapports de contrôle, traçabilité des lots et numéros de série.\n• Déclarer et assurer le suivi des non-conformités fournisseurs (SNCR)\n• Participer au suivi des actions correctives des fournisseurs (SCAR)\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks) sur les pièces livrées à réception.\n• Contribuer à la création et à la mise à jour des gammes et plans de contrôle à réception, en lien avec la R&D et le Design Transfer, notamment lors de l’introduction de nouveaux composants.\n• Participer à l’amélioration continue du processus de contrôle à réception et à la préparation des audits (ISO 13485, MDSAP, organisme notifié).\n• Être l'interlocuteur Qualité des fournisseurs pour les sujets liés au contrôle à réception et aux non-conformités.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence)\n• Vous disposez de minimum 2 ans d’expérience en contrôle qualité, idéalement en contrôle à réception, dans un environnement industriel exigeant (dispositif médical, aéronautique, automobile, pharmaceutique).\n• Vous êtes rigoureux·se et méthodique dans vos enregistrements : dans notre métier, ce qui n’est pas tracé n’existe pas.\n• Vous savez tenir votre position et bloquer un lot non conforme, même sous pression de délai.\n• Vous avez un niveau d’anglais suffisant pour lire des spécifications techniques et échanger par écrit avec nos fournisseurs et nos collègues aux États-Unis.\n\nSouhaitable\n\n• Vous connaissez les exigences de l’ISO 13485 et/ou du 21 CFR Part 820 appliquées au contrôle à réception.\n• Vous avez déjà travaillé sur des dispositifs médicaux ou en environnement à atmosphère contrôlée.\n• Vous êtes à l’aise avec un ERP et avec la gestion documentaire électronique.\n• Vous connaissez les plans d’échantillonnage (ISO 2859-1) et les bases du contrôle statistique.\n• Vous savez lire un plan et interpréter une cotation fonctionnelle (tolérancement GPS / ISO 1101), et vous maîtrisez les instruments de métrologie dimensionnelle (pied à coulisse, micromètre, comparateur, colonne de mesure).\n• Vous avez pratiqué la mesure sur MMT ou sur machine de mesure optique.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant être liée à une caractéristique physiq",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-qualit%C3%A9-%E2%80%93-incoming-inspection-h-f-x-at-quantum-surgical-4472161836"
     }
    ],
    "premiere_vue": "2026-10-19",
