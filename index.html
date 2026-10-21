@@ -167,6 +167,13 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 .drop.small{padding:14px 16px;margin-bottom:6px}.drop.small b{font-size:14.5px}
 .ed input{width:100%}.ed label{display:block;font-size:13px;font-weight:700;color:var(--mute);margin:12px 0 4px}
 #offre-pdf textarea{width:100%}
+.sources{background:#fff;border-bottom:1px solid var(--line)}
+.sources .wrap{padding-top:12px;padding-bottom:12px;display:grid;gap:8px}
+.srcrow{display:flex;gap:8px 10px;flex-wrap:wrap;align-items:center;font-size:14px}
+.srcrow b{font-weight:800}
+.srcnote{font-size:13px;color:var(--mute)}
+.chipsrc{background:#dcf6e6;color:#0b6b36;border-radius:99px;padding:3px 12px;font-size:13px;font-weight:700}
+.chipsrc small{opacity:.75;font-weight:600}
 </style>
 </head>
 <body>
@@ -184,6 +191,12 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
   <div class="maj" id="maj"></div>
 </div></header>
 
+<section class="sources"><div class="wrap">
+  <div class="srcrow"><b>📡 Offres récupérées automatiquement sur :</b> <span id="src-auto" class="sites"></span></div>
+  <div class="srcrow"><b>🔎 Autres sites à consulter (non récupérés automatiquement) :</b> <select id="req"></select> <span id="sites" class="sites"></span></div>
+  <div class="srcnote">Une offre vue sur l'un de ces sites ? Enregistre-la en PDF et glisse-la dans « Tu as une offre en PDF ou en texte ? » (onglet Offres) : elle est ajoutée automatiquement à ton suivi.</div>
+</div></section>
+
 <nav class="tabs"><div class="wrap">
   <button id="t-offres" class="on">Offres</button>
   <button id="t-carte">Carte</button>
@@ -196,21 +209,15 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 <section id="v-offres">
   <div class="panel" id="offre-pdf">
     <h2>📎 Tu as une offre en PDF ou en texte ?</h2>
-    <p class="h">Glisse le PDF de l'offre (ou colle son texte) : j'analyse l'offre et j'adapte ton CV, même si elle ne vient pas de ce site.</p>
+    <p class="h">Offre vue sur un autre site ? Glisse son PDF (ou colle son texte) : elle est ajoutée automatiquement à ton suivi, et tu peux adapter ton CV à cette offre.</p>
     <label class="drop small" id="op-drop" for="op-file"><b>Glisse le PDF de l'offre ici ou clique pour le choisir</b></label>
     <input type="file" id="op-file" accept=".pdf" hidden>
     <div class="f2"><div><label for="op-titre-in">Poste *</label><input id="op-titre-in" placeholder="Assistante qualité"></div>
       <div><label for="op-ent">Entreprise</label><input id="op-ent" placeholder="Nom de l'entreprise"></div></div>
     <label for="op-texte">Texte de l'offre</label>
     <textarea id="op-texte" rows="5" placeholder="Le texte de l'offre apparaît ici après la lecture du PDF, ou colle-le toi-même."></textarea>
-    <div style="margin-top:10px"><button class="btn pri" id="op-go">✨ Adapter mon CV à cette offre</button></div>
+    <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="op-add">📥 Ajouter à mon suivi</button><button class="btn pri" id="op-go">✨ Adapter mon CV (et ajouter au suivi)</button></div>
   </div>
-  <details class="search-box">
-    <summary>Chercher sur d'autres sites (Indeed, Welcome to the Jungle, APEC…)</summary>
-    <p>Ces sites bloquent la collecte automatique : ces boutons ouvrent la recherche déjà remplie. Une offre trouvée s'ajoute à la main dans « Mon suivi ».</p>
-    <select id="req"></select>
-    <div class="sites" id="sites"></div>
-  </details>
   <div class="bar">
     <input type="search" id="q" placeholder="Rechercher un poste, une entreprise…">
     <select id="f-com"><option value="">Toutes les villes</option></select>
@@ -297,13 +304,11 @@ dialog.add input{width:100%}dialog.add label{display:block;margin:10px 0 3px;fon
 /* ================= Données et constantes ================= */
 const STATUTS=[["a-postuler","À postuler"],["envoyee","Candidature envoyée"],["relance","Relancé"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refusé"],["silence","Sans réponse"]];
 const LIEU="Saint-Jean-de-V%C3%A9das";
+// Sites NON récupérés automatiquement (LinkedIn, HelloWork et France Travail le sont déjà)
 const SITES=[
- ["LinkedIn",q=>`https://www.linkedin.com/jobs/search/?keywords=${q}&location=${LIEU}%2C%20Occitanie%2C%20France&distance=50&f_TPR=r2592000`],
  ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=${LIEU}&radius=50&fromage=30`],
  ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=${LIEU}`],
  ["APEC",q=>`https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=${q}&lieux=599030`],
- ["HelloWork",q=>`https://www.hellowork.com/fr-fr/emploi/recherche.html?k=${q}&l=${LIEU}&ray=50`],
- ["France Travail",q=>`https://candidat.francetravail.fr/offres/recherche?motsCles=${q}&lieux=34270&rayon=50`],
  ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/${LIEU}`],
  ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=${LIEU}`],
  ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=${LIEU}`]
@@ -438,7 +443,7 @@ function renderSuivi(){
   $("#empty-suivi").hidden=liste.length>0;
   $("#tb").innerHTML=liste.map(s=>{
     const retard=s.relance&&s.relance<=today()&&!["entretien","offre","refus"].includes(s.statut);
-    const dispo=s.offreId&&offres.some(o=>o.id===s.offreId);
+    const dispo=(s.offreId&&offres.some(o=>o.id===s.offreId))||s.offre;
     return `<tr data-id="${s.id}" class="${retard?"row-late":""}">
      <td class="poste">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<input data-k="titre" value="${esc(s.titre)}">`}
        <div class="count" style="margin:0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}</div></td>
@@ -449,7 +454,7 @@ function renderSuivi(){
      <td><input type="date" data-k="relance" value="${esc(s.relance)}" title="${retard?"Relance à faire":""}"></td>
      <td><input data-k="contact" value="${esc(s.contact)}" placeholder="Nom, email…"></td>
      <td><textarea data-k="notes" rows="1">${esc(s.notes)}</textarea></td>
-     <td style="white-space:nowrap">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId)}" title="Adapter mon CV">✨ CV</button> `:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕</button></td></tr>`}).join("");
+     <td style="white-space:nowrap">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="Adapter mon CV">✨ CV</button> `:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕</button></td></tr>`}).join("");
 }
 $("#stats").onclick=e=>{const c=e.target.closest(".stat");if(c){filtreStatut=c.dataset.st;renderSuivi()}};
 $("#tb").addEventListener("change",e=>{
@@ -460,7 +465,9 @@ $("#tb").addEventListener("change",e=>{
   save();majCompteurs();renderSuivi()});
 $("#tb").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;
-  if(b.dataset.cv)return ouvrirCV(b.dataset.cv);
+  if(b.dataset.cvs){const it=suivi.find(x=>x.id===b.dataset.cvs);
+    if(it&&it.offre&&!it.offreId)return ouvrirCVOffre({id:"perso-"+it.id,titre:it.offre.titre,entreprise:it.offre.entreprise,lieu:it.lieu,commune:"",description:it.offre.description,extrait:"",liens:[{source:"PDF",url:""}]},true);
+    return ouvrirCV(b.dataset.cv)}
   if(!b.dataset.del)return;const id=b.closest("tr").dataset.id;
   const s=suivi.find(x=>x.id===id);if(!confirm(`Retirer « ${s.titre} » du suivi ?`))return;
   suivi=suivi.filter(x=>x.id!==id);save();majCompteurs();renderSuivi()});
@@ -978,7 +985,7 @@ function rendreCV(){
    <label>Autres informations</label>${ta("texte",a.texte,3)}</div>
    <div class="note" style="margin-top:8px">La formation et tes coordonnées se modifient dans l'onglet « Mon CV ».</div>
    <details id="apercu-d"><summary>Voir l'aperçu du CV final</summary><div class="atsprev" id="apercu-c"></div></details>
-   <div class="row" style="margin-top:14px"><button class="btn pri" id="dl-pdf">✓ Valider et télécharger en PDF</button><button class="btn teal sm" id="dl-docx">Télécharger en Word (.docx)</button><button class="btn sm" id="cp-cv">Copier le texte</button>${offrePerso?'<button class="btn sm" id="add-suivi">+ Ajouter l\'offre à mon suivi</button>':""}</div>
+   <div class="row" style="margin-top:14px"><button class="btn pri" id="dl-pdf">✓ Valider et télécharger en PDF</button><button class="btn teal sm" id="dl-docx">Télécharger en Word (.docx)</button><button class="btn sm" id="cp-cv">Copier le texte</button></div>
    <div class="note">Le PDF contient du vrai texte (pas une image), en une seule colonne : c'est ce que lisent les logiciels de recrutement. Envoie-le tel quel.</div>
    <h3>Lettre de motivation (brouillon)</h3><textarea id="o-let" style="min-height:240px">${esc(fabriquerLettre(o,a))}</textarea>
    <div class="row"><button class="btn sm" data-copie="o-let">Copier</button><button class="btn sm" id="dl-let">Télécharger en Word</button></div>
@@ -1089,11 +1096,21 @@ const zOp=$("#op-drop");
 ["dragenter","dragover"].forEach(ev=>zOp.addEventListener(ev,e=>{e.preventDefault();zOp.classList.add("on")}));
 ["dragleave","drop"].forEach(ev=>zOp.addEventListener(ev,e=>{e.preventDefault();zOp.classList.remove("on")}));
 zOp.addEventListener("drop",e=>offreDepuisPDF(e.dataTransfer.files[0]));
-$("#op-go").onclick=()=>{
+function offreSaisie(){
   const titre=$("#op-titre-in").value.trim(),texte=$("#op-texte").value.trim();
-  if(!titre||texte.length<40){alert("Indique le titre du poste et colle (ou charge) le texte de l'offre.");return}
-  ouvrirCVOffre({id:"perso-"+Date.now(),titre,entreprise:$("#op-ent").value.trim(),lieu:"",commune:"",description:texte,extrait:"",liens:[{source:"PDF",url:""}],date_pub:today(),premiere_vue:today(),derniere_vue:today()},true);
-};
+  if(!titre||texte.length<40){alert("Indique le titre du poste et colle (ou charge) le texte de l'offre.");return null}
+  return {id:"perso-"+Date.now(),titre,entreprise:$("#op-ent").value.trim(),lieu:"",commune:"",description:texte,extrait:"",liens:[{source:"PDF",url:""}],date_pub:today(),premiere_vue:today(),derniere_vue:today()};
+}
+function ajouterAuSuiviPerso(o){
+  const deja=suivi.find(s=>s.offre&&s.offre.titre===o.titre&&s.offre.entreprise===o.entreprise);
+  if(deja)return deja;
+  const s={id:"s"+Date.now(),offreId:null,offre:{titre:o.titre,entreprise:o.entreprise,description:o.description},titre:o.titre,entreprise:o.entreprise,lieu:o.lieu||"",url:"",
+    source:"Offre importée (PDF / texte)",statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()};
+  suivi.unshift(s);save();majCompteurs();return s;
+}
+function viderOffrePerso(){["#op-titre-in","#op-ent","#op-texte"].forEach(i=>$(i).value="")}
+$("#op-go").onclick=()=>{const o=offreSaisie();if(!o)return;ajouterAuSuiviPerso(o);toast("Offre ajoutée à ton suivi ✓");ouvrirCVOffre(o,true)};
+$("#op-add").onclick=()=>{const o=offreSaisie();if(!o)return;ajouterAuSuiviPerso(o);viderOffrePerso();toast("Offre ajoutée à ton suivi ✓")};
 
 /* ================= Démarrage ================= */
 fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
@@ -1105,6 +1122,8 @@ fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
   $("#f-src").innerHTML+=uniq(offres.flatMap(o=>o.liens.map(l=>l.source))).map(s=>`<option>${esc(s)}</option>`).join("");
   $("#f-ct").innerHTML+=uniq(offres.map(o=>o.contrat)).map(s=>`<option>${esc(s)}</option>`).join("");
   $("#f-com").innerHTML+=uniq(offres.map(o=>o.commune)).map(s=>`<option>${esc(s)}</option>`).join("");
+  const nb={};offres.forEach(o=>o.liens.forEach(l=>nb[l.source]=(nb[l.source]||0)+1));
+  $("#src-auto").innerHTML=["LinkedIn","HelloWork","France Travail"].map(n=>`<span class="chipsrc">${n}${nb[n]?` <small>· ${nb[n]} offres</small>`:""}</span>`).join("");
   majCompteurs();
   const h=location.hash.slice(1);onglet(["carte","suivi","cv"].includes(h)?h:"offres");
 }).catch(err=>{console.error(err);$("#list").innerHTML='<div class="empty">Impossible de charger les offres. En local, ouvre le site avec <b>lancer.bat</b> (et non en double-cliquant sur index.html).</div>';majCompteurs()});
