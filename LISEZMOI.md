@@ -1,6 +1,6 @@
 # Offres Qualité · Montpellier
 
-Site qui rassemble chaque jour les offres d'ingénieure qualité agroalimentaire, assistante / technicienne qualité et responsable qualité / QHSE autour de Montpellier (25 km), avec un tableau de suivi des candidatures.
+Site qui rassemble chaque jour les offres d'ingénieure qualité agroalimentaire, assistante / technicienne qualité et responsable qualité / QHSE autour de Saint-Jean-de-Védas (50 km), avec un tableau de suivi des candidatures.
 
 ## Utiliser en local
 - `actualiser.bat` : récupère les offres (écrit `data/offres.json`).

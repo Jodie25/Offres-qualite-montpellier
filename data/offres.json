@@ -1,6 +1,139 @@
 {
- "maj": "2026-10-19T11:59+00:00",
+ "maj": "2026-10-21T11:35+00:00",
  "offres": [
+  {
+   "id": "debfbb5b43c0",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-21",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454479459"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": true
+  },
+  {
+   "id": "910443fb37e3",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Aimargues",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-21",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454464469"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": true
+  },
+  {
+   "id": "8b966e84e61a",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Nîmes",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-21",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454463487"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": true
+  },
+  {
+   "id": "25fa0f00dc68",
+   "titre": "Agent de Laboratoire - Technicien Controle H/F",
+   "entreprise": "Jubil Intérim",
+   "lieu": "Codognan - 30",
+   "contrat": "Intérim",
+   "salaire": "",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/84461111.html"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "3f2b7aecd664",
+   "titre": "Assistant Qualité H/F",
+   "entreprise": "Groupe Synergie",
+   "lieu": "Vergèze - 30",
+   "contrat": "Intérim",
+   "salaire": "20 000 - 25 000 € / an",
+   "date_pub": "",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "HelloWork",
+     "url": "https://www.hellowork.com/fr-fr/emplois/83782418.html"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "7ca72439f632",
+   "titre": "Responsable QHSE et CHAI (F/H)",
+   "entreprise": "Carrefour",
+   "lieu": "Nîmes",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-20",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/responsable-qhse-et-chai-f-h-at-carrefour-4452572857"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "bdd5327d6735",
+   "titre": "Employé de fabrication et de conditionnement en laboratoire H/F",
+   "entreprise": "Innovative Diagnostics",
+   "lieu": "Grabels",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-19",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/employ%C3%A9-de-fabrication-et-de-conditionnement-en-laboratoire-h-f-at-innovative-diagnostics-4480273674"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
   {
    "id": "debc66fa9d69",
    "titre": "Technicien QHSE",
@@ -17,7 +150,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -36,7 +169,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -55,7 +188,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -74,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -93,7 +226,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -112,7 +245,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -131,7 +264,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -150,7 +283,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -169,7 +302,26 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "ec0403ea4cac",
+   "titre": "Technicien (ne) laboratoire matériaux- Bétons, Mortiers",
+   "entreprise": "setec lerm (Laboratoire d'Etudes et de Recherches sur les Matériaux)",
+   "lieu": "Arles",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-16",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-ne-laboratoire-mat%C3%A9riaux-b%C3%A9tons-mortiers-at-setec-lerm-laboratoire-d-etudes-et-de-recherches-sur-les-mat%C3%A9riaux-4471622673"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -188,7 +340,45 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "95bde04da9d6",
+   "titre": "stage 6 mois amélioration continue contrôle qualité",
+   "entreprise": "Sanofi",
+   "lieu": "Aramon",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-15",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-am%C3%A9lioration-continue-contr%C3%B4le-qualit%C3%A9-at-sanofi-4479804813"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "2da490f64694",
+   "titre": "stage 6 mois contrôle qualité biochimie",
+   "entreprise": "Sanofi",
+   "lieu": "Aramon",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-15",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-contr%C3%B4le-qualit%C3%A9-biochimie-at-sanofi-4479808623"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -207,7 +397,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -226,7 +416,26 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "675518432696",
+   "titre": "Technicien de laboratoire d'analyses médicales H/F",
+   "entreprise": "INOVIE (Groupe)",
+   "lieu": "Arles",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-14",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-analyses-m%C3%A9dicales-h-f-at-inovie-groupe-4479563710"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -245,7 +454,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -264,7 +473,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -283,7 +492,26 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "0ce9eed6bdfd",
+   "titre": "Stagiaire QHSE (H/F)",
+   "entreprise": "Medincell",
+   "lieu": "Jacou",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-12",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stagiaire-qhse-h-f-at-medincell-4476014849"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -325,22 +553,22 @@
    "agro": false
   },
   {
-   "id": "0ce9eed6bdfd",
-   "titre": "Stagiaire QHSE (H/F)",
-   "entreprise": "Medincell",
-   "lieu": "Jacou",
+   "id": "3bf6f53fde4f",
+   "titre": "Technicien Production Contrôle Qualité - Région Sud Est (H/F)",
+   "entreprise": "Curium Pharma",
+   "lieu": "Nîmes",
    "contrat": "",
    "salaire": "",
-   "date_pub": "2026-10-12",
+   "date_pub": "2026-10-10",
    "extrait": "",
    "liens": [
     {
      "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stagiaire-qhse-h-f-at-medincell-4476014849"
+     "url": "https://fr.linkedin.com/jobs/view/technicien-production-contr%C3%B4le-qualit%C3%A9-r%C3%A9gion-sud-est-h-f-at-curium-pharma-4475299907"
     }
    ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -359,7 +587,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -378,7 +606,45 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "7791edb6671c",
+   "titre": "Stage - Ingénieur Qualité - Déploiement des basiques qualité - H/F",
+   "entreprise": "Schneider Electric",
+   "lieu": "Gard",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-08",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-d%C3%A9ploiement-des-basiques-qualit%C3%A9-h-f-at-schneider-electric-4475981622"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "13aacbe0ed1b",
+   "titre": "Technicien de laboratoire d'analyses médicale H/F",
+   "entreprise": "INOVIE (Groupe)",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-08",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-analyses-m%C3%A9dicale-h-f-at-inovie-groupe-4477482715"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -401,25 +667,6 @@
    "agro": false
   },
   {
-   "id": "13aacbe0ed1b",
-   "titre": "Technicien de laboratoire d'analyses médicale H/F",
-   "entreprise": "INOVIE (Groupe)",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-08",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-analyses-m%C3%A9dicale-h-f-at-inovie-groupe-4477482715"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
-   "agro": false
-  },
-  {
    "id": "d538bd86b546",
    "titre": "Stagiaire Qualité F/H",
    "entreprise": "RAZEL-BEC | FAYAT Group",
@@ -435,7 +682,64 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "085e0b72506e",
+   "titre": "Technicien de Laboratoire Contrôle Qualité H/F",
+   "entreprise": "LFB",
+   "lieu": "Alès",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-05",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-contr%C3%B4le-qualit%C3%A9-h-f-at-lfb-4439991972"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "7739cacddf4f",
+   "titre": "Coordonnateur assurance qualité chantier TP",
+   "entreprise": "GROUPE ROGER MARTIN",
+   "lieu": "Béziers",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-05",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/coordonnateur-assurance-qualit%C3%A9-chantier-tp-at-groupe-roger-martin-4474284942"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "0f20e8af70ea",
+   "titre": "Stage PFE Ingénieur qualité F/H",
+   "entreprise": "Eiffage Énergie Systèmes",
+   "lieu": "Caissargues",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-02",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-pfe-ing%C3%A9nieur-qualit%C3%A9-f-h-at-eiffage-%C3%A9nergie-syst%C3%A8mes-4473144300"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -454,7 +758,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -473,7 +777,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -492,7 +796,26 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
+   "agro": false
+  },
+  {
+   "id": "09d5455b2551",
+   "titre": "Chargé Qualité et Administrateur LIMS (F/M)",
+   "entreprise": "Axens",
+   "lieu": "Salindres",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-09-30",
+   "extrait": "",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-qualit%C3%A9-et-administrateur-lims-f-m-at-axens-4473951565"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
@@ -511,46 +834,27 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
+   "derniere_vue": "2026-10-21",
    "agro": false
   },
   {
-   "id": "debfbb5b43c0",
-   "titre": "Global Quality and Food Safety Specialist H/F/X",
-   "entreprise": "Mars",
-   "lieu": "Montpellier",
+   "id": "eacf0d12473c",
+   "titre": "Technicien(ne) qualité niveau 2",
+   "entreprise": "Winncare",
+   "lieu": "Nîmes",
    "contrat": "",
    "salaire": "",
-   "date_pub": "2026-09-29",
+   "date_pub": "2026-09-24",
    "extrait": "",
    "liens": [
     {
      "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454479459"
+     "url": "https://fr.linkedin.com/jobs/view/technicien-ne-qualit%C3%A9-niveau-2-at-winncare-4469687309"
     }
    ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
-   "agro": true
-  },
-  {
-   "id": "910443fb37e3",
-   "titre": "Global Quality and Food Safety Specialist H/F/X",
-   "entreprise": "Mars",
-   "lieu": "Aimargues",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-09-29",
-   "extrait": "",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454464469"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-10-19",
-   "agro": true
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-10-21",
+   "agro": false
   },
   {
    "id": "7318dd016711",

@@ -77,7 +77,7 @@ dialog label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute)}di
 </head>
 <body>
 <header><div class="wrap top">
-  <h1>Offres Qualité · Montpellier</h1>
+  <h1>Offres Qualité · Montpellier (50 km)</h1>
   <span class="maj" id="maj"></span>
   <nav>
     <button id="t-offres" class="on">Offres</button>
@@ -145,16 +145,16 @@ dialog label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute)}di
 <script>
 const STATUTS=[["a-postuler","À postuler"],["envoyee","Candidature envoyée"],["relance","Relancé"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refusé"],["silence","Sans réponse"]];
 const SITES=[
- ["LinkedIn",q=>`https://www.linkedin.com/jobs/search/?keywords=${q}&location=Montpellier%2C%20Occitanie%2C%20France&distance=25&f_TPR=r2592000`],
- ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=Montpellier&radius=25&fromage=30`],
- ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=Montpellier`],
+ ["LinkedIn",q=>`https://www.linkedin.com/jobs/search/?keywords=${q}&location=Saint-Jean-de-V%C3%A9das%2C%20Occitanie%2C%20France&distance=50&f_TPR=r2592000`],
+ ["Indeed",q=>`https://fr.indeed.com/jobs?q=${q}&l=Saint-Jean-de-V%C3%A9das&radius=50&fromage=30`],
+ ["Welcome to the Jungle",q=>`https://www.welcometothejungle.com/fr/jobs?query=${q}&aroundQuery=Saint-Jean-de-V%C3%A9das`],
  ["APEC",q=>`https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=${q}&lieux=599030`],
- ["HelloWork",q=>`https://www.hellowork.com/fr-fr/emploi/recherche.html?k=${q}&l=Montpellier&ray=25`],
- ["France Travail",q=>`https://candidat.francetravail.fr/offres/recherche?motsCles=${q}&lieux=34172&rayon=25`],
- ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/Montpellier`],
- ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=Montpellier`],
- ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=Montpellier`],
- ["Indeed Alternance",q=>`https://fr.indeed.com/jobs?q=${q}+alternance&l=Montpellier&radius=25`]
+ ["HelloWork",q=>`https://www.hellowork.com/fr-fr/emploi/recherche.html?k=${q}&l=Saint-Jean-de-V%C3%A9das&ray=50`],
+ ["France Travail",q=>`https://candidat.francetravail.fr/offres/recherche?motsCles=${q}&lieux=34270&rayon=50`],
+ ["Jooble",q=>`https://fr.jooble.org/emploi-${q.replace(/%20/g,"-")}/Saint-Jean-de-V%C3%A9das`],
+ ["Meteojob",q=>`https://www.meteojob.com/jobs?what=${q}&where=Saint-Jean-de-V%C3%A9das`],
+ ["Cadremploi",q=>`https://www.cadremploi.fr/emploi/liste_offres?motsCles=${q}&lieux=Saint-Jean-de-V%C3%A9das`],
+ ["Indeed Alternance",q=>`https://fr.indeed.com/jobs?q=${q}+alternance&l=Saint-Jean-de-V%C3%A9das&radius=50`]
 ];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
