@@ -184,6 +184,26 @@ def adzuna(requetes):
     return res
 
 
+# ---------- Jooble (API, clé gratuite) ----------
+def jooble(requetes):
+    key = os.environ.get("JOOBLE_KEY")
+    if not key:
+        print("   (Jooble ignoré : pas de clé JOOBLE_KEY)")
+        return []
+    res = []
+    for q in requetes:
+        body = json.dumps({"keywords": q, "location": CFG["ville"], "radius": str(CFG["rayon_km"]), "page": "1"}).encode()
+        r = get(f"https://jooble.org/api/{key}", {"Content-Type": "application/json"}, data=body)
+        if not r:
+            continue
+        for o in json.loads(r).get("jobs", []):
+            res.append(offre("Jooble", o.get("id", ""), o.get("title", ""), o.get("company", ""), o.get("location", ""),
+                             o.get("link", ""), contrat=o.get("type", ""), salaire=o.get("salary", ""),
+                             date_pub=o.get("updated", ""), extrait=o.get("snippet", "")))
+        time.sleep(0.5)
+    return res
+
+
 # ---------- Filtrage et fusion ----------
 def pertinente(o):
     t = norm(o["titre"])
@@ -216,7 +236,7 @@ def main():
             n += len(r)
             brut += r
         print(f" {nom}: {n} résultats bruts")
-    for nom, f in (("France Travail", france_travail), ("Adzuna", adzuna)):
+    for nom, f in (("France Travail", france_travail), ("Adzuna", adzuna), ("Jooble", jooble)):
         r = f(CFG["requetes"])
         brut += r
         if r:

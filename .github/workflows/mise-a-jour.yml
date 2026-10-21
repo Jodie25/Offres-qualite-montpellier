@@ -48,6 +48,7 @@ jobs:
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          JOOBLE_KEY: ${{ secrets.JOOBLE_KEY }}
         run: python collecte/collecter.py
       - name: Enregistrer les données
         run: |
