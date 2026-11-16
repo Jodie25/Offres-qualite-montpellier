@@ -392,6 +392,16 @@ def cle(o):
 
 
 def main():
+    if "--si-ancien" in sys.argv:
+        heures = float(sys.argv[sys.argv.index("--si-ancien") + 1])
+        try:
+            derniere = datetime.fromisoformat(json.loads(SORTIE.read_text(encoding="utf-8"))["maj"])
+            age = (datetime.now(timezone.utc) - derniere).total_seconds() / 3600
+            if age < heures:
+                print(f"Dernière collecte il y a {age:.1f} h (< {heures:g} h) : rien à faire.")
+                return
+        except Exception:
+            pass
     print("Collecte des offres…")
     brut = []
     for nom, f in (("LinkedIn", linkedin), ("HelloWork", hellowork), ("Meteojob", meteojob), ("Welcome to the Jungle", wttj)):

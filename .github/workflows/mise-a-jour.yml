@@ -2,13 +2,13 @@ name: Mise à jour des offres
 
 on:
   schedule:
-    # 5h et 6h UTC : une seule des deux tombe à 7h heure de Paris (été/hiver), l'autre est ignorée
-    - cron: "0 5 * * *"
-    - cron: "0 6 * * *"
+    # GitHub retarde souvent les tâches planifiées de plusieurs heures : on tente donc plusieurs fois par jour,
+    # et le robot ne collecte que si la dernière collecte a plus de 20 heures (voir --si-ancien).
+    - cron: "17 3,5,7,9,11,13,15,17 * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["index.html", "collecte/config.json"]
+    paths: ["index.html", "collecte/config.json", "collecte/collecter.py"]
 
 permissions:
   contents: write
@@ -20,22 +20,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  heure:
-    runs-on: ubuntu-latest
-    outputs:
-      go: ${{ steps.h.outputs.go }}
-    steps:
-      - id: h
-        run: |
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(TZ=Europe/Paris date +%H)" = "07" ]; then
-            echo "go=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "go=false" >> "$GITHUB_OUTPUT"
-          fi
-
   collecte:
-    needs: heure
-    if: needs.heure.outputs.go == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,8 +33,12 @@ jobs:
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-          JOOBLE_KEY: ${{ secrets.JOOBLE_KEY }}
-        run: python collecte/collecter.py
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python collecte/collecter.py --si-ancien 20
+          else
+            python collecte/collecter.py
+          fi
       - name: Enregistrer les données
         run: |
           git config user.name "robot-offres"
@@ -60,8 +49,7 @@ jobs:
           git push
 
   publier:
-    needs: [heure, collecte]
-    if: needs.heure.outputs.go == 'true'
+    needs: [collecte]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
