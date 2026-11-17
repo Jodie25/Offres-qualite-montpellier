@@ -238,7 +238,7 @@ main{padding:26px 0 80px}
 <header class="hero"><div class="wrap">
   <div class="brand"><i>★</i> Offres Qualité · Agroalimentaire</div>
   <h1>Ton prochain poste en qualité t'attend près de chez toi</h1>
-  <p id="sous">Les offres autour de Saint-Jean-de-Védas, rassemblées pour toi chaque matin. Choisis, adapte ton CV, postule&nbsp;!</p>
+  <p id="sous">Les offres autour de Saint-Jean-de-Védas, mises à jour le matin, le midi et le soir. Choisis, adapte ton CV, postule&nbsp;!</p>
   <div class="hstats">
     <div class="hs"><b id="h-total">–</b><span>offres à découvrir</span></div>
     <div class="hs"><b id="h-new">–</b><span>nouvelles cette semaine</span></div>
@@ -329,7 +329,7 @@ main{padding:26px 0 80px}
   </div>
 </section>
 
-<p class="foot">Sources : LinkedIn, HelloWork, Meteojob, Welcome to the Jungle, France Travail · Offres de moins d'un mois · Mise à jour tous les matins à 7h</p>
+<p class="foot">Sources : LinkedIn, HelloWork, Meteojob, Welcome to the Jungle, France Travail · Offres de moins de 20 jours, de la plus récente à la plus ancienne · Mises à jour le matin, le midi et le soir</p>
 </main>
 
 <dialog class="add" id="dlg">
@@ -1168,10 +1168,10 @@ $("#op-add").onclick=()=>{const o=offreSaisie();if(!o)return;ajouterAuSuiviPerso
 
 /* ================= Démarrage ================= */
 fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
-  offres=d.offres;maj=d.maj;if(d.centre)centre=d.centre;if(d.rayon_km)rayon=d.rayon_km;
+  offres=d.offres;offres=offres.filter(o=>jours(dateRef(o))<=20).sort((a,b)=>(dateRef(b)||"").localeCompare(dateRef(a)||"")||(b.premiere_vue||"").localeCompare(a.premiere_vue||""));maj=d.maj;if(d.centre)centre=d.centre;if(d.rayon_km)rayon=d.rayon_km;
   $("#maj").textContent="Mis à jour le "+new Date(maj).toLocaleString("fr-FR",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"});
   $("#h-total").textContent=offres.length;$("#h-new").textContent=offres.filter(o=>jours(dateRef(o))<=7).length;
-  $("#sous").textContent=`${offres.length} offres autour de Saint-Jean-de-Védas (${rayon} km), rassemblées pour toi chaque matin. Choisis, adapte ton CV, postule !`;
+  $("#sous").textContent=`${offres.length} offres autour de Saint-Jean-de-Védas (${rayon} km), mises à jour le matin, le midi et le soir. Choisis, adapte ton CV, postule !`;
   const uniq=a=>[...new Set(a)].filter(Boolean).sort((x,y)=>x.localeCompare(y,"fr"));
   $("#f-src").innerHTML+=uniq(offres.flatMap(o=>o.liens.map(l=>l.source))).map(s=>`<option>${esc(s)}</option>`).join("");
   $("#f-ct").innerHTML+=uniq(offres.map(o=>o.contrat)).map(s=>`<option>${esc(s)}</option>`).join("");

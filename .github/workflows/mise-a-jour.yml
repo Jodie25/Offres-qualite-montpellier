@@ -2,9 +2,11 @@ name: Mise à jour des offres
 
 on:
   schedule:
-    # GitHub retarde souvent les tâches planifiées de plusieurs heures : on tente donc plusieurs fois par jour,
-    # et le robot ne collecte que si la dernière collecte a plus de 20 heures (voir --si-ancien).
-    - cron: "17 3,5,7,9,11,13,15,17 * * *"
+    # Trois collectes par jour : matin, midi et soir (heures UTC ; GitHub peut les retarder de quelques heures).
+    # Le robot ne collecte que si la dernière collecte a plus de 4 heures (voir --si-ancien).
+    - cron: "30 5 * * *"
+    - cron: "30 10 * * *"
+    - cron: "30 16 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -35,7 +37,7 @@ jobs:
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python collecte/collecter.py --si-ancien 20
+            python collecte/collecter.py --si-ancien 4
           else
             python collecte/collecter.py
           fi

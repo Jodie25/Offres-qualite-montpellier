@@ -21,7 +21,7 @@ Site qui rassemble chaque jour les offres d'ingénieure qualité agroalimentaire
 ## Mise en ligne (GitHub Pages)
 1. Créer un dépôt GitHub, y pousser ce dossier (branche `main`).
 2. Settings → Pages → Source : **GitHub Actions**.
-3. Actions → « Mise à jour des offres » → Run workflow. Ensuite la mise à jour se fait seule tous les matins à 7h (heure de Paris).
+3. Actions → « Mise à jour des offres » → Run workflow. Ensuite la mise à jour se fait seule trois fois par jour (matin, midi et soir).
 
 ## Réglages
 `collecte/config.json` : requêtes, rayon, mots exigés / exclus dans les titres.
