@@ -230,6 +230,7 @@ main{padding:26px 0 80px}
   nav.tabs button{padding:8px 10px;font-size:13.5px}
   nav.tabs .n{margin-left:3px}
 }
+#offre-pdf{margin-top:30px}
 </style>
 </head>
 <body>
@@ -250,7 +251,7 @@ main{padding:26px 0 80px}
 <section class="sources"><div class="wrap">
   <div class="srcrow"><b>📡 Offres récupérées automatiquement sur :</b> <span id="src-auto" class="sites"></span></div>
   <div class="srcrow"><b>🔎 Autres sites à consulter (non récupérés automatiquement) :</b> <select id="req"></select> <span id="sites" class="sites"></span></div>
-  <div class="srcnote">Pourquoi pas récupérés ? Indeed, APEC et Jooble bloquent les logiciels de collecte (protection anti-robot) ; Cadremploi n'affiche ses résultats que dans le navigateur. Une offre vue sur l'un de ces sites ? Enregistre-la en PDF et glisse-la dans « Tu as une offre en PDF ou en texte ? » (onglet Offres) : elle est ajoutée automatiquement à ton suivi.</div>
+  <div class="srcnote">Pourquoi pas récupérés ? Indeed, APEC et Jooble bloquent les logiciels de collecte (protection anti-robot) ; Cadremploi n'affiche ses résultats que dans le navigateur. Une offre vue sur l'un de ces sites ? Enregistre-la en PDF et glisse-la dans « Tu as une offre en PDF ou en texte ? » (tout en bas de l'onglet Offres) : elle est ajoutée automatiquement à ton suivi.</div>
 </div></section>
 
 <nav class="tabs"><div class="wrap">
@@ -263,6 +264,16 @@ main{padding:26px 0 80px}
 <main class="wrap">
 
 <section id="v-offres">
+  <div class="bar">
+    <input type="search" id="q" placeholder="Rechercher un poste, une entreprise…">
+    <select id="f-com"><option value="">Toutes les villes</option></select>
+    <select id="f-src"><option value="">Toutes les sources</option></select>
+    <select id="f-ct"><option value="">Tous contrats</option></select>
+    <label class="ck"><input type="checkbox" id="f-agro"> Agroalimentaire</label>
+    <label class="ck"><input type="checkbox" id="f-hide" checked> Masquer suivies / ignorées</label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="list" id="list"></div>
   <div class="panel" id="offre-pdf">
     <h2>📎 Tu as une offre en PDF ou en texte ?</h2>
     <p class="h">Offre vue sur un autre site ? Glisse son PDF (ou colle son texte) : elle est ajoutée automatiquement à ton suivi, et tu peux adapter ton CV à cette offre.</p>
@@ -274,17 +285,6 @@ main{padding:26px 0 80px}
     <textarea id="op-texte" rows="5" placeholder="Le texte de l'offre apparaît ici après la lecture du PDF, ou colle-le toi-même."></textarea>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="op-add">📥 Ajouter à mon suivi</button><button class="btn pri" id="op-go">✨ Adapter mon CV (et ajouter au suivi)</button></div>
   </div>
-  <div class="bar">
-    <input type="search" id="q" placeholder="Rechercher un poste, une entreprise…">
-    <select id="f-com"><option value="">Toutes les villes</option></select>
-    <select id="f-src"><option value="">Toutes les sources</option></select>
-    <select id="f-ct"><option value="">Tous contrats</option></select>
-    <label class="ck"><input type="checkbox" id="f-agro"> Agroalimentaire</label>
-    <label class="ck"><input type="checkbox" id="f-new"> Nouvelles (7 j)</label>
-    <label class="ck"><input type="checkbox" id="f-hide" checked> Masquer suivies / ignorées</label>
-  </div>
-  <p class="count" id="count"></p>
-  <div class="list" id="list"></div>
 </section>
 
 <section id="v-carte" hidden>
@@ -440,11 +440,11 @@ function actionsOffre(e){
 const rafraichir=()=>{renderOffres();if(!$("#v-carte").hidden)renderCarte()};
 function filtrees(){
   const q=$("#q").value.toLowerCase(),src=$("#f-src").value,ct=$("#f-ct").value,com=$("#f-com").value,
-    agro=$("#f-agro").checked,nw=$("#f-new").checked,hide=$("#f-hide").checked,sv=suiviIds();
+    agro=$("#f-agro").checked,hide=$("#f-hide").checked,sv=suiviIds();
   return offres.filter(o=>
     (!q||(o.titre+" "+o.entreprise+" "+o.lieu).toLowerCase().includes(q))&&
     (!src||o.liens.some(l=>l.source===src))&&(!ct||o.contrat.toLowerCase().includes(ct.toLowerCase()))&&
-    (!com||o.commune===com)&&(!agro||o.agro)&&(!nw||jours(dateRef(o))<=7)&&(!hide||!(sv.has(o.id)||ignores.has(o.id))));
+    (!com||o.commune===com)&&(!agro||o.agro)&&(!hide||!(sv.has(o.id)||ignores.has(o.id))));
 }
 function renderOffres(){
   const liste=filtrees(),sv=suiviIds();
@@ -452,7 +452,7 @@ function renderOffres(){
   $("#list").innerHTML=liste.length?liste.map(o=>carteOffre(o,sv)).join(""):'<div class="empty">Aucune offre ne correspond à ces filtres.</div>';
 }
 $("#list").onclick=actionsOffre;$("#map-list").onclick=actionsOffre;
-["q","f-src","f-ct","f-com","f-agro","f-new","f-hide"].forEach(id=>$("#"+id).addEventListener("input",renderOffres));
+["q","f-src","f-ct","f-com","f-agro","f-hide"].forEach(id=>$("#"+id).addEventListener("input",renderOffres));
 
 /* ================= Carte ================= */
 let map=null,couche=null;
