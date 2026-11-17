@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-17T19:19+00:00",
+ "maj": "2026-11-17T23:38+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -467,29 +467,6 @@
    "commune": "Garons"
   },
   {
-   "id": "d085171b2321",
-   "titre": "Contrôleur qualité industrie (H/F)",
-   "entreprise": "Randstad",
-   "lieu": "34 - Lavérune",
-   "contrat": "Intérim - 2 Mois",
-   "salaire": "Mensuel de 1809.57 Euros",
-   "date_pub": "2026-11-04",
-   "extrait": "Description du poste : Souhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante Vous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue Vous contrôlez les matières premières et les produits finis au sein des ateliers Vous gérez les non-conformités et analysez ",
-   "description": "Description du poste :\n\nSouhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante Vous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue Vous contrôlez les matières premières et les produits finis au sein des ateliers Vous gérez les non-conformités et analysez leurs causes profondes afin de définir des actions correctives Vous rédigez les documents de suivi qualité et veillez au respect des normes de production\n\nEt voici les modalités de l'offre Contrat: Intérim Durée: 2/mois Salaire: 12.31 euros/heure\n\nDe plus, nous offrons un ensemble complet d'avantages aux intérimaires, y compris Fast TT, pour assurer leur succès professionnel et personnel.\n\nDescription du profil :\n\nVous êtes une technicienne ou un technicien qualité rigoureux, justifiant d'une première expérience en environnement industriel Vous maîtrisez le contrôle des matières premières et des produits finis en usine\n\nProcessus de recrutement\n\nVous êtes intéressé(e) par cette offre d'emploi ? C'est très simple, postulez en quelques clics ! Notre équipe de consultant(e)s prendra contact avec vous pour valider vos compétences et objectifs de carrière. Si votre candidature est acceptée, nous vous fournirons tous les éléments nécessaires pour votre mission. À très bientôt !",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8527231"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-17",
-   "agro": false,
-   "lat": 43.5848,
-   "lon": 3.8003,
-   "commune": "Lavérune"
-  },
-  {
    "id": "e36f2b7ec3bd",
    "titre": "Technicien de Laboratoire d'anatomie pathologique H/F (H/F)",
    "entreprise": "INSTITUT REGIONAL DU CANCER DE MONTPELLI",
@@ -511,6 +488,29 @@
    "lat": 43.61,
    "lon": 3.8742,
    "commune": "Montpellier"
+  },
+  {
+   "id": "d085171b2321",
+   "titre": "Contrôleur qualité industrie (H/F)",
+   "entreprise": "Randstad",
+   "lieu": "34 - Lavérune",
+   "contrat": "Intérim - 2 Mois",
+   "salaire": "Mensuel de 1809.57 Euros",
+   "date_pub": "2026-11-04",
+   "extrait": "Description du poste : Souhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante Vous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue Vous contrôlez les matières premières et les produits finis au sein des ateliers Vous gérez les non-conformités et analysez ",
+   "description": "Description du poste :\n\nSouhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante Vous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue Vous contrôlez les matières premières et les produits finis au sein des ateliers Vous gérez les non-conformités et analysez leurs causes profondes afin de définir des actions correctives Vous rédigez les documents de suivi qualité et veillez au respect des normes de production\n\nEt voici les modalités de l'offre Contrat: Intérim Durée: 2/mois Salaire: 12.31 euros/heure\n\nDe plus, nous offrons un ensemble complet d'avantages aux intérimaires, y compris Fast TT, pour assurer leur succès professionnel et personnel.\n\nDescription du profil :\n\nVous êtes une technicienne ou un technicien qualité rigoureux, justifiant d'une première expérience en environnement industriel Vous maîtrisez le contrôle des matières premières et des produits finis en usine\n\nProcessus de recrutement\n\nVous êtes intéressé(e) par cette offre d'emploi ? C'est très simple, postulez en quelques clics ! Notre équipe de consultant(e)s prendra contact avec vous pour valider vos compétences et objectifs de carrière. Si votre candidature est acceptée, nous vous fournirons tous les éléments nécessaires pour votre mission. À très bientôt !",
+   "liens": [
+    {
+     "source": "France Travail",
+     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8527231"
+    }
+   ],
+   "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
+   "agro": false,
+   "lat": 43.5848,
+   "lon": 3.8003,
+   "commune": "Lavérune"
   },
   {
    "id": "b563f9b370d7",
