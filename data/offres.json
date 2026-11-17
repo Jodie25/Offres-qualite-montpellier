@@ -1,11 +1,34 @@
 {
- "maj": "2026-11-16T17:19+00:00",
+ "maj": "2026-11-17T10:25+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "716da582571a",
+   "titre": "Directeur.trice QHSE - H/F",
+   "entreprise": "LFC HUMAIN",
+   "lieu": "Villeneuve-lès-Béziers",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-16",
+   "extrait": "",
+   "description": "LFC Humain, Cabinet de Conseils en Ressources Humaines, recrute un.e Directeur.trice QHSE pour un groupe spécialisé dans l'agroalimentaire. Poste basé.e à Villeneuve-les-Béziers (34) .\n\nLe Groupe compte 100 collaborateurs répartis sur deux sites (Béziers et en Espagne) et conjugue tradition familiale et innovation . Porté par un savoir-faire transmis de génération en génération, il se distingue par son exigence de qualité, son respect des produits et son engagement en faveur de l’environnement.\n\nLe Poste\n\nRattaché.e à la Direction Générale et membre du CODIR , vous définissez et déployez la stratégie QHSE du Groupe. Véritable partenaire stratégique , vous êtes garant.e de la sécurité alimentaire, de la conformité réglementaire, de la performance des systèmes qualité et du développement d’une culture d’amélioration continue.\n\nVous encadrez les équipes QHSE (10p au total en comprenant le directeur QHSE, Responsable qualité, Assistant HSE, service nettoyage et laboratoire), accompagnez les évolutions organisationnelles et contribuez aux projets R&D, RSE et d’innovation produits en lien avec les différentes directions de l’entreprise. 2. Pilotage et déploiement de la politique Qualité, Sécurité, Hygiène et Environnement 3. Pilotage des projets R&D\n\n• Management des équipes QHSE\n• Manager une équipe pluridisciplinaire (effectif renforcé pendant les pics d’activité, au printemps et en été) dont 1 à 3 personnes en direct\n• Développer les compétences et favoriser l’engagement des collaborateurs\n• Déployer une véritable culture qualité auprès des équipes opérationnelles\n• Définir et déployer la politique QHSE en cohérence avec les ambitions du Groupe\n• Déployer la politique QHSE sur les sites et planifier les audits interne et externe\n• Piloter HACCP, Food Defense et Food Fraud\n• Assurer les démarches d’amélioration continue et accompagner l’évolution des pratiques et des différents processus qualité à mettre en oeuvre en lien avec les autres directions\n• Formaliser et optimiser les processus de contrôle qualité (rédaction des procédures, plan de maîtrise, …) et les indicateurs de suivi et mettre en place une méthodologie et des processus d’amélioration continue au sein de l’organisation existante\n• Effectuer l’animation, le suivi et l’obtention des certifications avec l’ensemble des directions de l’entreprise\n• Développer les relations et accueillir les autorités sanitaires, les organismes de contrôle et de certification\n• Assurer une veille réglementaire active sur les enjeux hygiène, sécurité alimentaire, sécurité du personnel, environnement et garantir la conformité aux exigences réglementaires françaises, européennes et internationales\n• Assurer le développement de la relation clients\n• Élaborer et suivre le budget de votre service par des suivis mensuels\n• Participer à l’évolution de la politique et des pratiques RSE du groupe\n• Participer aux développements produits avec le support ou non de prestataires externes\n• Coordonner le comité R&D\n• Assurer une veille marché et innovation en collaboration avec le service commercial et marketing\n\nProfil Recherché\n\nDe formaton Ingénieur ou Bac +5, vous justifiez d’une expérience d’ au moins 6 ans dans une fonction de direction QHSE au sein de l’industrie agroalimentaire.\n\nVous maîtrisez les enjeux liés à la sécurité alimentaire, aux référentiels qualité, aux procédés de transformation et aux démarches d’amélioration continue .\n\nLeader naturel.le , vous savez fédérer les équipes, accompagner le changement et créer une dynamique collective autour des enjeux qualité. Votre capacité d’analyse, votre sens de l’organisation et votre aisance relationnelle vous permettent d’évoluer efficacement dans un environnement en transformation.\n\nUn anglais professionnel est indispensable. La maîtrise de l’espagnol serait appréciée.\n\nVous vous reconnaissez dans cette opportunité ? Nous serons ravis de découvrir votre candidature !",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/directeur-trice-qhse-h-f-at-lfc-humain-4490120318"
+    }
+   ],
+   "premiere_vue": "2026-11-17",
+   "derniere_vue": "2026-11-17",
+   "agro": false,
+   "lat": 43.3178,
+   "lon": 3.2909,
+   "commune": "Villeneuve-lès-Béziers"
+  },
   {
    "id": "4c3eaf4ee399",
    "titre": "Stage - Management de la Qualité & Amélioration Continue Process",
@@ -23,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -46,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -69,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -92,7 +115,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -115,7 +138,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -138,7 +161,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -161,7 +184,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -184,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -207,7 +230,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.7924,
    "lon": 4.3919,
@@ -230,34 +253,11 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
    "commune": "Nîmes"
-  },
-  {
-   "id": "bd71f0c5573c",
-   "titre": "Technical Quality Leader (H/F/X)",
-   "entreprise": "IT Link",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-09",
-   "extrait": "",
-   "description": "Pourquoi nous rejoindre ?\n\nChez IT Link, vous ne rejoignez pas seulement une entreprise, vous intégrez une communauté certifiée Great Place to Work.\n\nQu'est-ce que ça signifie pour vous ? Que la qualité de vie au travail et votre épanouissement sont au cœur de notre culture. 80% de nos Linkers sont fiers de déclarer qu'ils travaillent pour IT Link, et ce n'est pas un hasard.\n\n• Un accompagnement sur mesure\n\nVotre manager est un véritable partenaire. Vous bénéficiez d'un suivi régulier de vos projets tous les 3 mois, pour un accompagnement optimal.\n\nVotre entretien annuel est une vraie occasion d'échanger sur votre parcours et de le valoriser.\n\nRésultat ? 96,5% de nos collaborateurs se disent satisfaits de leur manager et 88% estiment que le management leur fait confiance sans contrôle constant.\n\nC'est aussi grâce à ce suivi que 100% de nos collaborateurs en activité ont été augmentés en 2024, et plus d'un sur trois est formé chaque année.\n\n• Une équipe soudée\n\nL'ambiance d'équipe est une de nos forces, elle prend vie autour de nombreux événements : soirée annuelle, afterworks trimestriels, RDV tech...\n\n89% de nos Linkers estiment pouvoir compter sur la solidarité entre collègues.\n\n• Des projets de qualité\n\nLa transversalité est un atout majeur chez nous. Vous pourrez explorer différents secteurs d'activité (mobilité, énergie, santé, industrie...) et enrichir votre parcours de nouvelles expériences techniques.\n\nD'ailleurs, en moyenne, sur les 6 derniers mois, 92,3% des répondants à notre enquête interne sont satisfaits de leur projet, preuve de la pertinence de nos sujets.\n\nEt si vous rêviez d'ailleurs ? Nous offrons la possibilité d'une mobilité géographique nationale ou internationale (Canada, Benelux, Maroc) au sein du groupe.\n\nL'idée est simple : si vous souhaitez changer de région ou de pays, nous vous accompagnons dans les démarches administratives.\n\nVous avez envie de vous impliquer dans un projet concret pour la distribution d'électricité en France et à l'international ?\n\nChez nous, vous interviendrez sur de la gestion de projet transverse, avec des contacts clients quotidiens aux 4 coins du monde.\n\nPourquoi nous recrutons ?\n\nNous recherchons un(e) Technical Quality Leader (H/F/X) dans le cadre du développement de nos activités dans le secteur de l'énergie.\n\nVous intégrerez IT Link mais serez détaché.e chez notre client, au cœur d’une équipe d'environ 10 personnes.\n\nVous serez en charge :\n\nDu déploiement des processus qualité\n\n• Garantir l’intégration effective des exigences qualité dans les activités techniques et les projets.\n• Soutenir le déploiement de processus qualité cohérents à travers les projets et les applications.\n• Contribuer à la définition et au maintien de processus qualité clairs, documentés et reproductibles.\n• Veiller à ce que la qualité soit intégrée à l’exécution des projets, plutôt que gérée comme une activité distincte.\n• Soutenir la consolidation des informations qualité à l’échelle des projets.\n\nDes audits de conception et de validation\n\n• Réaliser et coordonner des audits de conception et de validation.\n• Vérifier que les activités de validation requises ont été réalisées et dûment documentées.\n• Accompagner les responsables techniques et les équipes projet dans le traitement des écarts identifiés lors des audits.\n• Suivre les actions qualité découlant des revues et des audits.\n• Contribuer à l’amélioration de l’efficacité et de la robustesse des processus de validation.\n• Identifier les problèmes récurrents de conception et de configuration pouvant être évités grâce à des contrôles automatisés.\n\nDu support qualité technique\n\n• Assurer le lien entre les responsables techniques et la fonction Qualité.\n• Apporter un soutien qualité aux responsables techniques et aux équipes techniques.\n• Soutenir les actions d’amélioration technique identifiées lors de l’exécution des projets, des audits, des activités de validation ou via le retour d’expérience.\n• Exploiter les résultats issus des audits et de la validation assistée par IA pour identifier les faiblesses techniques récurrentes et les opportunités d’amélioration.\n• Accompagner les équipes en fonction de la charge de travail des projets et des priorités techniques.\n• Coordonner avec l’équipe Innovation l’évaluation de la faisabilité d’outils basés sur l’IA pour l’amélioration continue.\n\n(Il est essentiel de comprendre les capacités de ces nouveaux outils afin de rester informé des innovations dans ce domaine.)\n\nDe la qualité et la gouvernance de projet\n\n• Veiller à ce que les activités qualité soient alignées sur la gouvernance de gestion de projet.\n• Vérifier que les contrôles qualité et de validation applicables sont intégrés à l’exécution des projets.\n• Accompagner la clôture des projets en veillant à ce que les activités de Qualité et de Validation requises soient réalisées.\n• Contribuer aux revues de projet et aux activités de gouvernance lorsque des compétences en matière de Qualité ou de validation technique sont nécessai",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technical-quality-leader-h-f-x-at-it-link-group-4487964474"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
   },
   {
    "id": "f881c2f4cf58",
@@ -273,6 +273,29 @@
     {
      "source": "France Travail",
      "url": "https://candidat.francetravail.fr/offres/recherche/detail/8676108"
+    }
+   ],
+   "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "bd71f0c5573c",
+   "titre": "Technical Quality Leader (H/F/X)",
+   "entreprise": "IT Link",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-09",
+   "extrait": "",
+   "description": "Pourquoi nous rejoindre ?\n\nChez IT Link, vous ne rejoignez pas seulement une entreprise, vous intégrez une communauté certifiée Great Place to Work.\n\nQu'est-ce que ça signifie pour vous ? Que la qualité de vie au travail et votre épanouissement sont au cœur de notre culture. 80% de nos Linkers sont fiers de déclarer qu'ils travaillent pour IT Link, et ce n'est pas un hasard.\n\n• Un accompagnement sur mesure\n\nVotre manager est un véritable partenaire. Vous bénéficiez d'un suivi régulier de vos projets tous les 3 mois, pour un accompagnement optimal.\n\nVotre entretien annuel est une vraie occasion d'échanger sur votre parcours et de le valoriser.\n\nRésultat ? 96,5% de nos collaborateurs se disent satisfaits de leur manager et 88% estiment que le management leur fait confiance sans contrôle constant.\n\nC'est aussi grâce à ce suivi que 100% de nos collaborateurs en activité ont été augmentés en 2024, et plus d'un sur trois est formé chaque année.\n\n• Une équipe soudée\n\nL'ambiance d'équipe est une de nos forces, elle prend vie autour de nombreux événements : soirée annuelle, afterworks trimestriels, RDV tech...\n\n89% de nos Linkers estiment pouvoir compter sur la solidarité entre collègues.\n\n• Des projets de qualité\n\nLa transversalité est un atout majeur chez nous. Vous pourrez explorer différents secteurs d'activité (mobilité, énergie, santé, industrie...) et enrichir votre parcours de nouvelles expériences techniques.\n\nD'ailleurs, en moyenne, sur les 6 derniers mois, 92,3% des répondants à notre enquête interne sont satisfaits de leur projet, preuve de la pertinence de nos sujets.\n\nEt si vous rêviez d'ailleurs ? Nous offrons la possibilité d'une mobilité géographique nationale ou internationale (Canada, Benelux, Maroc) au sein du groupe.\n\nL'idée est simple : si vous souhaitez changer de région ou de pays, nous vous accompagnons dans les démarches administratives.\n\nVous avez envie de vous impliquer dans un projet concret pour la distribution d'électricité en France et à l'international ?\n\nChez nous, vous interviendrez sur de la gestion de projet transverse, avec des contacts clients quotidiens aux 4 coins du monde.\n\nPourquoi nous recrutons ?\n\nNous recherchons un(e) Technical Quality Leader (H/F/X) dans le cadre du développement de nos activités dans le secteur de l'énergie.\n\nVous intégrerez IT Link mais serez détaché.e chez notre client, au cœur d’une équipe d'environ 10 personnes.\n\nVous serez en charge :\n\nDu déploiement des processus qualité\n\n• Garantir l’intégration effective des exigences qualité dans les activités techniques et les projets.\n• Soutenir le déploiement de processus qualité cohérents à travers les projets et les applications.\n• Contribuer à la définition et au maintien de processus qualité clairs, documentés et reproductibles.\n• Veiller à ce que la qualité soit intégrée à l’exécution des projets, plutôt que gérée comme une activité distincte.\n• Soutenir la consolidation des informations qualité à l’échelle des projets.\n\nDes audits de conception et de validation\n\n• Réaliser et coordonner des audits de conception et de validation.\n• Vérifier que les activités de validation requises ont été réalisées et dûment documentées.\n• Accompagner les responsables techniques et les équipes projet dans le traitement des écarts identifiés lors des audits.\n• Suivre les actions qualité découlant des revues et des audits.\n• Contribuer à l’amélioration de l’efficacité et de la robustesse des processus de validation.\n• Identifier les problèmes récurrents de conception et de configuration pouvant être évités grâce à des contrôles automatisés.\n\nDu support qualité technique\n\n• Assurer le lien entre les responsables techniques et la fonction Qualité.\n• Apporter un soutien qualité aux responsables techniques et aux équipes techniques.\n• Soutenir les actions d’amélioration technique identifiées lors de l’exécution des projets, des audits, des activités de validation ou via le retour d’expérience.\n• Exploiter les résultats issus des audits et de la validation assistée par IA pour identifier les faiblesses techniques récurrentes et les opportunités d’amélioration.\n• Accompagner les équipes en fonction de la charge de travail des projets et des priorités techniques.\n• Coordonner avec l’équipe Innovation l’évaluation de la faisabilité d’outils basés sur l’IA pour l’amélioration continue.\n\n(Il est essentiel de comprendre les capacités de ces nouveaux outils afin de rester informé des innovations dans ce domaine.)\n\nDe la qualité et la gouvernance de projet\n\n• Veiller à ce que les activités qualité soient alignées sur la gouvernance de gestion de projet.\n• Vérifier que les contrôles qualité et de validation applicables sont intégrés à l’exécution des projets.\n• Accompagner la clôture des projets en veillant à ce que les activités de Qualité et de Validation requises soient réalisées.\n• Contribuer aux revues de projet et aux activités de gouvernance lorsque des compétences en matière de Qualité ou de validation technique sont nécessai",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technical-quality-leader-h-f-x-at-it-link-group-4487964474"
     }
    ],
    "premiere_vue": "2026-11-16",
@@ -299,7 +322,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
@@ -322,7 +345,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -345,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -368,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -391,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -414,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -437,11 +460,34 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.7706,
    "lon": 4.4397,
    "commune": "Garons"
+  },
+  {
+   "id": "e36f2b7ec3bd",
+   "titre": "Technicien de Laboratoire d'anatomie pathologique H/F (H/F)",
+   "entreprise": "INSTITUT REGIONAL DU CANCER DE MONTPELLI",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-04",
+   "extrait": "",
+   "description": "Les missions principales : - Préparer et procéder à l'analyse à des fins médicales et/ou de recherche des prélèvements dans le respect des normes de qualité des règles d'hygiène, de sécurité, et de déontologie liées à la profession (accréditation...) - Contrôler le déroulement des procédures d'analyses et transmettre les résultats pour validation biologique après confirmation technique dans le respect des normes de qualité (accréditation...) - Mettre en œuvre des techniques d'analyses et/ ou d'investigation Les activités : - Réceptionner, vérifier la conformité des demandes, valider et classer les prélèvements et les demandes d'examen et/ou d'investigation - Effectuer les analyses et/ou les investigations à l'aide des techniques appropriées et assurer la validation technique ; Réaliser les contrôles qualité - Contrôler la fiabilité et la cohérence des résultats et les soumettre au médecin pathologiste - Participer à la conservation des prélèvements après analyse - Assurer la saisie informatique, la sauvegarde et l'archivage des résultats ; préparer les solutions stock et/ou les solutions de travail, Evaluer le niveau des stocks et inscrire les demandes de commandes - Surveiller la date de péremption des réactifs et les conditions de stockage - Réaliser la vérification, l'entretien et la maintenance courante du matériel utilisé - Participer à la rédaction des protocoles et procédures ; maîtriser les outils informatiques liés aux techniques de laboratoire ; appliquer les procédures d'élimination des déchets et d'hygiène Les activités Anapath : - Examens extemporanés/ prise en charge des pièces fraiches - Biopsies - Cytologie - Enrobage / Mégacassettes - Automates - Coupe en paraffine (et Coloration standard) - Immunohistochimie de routine (et Colorations spéciales) Les compétences requises : - Connaître les processus d'analyse et/ou d'investigation, les maintenances des appareils - Connaitre les risques présents au laboratoire, Connaitre l'anglais technique - Connaitre les moyens de protection personnelle et de l'environnement - Connaitre les aspects règlementaires des certifications liées au laboratoire (COFRAC, HAS...) - Connaitre les logiciels métier, Connaitre les procédures d'élimination des déchets et d'hygiène Le profil : (diplôme, expérience.)\n• Diplômes d'État ou autres diplômes permettant d'exercer l'emploi de technicien de laboratoire médical selon la réglementation en vigueur\n• Enregistrement au registre ADELI\n• Salaires et avantages :\nSalaire à partir de 2 450 euros brut/mois (mesures Ségur incluses)\n• Poste à pourvoir en 7h15\n• RTT, flexibilité horaires, temps de doublure, aide à la mobilité, journée d'accueil des nouveaux arrivants, restaurant du personnel, prestations CSE, mutuelle\n• Pour postuler/ se renseigner :\n• Toute candidature est à envoyer accompagnée d'une lettre de motivation et d'un CV\nProfil recherché Compétences : Désinfecter et décontaminer un équipement (exigé) ; Préparer les analyseurs, les réactifs et l'échantillon biologique (fractionnement, répartition, etc.) selon le type d'analyse (exigé) ; Procéder au traitement de l'échantillon par centrifugation, dilution, chauffage, surveiller le déroulement de l'analyse et consigner les données (exigé) ; Réaliser un prélèvement biologique (exigé) Qualités professionnelles : Faire preuve de rigueur et de précision ; Organiser son travail selon les priorités et les objectifs ; Faire preuve de curiosité, d'ouverture d'esprit Formation : Bac+2 ou équivalents (souhaité) Expérience : Débutant accepté",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-anatomie-pathologique-h-f-h-f-4486976988"
+    }
+   ],
+   "premiere_vue": "2026-11-17",
+   "derniere_vue": "2026-11-17",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "d085171b2321",
@@ -460,7 +506,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.5848,
    "lon": 3.8003,
@@ -483,7 +529,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -506,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -529,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.5685,
    "lon": 3.7829,
@@ -552,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.4093,
    "lon": 3.2563,
@@ -575,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.6831,
    "lon": 3.8447,
@@ -598,7 +644,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -621,7 +667,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -644,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -667,7 +713,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.6376,
    "lon": 4.1346,
@@ -690,7 +736,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.3844,
    "lon": 3.6441,
@@ -713,7 +759,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -736,7 +782,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -782,7 +828,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -805,7 +851,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -874,7 +920,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -897,7 +943,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.3481,
    "lon": 3.2342,
@@ -996,6 +1042,29 @@
    "commune": "Nîmes"
   },
   {
+   "id": "f07d141ebd6b",
+   "titre": "Assistant qualité en contrat d'alternance (H/F)",
+   "entreprise": "AERO NEGOCE INTERNATIONAL BOSSARD AEROSP",
+   "lieu": "Villeneuve-lès-Béziers",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-10-20",
+   "extrait": "",
+   "description": "Notre entreprise Depuis plus de 50 ans, Bossard Aerospace accompagne les acteurs de l'industrie aéronautique et aérospatiale grâce à son expertise dans la distribution de fixations et les solutions d'optimisation de la chaîne d'approvisionnement. Présent en Europe, en Asie et aux États-Unis, notre groupe évolue dans un environnement international exigeant, où la qualité, la fiabilité et la satisfaction client sont essentielles. Rejoindre Bossard Aerospace France, c'est intégrer une entreprise dynamique et participer activement à l'amélioration continue de ses pratiques et de sa performance.\nVos missions Rattaché(e) au service Qualité, vous contribuerez à son fonctionnement quotidien et participerez activement au déploiement de la démarche d'amélioration continue « Aéro Excellence », un projet transverse visant à renforcer la maturité opérationnelle et la performance de l'entreprise. Ce projet constituera le fil conducteur de votre alternance et vous permettra de collaborer avec différents services : Qualité, Logistique, Achats, Ventes, Support Client et Direction.\n• Vos principales responsabilités :\n• Participer à l'évaluation de la maturité opérationnelle de l'entreprise, identifier les écarts et contribuer au déploiement du programme « Aéro Excellence »\n• Suivre et analyser les indicateurs de performance, contribuer à l'identification des axes de progrès et au suivi des actions correctives\n• Analyser les non-conformités, les tendances et les récurrences afin de proposer des pistes d'amélioration\n• Participer au suivi et à l'amélioration du système de management de la qualité (SMQ)\n• Contribuer à la préparation et à la réalisation des audits internes et externes, ainsi qu'au suivi des plans d'actions associés\n• Accompagner l'équipe Qualité dans ses activités quotidiennes et dans la mise en œuvre de projets transverses\nVotre profil : Formation Master 1 ou Master 2 en Qualité, Management de la qualité ou équivalent - Maîtrise des outils informatiques et intérêt pour l'analyse des données et leur visualisation. - Connaissance des outils qualité et des méthodes d'amélioration continue. - Notions des référentiels ISO 9001 et des exigences qualité applicables au secteur aéronautique. - Anglais opérationnel obligatoire pour évoluer dans un environnement international. Rigoureux(se), organisé(e) et doté(e) d'un bon esprit d'analyse, vous faites preuve d'autonomie, de curiosité et d'un réel sens du service. Votre esprit d'équipe et votre capacité à travailler avec différents interlocuteurs seront des atouts pour réussir dans cette mission.\n• Vos conditions et avantages :\n• Contrat d'alternance De 12 à 24 mois selon cursus\n• Rémunération Selon les dispositions légales et conventionnelles applicables\n• Poste basé à Béziers (34)\n• Une expérience concrète au sein d'une PME à la dimension internationale, avec une participation active à un projet structurant d'amélioration continue\nBOSSARD AEROSPACE France s'engage en faveur de la diversité et de l'égalité des chances. Tous nos postes sont ouverts aux personnes en situation de handicap.\n• Profil recherché\n• Compétences : Procédures de contrôle qualité (souhaité) ; Contrôler la qualité et la conformité des process (souhaité)\n• Formation : Bac+5 et plus ou équivalents (exigé)\n• Langues : Anglais (exigé)\n• Expérience : Débutant accepté",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/assistant-qualit%C3%A9-en-contrat-d-alternance-h-f-4481925686"
+    }
+   ],
+   "premiere_vue": "2026-11-17",
+   "derniere_vue": "2026-11-17",
+   "agro": false,
+   "lat": 43.3178,
+   "lon": 3.2909,
+   "commune": "Villeneuve-lès-Béziers"
+  },
+  {
    "id": "18f708244406",
    "titre": "Assistant qualité en contrat d'alternance (H/F)",
    "entreprise": "AERO NEGOCE INTERNATIONAL BOSSARD AEROSP",
@@ -1012,7 +1081,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-17",
    "agro": false,
    "lat": 43.3481,
    "lon": 3.2342,
@@ -1086,29 +1155,6 @@
    "lat": 43.7341,
    "lon": 4.2332,
    "commune": "Vergèze"
-  },
-  {
-   "id": "9076dbaf1895",
-   "titre": "Assistant Qualité (h/f) (H/F)",
-   "entreprise": "ADECCO",
-   "lieu": "30 - Garons",
-   "contrat": "Intérim - 18 Mois",
-   "salaire": "Horaire de 12.53 Euros à 12.54 Euros",
-   "date_pub": "2026-10-17",
-   "extrait": "Adecco, leader mondial des Ressources Humaines, recherche pour l'un de ses clients basé à Garons un Assistant Qualité (H/F). Notre client recherche un(e) assistant(e) afin d'assurer le suivi administratif, la saisie de données et le contrôle des indicateurs liés à l'activité transport et logistique. Vos missions incluront : - Saisie et mise à jour de données administratives. - Préparation et suivi",
-   "description": "Adecco, leader mondial des Ressources Humaines, recherche pour l'un de ses clients basé à Garons un Assistant Qualité (H/F).\nNotre client recherche un(e) assistant(e) afin d'assurer le suivi administratif, la saisie de données et le contrôle des indicateurs liés à l'activité transport et logistique.\n\nVos missions incluront :\n\n- Saisie et mise à jour de données administratives.\n- Préparation et suivi des projets en cours.\n- Suivi des indicateurs qualité et des pénalités.\n- Suivi du respect des process internes.\n- Création et mise à jour des contrats de sous-traitance.\n- Gestion administrative de la facturation et des provisions.\n- Suivi des plannings et des congés.\n- Participation aux démarches qualité, sécurité et amélioration continue.\n\nVotre profil :\n\n- Vous êtes rigoureux(se), organisé(e) et à l'aise avec les tâches administratives.\n- Vous maîtrisez les outils informatiques et la saisie de données.\n- Vous appréciez le travail en équipe et savez gérer plusieurs tâches simultanément.\n- Vous êtes titulaire du CACES R489 catégorie 1B en cours de validité, nécessaire pour le déplacement ponctuel de palettes.\nInformations complémentaires :\n\n- Poste basé à Garons.\n- Horaires de journée.\n- Taux horaire : 12,53 € brut.\n- Ticket restaurant de 8,50 € par jour travaillé, avec une prise en charge employeur à hauteur de 60 %.\n- Rémunération selon profil et expérience.\n\nCe poste vous intéresse ?\nMerci de postuler en ligne avec un CV à jour. Nous étudierons votre candidature avec attention.",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/215JLWV"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-10-22",
-   "agro": false,
-   "lat": 43.7706,
-   "lon": 4.4397,
-   "commune": "Garons"
   }
  ]
 }
