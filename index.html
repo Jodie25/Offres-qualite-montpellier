@@ -643,11 +643,30 @@ function rendreAnalyse(a){
      <a href="https://www.linkedin.com/search/results/companies/?keywords=${encodeURIComponent(a.nom)}" target="_blank" rel="noopener">LinkedIn ↗</a> ·
      <a href="https://news.google.com/search?q=${encodeURIComponent(a.nom)}" target="_blank" rel="noopener">Actualités ↗</a></p></div>`;
 }
+// Registre officiel des entreprises : interrogé depuis le navigateur (l'API publique l'autorise et limite moins les particuliers que les serveurs partagés)
+async function registreNavigateur(nom,lieu,siren){
+  const base="https://recherche-entreprises.api.gouv.fr/search?per_page=8&";
+  const lire=async q=>{try{const r=await fetch(base+new URLSearchParams({q}));return r.ok?((await r.json()).results||[]):null}catch(e){return null}};
+  if(siren){const res=await lire(siren);const e=res&&res.find(x=>x.siren===siren);return {brut:e||null,candidats:[]}}
+  let mots=(nom||"").replace(/[()]/g," ").split(/\s+/).filter(Boolean),res=[];
+  while(mots.length&&!res.length){res=await lire(mots.join(" "))||[];if(!res.length)mots=mots.slice(0,-1)}
+  if(!res.length)return {brut:null,candidats:[]};
+  const ville=norm((lieu||"").split(/[,(-]/)[0]),tokens=norm(nom).split(" ").filter(t=>t.length>2);
+  const note=e=>{const n=norm(e.nom_complet+" "+(e.sigle||""));let s=tokens.filter(t=>n.includes(t)).length*2;
+    if(n===norm(nom))s+=6;if(ville&&norm(e.siege&&e.siege.libelle_commune)===ville)s+=5;if(e.etat_administratif==="A")s+=3;if(e.categorie_entreprise==="GE"||e.categorie_entreprise==="ETI")s+=1;return s};
+  const tries=[...res].sort((a,b)=>note(b)-note(a));
+  const garder=e=>({siren:e.siren,nom_complet:e.nom_complet,sigle:e.sigle,date_creation:e.date_creation,activite_principale:e.activite_principale,section_activite_principale:e.section_activite_principale,
+    tranche_effectif_salarie:e.tranche_effectif_salarie,annee_tranche_effectif_salarie:e.annee_tranche_effectif_salarie,categorie_entreprise:e.categorie_entreprise,
+    nombre_etablissements_ouverts:e.nombre_etablissements_ouverts,etat_administratif:e.etat_administratif,siege:e.siege&&{adresse:e.siege.adresse,libelle_commune:e.siege.libelle_commune,activite_principale:e.siege.activite_principale},
+    dirigeants:(e.dirigeants||[]).slice(0,5).map(d=>({nom:d.nom,prenoms:d.prenoms,qualite:d.qualite})),finances:e.finances});
+  return {brut:garder(tries[0]),candidats:tries.slice(0,5).map(e=>({siren:e.siren,nom:e.nom_complet,commune:e.siege?e.siege.libelle_commune:""}))};
+}
 async function lancerAnalyse(b){
   const s=suivi.find(x=>x.id===(b.dataset.prep||b.closest(".sv").dataset.id));if(!s)return;
   const siren=b.dataset.siren||"";
   const label=b.textContent;b.disabled=true;b.textContent="Analyse en cours… (10 à 20 secondes)";
-  const r=await appel("/api/entreprise","POST",{nom:s.entreprise||s.titre,lieu:s.lieu,site:s.site||"",siren});
+  const nom=s.entreprise||s.titre,reg=await registreNavigateur(nom,s.lieu,siren);
+  const r=await appel("/api/entreprise","POST",{nom,lieu:s.lieu,site:s.site||"",siren,brut:reg.brut,candidats:reg.candidats});
   b.disabled=false;b.textContent=label;
   if(!r.ok||!r.d||r.d.erreur){toast((r.d&&r.d.erreur)||"Analyse impossible pour le moment. Réessaie.");return}
   s.analyse=r.d;save();renderSuivi();toast("Fiche entreprise prête ✓");
