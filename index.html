@@ -247,6 +247,37 @@ main{padding:26px 0 80px}
 .svg select.st{font-weight:700;border-radius:10px;min-width:0}
 .svg textarea.notes{overflow:auto;resize:vertical;min-height:72px}
 .svt textarea.titre{font-weight:800;font-size:16px;width:100%;border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;resize:none;overflow:hidden}
+
+/* ---------- Couleurs des statuts : on voit d'un coup d'œil où on en est ---------- */
+.sv{border-left:6px solid var(--line)}
+.sv.st-a-postuler{border-left-color:#f59e0b}.sv.st-envoyee{border-left-color:#3a6ff7}.sv.st-relance{border-left-color:#8b5cf6}.sv.st-entretien{border-left-color:#14b8a6}
+.sv.st-offre{border-left-color:#16a34a}.sv.st-refus{border-left-color:#ef4444}.sv.st-silence{border-left-color:#94a3b8}
+.svg select.st.s-a-postuler{background:#fff4d6;color:#9a6a00;border-color:#f59e0b}
+.svg select.st.s-envoyee{background:#e6eeff;color:#2447b8;border-color:#3a6ff7}
+.svg select.st.s-relance{background:#efe8ff;color:#5b34c4;border-color:#8b5cf6}
+.svg select.st.s-entretien{background:#d9f6f1;color:#0b6b61;border-color:#14b8a6}
+.svg select.st.s-offre{background:#dcf6e6;color:#0b6b36;border-color:#16a34a}
+.svg select.st.s-refus{background:#ffe3e3;color:#a61e1e;border-color:#ef4444}
+.svg select.st.s-silence{background:#eef1f5;color:#55627a;border-color:#94a3b8}
+.stat[data-st]{border-top:4px solid var(--line)}
+.stat[data-st=a-postuler]{border-top-color:#f59e0b}.stat[data-st=envoyee]{border-top-color:#3a6ff7}.stat[data-st=relance]{border-top-color:#8b5cf6}.stat[data-st=entretien]{border-top-color:#14b8a6}
+.stat[data-st=offre]{border-top-color:#16a34a}.stat[data-st=refus]{border-top-color:#ef4444}.stat[data-st=silence]{border-top-color:#94a3b8}
+.stat[data-st=a-postuler] b{color:#9a6a00}.stat[data-st=envoyee] b{color:#2447b8}.stat[data-st=relance] b{color:#5b34c4}.stat[data-st=entretien] b{color:#0b6b61}
+.stat[data-st=offre] b{color:#0b6b36}.stat[data-st=refus] b{color:#a61e1e}.stat[data-st=silence] b{color:#55627a}
+.svh3{margin:10px 0 0;font-size:16px;display:flex;gap:10px;align-items:center;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.svlist .svh3:first-child{margin-top:0}
+/* ---------- Préparation d'entretien ---------- */
+.prep{margin-top:16px;padding-top:16px;border-top:1.5px dashed #bfe9e3}
+.prepbar{display:flex;gap:12px 16px;flex-wrap:wrap;align-items:flex-end}
+.prepbar label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:700;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;flex:1 1 260px;min-width:0}
+.prepbar label small{text-transform:none;letter-spacing:0;font-weight:500}
+.prepbar input{font:inherit;font-size:14px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;width:100%}
+.fiche{margin-top:14px;background:#f3fbf9;border:1.5px solid #cdeee8;border-radius:16px;padding:16px 18px}
+.fiche h4{margin:0 0 10px;font-size:16px}.fiche h4 small{color:var(--mute);font-weight:600}
+.bloc2{margin-bottom:14px}.bloc2:last-child{margin-bottom:0}
+.bloc2 h5{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:#0b6b61}
+.bloc2 ul{margin:4px 0 0;padding-left:20px}.bloc2 li{margin:3px 0;overflow-wrap:anywhere}
+.bloc2 p{margin:4px 0;overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -317,6 +348,7 @@ main{padding:26px 0 80px}
 
 <section id="v-suivi" hidden>
   <div class="stats" id="stats"></div>
+  <div class="fgroup" id="svgroupes"></div>
   <div class="bar">
     <button class="btn pri" id="add">+ Ajouter une offre</button>
     <button class="btn" id="exp-csv">Exporter Excel (CSV)</button>
@@ -445,7 +477,7 @@ function actionsOffre(e){
   const t=e.target.closest("button");if(!t)return;
   const s=t.dataset.suivre,i=t.dataset.ignorer,c=t.dataset.cv;
   if(s){const o=offres.find(x=>x.id===s);
-    suivi.unshift({id:"s"+Date.now(),offreId:o.id,titre:o.titre,entreprise:o.entreprise,lieu:o.commune||o.lieu,url:o.liens[0].url,
+    suivi.unshift({id:"s"+Date.now(),offreId:o.id,rech:(o.recherches||[]).slice(),titre:o.titre,entreprise:o.entreprise,lieu:o.commune||o.lieu,url:o.liens[0].url,
       source:o.liens.map(l=>l.source).join(", "),statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});
     save();majCompteurs();rafraichir();toast("Ajoutée à ton suivi ✓")}
   if(i){ignores.add(i);save();rafraichir()}
@@ -524,17 +556,32 @@ function majCompteurs(){
   $("#nb-suivi").textContent=suivi.length;$("#h-suivi").textContent=suivi.length;
   $("#h-env").textContent=suivi.filter(s=>["envoyee","relance","entretien","offre"].includes(s.statut)).length;
 }
+/* ---------- Suivi : séparer les offres selon la recherche qui les a trouvées ---------- */
+const cle=g=>g||"__main";
+function groupeDe(s){
+  if(typeof recherches==="undefined"||!recherches.length)return "";
+  const ids=(s.rech&&s.rech.length)?s.rech:(s.offreId?((offres.find(o=>o.id===s.offreId)||{}).recherches||[]):[]);
+  return ids.find(i=>recherches.some(r=>r.id===i))||"";
+}
+const nomGroupe=g=>g?((recherches.find(r=>r.id===g)||{}).nom||"Recherche"):"Ajoutées à la main";
+let filtreGroupe="";
 function renderSuivi(){
-  const cnt=Object.fromEntries(STATUTS.map(([k])=>[k,0]));suivi.forEach(s=>cnt[s.statut]=(cnt[s.statut]||0)+1);
-  $("#stats").innerHTML=`<div class="stat${filtreStatut?"":" on"}" data-st=""><b>${suivi.length}</b><span>Toutes</span></div>`+
+  const groupes=[...new Set(suivi.map(groupeDe))],multi=groupes.length>=2;
+  if(filtreGroupe&&!groupes.map(cle).includes(filtreGroupe))filtreGroupe="";
+  const ordreG=[...(typeof recherches!=="undefined"?recherches.map(r=>r.id):[]),""].filter(g=>groupes.includes(g));
+  $("#svgroupes").innerHTML=multi?`<span>Recherche</span><button class="fchip${filtreGroupe?"":" on"}" data-gr="">Toutes <b>${suivi.length}</b></button>`+
+    ordreG.map(g=>`<button class="fchip${filtreGroupe===cle(g)?" on":""}" data-gr="${esc(cle(g))}">${esc(nomGroupe(g))} <b>${suivi.filter(s=>groupeDe(s)===g).length}</b></button>`).join(""):"";
+  const base=suivi.filter(s=>!multi||!filtreGroupe||cle(groupeDe(s))===filtreGroupe);
+  const cnt=Object.fromEntries(STATUTS.map(([k])=>[k,0]));base.forEach(s=>cnt[s.statut]=(cnt[s.statut]||0)+1);
+  $("#stats").innerHTML=`<div class="stat${filtreStatut?"":" on"}" data-st=""><b>${base.length}</b><span>Toutes</span></div>`+
     STATUTS.map(([k,n])=>`<div class="stat${filtreStatut===k?" on":""}" data-st="${k}"><b>${cnt[k]}</b><span>${n}</span></div>`).join("");
-  const liste=suivi.filter(s=>!filtreStatut||s.statut===filtreStatut);
+  const liste=base.filter(s=>!filtreStatut||s.statut===filtreStatut);
   $("#empty-suivi").hidden=liste.length>0;
-  $("#tb").innerHTML=liste.map(s=>{
+  const fiches=liste.map(s=>{
     const retard=s.relance&&s.relance<=today()&&!["entretien","offre","refus"].includes(s.statut);
     const dispo=(s.offreId&&offres.some(o=>o.id===s.offreId))||s.offre;
     const champ=(k,lib,cls)=>`<label${cls==="notes"?' class="full"':""}>${lib}<textarea class="auto${cls?" "+cls:""}" data-k="${k}" rows="${cls==="notes"?3:1}">${esc(s[k])}</textarea></label>`;
-    return `<article class="sv${retard?" late":""}" data-id="${s.id}">
+    return {g:cle(groupeDe(s)),h:`<article class="sv st-${s.statut}${retard?" late":""}" data-id="${s.id}">
      <header class="svh"><div class="svt">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<textarea class="auto titre" data-k="titre" rows="1">${esc(s.titre)}</textarea>`}
        <div class="count" style="margin:2px 0 0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}${retard?" · <b style=\"color:var(--bad)\">relance à faire</b>":""}</div></div>
       <div class="svb">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="Adapter mon CV">✨ CV</button>`:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕ Retirer</button></div></header>
@@ -544,7 +591,13 @@ function renderSuivi(){
       <label>Candidature<input type="date" data-k="dateCandidature" value="${esc(s.dateCandidature)}"></label>
       <label>Relance<input type="date" data-k="relance" value="${esc(s.relance)}"></label>
       ${champ("contact","Contact (nom, email…)")}${champ("notes","Notes","notes")}
-     </div></article>`}).join("");
+     </div>${s.statut==="entretien"&&typeof APP_COMPTES!=="undefined"?blocPreparation(s):""}</article>`}});
+  let html;
+  if(multi&&!filtreGroupe){
+    html=ordreG.filter(g=>fiches.some(f=>f.g===cle(g))).map(g=>{const f=fiches.filter(x=>x.g===cle(g));
+      return `<h3 class="svh3">${esc(nomGroupe(g))} <span class="tag">${f.length}</span></h3>`+f.map(x=>x.h).join("")}).join("");
+  }else html=fiches.map(x=>x.h).join("");
+  $("#tb").innerHTML=html;
   ajusterChamps();
 }
 function ajusterChamps(){
@@ -552,15 +605,65 @@ function ajusterChamps(){
 }
 window.addEventListener("resize",ajusterChamps);
 $("#tb").addEventListener("input",e=>{if(e.target.matches("textarea.auto:not(.notes)")){e.target.style.height="auto";e.target.style.height=(e.target.scrollHeight+2)+"px"}});
+
+/* ---------- Préparation d'entretien : fiche de l'entreprise (site avec comptes) ---------- */
+const eur=n=>n==null?"":n>=1e9?(n/1e9).toFixed(1).replace(".",",")+" Md€":n>=1e6?(n/1e6).toFixed(1).replace(".",",")+" M€":Math.round(n/1e3)+" k€";
+function blocPreparation(s){
+  return `<section class="prep"><div class="prepbar">
+    <label>Site web de l'entreprise <small>(facultatif : sinon je le cherche)</small><input data-k="site" value="${esc(s.site||"")}" placeholder="https://www.entreprise.fr"></label>
+    <button class="btn pri" data-prep="${s.id}">🔎 ${s.analyse?"Relancer l'analyse":"Préparer l'entretien : analyser l'entreprise"}</button></div>
+    ${s.analyse?rendreAnalyse(s.analyse):'<p class="count" style="margin:8px 0 0;font-weight:500">Je lis le registre officiel des entreprises et le site web, puis je te propose les points clés et des questions à préparer.</p>'}</section>`;
+}
+function rendreAnalyse(a){
+  const r=a.registre,w=a.site,li=(t,v)=>v?`<li><b>${t}</b> ${esc(v)}</li>`:"";
+  const dirig=r&&r.dirigeants&&r.dirigeants.length?r.dirigeants.map(d=>`${d.nom}${d.qualite?" ("+d.qualite+")":""}`).join(", "):"";
+  const fin=r&&r.finances&&r.finances.length?r.finances.filter(f=>f.ca!=null).map(f=>`${f.annee} : ${eur(f.ca)}${f.resultat!=null?" (résultat net "+eur(f.resultat)+")":""}`).join(" · "):"";
+  return `<div class="fiche">
+   <h4>Fiche entreprise · ${esc(a.nom)} <small>analyse du ${esc(fmt(a.date))}</small></h4>
+   ${r?`<div class="bloc2"><h5>Identité (registre officiel)</h5><ul>
+     ${li("Activité :",(r.activite.libelle||"")+(r.activite.code?" ("+r.activite.code+")":""))}${li("Taille :",[r.categorie,r.effectif?r.effectif+(r.effectifAnnee?" en "+r.effectifAnnee:""):""].filter(Boolean).join(" · "))}
+     ${li("Créée en :",r.creation?r.creation.slice(0,4):"")}${li("Siège :",r.adresse)}${li("Établissements ouverts :",r.etablissements!=null?String(r.etablissements):"")}
+     ${li("Dirigeants :",dirig)}${li("Chiffre d'affaires :",fin)}${li("SIREN :",r.siren)}</ul></div>`
+    :'<div class="bloc2"><p>Je n\'ai pas trouvé cette entreprise dans le registre officiel : vérifie le nom dans la colonne « Entreprise ».</p></div>'}
+   ${a.candidats&&a.candidats.length>1?`<div class="bloc2"><h5>Ce n'est pas la bonne entreprise ?</h5><div class="fgroup">${a.candidats.map(c=>`<button class="fchip${r&&c.siren===r.siren?" on":""}" data-siren="${esc(c.siren)}">${esc(c.nom)} · ${esc(c.commune)}</button>`).join("")}</div></div>`:""}
+   ${w&&w.ok?`<div class="bloc2"><h5>Ce que dit leur site <a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.url)} ↗</a> <small>(${esc(w.source||"")})</small></h5>
+     ${w.description?`<p><b>${esc(w.description)}</b></p>`:""}
+     ${w.titres&&w.titres.length?`<p class="count" style="font-weight:500">Rubriques : ${w.titres.slice(0,6).map(esc).join(" · ")}</p>`:""}
+     ${w.extraits&&w.extraits.length?`<ul>${w.extraits.slice(0,4).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+     ${!w.lisible?'<p class="count" style="font-weight:500">Le site contient peu de texte lisible automatiquement : ouvre-le et note 3 ou 4 informations toi-même.</p>':""}
+     ${w.pages&&w.pages.length?`<p class="count" style="font-weight:500">Pages lues : ${w.pages.map(p=>`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.titre||p.url)}</a>`).join(" · ")}</p>`:""}</div>`
+    :(w?`<div class="bloc2"><p>Je n'ai pas pu lire <a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.url)}</a> : ouvre-le toi-même ou corrige l'adresse ci-dessus.</p></div>`
+        :'<div class="bloc2"><p>Je n\'ai pas trouvé le site web de l\'entreprise : colle son adresse dans le champ ci-dessus puis relance l\'analyse.</p></div>')}
+   ${(a.chiffres&&a.chiffres.length)||(a.certifications&&a.certifications.length)?`<div class="bloc2"><h5>Chiffres et certifications repérés sur le site</h5>
+     ${a.chiffres.length?`<ul>${a.chiffres.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>`:""}
+     ${a.certifications.length?`<div class="chips">${a.certifications.map(c=>`<span class="chip y">✓ ${esc(c)}</span>`).join("")}</div>`:""}</div>`:""}
+   <div class="bloc2"><h5>À préparer pour l'entretien</h5><ul>${a.questions.map(q=>`<li>${esc(q)}</li>`).join("")}</ul></div>
+   <p class="count" style="font-weight:500;margin:6px 0 0">Pour aller plus loin :
+     ${r?`<a href="https://annuaire-entreprises.data.gouv.fr/entreprise/${esc(r.siren)}" target="_blank" rel="noopener">Fiche officielle ↗</a> · `:""}
+     <a href="https://www.linkedin.com/search/results/companies/?keywords=${encodeURIComponent(a.nom)}" target="_blank" rel="noopener">LinkedIn ↗</a> ·
+     <a href="https://news.google.com/search?q=${encodeURIComponent(a.nom)}" target="_blank" rel="noopener">Actualités ↗</a></p></div>`;
+}
+async function lancerAnalyse(b){
+  const s=suivi.find(x=>x.id===(b.dataset.prep||b.closest(".sv").dataset.id));if(!s)return;
+  const siren=b.dataset.siren||"";
+  const label=b.textContent;b.disabled=true;b.textContent="Analyse en cours… (10 à 20 secondes)";
+  const r=await appel("/api/entreprise","POST",{nom:s.entreprise||s.titre,lieu:s.lieu,site:s.site||"",siren});
+  b.disabled=false;b.textContent=label;
+  if(!r.ok||!r.d||r.d.erreur){toast((r.d&&r.d.erreur)||"Analyse impossible pour le moment. Réessaie.");return}
+  s.analyse=r.d;save();renderSuivi();toast("Fiche entreprise prête ✓");
+}
+$("#svgroupes").onclick=e=>{const b=e.target.closest("button");if(!b)return;filtreGroupe=b.dataset.gr;renderSuivi()};
 $("#stats").onclick=e=>{const c=e.target.closest(".stat");if(c){filtreStatut=c.dataset.st;renderSuivi()}};
 $("#tb").addEventListener("change",e=>{
   const tr=e.target.closest(".sv"),k=e.target.dataset.k;if(!tr||!k)return;
   const s=suivi.find(x=>x.id===tr.dataset.id);s[k]=e.target.value;
+  if(k==="dateCandidature"&&e.target.value){const d=new Date(e.target.value+"T12:00:00");d.setDate(d.getDate()+10);s.relance=d.toISOString().slice(0,10)}
   if(k==="statut"&&e.target.value==="envoyee"&&!s.dateCandidature){s.dateCandidature=today();
     const d=new Date();d.setDate(d.getDate()+10);s.relance=d.toISOString().slice(0,10)}
   save();majCompteurs();renderSuivi()});
 $("#tb").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.prep||b.dataset.siren)return lancerAnalyse(b);
   if(b.dataset.cvs){const it=suivi.find(x=>x.id===b.dataset.cvs);
     if(it&&it.offre&&!it.offreId)return ouvrirCVOffre({id:"perso-"+it.id,titre:it.offre.titre,entreprise:it.offre.entreprise,lieu:it.lieu,commune:"",description:it.offre.description,extrait:"",liens:[{source:"PDF",url:""}]},true);
     return ouvrirCV(b.dataset.cv)}
