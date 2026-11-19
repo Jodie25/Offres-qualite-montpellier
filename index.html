@@ -278,6 +278,15 @@ main{padding:26px 0 80px}
 .bloc2 h5{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:#0b6b61}
 .bloc2 ul{margin:4px 0 0;padding-left:20px}.bloc2 li{margin:3px 0;overflow-wrap:anywhere}
 .bloc2 p{margin:4px 0;overflow-wrap:anywhere}
+
+/* ---------- Mail de relance ---------- */
+.mail{margin-top:16px;padding-top:16px;border-top:1.5px dashed #ffd9c9}
+.mailbar{display:flex;gap:10px 16px;flex-wrap:wrap;align-items:center}
+.mailbox{margin-top:12px;background:#fff8f3;border:1.5px solid #ffdcc9;border-radius:14px;padding:14px 16px}
+.mailbox label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:700;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+.mailbox input,.mailbox textarea{width:100%;font:inherit;font-size:14px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff}
+.mailbox textarea{resize:vertical;min-height:200px;line-height:1.55}
+.mailacts{display:flex;gap:8px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -591,7 +600,7 @@ function renderSuivi(){
       <label>Candidature<input type="date" data-k="dateCandidature" value="${esc(s.dateCandidature)}"></label>
       <label>Relance<input type="date" data-k="relance" value="${esc(s.relance)}"></label>
       ${champ("contact","Contact (nom, email…)")}${champ("notes","Notes","notes")}
-     </div>${s.statut==="entretien"&&typeof APP_COMPTES!=="undefined"?blocPreparation(s):""}</article>`}});
+     </div>${s.statut==="entretien"&&typeof APP_COMPTES!=="undefined"?blocPreparation(s):""}${["envoyee","relance"].includes(s.statut)?blocRelance(s):""}</article>`}});
   let html;
   if(multi&&!filtreGroupe){
     html=ordreG.filter(g=>fiches.some(f=>f.g===cle(g))).map(g=>{const f=fiches.filter(x=>x.g===cle(g));
@@ -672,6 +681,66 @@ async function lancerAnalyse(b){
   if(!r.ok||!r.d||r.d.erreur){toast((r.d&&r.d.erreur)||"Analyse impossible pour le moment. Réessaie.");return}
   s.analyse=r.d;save();renderSuivi();toast("Fiche entreprise prête ✓");
 }
+/* ---------- Mail de relance adapté à l'offre ---------- */
+function infosOffre(s){
+  const o=(s.offreId&&offres.find(x=>x.id===s.offreId))||s.offre||{};
+  return {titre:s.offre?.titre||o.titre||s.titre,description:o.description||s.offre?.description||"",entreprise:s.entreprise||o.entreprise||""};
+}
+function genererRelance(s,ton){
+  const o=infosOffre(s),poste=nettoyerTitre(o.titre),ent=o.entreprise.trim();
+  const interloc=(s.contact||"").match(/\b(Madame|Mme|Monsieur|M\.)\s+([A-ZÀ-ÖØ-Þ][\p{L}'’-]+(?:\s+[A-ZÀ-ÖØ-Þ][\p{L}'’-]+)?)/u);
+  const salut=interloc?`Bonjour ${interloc[1]==="Mme"?"Madame":interloc[1]==="M."?"Monsieur":interloc[1]} ${interloc[2]},`:"Bonjour,";
+  const quand=s.dateCandidature?`le ${new Date(s.dateCandidature+"T12:00:00").toLocaleDateString("fr-FR",{day:"numeric",month:"long"})}`:"récemment";
+  // points forts : mots-clés de l'offre que l'on retrouve dans le CV
+  let forts=[];
+  try{
+    if(typeof defsPourOffre==="function")DEFS=defsPourOffre({titre:o.titre,description:o.description});
+    const dansCV=motsDe(cvEnTexte(cv)).map(x=>x.lib);
+    forts=motsDe([o.titre,o.description].join("\n")).sort((a,b)=>b.n-a.n).map(x=>x.lib).filter(l=>dansCV.includes(l)&&!GENERIQUES.has(l)&&!(typeof GENLIBS!=="undefined"&&GENLIBS.has(l))).slice(0,3);
+  }catch(e){forts=[]}
+  const argument=forts.length?`Mon parcours, notamment mon expérience en ${liste(forts.map(f=>/[A-Z]{2,}/.test(f)?f:f.charAt(0).toLowerCase()+f.slice(1)))}, correspond aux missions décrites dans l'offre, et cette`:"Cette";
+  const coord=[cv.tel,cv.email].filter(Boolean).join(" | ");
+  const fin=`Cordialement,\n${(cv.nom||"").trim()}${coord?"\n"+coord:""}`.trim();
+  const dePoste=/^[aeiouyàâéèêëîïôöùûh]/i.test(poste)?"d'"+poste:"de "+poste;
+  const objet=`Candidature au poste ${dePoste} – relance`;
+  const corps=ton==="court"
+    ?`${salut}\n\nJe me permets de revenir vers vous au sujet de ma candidature au poste ${dePoste}${ent?` chez ${ent}`:""}, envoyée ${quand}. Elle m'intéresse toujours vivement : auriez-vous des nouvelles de l'avancement du recrutement ?\n\nJe reste disponible pour échanger à votre convenance.\n\n${fin}`
+    :`${salut}\n\nJe me permets de revenir vers vous au sujet de ma candidature au poste ${dePoste}${ent?` au sein de ${ent}`:""}, que je vous ai adressée ${quand}.\n\n${argument} opportunité m'intéresse toujours vivement.\n\nAuriez-vous des nouvelles sur l'avancement du recrutement ? Je reste bien entendu disponible pour échanger par téléphone ou en visioconférence, à votre convenance, et je peux vous transmettre tout complément d'information utile.\n\nJe vous remercie par avance de l'attention portée à ma demande et vous souhaite une excellente journée.\n\n${fin}`;
+  return {objet,corps,ton:ton||"classique",forts};
+}
+function blocRelance(s){
+  const jr=s.dateCandidature?Math.floor((Date.now()-new Date(s.dateCandidature+"T12:00:00"))/864e5):null;
+  const conseil=jr==null?"":jr<7?`Candidature envoyée il y a ${jr} jour${jr>1?"s":""} : le bon moment pour relancer se situe plutôt entre 7 et 10 jours.`:jr<=14?`Candidature envoyée il y a ${jr} jours : c'est le bon moment pour relancer.`:`Candidature envoyée il y a ${jr} jours : une relance courte est tout à fait appropriée.`;
+  const m=s.mail;
+  return `<section class="mail"><div class="mailbar"><button class="btn teal" data-mail="gen" data-id="${s.id}">✉️ ${m?"Réécrire le mail de relance":"Écrire un mail de relance adapté à l'offre"}</button>
+    ${conseil?`<span class="count" style="margin:0;font-weight:500">${esc(conseil)}</span>`:""}</div>
+    ${m?`<div class="mailbox"><label>Objet<input data-mk="objet" value="${esc(m.objet)}"></label>
+      <label>Message<textarea class="mailcorps" data-mk="corps" rows="12">${esc(m.corps)}</textarea></label>
+      ${m.forts&&m.forts.length?`<p class="count" style="margin:4px 0 8px;font-weight:500">Points de ton CV repris dans le message : ${m.forts.map(esc).join(", ")}. Relis et personnalise avant d'envoyer.</p>`:'<p class="count" style="margin:4px 0 8px;font-weight:500">Relis et personnalise avant d\'envoyer. Ajoute ton CV à jour dans l\'onglet « Mon CV » pour que je reprenne tes points forts.</p>'}
+      <div class="mailacts"><button class="btn pri sm" data-mail="copier" data-id="${s.id}">Copier le mail</button>
+        <button class="btn sm" data-mail="envoyer" data-id="${s.id}">Ouvrir dans ma messagerie</button>
+        <button class="btn sm" data-mail="${m.ton==="court"?"gen":"court"}" data-id="${s.id}">${m.ton==="court"?"Version complète":"Version courte"}</button>
+        <button class="btn sm" data-mail="fait" data-id="${s.id}" title="Passe la candidature en « Relancé » et prévoit la prochaine relance dans 7 jours">✓ C'est envoyé</button></div></div>`:""}</section>`;
+}
+function actionMail(b){
+  const s=suivi.find(x=>x.id===b.dataset.id);if(!s)return;
+  const a=b.dataset.mail;
+  if(a==="gen"||a==="court"){s.mail=genererRelance(s,a==="court"?"court":"classique");save();renderSuivi();return}
+  if(!s.mail)return;
+  if(a==="copier"){navigator.clipboard.writeText(`Objet : ${s.mail.objet}\n\n${s.mail.corps}`).then(()=>toast("Mail copié ✓"));return}
+  if(a==="envoyer"){
+    const dest=((s.contact||"").match(/[\w.+-]+@[\w-]+(?:\.[\w-]+)+/)||[""])[0];
+    location.href=`mailto:${dest}?subject=${encodeURIComponent(s.mail.objet)}&body=${encodeURIComponent(s.mail.corps)}`;return}
+  if(a==="fait"){
+    s.statut="relance";const d=new Date();d.setDate(d.getDate()+7);s.relance=d.toISOString().slice(0,10);
+    save();majCompteurs();renderSuivi();toast("Passé en « Relancé » : prochaine relance dans 7 jours");
+  }
+}
+$("#tb").addEventListener("input",e=>{
+  const t=e.target;if(!t.dataset||!t.dataset.mk)return;
+  const s=suivi.find(x=>x.id===t.closest(".sv").dataset.id);if(!s||!s.mail)return;
+  s.mail[t.dataset.mk]=t.value;save();
+});
 $("#svgroupes").onclick=e=>{const b=e.target.closest("button");if(!b)return;filtreGroupe=b.dataset.gr;renderSuivi()};
 $("#stats").onclick=e=>{const c=e.target.closest(".stat");if(c){filtreStatut=c.dataset.st;renderSuivi()}};
 $("#tb").addEventListener("change",e=>{
@@ -683,6 +752,7 @@ $("#tb").addEventListener("change",e=>{
   save();majCompteurs();renderSuivi()});
 $("#tb").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.mail)return actionMail(b);
   if(b.dataset.prep||b.dataset.siren)return lancerAnalyse(b);
   if(b.dataset.cvs){const it=suivi.find(x=>x.id===b.dataset.cvs);
     if(it&&it.offre&&!it.offreId)return ouvrirCVOffre({id:"perso-"+it.id,titre:it.offre.titre,entreprise:it.offre.entreprise,lieu:it.lieu,commune:"",description:it.offre.description,extrait:"",liens:[{source:"PDF",url:""}]},true);
