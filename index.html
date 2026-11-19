@@ -287,6 +287,10 @@ main{padding:26px 0 80px}
 .mailbox input,.mailbox textarea{width:100%;font:inherit;font-size:14px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff}
 .mailbox textarea{resize:vertical;min-height:200px;line-height:1.55}
 .mailacts{display:flex;gap:8px;flex-wrap:wrap}
+.chipx{display:inline-flex;gap:2px;align-items:center}
+.chip.ign{padding:3px 8px;background:#f0e6da;color:var(--mute);border:0;cursor:pointer}
+.chip.ign:hover{background:#ffd9c9;color:var(--bad)}
+.lien{background:none;border:0;color:var(--mute);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
 </style>
 </head>
 <body>
@@ -803,7 +807,25 @@ const MOTS=[
  ["Excel",["excel"]],["ERP / SAP",["sap","erp"]],["Anglais",["anglais","english"]],["Management d'équipe",["manager","encadrement","management"]],
  ["Rigueur / autonomie",["rigueur","autonomie","autonome","rigoureu"]],["Cosmétique (ISO 22716)",["22716","cosmetique"]],["Pharmaceutique",["pharmaceutique","pharma"]],
  ["Dispositifs médicaux",["dispositifs medicaux","dispositif medical"]],["Production / fabrication",["production","fabrication"]],
- ["PRP / CCP",["prp","oprp","ccp"]],["Inspections / réception",["inspection","reception"]]
+ ["PRP / CCP",["prp","oprp","ccp"]],["Inspections / réception",["inspection","reception"]],
+ ["Allemand",["allemand","german","deutsch"]],["Espagnol",["espagnol","spanish"]],["Italien",["italien","italian"]],["Néerlandais",["neerlandais","dutch"]],["Portugais",["portugais","portuguese"]],
+ ["Arabe",["arabe","arabic"]],["Chinois",["chinois","mandarin"]],["Bilingue",["bilingue","bilingual"]],["TOEIC / TOEFL / IELTS",["toeic","toefl","ielts"]],
+ ["Pack Office",["pack office","microsoft office","office 365","office365","m365"]],["Word",["word"]],["PowerPoint",["powerpoint"]],["Outlook",["outlook"]],["SharePoint",["sharepoint"]],
+ ["Power BI",["power bi","powerbi"]],["SQL",["sql"]],["Python",["python"]],["VBA",["vba"]],["JavaScript",["javascript"]],["TypeScript",["typescript"]],["Java",["java"]],["PHP",["php"]],
+ ["React",["react"]],["Angular",["angular"]],["Node.js",["node.js","node js","nodejs"]],["Git",["git","github","gitlab"]],["Docker",["docker"]],["Kubernetes",["kubernetes"]],["AWS",["aws","amazon web services"]],
+ ["Azure",["azure"]],["Google Cloud",["gcp","google cloud"]],["Jira",["jira"]],["Confluence",["confluence"]],["Photoshop",["photoshop"]],["Illustrator",["illustrator"]],["InDesign",["indesign"]],
+ ["Figma",["figma"]],["Canva",["canva"]],["AutoCAD",["autocad"]],["SolidWorks",["solidworks"]],["CATIA",["catia"]],["GMAO",["gmao"]],["CRM",["crm"]],["Salesforce",["salesforce"]],["HubSpot",["hubspot"]],
+ ["Cegid / Sage",["cegid","sage 100","sage x3"]],["WordPress",["wordpress"]],["Shopify",["shopify"]],["Google Analytics",["google analytics","ga4"]],["SEO",["seo","referencement naturel"]],
+ ["Google Ads",["google ads","adwords"]],["LinkedIn",["linkedin"]],["Trello / Asana",["trello","asana"]],["Slack / Teams",["slack","microsoft teams"]],
+ ["Scrum",["scrum"]],["Agile",["agile","methodes agiles"]],["Kanban",["kanban"]],["PMP",["pmp"]],["ITIL",["itil"]],["RGPD",["rgpd","gdpr"]],
+ ["Gestion de projet",["gestion de projet","gestion des projets","conduite de projet","chef de projet"]],["Travail en équipe",["travail en equipe","esprit d equipe","collaboratif"]],
+ ["Communication",["communication","communiquer"]],["Relation client",["relation client","service client","relation clientele"]],["Négociation",["negociation","negocier"]],
+ ["Prospection",["prospection","prospecter"]],["Analyse de données",["analyse de donnees","data analyse","data analysis"]],["Reporting",["reporting"]],["Budget",["budget","budgetaire"]],
+ ["Comptabilité",["comptabilite","comptable"]],["Paie",["paie"]],["Gestion du temps",["gestion du temps","gestion des priorites"]],["Adaptabilité",["adaptabilite","capacite d adaptation"]],
+ ["Créativité",["creativite","creatif"]],["Sens du service",["sens du service","orientation client"]],["Rédaction",["redaction","rediger"]],["Veille",["veille"]],
+ ["Sens de l'organisation",["sens de l organisation","esprit d organisation","bonne organisation"]],["Esprit d'analyse",["esprit d analyse","esprit de synthese"]],["Pédagogie",["pedagogie","pedagogue"]],
+ ["Gestion des stocks",["gestion de stock","gestion des stocks","inventaire"]],["Logistique",["logistique"]],["Supply chain",["supply chain"]],["Achats",["achats","acheteur"]],
+ ["Planification",["planification"]],["Maintenance",["maintenance"]],["Marketing digital",["marketing digital","community management","reseaux sociaux"]],["E-commerce",["e commerce","ecommerce"]]
 ];
 function motsDe(texte){
   const t=" "+norm(texte).replace(/\s+/g," ")+" ";const res=[];
@@ -1063,6 +1085,8 @@ const cvVideOK=()=>cvEnTexte(cv).split(/\s+/).filter(Boolean).length>=15;
 
 // Termes exacts employés par l'offre (pour reprendre son vocabulaire à la lettre)
 const eq=t=>[...(t||"")].map(c=>{const b=c.normalize("NFD")[0]||c;return b.toLowerCase().length===1?b.toLowerCase():c}).join("");
+// Mots-clés de l'offre, sans ceux que la personne a masqués (bouton ✕ sur les mots proposés)
+const motsOffre=texte=>motsDe(texte).filter(m=>!(cv.motsIgnores||[]).includes(m.lib));
 function termesOffre(texte){
   const t=eq(texte),res={};
   for(const [lib,vars] of MOTS){
@@ -1076,7 +1100,7 @@ function termesOffre(texte){
   return Object.fromEntries(Object.entries(res).map(([k,v])=>[k,v.s]));
 }
 // Mots-clés trop généraux pour figurer dans une phrase d'accroche
-const GENERIQUES=new Set(["Excel","Anglais","Management d'équipe","Rigueur / autonomie","Production / fabrication","Formation / sensibilisation","Réglementation","Documentation qualité","Validation / qualification","Environnement / RSE","Inspections / réception","Indicateurs / KPI","Laboratoire"]);
+const GENERIQUES=new Set(["Communication","Travail en équipe","Organisation","Adaptabilité","Créativité","Sens du service","Sens de l'organisation","Esprit d'analyse","Pédagogie","Gestion du temps","Pack Office","Word","PowerPoint","Outlook","Allemand","Espagnol","Italien","Bilingue","Excel","Anglais","Management d'équipe","Rigueur / autonomie","Production / fabrication","Formation / sensibilisation","Réglementation","Documentation qualité","Validation / qualification","Environnement / RSE","Inspections / réception","Indicateurs / KPI","Laboratoire"]);
 const enPhrase=t=>/[A-Z]{2,}/.test(t)?t:(t?t[0].toLowerCase()+t.slice(1):t);
 const sansParentheses=t=>(t||"").replace(/\s*\([^)]*\)/g,"").trim();
 const commeUn=t=>{const m=enPhrase(sansParentheses(t));return /^[aeiouyàâéèêëîïôöùûh]/i.test(m)?"qu'"+m:"que "+m};
@@ -1086,7 +1110,7 @@ const libelleOffre=(lib,termes)=>{const s=termes[lib];return s&&(/\s/.test(s)||/
 
 function adapterCV(o){
   const offreTxt=[o.titre,o.description||"",o.extrait||""].join("\n");
-  const dansOffre=motsDe(offreTxt).sort((a,b)=>b.n-a.n);
+  const dansOffre=motsOffre(offreTxt).sort((a,b)=>b.n-a.n);
   const libOffre=dansOffre.map(m=>m.lib),termes=termesOffre(offreTxt);
   const base=cvEnTexte(cv),dansBase=motsDe(base).map(x=>x.lib);
   const present=libOffre.filter(l=>dansBase.includes(l)),
@@ -1195,7 +1219,7 @@ function imprimerCV(a){
 /* ---------- CV final : modifications puis PDF ---------- */
 let aCourant=null,edits={},offrePerso=false;
 function recalculer(a,o){
-  const libOffre=motsDe([o.titre,o.description||"",o.extrait||""].join("\n")).map(m=>m.lib),poste=nettoyerTitre(o.titre);
+  const libOffre=motsOffre([o.titre,o.description||"",o.extrait||""].join("\n")).map(m=>m.lib),poste=nettoyerTitre(o.titre);
   a.texteBrut=cvEnTexte({...cv,nom:a.nom,titre:a.titre,resume:a.resume,competences:a.competences.join("\n"),exps:a.exps.map(x=>({...x,missions:x.missions.join("\n")})),langues:a.langues.join("\n"),certifs:a.certifs.join("\n"),texte:a.texte});
   const trouves=motsDe(a.texteBrut).map(x=>x.lib).filter(l=>libOffre.includes(l));
   a.apres=libOffre.length?Math.round(trouves.length/libOffre.length*100):0;
@@ -1256,8 +1280,9 @@ function rendreCV(){
    <div class="score"><div class="ring" id="ring" style="background:conic-gradient(${coulScore(a.apres)} ${a.apres*3.6}deg,#f0e6da 0)"><span id="ring-val" style="background:#fff;border-radius:50%;width:56px;height:56px;display:grid;place-items:center">${a.apres}%</span></div>
      <div><b id="score-t">CV final : ${a.apres}% des mots-clés de l'offre repris.</b>
      <div class="avap">Avant adaptation : ${a.avant}% · ${a.present.length+a.confirmes.length} mots-clés sur ${a.nb} déjà dans ton CV</div></div></div>
-   <div class="chips">${a.present.map(x=>`<span class="chip y">✓ ${esc(x)}</span>`).join("")}${a.confirmes.map(x=>`<span class="chip conf">✓ ${esc(x)} (ajouté)</span>`).join("")}${a.manque.map(x=>`<button class="chip add" data-add="${esc(x)}" title="Clique si tu as vraiment cette compétence">+ ${esc(x)}</button>`).join("")}</div>
-   ${a.manque.length?`<div class="note"><b>Les mots-clés jaunes sont demandés par l'offre mais absents de ton CV.</b> Si tu maîtrises vraiment l'un d'eux (même en stage, en formation ou en projet), clique dessus : il sera ajouté à tes compétences. N'ajoute jamais ce que tu ne sais pas faire : les recruteurs le vérifient en entretien.</div>`:""}
+   <div class="chips">${a.present.map(x=>`<span class="chip y">✓ ${esc(x)}</span>`).join("")}${a.confirmes.map(x=>`<span class="chip conf">✓ ${esc(x)} (ajouté)</span>`).join("")}${a.manque.map(x=>`<span class="chipx"><button class="chip add" data-add="${esc(x)}" title="Clique si tu as vraiment cette compétence">+ ${esc(x)}</button><button class="chip ign" data-ign="${esc(x)}" title="Ce mot n'a pas de sens ou ne m'intéresse pas : le masquer">✕</button></span>`).join("")}</div>
+   ${(cv.motsIgnores||[]).length?`<p class="count" style="margin:-4px 0 10px;font-weight:500">Mots masqués : ${cv.motsIgnores.map(x=>`<button class="lien" data-unign="${esc(x)}" title="Réafficher">${esc(x)} ↺</button>`).join(" · ")}</p>`:""}
+   ${a.manque.length?`<div class="note"><b>Les mots-clés jaunes sont demandés par l'offre mais absents de ton CV.</b> Si tu maîtrises vraiment l'un d'eux (même en stage, en formation ou en projet), clique dessus : il sera ajouté à tes compétences. Un mot qui n'a pas de sens ? Clique sur sa croix ✕ : il ne sera plus jamais proposé. N'ajoute jamais ce que tu ne sais pas faire : les recruteurs le vérifient en entretien.</div>`:""}
    ${a.nb?"":`<div class="note">La description de cette offre est trop courte ou absente : l'analyse est limitée. Colle le texte complet de l'offre dans le champ prévu sur la page des offres.</div>`}
    <h3>Contrôles « logiciels de recrutement »</h3>
    <ul class="ats" id="ats-list">${a.controles.map(([ok,t])=>`<li class="${ok?"ok":"ko"}">${esc(t)}</li>`).join("")}</ul>
@@ -1295,6 +1320,10 @@ $("#cv-body").addEventListener("change",e=>{
 });
 $("#cv-body").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.ign||b.dataset.unign){
+    const mot=b.dataset.ign||b.dataset.unign;
+    cv.motsIgnores=b.dataset.ign?[...new Set([...(cv.motsIgnores||[]),mot])]:(cv.motsIgnores||[]).filter(x=>x!==mot);
+    put(KC,cv);const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.add){extras.add(b.dataset.add);delete edits.competences;const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.copie){navigator.clipboard.writeText($("#"+b.dataset.copie).value).then(()=>toast("Copié ✓"));return}
   if(b.id==="cp-claude"){navigator.clipboard.writeText(cvSortie.prompt).then(()=>toast("Demande copiée : colle-la dans Claude ✓"));return}
