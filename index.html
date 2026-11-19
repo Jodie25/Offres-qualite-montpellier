@@ -455,14 +455,14 @@ $("#list").onclick=actionsOffre;$("#map-list").onclick=actionsOffre;
 ["q","f-src","f-ct","f-com","f-agro","f-hide"].forEach(id=>$("#"+id).addEventListener("input",renderOffres));
 
 /* ================= Carte ================= */
-let map=null,couche=null;
+let map=null,couche=null,vueMap=null;
 function creerCarte(){
   const m=L.map("map",{scrollWheelZoom:false}).setView(centre,9);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© les contributeurs d'OpenStreetMap"}).addTo(m);
   const cercle=L.circle(centre,{radius:rayon*1000,color:"#ff6b4a",weight:2,dashArray:"6 6",fillColor:"#ffd166",fillOpacity:.08}).addTo(m);
   L.marker(centre,{icon:L.divIcon({className:"",html:'<div style="font-size:26px;filter:drop-shadow(0 2px 4px #0006)">📍</div>',iconSize:[26,26],iconAnchor:[13,26]}),title:"Saint-Jean-de-Védas"}).addTo(m);
   couche=L.layerGroup().addTo(m);
-  m.fitBounds(cercle.getBounds());
+  vueMap=cercle.getBounds();m.fitBounds(vueMap);
   return m;
 }
 function renderCarte(){
@@ -470,19 +470,28 @@ function renderCarte(){
   const loc=offres.filter(o=>o.lat!=null&&!ignores.has(o.id));
   const par={};for(const o of loc){(par[o.commune]??={lat:o.lat,lon:o.lon,items:[]}).items.push(o)}
   const villes=Object.entries(par).sort((a,b)=>b[1].items.length-a[1].items.length);
+  coordVilles=Object.fromEntries(villes.map(([n,v])=>[n,[v.lat,v.lon]]));
   if(!map)map=creerCarte();
   couche.clearLayers();
   for(const [nom,v] of villes){
     const n=v.items.length,taille=Math.min(26+n*3,58),on=nom===communeSel;
     const ic=L.divIcon({className:"",html:`<div class="bub${on?" on":""}" style="width:${taille}px;height:${taille}px;font-size:${taille>36?16:14}px">${n}</div>`,iconSize:[taille,taille]});
-    L.marker([v.lat,v.lon],{icon:ic,title:nom+" : "+n+" offre(s)"}).addTo(couche).on("click",()=>{communeSel=nom;renderCarte()});
+    L.marker([v.lat,v.lon],{icon:ic,title:nom+" : "+n+" offre(s)"}).addTo(couche).on("click",()=>choisirVille(nom));
   }
   $("#pills").innerHTML=villes.map(([nom,v])=>`<button class="pill${nom===communeSel?" on":""}" data-c="${esc(nom)}">${esc(nom)} <b>${v.items.length}</b></button>`).join("");
   const sel=par[communeSel];
   $("#map-count").textContent=sel?`${sel.items.length} offre${sel.items.length>1?"s":""} à ${communeSel}`:`${loc.length} offres localisées sur la carte · clique sur une ville`;
   $("#map-list").innerHTML=(sel?sel.items:[]).map(o=>carteOffre(o,sv,true)).join("");
 }
-$("#pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;communeSel=communeSel===b.dataset.c?"":b.dataset.c;renderCarte()};
+$("#pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;choisirVille(b.dataset.c)};
+let coordVilles={};
+function choisirVille(nom){
+  communeSel=communeSel===nom?"":nom;
+  renderCarte();
+  if(communeSel&&coordVilles[communeSel])map.setView(coordVilles[communeSel],10.5,{animate:true,duration:.6});   // zoom sur la zone de l'offre
+  else if(vueMap){map.fitBounds(vueMap);renderCarte()}                                               // retour à la vue d'ensemble
+}
+
 
 /* ================= Suivi ================= */
 function majCompteurs(){
