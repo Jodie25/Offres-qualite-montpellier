@@ -307,6 +307,7 @@ main{padding:26px 0 80px}
   <div class="mapgrid">
     <div><div id="map"></div></div>
     <div class="mapside">
+      <label class="ck" style="margin:0 0 12px"><input type="checkbox" id="f-hide2" checked> Masquer suivies / ignorées</label>
       <div class="pills" id="pills"></div>
       <p class="count" id="map-count">Clique sur une ville de la carte pour voir ses offres.</p>
       <div class="list" id="map-list"></div>
@@ -450,7 +451,7 @@ function actionsOffre(e){
   if(i){ignores.add(i);save();rafraichir()}
   if(c)ouvrirCV(c);
 }
-const rafraichir=()=>{renderOffres();if(!$("#v-carte").hidden)renderCarte()};
+const rafraichir=()=>{renderOffres();if(typeof renderFiltres==="function")renderFiltres();if(!$("#v-carte").hidden)renderCarte()};
 function filtrees(){
   const q=$("#q").value.toLowerCase(),src=$("#f-src").value,ct=$("#f-ct").value,com=$("#f-com").value,
     agro=$("#f-agro").checked,hide=$("#f-hide").checked,sv=suiviIds();
@@ -480,7 +481,7 @@ function creerCarte(){
 }
 function renderCarte(){
   const sv=suiviIds();
-  const loc=offres.filter(o=>o.lat!=null&&!ignores.has(o.id));
+  const loc=offres.filter(o=>o.lat!=null&&!estMasquee(o,sv));
   const par={};for(const o of loc){(par[o.commune]??={lat:o.lat,lon:o.lon,items:[]}).items.push(o)}
   const villes=Object.entries(par).sort((a,b)=>b[1].items.length-a[1].items.length);
   coordVilles=Object.fromEntries(villes.map(([n,v])=>[n,[v.lat,v.lon]]));
@@ -504,6 +505,18 @@ function choisirVille(nom){
   if(communeSel&&coordVilles[communeSel])map.setView(coordVilles[communeSel],10.5,{animate:true,duration:.6});   // zoom sur la zone de l'offre
   else if(vueMap){map.fitBounds(vueMap);renderCarte()}                                               // retour à la vue d'ensemble
 }
+
+/* ---------- « Masquer suivies / ignorées » : même réglage sur les pages Offres et Carte ---------- */
+const masquerActif=()=>$("#f-hide").checked;
+const estMasquee=(o,sv)=>masquerActif()&&(sv.has(o.id)||ignores.has(o.id));
+function syncMasque(depuis){
+  $("#f-hide").checked=$("#f-hide2").checked=depuis.checked;
+  renderOffres();
+  if(typeof renderFiltres==="function")renderFiltres();
+  if(!$("#v-carte").hidden)renderCarte();
+}
+$("#f-hide").addEventListener("input",e=>syncMasque(e.target));
+$("#f-hide2").addEventListener("input",e=>syncMasque(e.target));
 
 
 /* ================= Suivi ================= */
