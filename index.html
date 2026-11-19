@@ -481,9 +481,8 @@ function carteOffre(o,sv,compact){
    ${snip?`<div class="snip">${esc(snip)}${compact?"":`<details><summary>Lire toute l'offre</summary><div class="full">${esc(desc)}</div></details>`}</div>`:""}
    <div class="acts">
      <a class="btn pri sm" target="_blank" rel="noopener" href="${esc(o.liens[0].url)}">Je postule ↗</a>
-     <button class="btn teal sm" data-cv="${o.id}">✨ Adapter mon CV</button>
+     ${cvFaits.has(o.id)?'<span class="cvdone">✓ CV adapté</span>':`<button class="btn teal sm" data-cv="${o.id}">✨ Adapter mon CV</button>`}
      ${suit?'<span class="cvdone">✓ Dans mon suivi</span>':`<button class="btn sm" data-suivre="${o.id}">+ Suivre</button><button class="btn ghost sm" data-ignorer="${o.id}">Ignorer</button>`}
-     ${cvFaits.has(o.id)?'<span class="cvdone">CV adapté ✓</span>':""}
    </div></article>`;
 }
 function actionsOffre(e){
@@ -597,7 +596,7 @@ function renderSuivi(){
     return {g:cle(groupeDe(s)),h:`<article class="sv st-${s.statut}${retard?" late":""}" data-id="${s.id}">
      <header class="svh"><div class="svt">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<textarea class="auto titre" data-k="titre" rows="1">${esc(s.titre)}</textarea>`}
        <div class="count" style="margin:2px 0 0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}${retard?" · <b style=\"color:var(--bad)\">relance à faire</b>":""}</div></div>
-      <div class="svb">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="Adapter mon CV">✨ CV</button>`:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕ Retirer</button></div></header>
+      <div class="svb">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="${s.offreId&&cvFaits.has(s.offreId)?"CV déjà adapté : le rouvrir":"Adapter mon CV à cette offre"}">${s.offreId&&cvFaits.has(s.offreId)?"📄 CV adapté":"✨ CV"}</button>`:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕ Retirer</button></div></header>
      <div class="svg">
       ${champ("entreprise","Entreprise")}${champ("lieu","Lieu")}
       <label>Statut<select class="st s-${s.statut}" data-k="statut">${STATUTS.map(([k,n])=>`<option value="${k}"${k===s.statut?" selected":""}>${n}</option>`).join("")}</select></label>
@@ -1247,12 +1246,16 @@ function construire(){
   recalculer(a,offreCV);
   aCourant=a;return a;
 }
+// Le CV est « adapté » quand la personne le télécharge ou le copie
+function marquerAdapte(){
+  if(!offreCV||offrePerso||!offreCV.id||cvFaits.has(offreCV.id))return;
+  cvFaits.add(offreCV.id);put(KD,[...cvFaits]);rafraichir();
+}
 function ouvrirCV(id){const o=offres.find(x=>x.id===id);if(o)ouvrirCVOffre(o,false)}
 function ouvrirCVOffre(o,perso){
   offreCV=o;extras=new Set();edits={};offrePerso=!!perso;
   $("#cv-h").textContent="Adapter mon CV · "+nettoyerTitre(o.titre);
   $("#cv-sh").textContent=(o.entreprise||"Entreprise non précisée")+(o.commune||o.lieu?" · "+(o.commune||o.lieu):"");
-  if(!perso){cvFaits.add(o.id);put(KD,[...cvFaits])}
   rendreCV();$("#cvdlg").showModal();if(!perso)rafraichir();
 }
 const coulScore=n=>n>=60?"#12a150":n>=35?"#f5a524":"#ff6b4a";
@@ -1327,16 +1330,16 @@ $("#cv-body").addEventListener("click",e=>{
   if(b.dataset.add){extras.add(b.dataset.add);delete edits.competences;const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.copie){navigator.clipboard.writeText($("#"+b.dataset.copie).value).then(()=>toast("Copié ✓"));return}
   if(b.id==="cp-claude"){navigator.clipboard.writeText(cvSortie.prompt).then(()=>toast("Demande copiée : colle-la dans Claude ✓"));return}
-  if(b.id==="cp-cv"){navigator.clipboard.writeText(aCourant.texteBrut).then(()=>toast("CV copié ✓"));return}
+  if(b.id==="cp-cv"){navigator.clipboard.writeText(aCourant.texteBrut).then(()=>{toast("CV copié ✓");marquerAdapte()});return}
   if(b.id==="add-suivi"){suivi.unshift({id:"s"+Date.now(),offreId:null,titre:offreCV.titre,entreprise:offreCV.entreprise,lieu:offreCV.lieu||"",url:"",source:"PDF / texte",statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});save();majCompteurs();toast("Ajoutée à ton suivi ✓");return}
   const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40),qui=(cv.nom||"").trim().replace(/\s+/g,"-")||"candidature";
   if(b.id==="dl-pdf"){
     if(!window.jspdf){toast("Module PDF non chargé : vérifie ta connexion");return}
-    try{cvEnPdf(aCourant).save(`CV-${qui}-${slug}.pdf`);toast("PDF téléchargé ✓")}catch(err){console.error(err);toast("Erreur lors de la création du PDF")}
+    try{cvEnPdf(aCourant).save(`CV-${qui}-${slug}.pdf`);toast("PDF téléchargé ✓");marquerAdapte()}catch(err){console.error(err);toast("Erreur lors de la création du PDF")}
     return}
   if(b.id==="dl-docx"){
     if(typeof docx==="undefined"){toast("Module Word non chargé : vérifie ta connexion");return}
-    docx.Packer.toBlob(cvEnDocx(aCourant)).then(bl=>{const l=document.createElement("a");l.href=URL.createObjectURL(bl);l.download=`CV-${qui}-${slug}.docx`;l.click();URL.revokeObjectURL(l.href)});
+    docx.Packer.toBlob(cvEnDocx(aCourant)).then(bl=>{const l=document.createElement("a");l.href=URL.createObjectURL(bl);l.download=`CV-${qui}-${slug}.docx`;l.click();URL.revokeObjectURL(l.href);marquerAdapte()});
   }
   if(b.id==="dl-let"){
     if(typeof docx==="undefined"){toast("Module Word non chargé : vérifie ta connexion");return}
@@ -1394,6 +1397,7 @@ $("#cv-pdf-top").onclick=()=>{
   if(!aCourant)return;
   const slug=nettoyerTitre(offreCV.titre).replace(/[^\wÀ-ÿ]+/g,"-").slice(0,40),qui=(cv.nom||"").trim().replace(/\s+/g,"-")||"candidature";
   telechargerPDF(aCourant,`CV-${qui}-${slug}.pdf`);
+  marquerAdapte();
 };
 
 /* ---------- Offre en PDF ou en texte ---------- */
