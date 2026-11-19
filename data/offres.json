@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-18T23:02+00:00",
+ "maj": "2026-11-19T08:31+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,7 +23,7 @@
     }
    ],
    "premiere_vue": "2026-11-18",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -46,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-18",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.3481,
    "lon": 3.2342,
@@ -69,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -92,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -115,7 +115,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -138,7 +138,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -161,7 +161,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -184,7 +184,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -207,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -230,7 +230,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -253,7 +253,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -276,7 +276,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.7924,
    "lon": 4.3919,
@@ -299,7 +299,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -322,7 +322,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
@@ -391,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -414,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -437,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -460,7 +460,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -483,7 +483,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -506,7 +506,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.7706,
    "lon": 4.4397,
@@ -575,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -598,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -621,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.5685,
    "lon": 3.7829,
@@ -644,7 +644,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.4093,
    "lon": 3.2563,
@@ -667,7 +667,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.6831,
    "lon": 3.8447,
@@ -690,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -713,30 +713,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "c5a9a0774fef",
-   "titre": "Alternance - Chargé de mission QHSE - H/F",
-   "entreprise": "EDF power solutions",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-10-29",
-   "extrait": "",
-   "description": "Présentation de l'entreprise\n\nActeur industriel responsable et innovant, EDF power solutions développe, construit et exploite des moyens de production d'énergies renouvelables et bas carbone ainsi que des solutions de flexibilité et de transport d'électricité.\n\nGrâce à l'ensemble de ses expertises, EDF power solutions accompagne ses clients en leur proposant des offres sur mesure pour contribuer à la décarbonation et à la performance des systèmes électriques.\n\nDans nos différentes géographies, nos équipes s'engagent au quotidien pour accélérer la transition énergétique.\n\nPour plus d'informations, n'hésitez pas à visiter le site d'EDF Power Solutions https://edf-powersolutions.com/\n\nDescription De L'offre\n\nActuellement, EDF power solutions recherche pour sa direction AOS (Asset Operation Solutions) un(e) :\n\nChargé(e) de mission QHSE en Alternance\n\n• Début : Janvier 2027\n• Durée : 12 à 24 mois\n• Localisation : Montpellier (34)\n\nAu sein de la direction Asset Operation Solutions, vous serez rattaché(e) à la Responsable QHSE et contribuerez au déploiement opérationnel de la démarche Qualité, Santé Sécurité et Environnement auprès des équipes digitales, de supervision et d'ingénierie. Vous participerez à des missions transverses visant à fiabiliser les suivis, accompagner les métiers et transformer les retours du terrain en actions d'amélioration concrètes. Vos missions principales seront les suivantes :\n\n• Participer aux actions de prévention et à l'animation QHSE\n• Fiabiliser les outils de suivi des actions et indicateurs QHSE\n• Appuyer la surveillance du suivi des formations et habilitations des équipes opérationnelles\n• Coordonner la préparation et la diffusion des Safety Alert Manufacturers auprès des filiales\n• Travailler sur l'évaluation du risque chimique : tenir à jour l'inventaire des produits et les fiches de données de sécurité de l'atelier de réparation des composants majeurs d'éolienne (évaluation SEIRICH et contrôles réglementaires)\n• Assurer le suivi de la Gestion Electronique des Documents applicables et la formation des collaborateurs à l'outil existant\n• Participer au pilotage de la certification ISO QHSE (mise en oeuvre du planning d'audits, mise à jour des indicateurs de performance et suivi du plan d'actions)\n\nCette alternance vous permettra d'interagir avec des interlocuteurs très variés au sein des différentes directions. La diversité des sujets que vous porterez vous permettra d'avoir une vision transverse de toutes les activités et métiers d'EDF power solutions.\n\nCompétences et qualités recherchées\n\nActuellement, étudiant(e) en préparation d'un diplôme de niveau master QSE ou équivalent, vous êtes à la recherche d'une alternance de 12 à 24 mois au sein d'un groupe leader dans son domaine.\n\nVous disposez idéalement d'une première expérience (alternance, stage, projet académique...) dans le domaine de l'énergie et avez une connaissance des normes ISO 9001, 45001 et 14001.\n\nQualités recherchées :\n\n• Autonomie, Rigueur\n• Connaissances des référentiels QHSE\n• Curiosité, sens du relationnel\n• Travail en équipe\n• Bonnes capacités rédactionnelles\n\nConnaissances outils IT (logiciels/langages...) : Pack Office (Word, Excel, PowerPoint...). La connaissance de SharePoint Online et de Power BI, ainsi qu'une familiarité avec les outils d'intelligence artificielle générative pour la rédaction, la synthèse et l'exploitation d'informations, seraient appréciées, dans le respect de la confidentialité des données et avec un regard critique sur les résultats produits.\n\nNiveau d'anglais : intermédiaire\n\nFaire son alternance chez EDF power solutions, c'est l'occasion de développer son potentiel et prendre part à des missions d'envergure sur des projets uniques tout en vivant une expérience engageante et enrichissante.\n\nAlors, rejoignez-nous et préparons ensemble votre avenir !\n\nConformément aux engagements pris par le groupe EDF, la diversité et l'inclusion sont au coeur de nos valeurs fondamentales. EDF power solutions est une entreprise engagée, qui s'investit pour le développement de l'égalité professionnelle et de la diversité sous toutes ses formes",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/alternance-charg%C3%A9-de-mission-qhse-h-f-at-edf-power-solutions-4482590354"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-19",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
