@@ -1,11 +1,34 @@
 {
- "maj": "2026-11-19T08:46+00:00",
+ "maj": "2026-11-19T08:55+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "038a1c7cda57",
+   "titre": "Responsable qualité textile (F/H)",
+   "entreprise": "Alphika",
+   "lieu": "Saint-Aunès",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-19",
+   "extrait": "",
+   "description": "Notre client est une entité créée spécifiquement pour assurer le pilotage du marché PNGN (Police Nationale et Gendarmerie nationale), portant sur la fourniture et la gestion des uniformes et équipements associés. Elle assure la coordination des partenaires industriels, le suivi des engagements contractuels ainsi que le pilotage de la qualité et de la performance globale du marché.\n\nRattaché au Directeur Général Délégué, vous garantissez la qualité des produits et des prestations, pilotez le Plan d’Assurance Qualité (PAQ) et coordonnez les partenaires pour répondre aux exigences du client.\n\nVous êtes notamment en charge de :\n\n• Piloter la qualité du marché : rédiger et actualiser le PAQ, suivre les indicateurs contractuels et contribuer aux plans de progrès. Être l’interlocuteur qualité du client.\n• Superviser les contrôles : coordonner les co-traitants, le Bureau Homologation (BH) et le prestataire de contrôle ; organiser les contrôles complémentaires et transmettre les rapports dans les délais.\n• Sécuriser les produits : suivre la qualification des composants et les changements de sourcing, coordonner les présentations des têtes de série au BH et garantir la disponibilité des spécimens validés.\n• Traiter les réclamations : établir un diagnostic, analyser les causes avec les co-traitants, piloter les actions correctives et vérifier leur efficacité.\n• Suivre les fournisseurs : consolider le planning d’audits, suivre la clôture des écarts, la notation qualité et la traçabilité des produits, matières et composants. Animer les revues qualité avec les co-traitants.\n• Anticiper les risques : assurer la veille réglementaire et technique, gérer les obsolescences et coordonner la qualification des solutions de substitution.\n• Fiabiliser la documentation : tenir à jour le référentiel technique, contribuer aux projets d’innovation et accompagner la sélection et la contractualisation du prestataire de contrôle, dont le fonctionnement opérationnel relève des co-traitants.\n\nProfil :\n\n• Formation et expérience : Bac +5 en qualité, ingénierie ou domaine technique équivalent ; au moins 5 ans d’expérience en qualité, en environnement industriel ou logistique.\n• Expertise : produits textiles et composants techniques, ISO 9001, échantillonnage NQA/AQL, contrôles et audits fournisseurs ; connaissance des marchés publics et de la réglementation produits (REACH, SVHC, PFAS).\n• Compétences : pilotage de plans d’action et d’indicateurs, analyse des non-conformités, gestion documentaire et excellente maîtrise d’Excel.\n• Qualités personnelles : rigueur, autonomie, analyse et synthèse, anticipation et réactivité ; communication claire, diplomatie, équité et sens du business.\n• Animation et management : fédérer des partenaires sans lien hiérarchique, coordonner les acteurs internes et externes et développer les compétences de l’équipe qualité.\n\nCritères de Performance\n\nConformité des produits et acceptation par le BH, respect des délais documentaires et de traitement des réclamations, réalisation des audits et clôture des actions correctives. La fiabilité des livrables, la traçabilité, la satisfaction client et la maîtrise des coûts de non-qualité sont également essentielles.\n\nConditions d’Accès\n\nLocalisation : poste basé à Saint-Aunès (34), avec un déplacement au siège de l’entreprise à Gennevilliers (92) toutes les deux semaines.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-textile-f-h-at-alphika-4491600170"
+    }
+   ],
+   "premiere_vue": "2026-11-19",
+   "derniere_vue": "2026-11-19",
+   "agro": false,
+   "lat": 43.6341,
+   "lon": 3.97,
+   "commune": "Saint-Aunès"
+  },
   {
    "id": "b61ebdc74226",
    "titre": "Technicien de laboratoire H/F",
