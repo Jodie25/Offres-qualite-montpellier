@@ -370,8 +370,19 @@ def geocoder(nom, ref):
 
 
 # ---------- Filtrage et fusion ----------
+ECOLE_ENT = re.compile(r"\b(ecoles?|universite|universites|lycee|college|business school|cfa|campus|centre de formation|organisme de formation|institut de formation|institut superieur|academy|academie|greta|afpa|ifocop|openclassrooms|studi|cned|cnam|supinfo|ynov|efrei|edhec|escp|neoma|kedge|ipag|isefac|digital campus|ecv|iseg|esg|formations?)\b")
+ECOLE_TITRE = re.compile(r"^(bachelor|master|mastere|licence|bts|mba|titre professionnel|formation|devenez|preparez|preparer un|rejoignez notre (ecole|formation))\b")
+
+
+def est_ecole(o):
+    """Annonce publiée par un établissement de formation (recrutement d'élèves) et non par une entreprise."""
+    return bool(ECOLE_ENT.search(norm(o.get("entreprise", "")))) or bool(ECOLE_TITRE.search(norm(o.get("titre", ""))))
+
+
 def pertinente(o):
     t = norm(o["titre"])
+    if est_ecole(o):
+        return False
     if not any(norm(k) in t for k in CFG["titre_doit_contenir"]):
         return False
     if any(norm(k) in t for k in CFG["titre_exclu"]):

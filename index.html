@@ -291,6 +291,17 @@ main{padding:26px 0 80px}
 .chip.ign{padding:3px 8px;background:#f0e6da;color:var(--mute);border:0;cursor:pointer}
 .chip.ign:hover{background:#ffd9c9;color:var(--bad)}
 .lien{background:none;border:0;color:var(--mute);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+
+/* ---------- Lettre et entretien ---------- */
+.encadre{background:#fff8f3;border:1.5px solid #ffdcc9;border-radius:14px;padding:14px 16px;margin:6px 0 12px;display:flex;flex-direction:column;gap:8px}
+.encadre textarea{width:100%;font:inherit;font-size:14px;border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff;resize:vertical}
+.encadre .btn{align-self:flex-start}
+.qrbloc{margin-top:12px;background:#fff8f3;border:1.5px solid #ffdcc9;border-radius:14px;padding:12px 16px}
+.qrbloc>summary{cursor:pointer;font-weight:700}
+.qr{border-top:1px solid #f3dfd2;padding:8px 0}
+.qr summary{cursor:pointer;font-weight:600}
+.qr p{margin:6px 0;color:var(--mute);font-size:14px}
+.qr textarea{width:100%;font:inherit;font-size:14px;border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff}
 </style>
 </head>
 <body>
@@ -432,6 +443,10 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const KS="emplois_suivi_v1",KI="emplois_ignores_v1",KC="emplois_cv_v1",KD="emplois_cvfait_v1";
 function load(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}}
 function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+// Annonces d'écoles (recrutement d'élèves) : on ne garde que les offres d'entreprise
+const RE_ECOLE_ENT=/\b(ecoles?|universites?|lycee|college|business school|cfa|campus|centre de formation|organisme de formation|institut de formation|institut superieur|academy|academie|greta|afpa|ifocop|openclassrooms|studi|cned|cnam|supinfo|ynov|efrei|edhec|escp|neoma|kedge|ipag|isefac|digital campus|ecv|iseg|esg|formations?)\b/,
+  RE_ECOLE_TIT=/^(bachelor|master|mastere|licence|bts|mba|titre professionnel|formation|devenez|preparez|preparer un|rejoignez notre (ecole|formation))\b/;
+const estEcole=o=>RE_ECOLE_ENT.test(norm(o.entreprise||""))||RE_ECOLE_TIT.test(norm(o.titre||""));
 let offres=[],maj="",centre=[43.573,3.833],rayon=50;
 let suivi=load(KS,[]),ignores=new Set(load(KI,[])),cv=Object.assign(cvVide(),load(KC,{})),cvFaits=new Set(load(KD,[]));
 let filtreStatut="",communeSel="";
@@ -603,7 +618,7 @@ function renderSuivi(){
       <label>Candidature<input type="date" data-k="dateCandidature" value="${esc(s.dateCandidature)}"></label>
       <label>Relance<input type="date" data-k="relance" value="${esc(s.relance)}"></label>
       ${champ("contact","Contact (nom, email…)")}${champ("notes","Notes","notes")}
-     </div>${s.statut==="entretien"&&typeof APP_COMPTES!=="undefined"?blocPreparation(s):""}${["envoyee","relance"].includes(s.statut)?blocRelance(s):""}</article>`}});
+     </div>${s.statut==="entretien"?(typeof APP_COMPTES!=="undefined"?blocPreparation(s):blocQrSeul(s)):""}${["envoyee","relance"].includes(s.statut)?blocRelance(s):""}</article>`}});
   let html;
   if(multi&&!filtreGroupe){
     html=ordreG.filter(g=>fiches.some(f=>f.g===cle(g))).map(g=>{const f=fiches.filter(x=>x.g===cle(g));
@@ -623,8 +638,58 @@ const eur=n=>n==null?"":n>=1e9?(n/1e9).toFixed(1).replace(".",",")+" Md€":n>=1
 function blocPreparation(s){
   return `<section class="prep"><div class="prepbar">
     <label>Site web de l'entreprise <small>(facultatif : sinon je le cherche)</small><input data-k="site" value="${esc(s.site||"")}" placeholder="https://www.entreprise.fr"></label>
-    <button class="btn pri" data-prep="${s.id}">🔎 ${s.analyse?"Relancer l'analyse":"Préparer l'entretien : analyser l'entreprise"}</button></div>
+    <button class="btn pri" data-prep="${s.id}">🔎 ${s.analyse?"Relancer l'analyse":"Analyser l'entreprise"}</button></div>
+    <details class="qrbloc" open><summary>🎤 Préparer les questions d'entretien</summary>${blocQuestions(s)}</details>
     ${s.analyse?rendreAnalyse(s.analyse):'<p class="count" style="margin:8px 0 0;font-weight:500">Je lis le registre officiel des entreprises et le site web, puis je te propose les points clés et des questions à préparer.</p>'}</section>`;
+}
+/* ---------- Questions d'entretien : réponses préparées à partir du CV et de l'offre ---------- */
+function infosPrep(s){
+  const o=infosOffre(s),poste=nettoyerTitre(o.titre),ent=(o.entreprise||"").trim()||"l'entreprise";
+  let forts=[],manque=[];
+  try{
+    if(typeof defsPourOffre==="function")DEFS=defsPourOffre({titre:o.titre,description:o.description});
+    const dansCV=motsDe(cvEnTexte(cv)).map(x=>x.lib),dansOffre=motsOffre([o.titre,o.description].join("\n")).sort((a,b)=>b.n-a.n).map(x=>x.lib).filter(l=>!GENERIQUES.has(l)&&!(typeof GENLIBS!=="undefined"&&GENLIBS.has(l)));
+    forts=dansOffre.filter(l=>dansCV.includes(l)).slice(0,4);manque=dansOffre.filter(l=>!dansCV.includes(l)).slice(0,2);
+  }catch(e){}
+  const e0=((cv.exps||cv.experiences||[])[0])||{};
+  return {poste,ent,forts,manque,e0,a:s.analyse};
+}
+function questionsEntretien(s){
+  const {poste,ent,forts,manque,e0,a}=infosPrep(s);
+  const l=x=>liste(x.map(f=>/[A-Z]{2,}/.test(f)?f:f.charAt(0).toLowerCase()+f.slice(1)));
+  const act=a&&a.registre&&a.registre.activite&&a.registre.activite.libelle?a.registre.activite.libelle.toLowerCase():"";
+  const QR=[
+   ["Pouvez-vous vous présenter ?",`Structure en 3 temps (1 min 30 maximum) : ton parcours (formation, expériences${e0.poste?", dont "+e0.poste:""}), ce que tu sais faire${forts.length?" (notamment "+l(forts)+")":""}, puis pourquoi ce poste de ${poste}.`],
+   [`Pourquoi ce poste de ${poste} ?`,`Relie les missions de l'offre à ce que tu as déjà fait${forts.length?" ("+l(forts)+")":""} et à ton projet professionnel. Montre que tu as lu l'offre : cite 2 missions qui t'attirent.`],
+   [`Pourquoi ${ent} ?`,`${act?`Appuie-toi sur l'activité (${act}) et `:"Appuie-toi sur "}ce que tu as appris de l'entreprise : produits, valeurs, certifications, actualités (la fiche entreprise t'aide). Évite « parce que vous recrutez » : donne une raison précise.`],
+   ["Parlez-moi d'une réalisation dont vous êtes fière.",`Choisis la mission la plus proche de l'offre${e0.poste?" (par exemple chez "+(e0.entreprise||"ton dernier employeur")+")":""} et raconte-la en méthode STAR : Situation, Tâche, Action (ce que TU as fait), Résultat chiffré si possible.`],
+   ["Quelles sont vos principales qualités ?",`Donne 3 qualités, chacune prouvée par un exemple court (rigueur, autonomie, communication…). ${forts.length?"Mets en avant tes compétences techniques demandées : "+l(forts)+".":""}`],
+   ["Quel est votre principal défaut ?","Choisis un vrai défaut qui n'est pas incompatible avec le poste, et explique ce que tu fais pour le corriger (ex. : tendance à vouloir tout vérifier → je priorise avec des check-lists)."],
+   [manque.length?`Vous n'avez pas d'expérience en ${l(manque)} : comment comptez-vous vous y mettre ?`:"Que souhaitez-vous apprendre dans ce poste ?",manque.length?"Reconnais-le franchement, cite ce qui s'en rapproche dans ton parcours, et montre que tu apprends vite (formation, exemple passé où tu as monté en compétence rapidement).":"Cite une compétence liée aux missions de l'offre et la façon dont tu comptes la développer."],
+   ["Comment gérez-vous un désaccord ou une non-conformité ?","Raconte un cas concret : tu as écouté, objectivé avec des faits (données, procédure), proposé une action corrective, assuré le suivi. Le recruteur cherche calme, factuel et esprit d'équipe."],
+   ["Où vous voyez-vous dans 3 à 5 ans ?",`Reste cohérente avec le poste : monter en compétence, prendre plus de responsabilités chez ${ent}. Évite de laisser entendre que tu veux partir ou changer complètement de métier.`],
+   ["Quelles sont vos disponibilités et vos prétentions salariales ?","Prépare une fourchette réaliste (cherche les salaires du poste dans ta région sur l'APEC ou Glassdoor) et ta date de disponibilité réelle. Annonce une fourchette plutôt qu'un chiffre unique."]
+  ];
+  const certs=a&&a.certifications&&a.certifications.length?a.certifications.slice(0,2):[];
+  const Q=[
+   `Comment se déroule une journée ou une semaine type sur le poste de ${poste} ?`,
+   "Avec qui travaillerai-je au quotidien, et à qui est rattaché le poste ?",
+   "Quels sont les principaux défis ou priorités des 6 premiers mois ?",
+   certs.length?`Je vois que vous êtes certifiés ${certs.join(" et ")} : comment cela se vit-il au quotidien ?`:"Quels référentiels, certifications ou audits structurent votre activité ?",
+   "Comment se passe l'intégration d'un nouvel arrivant ?",
+   "Quelles possibilités d'évolution ou de formation existent dans l'entreprise ?",
+   "Pourquoi ce poste est-il ouvert (création ou remplacement) ?",
+   "Quelles sont les prochaines étapes du processus de recrutement, et dans quel délai aurai-je un retour ?"
+  ];
+  return {QR,Q,ent};
+}
+function blocQrSeul(s){return `<section class="prep"><details class="qrbloc" open><summary>🎤 Préparer les questions d'entretien</summary>${blocQuestions(s)}</details></section>`}
+function blocQuestions(s){
+  const {QR,Q,ent}=questionsEntretien(s);
+  return `<div class="bloc2"><h5>Questions probables et comment y répondre</h5>
+    ${QR.map(([q,r])=>`<details class="qr"><summary>${esc(q)}</summary><p>${esc(r)}</p><textarea class="auto" data-qr="${esc(q)}" rows="2" placeholder="Écris ici ta propre réponse (elle est enregistrée)…">${esc((s.reponses||{})[q]||"")}</textarea></details>`).join("")}</div>
+   <div class="bloc2"><h5>Questions à poser à ${esc(ent)}</h5><ul>${Q.map(q=>`<li>${esc(q)}</li>`).join("")}</ul>
+    <p class="count" style="font-weight:500;margin:6px 0 0">Prépare-en 3 ou 4 : poser des questions montre ton intérêt réel pour le poste.</p></div>`;
 }
 function rendreAnalyse(a){
   const r=a.registre,w=a.site,li=(t,v)=>v?`<li><b>${t}</b> ${esc(v)}</li>`:"";
@@ -740,7 +805,9 @@ function actionMail(b){
   }
 }
 $("#tb").addEventListener("input",e=>{
-  const t=e.target;if(!t.dataset||!t.dataset.mk)return;
+  const t=e.target;
+  if(t&&t.dataset&&t.dataset.qr){const s=suivi.find(x=>x.id===t.closest(".sv").dataset.id);if(s){s.reponses=s.reponses||{};s.reponses[t.dataset.qr]=t.value;save()}return}
+  if(!t.dataset||!t.dataset.mk)return;
   const s=suivi.find(x=>x.id===t.closest(".sv").dataset.id);if(!s||!s.mail)return;
   s.mail[t.dataset.mk]=t.value;save();
 });
@@ -1167,6 +1234,7 @@ function adapterCV(o){
   return a;
 }
 
+let enAvant="";
 function fabriquerLettre(o,a){
   const nom=a.nom,poste=nettoyerTitre(o.titre),ent=o.entreprise||"";
   const intitule=(cv.titre||"").trim()||"Professionnelle de la qualité";
@@ -1176,6 +1244,8 @@ function fabriquerLettre(o,a){
   if(a.meilleure){const e=a.meilleure.x;
     P.push(`Chez ${e.entreprise||"mon employeur"}${e.poste?`, en tant ${commeUn(e.poste)}`:""}, mes missions ont notamment porté sur : ${a.meilleure.top.map(min1).join(" ; ")}. Elles correspondent directement à celles de votre offre.`);
   }else P.push("[Un exemple concret tiré de ton parcours, le plus proche des missions de l'offre : contexte, ce que tu as fait, résultat.]");
+  const perso=(enAvant||"").trim();
+  if(perso)P.splice(2,0,perso.split(/\n+/).map(x=>x.trim()).filter(Boolean).join("\n\n"));
   const aApprendre=a.manque.filter(l=>!GENERIQUES.has(l)).slice(0,2).map(enPhrase);
   if(aApprendre.length)P.push(`Je suis par ailleurs motivée pour renforcer mes compétences en ${liste(aApprendre)}.`);
   return `${nom}${cv.email||cv.tel?"\n"+[cv.email,cv.tel].filter(Boolean).join(" | "):""}\n\nObjet : Candidature au poste de ${poste}\n\nMadame, Monsieur,\n\n${P.join("\n\n")}\n\nJe serais ravie d'échanger avec vous lors d'un entretien pour vous présenter ma motivation et mon parcours.\n\nDans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n${nom}`;
@@ -1251,7 +1321,7 @@ function marquerAdapte(){
   if(!offreCV||offrePerso||!offreCV.id||cvFaits.has(offreCV.id))return;
   cvFaits.add(offreCV.id);put(KD,[...cvFaits]);rafraichir();
 }
-function ouvrirCV(id){const o=offres.find(x=>x.id===id);if(o)ouvrirCVOffre(o,false)}
+function ouvrirCV(id){enAvant="";const o=offres.find(x=>x.id===id);if(o)ouvrirCVOffre(o,false)}
 function ouvrirCVOffre(o,perso){
   offreCV=o;extras=new Set();edits={};offrePerso=!!perso;
   $("#cv-h").textContent="Adapter mon CV · "+nettoyerTitre(o.titre);
@@ -1304,7 +1374,11 @@ function rendreCV(){
    <details id="apercu-d"><summary>Voir l'aperçu du CV final</summary><div class="atsprev" id="apercu-c"></div></details>
    <div class="row" style="margin-top:14px"><button class="btn pri" id="dl-pdf">✓ Valider et télécharger en PDF</button><button class="btn teal sm" id="dl-docx">Télécharger en Word (.docx)</button><button class="btn sm" id="cp-cv">Copier le texte</button></div>
    <div class="note">Le PDF contient du vrai texte (pas une image), en une seule colonne : c'est ce que lisent les logiciels de recrutement. Envoie-le tel quel.</div>
-   <h3>Lettre de motivation (brouillon)</h3><textarea id="o-let" style="min-height:240px">${esc(fabriquerLettre(o,a))}</textarea>
+   <h3>Lettre de motivation</h3>
+   <div class="encadre"><label for="o-avant"><b>Ce que je veux mettre en avant</b> <small>(facultatif : ta motivation, une réalisation, un point fort, pourquoi cette entreprise…)</small></label>
+   <textarea id="o-avant" rows="4" placeholder="Ex. : j'ai mis en place un plan HACCP dans une PME ; je suis attirée par votre démarche zéro déchet ; je suis disponible rapidement…">${esc(enAvant)}</textarea>
+   <button class="btn teal sm" id="maj-let">Réécrire la lettre avec ce texte</button></div>
+   <textarea id="o-let" style="min-height:240px">${esc(fabriquerLettre(o,a))}</textarea>
    <div class="row"><button class="btn sm" data-copie="o-let">Copier</button><button class="btn sm" id="dl-let">Télécharger en Word</button></div>
    <h3>Aller plus loin avec Claude</h3>
    <div class="note">Pour une réécriture complète, copie la demande ci-dessous et colle-la dans une conversation Claude : elle contient l'offre et ton CV de base.</div>
@@ -1329,6 +1403,7 @@ $("#cv-body").addEventListener("click",e=>{
     put(KC,cv);const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.add){extras.add(b.dataset.add);delete edits.competences;const y=$("#cv-body").scrollTop;rendreCV();$("#cv-body").scrollTop=y;return}
   if(b.dataset.copie){navigator.clipboard.writeText($("#"+b.dataset.copie).value).then(()=>toast("Copié ✓"));return}
+  if(b.id==="maj-let"){enAvant=$("#o-avant").value;$("#o-let").value=fabriquerLettre(offreCV,aCourant);toast("Lettre mise à jour ✓");return}
   if(b.id==="cp-claude"){navigator.clipboard.writeText(cvSortie.prompt).then(()=>toast("Demande copiée : colle-la dans Claude ✓"));return}
   if(b.id==="cp-cv"){navigator.clipboard.writeText(aCourant.texteBrut).then(()=>{toast("CV copié ✓");marquerAdapte()});return}
   if(b.id==="add-suivi"){suivi.unshift({id:"s"+Date.now(),offreId:null,titre:offreCV.titre,entreprise:offreCV.entreprise,lieu:offreCV.lieu||"",url:"",source:"PDF / texte",statut:"a-postuler",dateCandidature:"",relance:"",contact:"",notes:"",ajoute:today()});save();majCompteurs();toast("Ajoutée à ton suivi ✓");return}
@@ -1436,7 +1511,7 @@ $("#op-add").onclick=()=>{const o=offreSaisie();if(!o)return;ajouterAuSuiviPerso
 
 /* ================= Démarrage ================= */
 fetch("data/offres.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
-  offres=d.offres;offres=offres.filter(o=>jours(dateRef(o))<=20).sort((a,b)=>(dateRef(b)||"").localeCompare(dateRef(a)||"")||(b.premiere_vue||"").localeCompare(a.premiere_vue||""));maj=d.maj;if(d.centre)centre=d.centre;if(d.rayon_km)rayon=d.rayon_km;
+  offres=d.offres;offres=offres.filter(o=>jours(dateRef(o))<=20&&!estEcole(o)).sort((a,b)=>(dateRef(b)||"").localeCompare(dateRef(a)||"")||(b.premiere_vue||"").localeCompare(a.premiere_vue||""));maj=d.maj;if(d.centre)centre=d.centre;if(d.rayon_km)rayon=d.rayon_km;
   $("#maj").textContent="Mis à jour le "+new Date(maj).toLocaleString("fr-FR",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"});
   $("#h-total").textContent=offres.length;$("#h-new").textContent=offres.filter(o=>jours(dateRef(o))<=7).length;
   $("#sous").textContent=`${offres.length} offres autour de Saint-Jean-de-Védas (${rayon} km), mises à jour le matin, le midi et le soir. Choisis, adapte ton CV, postule !`;
