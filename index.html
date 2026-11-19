@@ -655,6 +655,7 @@ async function registreNavigateur(nom,lieu,siren){
   const note=e=>{const n=norm(e.nom_complet+" "+(e.sigle||""));let s=tokens.filter(t=>n.includes(t)).length*2;
     if(n===norm(nom))s+=6;if(ville&&norm(e.siege&&e.siege.libelle_commune)===ville)s+=5;if(e.etat_administratif==="A")s+=3;if(e.categorie_entreprise==="GE"||e.categorie_entreprise==="ETI")s+=1;return s};
   const tries=[...res].sort((a,b)=>note(b)-note(a));
+  if(!tokens.some(t=>norm(tries[0].nom_complet+" "+(tries[0].sigle||"")).includes(t)))return {brut:null,candidats:[]};   // aucun mot du nom en commun : on ne propose pas une entreprise au hasard
   const garder=e=>({siren:e.siren,nom_complet:e.nom_complet,sigle:e.sigle,date_creation:e.date_creation,activite_principale:e.activite_principale,section_activite_principale:e.section_activite_principale,
     tranche_effectif_salarie:e.tranche_effectif_salarie,annee_tranche_effectif_salarie:e.annee_tranche_effectif_salarie,categorie_entreprise:e.categorie_entreprise,
     nombre_etablissements_ouverts:e.nombre_etablissements_ouverts,etat_administratif:e.etat_administratif,siege:e.siege&&{adresse:e.siege.adresse,libelle_commune:e.siege.libelle_commune,activite_principale:e.siege.activite_principale},
