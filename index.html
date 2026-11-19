@@ -231,6 +231,22 @@ main{padding:26px 0 80px}
   nav.tabs .n{margin-left:3px}
 }
 #offre-pdf{margin-top:30px}
+.svlist{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.sv{min-width:0}
+.sv{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:var(--shadow)}
+.sv.late{border-left:5px solid var(--bad)}
+.svh{display:flex;gap:12px 16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
+.svt{min-width:0;flex:1 1 260px}
+.svt a{font-weight:800;font-size:17px;color:inherit;overflow-wrap:anywhere;text-decoration:none}
+.svt a:hover{color:var(--coral-d)}
+.svb{display:flex;gap:8px;flex-wrap:wrap}
+.svg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px 16px}
+.svg label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:700;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;min-width:0}
+.svg label.full{grid-column:1/-1}
+.svg input,.svg select,.svg textarea{width:100%;font:inherit;font-size:14px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff;resize:none;overflow:hidden;overflow-wrap:anywhere}
+.svg select.st{font-weight:700;border-radius:10px;min-width:0}
+.svg textarea.notes{overflow:auto;resize:vertical;min-height:72px}
+.svt textarea.titre{font-weight:800;font-size:16px;width:100%;border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;resize:none;overflow:hidden}
 </style>
 </head>
 <body>
@@ -308,10 +324,7 @@ main{padding:26px 0 80px}
     <input type="file" id="imp-file" accept=".json" hidden>
     <span class="count" style="margin:0">Ton suivi est enregistré dans ce navigateur.</span>
   </div>
-  <div class="tw"><table>
-    <thead><tr><th>Poste</th><th>Entreprise</th><th>Lieu</th><th>Statut</th><th>Candidature</th><th>Relance</th><th>Contact</th><th>Notes</th><th></th></tr></thead>
-    <tbody id="tb"></tbody>
-  </table></div>
+  <div id="tb" class="svlist"></div>
   <div class="empty" id="empty-suivi" hidden>Aucune offre suivie pour l'instant. Clique sur « Suivre » sur une offre qui te plaît !</div>
 </section>
 
@@ -507,21 +520,28 @@ function renderSuivi(){
   $("#tb").innerHTML=liste.map(s=>{
     const retard=s.relance&&s.relance<=today()&&!["entretien","offre","refus"].includes(s.statut);
     const dispo=(s.offreId&&offres.some(o=>o.id===s.offreId))||s.offre;
-    return `<tr data-id="${s.id}" class="${retard?"row-late":""}">
-     <td class="poste">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<input data-k="titre" value="${esc(s.titre)}">`}
-       <div class="count" style="margin:0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}</div></td>
-     <td><input data-k="entreprise" value="${esc(s.entreprise)}"></td>
-     <td><input data-k="lieu" value="${esc(s.lieu)}"></td>
-     <td><select class="st s-${s.statut}" data-k="statut">${STATUTS.map(([k,n])=>`<option value="${k}"${k===s.statut?" selected":""}>${n}</option>`).join("")}</select></td>
-     <td><input type="date" data-k="dateCandidature" value="${esc(s.dateCandidature)}"></td>
-     <td><input type="date" data-k="relance" value="${esc(s.relance)}" title="${retard?"Relance à faire":""}"></td>
-     <td><input data-k="contact" value="${esc(s.contact)}" placeholder="Nom, email…"></td>
-     <td><textarea data-k="notes" rows="1">${esc(s.notes)}</textarea></td>
-     <td style="white-space:nowrap">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="Adapter mon CV">✨ CV</button> `:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕</button></td></tr>`}).join("");
+    const champ=(k,lib,cls)=>`<label${cls==="notes"?' class="full"':""}>${lib}<textarea class="auto${cls?" "+cls:""}" data-k="${k}" rows="${cls==="notes"?3:1}">${esc(s[k])}</textarea></label>`;
+    return `<article class="sv${retard?" late":""}" data-id="${s.id}">
+     <header class="svh"><div class="svt">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>`:`<textarea class="auto titre" data-k="titre" rows="1">${esc(s.titre)}</textarea>`}
+       <div class="count" style="margin:2px 0 0;font-size:12px">${esc(s.source)}${s.ajoute?" · ajoutée le "+fmt(s.ajoute):""}${retard?" · <b style=\"color:var(--bad)\">relance à faire</b>":""}</div></div>
+      <div class="svb">${dispo?`<button class="btn teal sm" data-cv="${esc(s.offreId||"")}" data-cvs="${s.id}" title="Adapter mon CV">✨ CV</button>`:""}<button class="btn sm" data-del="1" title="Retirer du suivi">✕ Retirer</button></div></header>
+     <div class="svg">
+      ${champ("entreprise","Entreprise")}${champ("lieu","Lieu")}
+      <label>Statut<select class="st s-${s.statut}" data-k="statut">${STATUTS.map(([k,n])=>`<option value="${k}"${k===s.statut?" selected":""}>${n}</option>`).join("")}</select></label>
+      <label>Candidature<input type="date" data-k="dateCandidature" value="${esc(s.dateCandidature)}"></label>
+      <label>Relance<input type="date" data-k="relance" value="${esc(s.relance)}"></label>
+      ${champ("contact","Contact (nom, email…)")}${champ("notes","Notes","notes")}
+     </div></article>`}).join("");
+  ajusterChamps();
 }
+function ajusterChamps(){
+  document.querySelectorAll("#tb textarea.auto:not(.notes)").forEach(t=>{t.style.height="auto";t.style.height=(t.scrollHeight+2)+"px"});
+}
+window.addEventListener("resize",ajusterChamps);
+$("#tb").addEventListener("input",e=>{if(e.target.matches("textarea.auto:not(.notes)")){e.target.style.height="auto";e.target.style.height=(e.target.scrollHeight+2)+"px"}});
 $("#stats").onclick=e=>{const c=e.target.closest(".stat");if(c){filtreStatut=c.dataset.st;renderSuivi()}};
 $("#tb").addEventListener("change",e=>{
-  const tr=e.target.closest("tr"),k=e.target.dataset.k;if(!tr||!k)return;
+  const tr=e.target.closest(".sv"),k=e.target.dataset.k;if(!tr||!k)return;
   const s=suivi.find(x=>x.id===tr.dataset.id);s[k]=e.target.value;
   if(k==="statut"&&e.target.value==="envoyee"&&!s.dateCandidature){s.dateCandidature=today();
     const d=new Date();d.setDate(d.getDate()+10);s.relance=d.toISOString().slice(0,10)}
@@ -531,7 +551,7 @@ $("#tb").addEventListener("click",e=>{
   if(b.dataset.cvs){const it=suivi.find(x=>x.id===b.dataset.cvs);
     if(it&&it.offre&&!it.offreId)return ouvrirCVOffre({id:"perso-"+it.id,titre:it.offre.titre,entreprise:it.offre.entreprise,lieu:it.lieu,commune:"",description:it.offre.description,extrait:"",liens:[{source:"PDF",url:""}]},true);
     return ouvrirCV(b.dataset.cv)}
-  if(!b.dataset.del)return;const id=b.closest("tr").dataset.id;
+  if(!b.dataset.del)return;const id=b.closest(".sv").dataset.id;
   const s=suivi.find(x=>x.id===id);if(!confirm(`Retirer « ${s.titre} » du suivi ?`))return;
   suivi=suivi.filter(x=>x.id!==id);save();majCompteurs();renderSuivi()});
 $("#add").onclick=()=>{$("#frm").reset();$("#dlg").showModal()};
