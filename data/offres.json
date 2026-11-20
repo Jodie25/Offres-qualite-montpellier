@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T14:20+00:00",
+ "maj": "2026-11-20T18:46+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,6 +23,29 @@
     }
    ],
    "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-11-20",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "422e2b61b208",
+   "titre": "Quality Assurance Engineer",
+   "entreprise": "Matooma",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-20",
+   "extrait": "",
+   "description": "QA Engineer\n\nWho are we?\n\n👋 Founded in June 2012, Matooma is a company based in Montpellier that provides SIM card connectivity services and IoT (Internet of Things) management solutions.\n\nToday, we serve over 10,000 customers worldwide and manage more than one million SIM cards.\n\nSince July 2019, we have been part of the Wireless Logic Ltd group, forming the European market leader.\n\nWith 60 employees, Matooma places great importance on customer and employee satisfaction, teamwork, and embraces values such as simplicity, integrity, and collaboration.\n\nMatooma is an equal opportunity employer and actively encourages applications from qualified candidates regardless of gender, ethnicity, disability, age, marital status, or pregnancy and maternity.\n\nJoining Matooma Means\n\n🤝 Joining Matooma means:\n\n• Becoming part of a supportive and caring team that listens and believes in you\n• Working with clear processes and a variety of digital tools\n• Enjoying hybrid remote work options\n• Taking part in regular after-work events and team-building activities\n• Benefiting from a pleasant working environment with great office spaces\n\n👉 Meet the team → https://www.matooma.com/fr/qui-sommes-nous/matooteam\n\nThe Role\n\n🎯 You will join a 20-person IT team and be part of the QA (testing) team, currently composed of two testers.\n\nOur information system is composed of around ten microservices using different programming languages, high-volume databases (ElasticSearch and PostgreSQL), two front-end applications (Angular), and an API available to our clients. Each microservice is deployed using a continuous integration process (CI/CD, automated testing) on an AWS-based ecosystem (Terraform, K8S).\n\nAs a QA Engineer, you will be responsible for ensuring the quality and reliability of our applications. You will work closely with the development and product teams to design, execute, and automate tests while ensuring an optimal user experience.\n\nMain Responsibilities\n\n📌 Main Responsibilities\n\n• Design and execute test plans (manual and automated) for web applications\n• Identify, document, and track bugs through to resolution\n• Develop and maintain automated test scripts (Playwright and Claude AI)\n• Contribute to the continuous improvement of QA processes and testing methodologies\n• Collaborate with developers to embed quality best practices from the earliest stages of development\n\nDesired Profile\n\n• Education: Ideally a Bachelor's or Master's degree in Computer Science or equivalent (Bac+3 to Bac+5)\n• Experience: Ideally 2 years in software quality assurance or a similar position\n\nTechnical Skills\n\n🔧 Technical Skills\n\n• Knowledge of Agile/Scrum methodologies\n• Familiarity with test management tools (JIRA or similar)\n• Proficiency with Playwright and Claude AI automated testing tools\n• Scripting skills (JavaScript, or another relevant language)\n• Knowledge of databases (SQL) and APIs (Postman, REST, etc.)\n• Professional working proficiency in English\n\nSoft Skills\n\n💡 Soft Skills\n\n• Detail-oriented, rigorous, and analytical mindset\n• Strong communication and teamwork skills\n• Adaptability to a fast-paced environment\n• Eagerness to learn and share knowledge\n• Proactive and open to constructive feedback\n• Team spirit: ready to support your colleagues and be supported in return\n• Comfortable taking initiatives and executing independently\n\nWhat We Offer\n\n🔥 What We Offer\n\n• A collaborative and innovative work environment\n• Ongoing training and professional development opportunities\n• Company profit-sharing\n• Meal vouchers (SWILE)\n• Health insurance (ALAN)\n• Sustainable mobility allowance\n• Employee perks via Leeto\n\nJob Details\n\n💼 Job Details\n\n• Contract Type: Permanent (CDI)\n• Location: Montpellier, France\n• Start Date: As soon as possible\n\nJoin us and help shape the future of technology!\n\nWe value diversity and encourage all qualified candidates to apply, regardless of background, gender, or disability.\n\nSee you soon? 😁",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/quality-assurance-engineer-at-matooma-4491939319"
+    }
+   ],
+   "premiere_vue": "2026-11-20",
    "derniere_vue": "2026-11-20",
    "agro": false,
    "lat": 43.61,
@@ -212,6 +235,52 @@
    "lat": 43.7341,
    "lon": 4.2332,
    "commune": "Vergèze"
+  },
+  {
+   "id": "22639e5d58f4",
+   "titre": "Coordinateur Hygiène H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-13",
+   "extrait": "",
+   "description": "Job Description:\n\nSegment : Royal Canin\n\nContrat : CDI/Permanent\n\nLocalisation : Aimargues, proche de Montpellier\n\nLa mission du Coordinateur Hygiène est de garantir la qualité sanitaire de nos produits et de protéger nos clients et consommateurs des risques microbiologiques.\n\nLe coordinateur hygiène est responsable du suivi et de la coordination de l’ensemble des actions correctives et préventives nécessaires pour atteindre et maintenir un statut hygiène et microbiologique du site optimal.\n\nQu'est-ce que l'on recherche ?\n\n• Master en ingénierie ou agroalimentaire ou similaire (Bac +5)\n• Maîtrise du français/anglais\n• Expérience en gestion de projet, Management du changement, Système qualité\n\nQuelles seront vos principales missions ?\n\n• Responsable du suivi du statut microbiologique du site (Environnement / Equipements).\n• S’assure de la conformité des programmes internes de sécurité alimentaire par rapport aux exigences demandées par les standards Qualité Mars, par les certifications externes telles que FSSC 22000 et par la réglementation européenne. Une présence terrain forte lors des activités de sanitation est essentielle pour assurer cette conformité.\n• Responsable, en cas d’incidents ou non-conformités en lien avec le statut microbiologique du site, de collecter les données, d’analyser les écarts, de diagnostiquer les causes à l’aide d’une méthode de résolution de problème, d’élaborer un plan d’actions correctives / préventives avec les interlocuteurs concernés et de mesurer son efficacité.\n• Réalise l’étude et l’identification d’écarts par rapport aux standards Qualité Mars en vigueur, propose des actions correctives à mettre en œuvre afin de résoudre les écarts et coordonne la mise en place des actions correctives avec les interlocuteurs concernés.\n• Réalise des audits afin de contrôler le respect des standards et des normes Qualité en vigueur sur les lignes de production et lors de modification ou d’installation de nouvel équipement.\n• Rédige et met à jour les procédures de sécurité alimentaire et documents relatifs aux normes qualité, en lien avec le statut microbiologique du site.\n• Est le point de contact principal avec le laboratoire d’analyses microbiologiques et vérifie la conformité des résultats obtenus.\n• Est le représentant du site au niveau européen Royal Canin.\n\nQuels sont les avantages chez Mars ?\n\n• Tu travailleras dans un environnement multiculturel (plus de 40 nationalités) et où ton chien sera le bienvenu et accueilli par plus de 100 autres chiens d’Associés!\n• Tu travailleras au sein d’un campus unique, aux portes de la Camargue, qui regroupe plus de 800 Associés travaillant pour: le siège international, la filiale française, deux laboratoires, un chenil et une chatterie avec plus de 200 chats & chiens, et enfin la plus importante usine du groupe Royal Canin\n• Des conditions de travail uniques et idéales pour devenir le leader de la santé par la nutrition animale !\n• Tu évolueras au cœur d’une usine de production innovante qui te proposera de te challenger au quotidien\n\nLes engagements RSE de Royal Canin, pour construire un monde meilleur pour demain :\n\n• Depuis 2015, aucun gaspillage à la décharge n'est effectué par les usines Royal Canin\n• Tous les produits Royal Canin manufacturés en Europe sont certifiés ISO 14001 du design à l’entrée des usines\n• Depuis 2017, Royal Canin soutient le programme K-DOG de l’institut Curie, qui forme les chiens à la détection des cancers du sein via l’olfaction.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/coordinateur-hygi%C3%A8ne-h-f-x-at-mars-4490594834"
+    }
+   ],
+   "premiere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-20",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "9540db78ec1f",
+   "titre": "Coordinateur Hygiène H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Aimargues",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-13",
+   "extrait": "",
+   "description": "Job Description:\n\nSegment : Royal Canin\n\nContrat : CDI/Permanent\n\nLocalisation : Aimargues, proche de Montpellier\n\nLa mission du Coordinateur Hygiène est de garantir la qualité sanitaire de nos produits et de protéger nos clients et consommateurs des risques microbiologiques.\n\nLe coordinateur hygiène est responsable du suivi et de la coordination de l’ensemble des actions correctives et préventives nécessaires pour atteindre et maintenir un statut hygiène et microbiologique du site optimal.\n\nQu'est-ce que l'on recherche ?\n\n• Master en ingénierie ou agroalimentaire ou similaire (Bac +5)\n• Maîtrise du français/anglais\n• Expérience en gestion de projet, Management du changement, Système qualité\n\nQuelles seront vos principales missions ?\n\n• Responsable du suivi du statut microbiologique du site (Environnement / Equipements).\n• S’assure de la conformité des programmes internes de sécurité alimentaire par rapport aux exigences demandées par les standards Qualité Mars, par les certifications externes telles que FSSC 22000 et par la réglementation européenne. Une présence terrain forte lors des activités de sanitation est essentielle pour assurer cette conformité.\n• Responsable, en cas d’incidents ou non-conformités en lien avec le statut microbiologique du site, de collecter les données, d’analyser les écarts, de diagnostiquer les causes à l’aide d’une méthode de résolution de problème, d’élaborer un plan d’actions correctives / préventives avec les interlocuteurs concernés et de mesurer son efficacité.\n• Réalise l’étude et l’identification d’écarts par rapport aux standards Qualité Mars en vigueur, propose des actions correctives à mettre en œuvre afin de résoudre les écarts et coordonne la mise en place des actions correctives avec les interlocuteurs concernés.\n• Réalise des audits afin de contrôler le respect des standards et des normes Qualité en vigueur sur les lignes de production et lors de modification ou d’installation de nouvel équipement.\n• Rédige et met à jour les procédures de sécurité alimentaire et documents relatifs aux normes qualité, en lien avec le statut microbiologique du site.\n• Est le point de contact principal avec le laboratoire d’analyses microbiologiques et vérifie la conformité des résultats obtenus.\n• Est le représentant du site au niveau européen Royal Canin.\n\nQuels sont les avantages chez Mars ?\n\n• Tu travailleras dans un environnement multiculturel (plus de 40 nationalités) et où ton chien sera le bienvenu et accueilli par plus de 100 autres chiens d’Associés!\n• Tu travailleras au sein d’un campus unique, aux portes de la Camargue, qui regroupe plus de 800 Associés travaillant pour: le siège international, la filiale française, deux laboratoires, un chenil et une chatterie avec plus de 200 chats & chiens, et enfin la plus importante usine du groupe Royal Canin\n• Des conditions de travail uniques et idéales pour devenir le leader de la santé par la nutrition animale !\n• Tu évolueras au cœur d’une usine de production innovante qui te proposera de te challenger au quotidien\n\nLes engagements RSE de Royal Canin, pour construire un monde meilleur pour demain :\n\n• Depuis 2015, aucun gaspillage à la décharge n'est effectué par les usines Royal Canin\n• Tous les produits Royal Canin manufacturés en Europe sont certifiés ISO 14001 du design à l’entrée des usines\n• Depuis 2017, Royal Canin soutient le programme K-DOG de l’institut Curie, qui forme les chiens à la détection des cancers du sein via l’olfaction.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/coordinateur-hygi%C3%A8ne-h-f-x-at-mars-4490702640"
+    }
+   ],
+   "premiere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-20",
+   "agro": false,
+   "lat": 43.6667,
+   "lon": 4.201,
+   "commune": "Aimargues"
   },
   {
    "id": "e772cd40f90f",
