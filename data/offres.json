@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T18:46+00:00",
+ "maj": "2026-11-21T13:41+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,7 +23,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -46,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -69,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -92,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.6341,
    "lon": 3.97,
@@ -115,11 +115,34 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
    "commune": "Montpellier"
+  },
+  {
+   "id": "c74803ac9b40",
+   "titre": "E.Leclerc - Assistant(e) Qualité - H/F",
+   "entreprise": "DEVEDIS",
+   "lieu": "34 - Béziers",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "2026-11-18",
+   "extrait": "DESCRIPTIF DE L'OFFRE Rattaché(e) au Responsable Qualité, vous participez au maintien et à l'amélioration du système de gestion de la qualité de l'entreprise. Vos missions : * CONTRÔLES EN RAYON : Vérifier les dates limites de consommation (DLC/DDM), le balisage, la fraîcheur des produits et la conformité de l'étiquetage. * GESTION DES NON-CONFORMITÉS : Identifier les produits défectueux ou hors n",
+   "description": "DESCRIPTIF DE L'OFFRE\n\nRattaché(e) au Responsable Qualité, vous participez au maintien et à l'amélioration du système de gestion de la qualité de l'entreprise. Vos missions :\n\n* CONTRÔLES EN RAYON : Vérifier les dates limites de consommation (DLC/DDM), le balisage, la fraîcheur des produits et la conformité de l'étiquetage.\n* GESTION DES NON-CONFORMITÉS : Identifier les produits défectueux ou hors normes, procéder à leur retrait de la surface de vente et tracer les démarques.\n* AUDIT & HYGIÈNE : Réaliser des relevés de température (vitrines, chambres froides), contrôler le respect de la chaîne du froid et effectuer les prélèvements pour analyses si nécessaire.\n* SUIVI TERRAIN : Signaler les anomalies et participer à la mise en place des actions correctives.\n\n* SUIVI DOCUMENTAIRE : Rédiger, mettre à jour et classer les procédures, consignes et fiches réflexes\n* GESTION DES RÉCLAMATIONS : Enregistrer les non-conformités, suivre les retours clients/fournisseurs et participer au suivi des actions correctives.\n* SENSIBILISATION : Aider à la préparation des réunions qualité et participer à la sensibilisation du personnel aux bonnes pratiques.\n\nPROFIL RECHERCHÉ\n\n* Formation : Bac à Bac+2 (type BTS/DUT QHSE ou gestion administrative).\n* Expérience : Débutant(e) accepté(e) avec une vraie sensibilité aux enjeux de la qualité. Une première expérience sur un poste similaire est un plus.\n* Compétences : Maîtrise des outils bureautiques (Word, Excel) et aisance rédactionnelle.\n* Savoir-être : Rigueur, méthode, sens de l'observation et bon relationnel pour échanger avec les différents services.\n\nCONDITIONS DU POSTE\n\n* Horaire hebdomadaire : 30 heures réparties du lundi au samedi\n* Primes annuelles, : 13ème mois, PRPQT, Intéressement / Participation\n* Mutuelle d'entreprise\n* Taux Horaire : 12.31 EUR /h",
+   "liens": [
+    {
+     "source": "France Travail",
+     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8953650"
+    }
+   ],
+   "premiere_vue": "2026-11-18",
+   "derniere_vue": "2026-11-21",
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
   },
   {
    "id": "b61ebdc74226",
@@ -145,29 +168,6 @@
    "commune": "Montpellier"
   },
   {
-   "id": "c74803ac9b40",
-   "titre": "E.Leclerc - Assistant(e) Qualité - H/F",
-   "entreprise": "DEVEDIS",
-   "lieu": "34 - Béziers",
-   "contrat": "CDI",
-   "salaire": "",
-   "date_pub": "2026-11-18",
-   "extrait": "DESCRIPTIF DE L'OFFRE Rattaché(e) au Responsable Qualité, vous participez au maintien et à l'amélioration du système de gestion de la qualité de l'entreprise. Vos missions : * CONTRÔLES EN RAYON : Vérifier les dates limites de consommation (DLC/DDM), le balisage, la fraîcheur des produits et la conformité de l'étiquetage. * GESTION DES NON-CONFORMITÉS : Identifier les produits défectueux ou hors n",
-   "description": "DESCRIPTIF DE L'OFFRE\n\nRattaché(e) au Responsable Qualité, vous participez au maintien et à l'amélioration du système de gestion de la qualité de l'entreprise. Vos missions :\n\n* CONTRÔLES EN RAYON : Vérifier les dates limites de consommation (DLC/DDM), le balisage, la fraîcheur des produits et la conformité de l'étiquetage.\n* GESTION DES NON-CONFORMITÉS : Identifier les produits défectueux ou hors normes, procéder à leur retrait de la surface de vente et tracer les démarques.\n* AUDIT & HYGIÈNE : Réaliser des relevés de température (vitrines, chambres froides), contrôler le respect de la chaîne du froid et effectuer les prélèvements pour analyses si nécessaire.\n* SUIVI TERRAIN : Signaler les anomalies et participer à la mise en place des actions correctives.\n\n* SUIVI DOCUMENTAIRE : Rédiger, mettre à jour et classer les procédures, consignes et fiches réflexes\n* GESTION DES RÉCLAMATIONS : Enregistrer les non-conformités, suivre les retours clients/fournisseurs et participer au suivi des actions correctives.\n* SENSIBILISATION : Aider à la préparation des réunions qualité et participer à la sensibilisation du personnel aux bonnes pratiques.\n\nPROFIL RECHERCHÉ\n\n* Formation : Bac à Bac+2 (type BTS/DUT QHSE ou gestion administrative).\n* Expérience : Débutant(e) accepté(e) avec une vraie sensibilité aux enjeux de la qualité. Une première expérience sur un poste similaire est un plus.\n* Compétences : Maîtrise des outils bureautiques (Word, Excel) et aisance rédactionnelle.\n* Savoir-être : Rigueur, méthode, sens de l'observation et bon relationnel pour échanger avec les différents services.\n\nCONDITIONS DU POSTE\n\n* Horaire hebdomadaire : 30 heures réparties du lundi au samedi\n* Primes annuelles, : 13ème mois, PRPQT, Intéressement / Participation\n* Mutuelle d'entreprise\n* Taux Horaire : 12.31 EUR /h",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8953650"
-    }
-   ],
-   "premiere_vue": "2026-11-18",
-   "derniere_vue": "2026-11-20",
-   "agro": false,
-   "lat": 43.3481,
-   "lon": 3.2342,
-   "commune": "Béziers"
-  },
-  {
    "id": "716da582571a",
    "titre": "Directeur.trice QHSE - H/F",
    "entreprise": "LFC HUMAIN",
@@ -184,7 +184,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -207,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -230,34 +230,11 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
    "commune": "Vergèze"
-  },
-  {
-   "id": "22639e5d58f4",
-   "titre": "Coordinateur Hygiène H/F/X",
-   "entreprise": "Mars",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-13",
-   "extrait": "",
-   "description": "Job Description:\n\nSegment : Royal Canin\n\nContrat : CDI/Permanent\n\nLocalisation : Aimargues, proche de Montpellier\n\nLa mission du Coordinateur Hygiène est de garantir la qualité sanitaire de nos produits et de protéger nos clients et consommateurs des risques microbiologiques.\n\nLe coordinateur hygiène est responsable du suivi et de la coordination de l’ensemble des actions correctives et préventives nécessaires pour atteindre et maintenir un statut hygiène et microbiologique du site optimal.\n\nQu'est-ce que l'on recherche ?\n\n• Master en ingénierie ou agroalimentaire ou similaire (Bac +5)\n• Maîtrise du français/anglais\n• Expérience en gestion de projet, Management du changement, Système qualité\n\nQuelles seront vos principales missions ?\n\n• Responsable du suivi du statut microbiologique du site (Environnement / Equipements).\n• S’assure de la conformité des programmes internes de sécurité alimentaire par rapport aux exigences demandées par les standards Qualité Mars, par les certifications externes telles que FSSC 22000 et par la réglementation européenne. Une présence terrain forte lors des activités de sanitation est essentielle pour assurer cette conformité.\n• Responsable, en cas d’incidents ou non-conformités en lien avec le statut microbiologique du site, de collecter les données, d’analyser les écarts, de diagnostiquer les causes à l’aide d’une méthode de résolution de problème, d’élaborer un plan d’actions correctives / préventives avec les interlocuteurs concernés et de mesurer son efficacité.\n• Réalise l’étude et l’identification d’écarts par rapport aux standards Qualité Mars en vigueur, propose des actions correctives à mettre en œuvre afin de résoudre les écarts et coordonne la mise en place des actions correctives avec les interlocuteurs concernés.\n• Réalise des audits afin de contrôler le respect des standards et des normes Qualité en vigueur sur les lignes de production et lors de modification ou d’installation de nouvel équipement.\n• Rédige et met à jour les procédures de sécurité alimentaire et documents relatifs aux normes qualité, en lien avec le statut microbiologique du site.\n• Est le point de contact principal avec le laboratoire d’analyses microbiologiques et vérifie la conformité des résultats obtenus.\n• Est le représentant du site au niveau européen Royal Canin.\n\nQuels sont les avantages chez Mars ?\n\n• Tu travailleras dans un environnement multiculturel (plus de 40 nationalités) et où ton chien sera le bienvenu et accueilli par plus de 100 autres chiens d’Associés!\n• Tu travailleras au sein d’un campus unique, aux portes de la Camargue, qui regroupe plus de 800 Associés travaillant pour: le siège international, la filiale française, deux laboratoires, un chenil et une chatterie avec plus de 200 chats & chiens, et enfin la plus importante usine du groupe Royal Canin\n• Des conditions de travail uniques et idéales pour devenir le leader de la santé par la nutrition animale !\n• Tu évolueras au cœur d’une usine de production innovante qui te proposera de te challenger au quotidien\n\nLes engagements RSE de Royal Canin, pour construire un monde meilleur pour demain :\n\n• Depuis 2015, aucun gaspillage à la décharge n'est effectué par les usines Royal Canin\n• Tous les produits Royal Canin manufacturés en Europe sont certifiés ISO 14001 du design à l’entrée des usines\n• Depuis 2017, Royal Canin soutient le programme K-DOG de l’institut Curie, qui forme les chiens à la détection des cancers du sein via l’olfaction.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/coordinateur-hygi%C3%A8ne-h-f-x-at-mars-4490594834"
-    }
-   ],
-   "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-20",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
   },
   {
    "id": "9540db78ec1f",
@@ -276,11 +253,34 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
    "commune": "Aimargues"
+  },
+  {
+   "id": "22639e5d58f4",
+   "titre": "Coordinateur Hygiène H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-13",
+   "extrait": "",
+   "description": "Job Description:\n\nSegment : Royal Canin\n\nContrat : CDI/Permanent\n\nLocalisation : Aimargues, proche de Montpellier\n\nLa mission du Coordinateur Hygiène est de garantir la qualité sanitaire de nos produits et de protéger nos clients et consommateurs des risques microbiologiques.\n\nLe coordinateur hygiène est responsable du suivi et de la coordination de l’ensemble des actions correctives et préventives nécessaires pour atteindre et maintenir un statut hygiène et microbiologique du site optimal.\n\nQu'est-ce que l'on recherche ?\n\n• Master en ingénierie ou agroalimentaire ou similaire (Bac +5)\n• Maîtrise du français/anglais\n• Expérience en gestion de projet, Management du changement, Système qualité\n\nQuelles seront vos principales missions ?\n\n• Responsable du suivi du statut microbiologique du site (Environnement / Equipements).\n• S’assure de la conformité des programmes internes de sécurité alimentaire par rapport aux exigences demandées par les standards Qualité Mars, par les certifications externes telles que FSSC 22000 et par la réglementation européenne. Une présence terrain forte lors des activités de sanitation est essentielle pour assurer cette conformité.\n• Responsable, en cas d’incidents ou non-conformités en lien avec le statut microbiologique du site, de collecter les données, d’analyser les écarts, de diagnostiquer les causes à l’aide d’une méthode de résolution de problème, d’élaborer un plan d’actions correctives / préventives avec les interlocuteurs concernés et de mesurer son efficacité.\n• Réalise l’étude et l’identification d’écarts par rapport aux standards Qualité Mars en vigueur, propose des actions correctives à mettre en œuvre afin de résoudre les écarts et coordonne la mise en place des actions correctives avec les interlocuteurs concernés.\n• Réalise des audits afin de contrôler le respect des standards et des normes Qualité en vigueur sur les lignes de production et lors de modification ou d’installation de nouvel équipement.\n• Rédige et met à jour les procédures de sécurité alimentaire et documents relatifs aux normes qualité, en lien avec le statut microbiologique du site.\n• Est le point de contact principal avec le laboratoire d’analyses microbiologiques et vérifie la conformité des résultats obtenus.\n• Est le représentant du site au niveau européen Royal Canin.\n\nQuels sont les avantages chez Mars ?\n\n• Tu travailleras dans un environnement multiculturel (plus de 40 nationalités) et où ton chien sera le bienvenu et accueilli par plus de 100 autres chiens d’Associés!\n• Tu travailleras au sein d’un campus unique, aux portes de la Camargue, qui regroupe plus de 800 Associés travaillant pour: le siège international, la filiale française, deux laboratoires, un chenil et une chatterie avec plus de 200 chats & chiens, et enfin la plus importante usine du groupe Royal Canin\n• Des conditions de travail uniques et idéales pour devenir le leader de la santé par la nutrition animale !\n• Tu évolueras au cœur d’une usine de production innovante qui te proposera de te challenger au quotidien\n\nLes engagements RSE de Royal Canin, pour construire un monde meilleur pour demain :\n\n• Depuis 2015, aucun gaspillage à la décharge n'est effectué par les usines Royal Canin\n• Tous les produits Royal Canin manufacturés en Europe sont certifiés ISO 14001 du design à l’entrée des usines\n• Depuis 2017, Royal Canin soutient le programme K-DOG de l’institut Curie, qui forme les chiens à la détection des cancers du sein via l’olfaction.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/coordinateur-hygi%C3%A8ne-h-f-x-at-mars-4490594834"
+    }
+   ],
+   "premiere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "e772cd40f90f",
@@ -345,7 +345,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -391,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -414,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -437,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.7924,
    "lon": 4.3919,
@@ -460,7 +460,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -483,7 +483,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -552,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -575,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -598,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -621,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -644,7 +644,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -667,7 +667,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -690,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.7706,
    "lon": 4.4397,
@@ -759,7 +759,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -782,7 +782,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -828,7 +828,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.4093,
    "lon": 3.2563,
@@ -851,7 +851,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-21",
    "agro": false,
    "lat": 43.6831,
    "lon": 3.8447,
