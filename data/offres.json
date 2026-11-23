@@ -1,11 +1,34 @@
 {
- "maj": "2026-11-22T17:59+00:00",
+ "maj": "2026-11-23T16:22+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "a4d1d8efd114",
+   "titre": "Pharmaceutical Quality Coordinator (F/M) 12 months contract",
+   "entreprise": "Medincell",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-23",
+   "extrait": "",
+   "description": "Pharmaceutical Quality Coordinator (F/M) 12 months contract\n\nMedinCell® is a fast-growing pharmaceutical company developing innovative long-acting injectable therapies based on its proprietary BEPO® technology.\n\nWe are looking for a Pharmaceutical Quality Coordinator to support our pharmaceutical quality activities across the development lifecycle, from lead candidate selection through clinical trials.\n\nReporting to the Senior Vendors Compliance & CTS Manager , you will help ensure GxP compliance across our external vendors, clinical trial supply activities, internal operations, partners and development projects. You will collaborate closely with Pharmaceutical Development, Clinical, Regulatory, Non-Clinical, Project Management, QHSE, Legal, Alliance Management and other internal teams.\n\nKey Responsibilities\n\nGxP vendors compliance\n• Support the management of GxP vendors from selection, qualification to performance monitoring, including raw materials manufacturers, CDMOs, testing laboratories, non-clinical & clinical CROs, clinical trial supply providers and other outsourced vendors.\n• Prepare, support and/or conduct vendor initial & follow-up audits until CAPAs closure.\n• Contribute to the investigation of vendor-related deviations, changes and complaints.\n• Support the quality assessment of API manufacturers, including the review of relevant regulatory documentation as Drug Master File.\n\nPharmaceutical quality and GxP compliance\n• Support Pharmaceutical quality and GxP compliance across internal projects, external vendors and partners including the quality review of documentation for clinical trial applications.\n• Draft, review and maintain SOPs, templates and quality documentation linked to Pharmaceutical activities.\n• Contribute to internal investigations, change controls, CAPAs related to GxP compliance and continuous improvement initiatives.\n• Participate in vendor quality and technical meetings as well as in the vendor documentation review (Batch records, Product Specification File, …) and support the Quality Agreements implementation & maintenance with Vendors.\n• Support Partner audits of Medincell, as well as the quality documentation with Partners including Quality Agreements, Product Specification Files.\n• Collect and report relevant quality and vendor-compliance KPIs.\n• Support the key activities within Pharmaceutical Development Team, including during the Process & Analytical Transfer to CDMO as well as GMP manufacturing and testing.\n\nInternal batches manufacturing for GLP studies\n• Support the implementation of the corresponding quality roadmap and associated procedures.\n• Review master and executed batch records for internal batches intended for GLP studies and contribute to their release for use.\n\nClinical trial supply (CTS) and clinical quality support\n• Support the selection and management of Clinical Trial Supply vendors.\n• Coordinate activities for the secondary packaging, labelling, distribution, importation, returns and resupply of Investigational Medicinal Products.\n• Review CTS documentation, help define clinical label information in line with applicable country requirements, and support the availability of the documentation for customs clearance.\n• Provide quality support during clinical trials, including for temperature excursions, deviations, and complaints.\n• Contribute to some clinical documentation review, provide requested documentation for Trial Master File completion and support the follow-up of investigator-site (audits if required).\n\nProfile\n• Master’s degree, PharmD or equivalent qualification in pharmaceutical sciences, ideally with a quality or industrial pharmaceutical focus.\n• At least five years of experience in Quality Assurance and/or pharmaceutical compliance within the pharmaceutical or biopharmaceutical industry.\n• Good knowledge of GxP requirements, particularly GMP, including requirements applicable to sterile and injectable products.\n• Experience in the qualification and auditing of GxP vendors. Auditor experience or qualification would be an advantage.\n• Experience in pharmaceutical development or clinical trials would be appreciated. Experience in clinical packaging and distribution would be a plus.\n• Fluent English, both written and spoken. French would be an advantage.\n\nMedincell is an equal opportunity employer committed to fostering an inclusive and respectful workplace. We welcome applications from all backgrounds and believe that diversity strengthens our teams and drives innovation.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/pharmaceutical-quality-coordinator-f-m-12-months-contract-at-medincell-4481452021"
+    }
+   ],
+   "premiere_vue": "2026-11-23",
+   "derniere_vue": "2026-11-23",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
   {
    "id": "68e13066de12",
    "titre": "Ingénieure / Ingénieure Assurance Qualité - Industrie Pharmaceutique",
@@ -23,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -46,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -69,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -92,7 +115,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.6341,
    "lon": 3.97,
@@ -115,7 +138,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -138,7 +161,7 @@
     }
    ],
    "premiere_vue": "2026-11-18",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -184,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -207,7 +230,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -230,7 +253,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -253,7 +276,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -276,7 +299,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -345,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -391,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -414,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -437,7 +460,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.7924,
    "lon": 4.3919,
@@ -460,7 +483,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -529,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
@@ -552,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -575,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -598,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -621,7 +644,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -644,7 +667,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -667,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -690,7 +713,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.7706,
    "lon": 4.4397,
@@ -759,7 +782,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -782,7 +805,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
+   "derniere_vue": "2026-11-23",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -810,52 +833,6 @@
    "lat": 43.5685,
    "lon": 3.7829,
    "commune": "Saussan"
-  },
-  {
-   "id": "76eb2cea492f",
-   "titre": "Responsable hygiène et qualité multi-sites H/F",
-   "entreprise": "Coopérative U",
-   "lieu": "Bassan",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-02",
-   "extrait": "",
-   "description": "Votre Mission Principale\n\nÉvaluer et garantir la qualité ainsi que la sécurité alimentaire de plusieurs magasins U du secteur (Pézenas, Servian, Pomerols).\n\nVéritable interface clé entre les fournisseurs, la direction, les équipes magasin et les clients, vous garantissez le respect des normes de qualité et de sécurité alimentaire. Vous coordonnez les procédures au quotidien et veillez au maintien d'un niveau d'hygiène irréprochable.\n\nVos Activités Au Quotidien\n\n• Élaborer et mettre en place la politique qualité et hygiène au sein des magasins.\n• Superviser et contrôler la gestion des retraits et rappels de produits.\n• Évaluer régulièrement les risques et vérifier l’efficacité des mesures de prévention.\n• Sensibiliser, former et accompagner les équipes terrain à la démarche qualité.\n• Réaliser les audits internes et veiller au respect strict des réglementations en vigueur.\n• Assurer le maintien des certifications et accréditations.\n• Être l’interlocuteur privilégié des services administratifs et de contrôle.\n\nDes questions ? On vous dit tout sur le métier de coordinateur QSE suivez le lien -> https://urlr.me/9gTZF\n\nProfil De Candidat Recherché\n\nChez U, tout commence avec vous.\n\nVous, qui êtes…\n\n• Titulaire d'une Licence QSSA (ou équivalent en Qualité / Sécurité Alimentaire).\n• Titulaire du Permis B (déplacements à prévoir entre les magasins du secteur).\n• Organisé(e) et rigoureux(se), doté(e) du sens des responsabilités et de l'initiative.\n• Pédagogue et doté(e) d'un excellent relationnel pour embarquer les équipes.\n• Réactif(ve) et orienté(e) amélioration continue pour garantir la satisfaction client.\n• Engagé(e) pour un commerce responsable et de qualité.\n\nVous, qui voulez…\n\n• Encourager l’innovation et l’évolution du commerce de proximité.\n• Concilier bienveillance, sécurité et efficacité au service des clients et des équipes.\n\nEt nous, alors ?\n\nVous aider à vous réaliser et à atteindre votre sommet, c’est ça, être Commerçants autrement.\n\nVoici ce que nous vous proposons pour vous épanouir à nos côtés :\n\n• Pause de 5 % du temps de travail rémunérée\n• Prime annuelle\n• Mutuelle & Prévoyance\n• [Exemple : Véhicule de service / Indemnités kilométriques selon conditions]\n\nSi vous êtes fait(e) pour coopérer, alors vous êtes peut-être U ?\n\nTous nos postes sont ouverts aux personnes en situation de handicap.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/responsable-hygi%C3%A8ne-et-qualit%C3%A9-multi-sites-h-f-at-coop%C3%A9rative-u-4486167093"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
-   "agro": false,
-   "lat": 43.4093,
-   "lon": 3.2563,
-   "commune": "Bassan"
-  },
-  {
-   "id": "d3df2bc1b6ff",
-   "titre": "Responsable qualité H/F",
-   "entreprise": "YellowScan",
-   "lieu": "Saint-Clément-de-Rivière",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-02",
-   "extrait": "",
-   "description": "La société YellowScan conçoit, développe et produit des capteurs de cartographie pour les applications de drones professionnels. Entièrement intégrés, ultralégers et faciles à utiliser, ces capteurs hautement automatisés sont utilisés par les clients du monde entier dans diverses domaines : topographie, recherche environnementale, archéologie, génie civil, mines…\n\nRésolument orientés vers la satisfaction de nos clients, nous nous engageons à fournir la plus haute performance, qualité et fiabilité de nos produits et services. Pour développer rapidement notre activité dans le monde entier, nous recherchons activement les meilleurs talents pour renforcer notre équipe.\n\nAujourd'hui, nous souhaitons intégrer un.e Responsable Qualité , pour renforcer l’équipe et accompagner la structuration ainsi que l'amélioration continue de nos processus et de notre système qualité.\n\nPoste basé à Saint-Clément-de-Rivière, près de Montpellier, à pourvoir dès que possible.\n\nLes missions du poste :\n\nEn lien avec la politique qualité de YellowScan, le/la Responsable Qualité définit, pilote et déploie le système de management de la qualité afin de garantir la conformité, la fiabilité et la performance de nos produits et processus.\nAu sein des équipes opérationnelles et en étroite collaboration avec les différents services de l'entreprise, il/elle contribue à l'amélioration continue de l'organisation, à la satisfaction des clients et à la maîtrise des risques qualité.\n\nVos missions seront notamment de :\n\nManagement du Système Qualité\n• Définir, maintenir et faire évoluer le Système de Management de la Qualité (SMQ)\n• Structurer et animer la démarche qualité dans l'ensemble des services de l'entreprise\n• Garantir la conformité aux référentiels applicables (ISO 9001 et autres normes pertinentes)\n• Formaliser et maintenir les procédures, processus et instructions de travail\n• Préparer, organiser et piloter les audits internes et externes\n• Assurer la veille réglementaire et garantir la conformité de l'entreprise et de ses produits aux exigences réglementaires applicables (FDA, marquage CE, FCC, NDAA, Dual Use et autres réglementations pertinentes selon les marchés visés)\n• Coordonner et participer aux démarches de certification et maintenir les homologations nécessaires à la commercialisation des produits sur les différents marchés\n• Coordonner l'organisation, la préparation et le bon déroulement des Revues de Direction, assurer le suivi des plans d'actions associés et contribuer au pilotage de la performance de l'entreprise\n\nAssurance Qualité Produit\n• Définir les critères qualité applicables aux produits et composants\n• Participer aux revues de conception et d'industrialisation\n• Piloter les plans de contrôle qualité en production\n• Veiller à la traçabilité des équipements et composants critiques\n• Assurer l'analyse et le traitement des non-conformités produit\n• Participer à l'amélioration continue de l'ERP et des outils de gestion documentaire en lien avec les exigences qualité\n\nGestion des fournisseurs\n• Évaluer et qualifier les fournisseurs stratégiques\n• Mettre en place des indicateurs de performance fournisseurs\n• Conduire les audits fournisseurs lorsque nécessaire\n• Piloter les plans d'actions correctifs avec les partenaires industriels\n\nAmélioration Continue\n• Mettre en œuvre les démarches Lean et d'amélioration continue\n• Analyser les indicateurs clés de performance (KPI)\n• Animer les analyses de causes racines (8D, 5 Pourquoi, Ishikawa, etc.)\n• Piloter les actions correctives et préventives\n\nQualité Client\n• Suivre les réclamations clients et les retours terrain\n• Déployer les actions d'amélioration visant à augmenter la satisfaction client\n• Participer à l'analyse des incidents qualité et aux retours d'expérience\n\nManagement et animation\n• Sensibiliser et former les équipes aux bonnes pratiques qualité\n• Promouvoir une culture qualité à tous les niveaux de l'entreprise\n• Coordonner les interlocuteurs qualité des différents services\n\nFormation et Profil\n• Diplômé(e) d'une école d'ingénieur ou d'un Master spécialisé en Qualité, Management des Organisations ou équivalent\n• Minimum 5 ans d'expérience sur des fonctions similaires dans un environnement industriel ou de haute technologie\n• Expérience significative dans la mise en œuvre et l'animation d'un système qualité\n• Maîtrise des méthodes de résolution de problèmes et des outils qualité\n• Connaissance des référentiels qualité applicables (ISO 9001 notamment)\n• Maîtrise d'un ERP indispensable (Odoo serait un plus)\n• Anglais niveau C2\n\nVotre profil\n• Excellent relationnel : capacité à écouter, comprendre et interagir dans une démarche constructive avec l'ensemble des services de l'entreprise\n• Grande rigueur, sens de l'organisation et de la méthode\n• Esprit d'analyse et capacité à résoudre des problématiques complexes\n• Force de proposition et orientation amélioration continue\n• Capacité à fédérer les équipes autour des enjeux qualité\n• Savoir contribuer à la création d'un env",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/responsable-qualit%C3%A9-h-f-at-yellowscan-4486161711"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-22",
-   "agro": false,
-   "lat": 43.6831,
-   "lon": 3.8447,
-   "commune": "Saint-Clément-de-Rivière"
   }
  ]
 }
