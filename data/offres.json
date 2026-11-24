@@ -1,11 +1,57 @@
 {
- "maj": "2026-11-24T16:10+00:00",
+ "maj": "2026-11-24T20:47+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "626bda309a0c",
+   "titre": "Stage Ingénieur Qualité, Conformité d'Emballage & Écoconception (H/F)",
+   "entreprise": "AdVini",
+   "lieu": "Saint-Félix-de-Lodez",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "À propos de nous\n\nGroupe viticole international fondé en 1872, AdVini (270 M€ de CA, 950 collaborateurs), embrasse tous les métiers de la filière vin. A la fois vigneron et producteur, expert de la supply-chain et distributeur dans le monde, AdVini perpétue un savoir-faire d’excellence et des traditions culturelles, en partageant sa passion du vin avec ses partenaires et en révélant les terroirs qui la compose.\n\nEnraciné au cœur du vignoble en France et en Afrique du Sud, AdVini cultive l’autonomie de ses maisons, fédérées autour d’une raison d’être : « Agir chaque jour avec humanité, unis dans la diversité, pour la valorisation des Vignobles et des Hommes. »\n\nRésolument engagé pour la durabilité de ses activités, AdVini s’évertue au quotidien à réduire l’impact environnemental de ses activités.\n\nPlus d’informations sur www.advini.com\n\nMission\n\nCette offre concerne exclusivement les candidatures pour un stage (les contrats en alternance ne sont pas acceptés).\n\nPour toute candidature en CDI, CDD ou alternance, nous vous invitons à consulter notre site carrière : https://advini.recrutement-talents.fr/\n\nActeur majeur du secteur vitivinicole, AdVini engage un projet structurant pour renforcer la maîtrise des données techniques, environnementales et réglementaires de ses emballages.\n\nCes données conditionnent aujourd'hui notre capacité à répondre aux nouvelles réglementations emballages, aux demandes de nos clients, aux déclarations environnementales, au calcul de l'empreinte carbone de nos produits et aux projets d'écoconception du Groupe.\n\nDans ce contexte, nous recherchons un.e stagiaire de fin d'études en tant qu' Ingénieur Qualité, Conformité d'Emballage & Écoconception , pour contribuer au projet visant à créer et fiabiliser une base de données centralisée de l'ensemble de nos emballages : bouteilles, capsules, bouchons, étiquettes, cartons, palettes, …\n\nRattaché.e à la Responsable Qualité, Sécurité et Conformité, vous travaillerez en étroite collaboration avec les services Achats, Développement Durable et Opérations commerciales.\n\nVos Missions Principales S'articulent Autour De 3 Axes\n\n• Construire et fiabiliser la base de données emballages\n• Participer à la cartographie des données manquantes dans les cahiers des charges emballages, les mettre à jour avec les référents matières sèches et les rediffuser aux fournisseurs ;\n• Collecter auprès des fournisseurs les données techniques, environnementales et réglementaires, et en contrôler la cohérence ;\n• Réaliser un benchmark des solutions de gestion de données adaptée à l'entreprise et proposer une gouvernance pour ces données.\n\n• Dresser un état des lieux réglementaire et ouvrir les pistes d'écoconception\n• Contribuer à l'analyse de conformité de nos emballages au regard des exigences du règlement européen sur les emballages et déchets d'emballages (PPWR) et de la loi française dite AGEC (loi Anti-Gaspillage pour une Economie Circulaire) ;\n• Participer à l'évaluation des impacts des évolutions réglementaires sur nos produits et nos processus internes ;\n• Identifier et proposer des pistes d'écoconception, d’amélioration de la recyclabilité et d'optimisation de nos packagings, puis participer à leur mise en œuvre et leurs suivis jusqu'aux essais et validations en conditions industrielles.\n\n• Structurer l'exploitation des données et reporting\n• Contribuer à l'évolution de SAP et du process de création articles avec l'équipe dédiée (création de nouveaux articles, nouveaux champs de saisie, …) ;\n• Aider à la conception des outils qui rendront ces données exploitables : déclarations Adelphe et CITEO Pro, calculs d’empreinte carbone, questionnaires et portails clients, tableaux de bord.\nProfil\n\nVous préparez un diplôme Bac+5 (école d'ingénieur ou Master 2) en packaging, agroalimentaire ou qualité, sécurité, environnement et recherchez un stage de fin d'études de 6 mois.\n\nVous Possédez Idéalement\n\n• Sensibilité environnementale et réglementaire : intérêt pour les enjeux PPWR, AGEC, économie circulaire et REP.\n• Compétences en analyse de données : très bonne maîtrise d'Excel et des outils d'analyse, capacité à structurer et fiabiliser des bases de données.\n• Gestion de projet : appétence pour le pilotage de projet transverse, coordination de multiples interlocuteurs internes et externes.\n• Capacité d'analyse et de synthèse : rigueur, esprit critique et aptitude à hiérarchiser les priorités.\n• Aisance relationnelle : facilité à dialoguer avec les achats, la qualité, le développement durable, les opérations commerciales et les fournisseurs.\n• Qualités personnelles : autonomie, organisation, curiosité et fiabilité dans le suivi des actions.\n• Atouts supplémentaires : connaissance des emballages, du secteur vitivinicole, de SAP ou des réglementations environnementales.\n\nPourquoi ce stage ?\n\n• Une mission à fort impact stratégique pour l'entreprise.\n• Une vision transverse des enjeux qualité, réglementaires, packaging et développement durable.\n• Une montée en compétence ",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-conformit%C3%A9-d-emballage-%C3%A9coconception-h-f-at-advini-4488122892"
+    }
+   ],
+   "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.6595,
+   "lon": 3.4682,
+   "commune": "Saint-Félix-de-Lodez"
+  },
+  {
+   "id": "f700940127d3",
+   "titre": "AUDITEUR QUALITE",
+   "entreprise": "Eurofins",
+   "lieu": "Vergèze",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "Description de l'entreprise\n\nEurofins ADME BIOANALYSES est une société de recherche sous contrat, située entre Montpellier et Nîmes, avec plus de 2000 m2 de laboratoire et près d’une centaine de collaborateurs très qualifiés.\n\nDepuis près de 40 ans, la société propose à ses clients des industries pharmaceutiques, cosmétiques et vétérinaires, une large gamme de services et de prestations de qualité pour optimiser la découverte et assurer l’évaluation et la sécurité de nouveaux médicaments ou produits cosmétiques.\n\nLes valeurs de la société reposent sur une solide expertise scientifique en bioanalyse, pharmacocinétique et métabolisme, un haut niveau de qualité et une éthique rigoureuse pour assurer la satisfaction de ses clients.\n\nEurofins ADME BIOANALYSES fait partie du Groupe Eurofins, l’un des leaders mondiaux dans les prestations analytiques et de conseils.\n\nDescription du poste\n\nVous êtes rattaché(e) à la Responsable Assurance Qualité sur le plan hiérarchique.\n\nMissions\n\nDans le cadre de vos missions,\n\n• vous assistez la Responsable Assurance Qualité dans l’application des principes des Bonnes Pratiques de Laboratoire et référentiels réglementaires internationaux; européens et français dans le domaine de la pharmacie, la cosmétique et les médicaments vétérinaires.\n• vous réalisez les audits des dossiers d’études, des procédés et d’installation.\n• vous sensibilisez le personnel à l’assurance qualité.\n• vous participez activement au maintien et à l’amélioration du système de management de la qualité.\n• vous informez régulièrement le Responsable Assurance Qualité de l’avancement de votre travail et de toute déviation constatée.\n• vous proposez la création ou la modification des modes opératoires normalisés (procédures opératoires) en concertation avec le responsable Assurance Qualité.\n\nQualifications\n\nVous avez une formation scientifique (bac+2 minimum) en immunochimie ou en chimie analytique avec une forte appétence pour le domaine de la Qualité\n\nLa maîtrise de l’anglais parlé et écrit et du Pack Office est indispensable.\n\nVous justifiez idéalement d’une expérience réussie dans une fonction similaire dans le domaine de la bioanalyse et des BPL.\n\nInformations complémentaires\n\nVos aptitudes et qualités personnelles\n\n• Vous êtes rigoureux(se) et avez le sens de l’éthique pour travailler dans un cadre réglementaire (BPL),\n• Vous avez une aisance relationnelle pour interagir avec différents interlocuteurs et aimez le travail en équipe,\n• Autonome, vous savez gérer votre temps pour déterminer les priorités des activités qui vous sont confiées,\n• Vous disposez d’un niveau d’énergie élevé et d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n• Vous disposez d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n\nCe que nous offrons\n\n• Un environnement de travail agréable.\n• Des avantages sociaux attractifs (titre restaurant, mutuelle, prévoyance, participation, intéressement).\n• La possibilité de contribuer activement à des projets ayant un impact sur la santé globale.\n\nComment postuler\n\nSi vous êtes passionné(e) par les sciences de la vie et que vous souhaitez rejoindre une équipe dynamique et engagée, veuillez nous adresser votre lettre de motivation et CV à : [email protected]\n\nEurofins ADME BIOANALYSES est engagée en faveur de la diversité et de l'inclusion. Toutes les candidatures seront examinées sans distinction d'origine, de sexe, d'âge, de handicap ou de toute autre caractéristique.\n\nRejoignez-nous pour contribuer à la création d'un nouveau pôle d'excellence dédié à l'évaluation et au contrôle qualité des produits topiques pharmaceutiques.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/auditeur-qualite-at-eurofins-4494178724"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
+  },
   {
    "id": "ea6213a8e477",
    "titre": "Technicien·ne Qualité – Incoming Inspection H/F/X",
@@ -69,6 +115,29 @@
     }
    ],
    "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "af4ab6078488",
+   "titre": "Contrôle qualité électrique (H/F)",
+   "entreprise": "",
+   "lieu": "34 - Montpellier",
+   "contrat": "Intérim - 1 Mois",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "Nous recherchons pour un de nos client situé sur CASTRIES un CONTROLEUR QUALITE ELECTRIQUE (H/F) pour une mission d'intérim. Formation électrotechnique ou électronique (BEP/BAC) indispensable avec de préférence une expérience dans la production avec travail sous pression Contrôle qualité TR + 13ème mois",
+   "description": "Nous recherchons pour un de nos client situé sur CASTRIES un CONTROLEUR QUALITE ELECTRIQUE (H/F) pour une mission d'intérim. Formation électrotechnique ou électronique (BEP/BAC) indispensable avec de préférence une expérience dans la production avec travail sous pression Contrôle qualité TR + 13ème mois",
+   "liens": [
+    {
+     "source": "France Travail",
+     "url": "https://candidat.francetravail.fr/offres/recherche/detail/9149039"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
    "derniere_vue": "2026-11-24",
    "agro": false,
    "lat": 43.61,
@@ -207,6 +276,29 @@
     }
    ],
    "premiere_vue": "2026-11-19",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "4cc9d613cfee",
+   "titre": "Aide Laboratoire H/F",
+   "entreprise": "INOVIE (Groupe)",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-18",
+   "extrait": "",
+   "description": "Pourquoi nous rejoindre / choisir INOVIE LABOSUD ?\n\nINOVIE LABOSUD, créé en 2010, par des biologistes médicaux indépendants, c’est près de 100 laboratoires de proximité, 15 000 patients accueillis chaque jour, et plus de 900 collaborateurs engagés. Issu de la fusion de plusieurs laboratoires du sud de la France, INOVIE Labosud est devenu l'un des principaux laboratoires multi-sites grâce à un développement rapide et innovant.\n\nEn rejoignant nos équipes, vous participerez à plus de 70% des diagnostics médicaux, en répondant efficacement aux besoins des patients et des professionnels de santé. Vous bénéficierez d’un environnement de travail dynamique et collaboratif, équipé des dernières innovations technologiques pour assurer la meilleure qualité de soins.\n\nTous nos postes sont ouverts aux candidats en situation de handicap. Des référents handicap sont présents au sein de l'entreprise et joignables via l'adresse: ls.referents-handicap@inovie.fr .\n\nDe plus, nous sommes engagés en faveur de l’égalité des chances et de la diversité. Toutes les candidatures sont étudiées sans distinction d’origine, de genre, d’âge, de situation de handicap ou de toute autre caractéristique protégée par la loi.\n\nDans le cadre d'un CDI à temps complet , le laboratoire de Garosud à Montpellier recherche un Aide laboratoire H/F\n\nLe salaire mensuel brut est entre 2046 euros et 2046 euros\n\nAvantages\n\n• Mutuelle\n• Remboursement frais de transport 60%\n• Intéressement\n• Annualisation du temps de travail\n• Congé supplémentaire pour ancienneté et évènements familiaux\n• Plan d'épargne retraite\n• Avantages CSE\n• Tickets restaurants\n\nVos Missions\n\n• Participer au tri\n• Assurer la traçabilité et la gestion des échantillons prélevés\n• Collaborer avec l'équipe médicale pour assurer la confidentialité des données et résultats\n\nProfil Recherché\n\n• Titulaire d’un BTS Analyses de Biologie Médicale ou d’un diplôme d’Etat de Technicien de laboratoire Médical, ou équivalent permettant l’exercice de la fonction de technicien de laboratoire\n• Disposer du certificat de capacité à effectuer des prélèvements sanguins (optionnel)\n• Disposer d'un N°ADELI\n• Minutie et précision dans l'exécution des prélèvements\n• Polyvalence et rigueur\n• Esprit d'analyse pour interpréter correctement les résultats des prélèvements",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/aide-laboratoire-h-f-at-inovie-groupe-4491784312"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
    "derniere_vue": "2026-11-24",
    "agro": false,
    "lat": 43.61,
@@ -649,29 +741,6 @@
    "lat": 43.8322,
    "lon": 4.3429,
    "commune": "Nîmes"
-  },
-  {
-   "id": "626bda309a0c",
-   "titre": "Stage Ingénieur Qualité, Conformité d'Emballage & Écoconception (H/F)",
-   "entreprise": "AdVini",
-   "lieu": "Saint-Félix-de-Lodez",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "",
-   "description": "À propos de nous\n\nGroupe viticole international fondé en 1872, AdVini (270 M€ de CA, 950 collaborateurs), embrasse tous les métiers de la filière vin. A la fois vigneron et producteur, expert de la supply-chain et distributeur dans le monde, AdVini perpétue un savoir-faire d’excellence et des traditions culturelles, en partageant sa passion du vin avec ses partenaires et en révélant les terroirs qui la compose.\n\nEnraciné au cœur du vignoble en France et en Afrique du Sud, AdVini cultive l’autonomie de ses maisons, fédérées autour d’une raison d’être : « Agir chaque jour avec humanité, unis dans la diversité, pour la valorisation des Vignobles et des Hommes. »\n\nRésolument engagé pour la durabilité de ses activités, AdVini s’évertue au quotidien à réduire l’impact environnemental de ses activités.\n\nPlus d’informations sur www.advini.com\n\nMission\n\nCette offre concerne exclusivement les candidatures pour un stage (les contrats en alternance ne sont pas acceptés).\n\nPour toute candidature en CDI, CDD ou alternance, nous vous invitons à consulter notre site carrière : https://advini.recrutement-talents.fr/\n\nActeur majeur du secteur vitivinicole, AdVini engage un projet structurant pour renforcer la maîtrise des données techniques, environnementales et réglementaires de ses emballages.\n\nCes données conditionnent aujourd'hui notre capacité à répondre aux nouvelles réglementations emballages, aux demandes de nos clients, aux déclarations environnementales, au calcul de l'empreinte carbone de nos produits et aux projets d'écoconception du Groupe.\n\nDans ce contexte, nous recherchons un.e stagiaire de fin d'études en tant qu' Ingénieur Qualité, Conformité d'Emballage & Écoconception , pour contribuer au projet visant à créer et fiabiliser une base de données centralisée de l'ensemble de nos emballages : bouteilles, capsules, bouchons, étiquettes, cartons, palettes, …\n\nRattaché.e à la Responsable Qualité, Sécurité et Conformité, vous travaillerez en étroite collaboration avec les services Achats, Développement Durable et Opérations commerciales.\n\nVos Missions Principales S'articulent Autour De 3 Axes\n\n• Construire et fiabiliser la base de données emballages\n• Participer à la cartographie des données manquantes dans les cahiers des charges emballages, les mettre à jour avec les référents matières sèches et les rediffuser aux fournisseurs ;\n• Collecter auprès des fournisseurs les données techniques, environnementales et réglementaires, et en contrôler la cohérence ;\n• Réaliser un benchmark des solutions de gestion de données adaptée à l'entreprise et proposer une gouvernance pour ces données.\n\n• Dresser un état des lieux réglementaire et ouvrir les pistes d'écoconception\n• Contribuer à l'analyse de conformité de nos emballages au regard des exigences du règlement européen sur les emballages et déchets d'emballages (PPWR) et de la loi française dite AGEC (loi Anti-Gaspillage pour une Economie Circulaire) ;\n• Participer à l'évaluation des impacts des évolutions réglementaires sur nos produits et nos processus internes ;\n• Identifier et proposer des pistes d'écoconception, d’amélioration de la recyclabilité et d'optimisation de nos packagings, puis participer à leur mise en œuvre et leurs suivis jusqu'aux essais et validations en conditions industrielles.\n\n• Structurer l'exploitation des données et reporting\n• Contribuer à l'évolution de SAP et du process de création articles avec l'équipe dédiée (création de nouveaux articles, nouveaux champs de saisie, …) ;\n• Aider à la conception des outils qui rendront ces données exploitables : déclarations Adelphe et CITEO Pro, calculs d’empreinte carbone, questionnaires et portails clients, tableaux de bord.\nProfil\n\nVous préparez un diplôme Bac+5 (école d'ingénieur ou Master 2) en packaging, agroalimentaire ou qualité, sécurité, environnement et recherchez un stage de fin d'études de 6 mois.\n\nVous Possédez Idéalement\n\n• Sensibilité environnementale et réglementaire : intérêt pour les enjeux PPWR, AGEC, économie circulaire et REP.\n• Compétences en analyse de données : très bonne maîtrise d'Excel et des outils d'analyse, capacité à structurer et fiabiliser des bases de données.\n• Gestion de projet : appétence pour le pilotage de projet transverse, coordination de multiples interlocuteurs internes et externes.\n• Capacité d'analyse et de synthèse : rigueur, esprit critique et aptitude à hiérarchiser les priorités.\n• Aisance relationnelle : facilité à dialoguer avec les achats, la qualité, le développement durable, les opérations commerciales et les fournisseurs.\n• Qualités personnelles : autonomie, organisation, curiosité et fiabilité dans le suivi des actions.\n• Atouts supplémentaires : connaissance des emballages, du secteur vitivinicole, de SAP ou des réglementations environnementales.\n\nPourquoi ce stage ?\n\n• Une mission à fort impact stratégique pour l'entreprise.\n• Une vision transverse des enjeux qualité, réglementaires, packaging et développement durable.\n• Une montée en compétence ",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-conformit%C3%A9-d-emballage-%C3%A9coconception-h-f-at-advini-4488122892"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
-   "agro": false,
-   "lat": 43.6595,
-   "lon": 3.4682,
-   "commune": "Saint-Félix-de-Lodez"
   },
   {
    "id": "e64f45a9ee33",
