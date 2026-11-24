@@ -1,11 +1,80 @@
 {
- "maj": "2026-11-24T03:01+00:00",
+ "maj": "2026-11-24T16:10+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "ea6213a8e477",
+   "titre": "Technicien·ne Qualité – Incoming Inspection H/F/X",
+   "entreprise": "Quantum Surgical",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "Description De L’entreprise\n\nDésormais membre du groupe Precision IO , chez Quantum Surgical , nous sommes une entreprise spécialisée dans la robotique médicale et l'intelligence artificielle.\n\nNotre plateforme robotisée d'ablation percutanée, Epione® , est dédiée au traitement curatif et précoce des cancers. Nous proposons ainsi une nouvelle approche du traitement du cancer en uniformisant l'accès aux soins. Davantage de patients peuvent ainsi bénéficier de traitements innovants, mieux ciblés et moins invasifs. Plus de 1 800 patients ont déjà été traités à travers le monde.\n\nNous avons récemment acquis NeuWave Medical . Ensemble, nos deux sociétés opèrent désormais au sein du groupe : Precision IO , avec l'ambition de transformer les normes de soins en matière d'ablation tumorale et d'oncologie interventionnelle grâce à l'innovation.\n\nDescription Du Poste\n\nPour accompagner la montée en cadence de la production d’ Epione® , nous renforçons notre équipe Qualité.\n\nRattaché·e au QA Production Manager, en tant que Technicien·ne Qualité – Incoming Inspection , vous êtes le premier filtre qualité de notre chaîne : aucun composant n’entre en production sans votre validation. Au quotidien, vous travaillez avec la Production, la Supply Chain, la Qualité Fournisseurs et la R&D.\n\nCe poste est basé à Montpellier.\n\nVos Missions Seront Les Suivantes\n\n• Réaliser les contrôles à réception (visuels, dimensionnels et documentaires) des composants, sous-ensembles et consommables, conformément aux plans et aux gammes de contrôle.\n• Prononcer l’acceptation, la mise en quarantaine ou le refus des lots, et enregistrer les résultats dans notre système qualité et notre ERP.\n• Vérifier la conformité documentaire des livraisons fournisseurs : certificats de conformité, certificats matière, rapports de contrôle, traçabilité des lots et numéros de série.\n• Déclarer et assurer le suivi des non-conformités fournisseurs (SNCR)\n• Participer au suivi des actions correctives des fournisseurs (SCAR)\n• Contribuer au suivi des dérogations (Concessions) et des retouches (Reworks) sur les pièces livrées à réception.\n• Contribuer à la création et à la mise à jour des gammes et plans de contrôle à réception, en lien avec la R&D et le Design Transfer, notamment lors de l’introduction de nouveaux composants.\n• Participer à l’amélioration continue du processus de contrôle à réception et à la préparation des audits (ISO 13485, MDSAP, organisme notifié).\n• Être l'interlocuteur Qualité des fournisseurs pour les sujets liés au contrôle à réception et aux non-conformités.\n\nLes missions du poste peuvent être amenées à évoluer avec la croissance de l’entreprise et les différents projets à venir.\n\nProfil Recherché\n\nRequis\n\n• Vous êtes titulaire d'un BAC+2 / BAC+3 (type BTS, DUT, Licence)\n• Vous disposez de minimum 2 ans d’expérience en contrôle qualité, idéalement en contrôle à réception, dans un environnement industriel exigeant (dispositif médical, aéronautique, automobile, pharmaceutique).\n• Vous êtes rigoureux·se et méthodique dans vos enregistrements : dans notre métier, ce qui n’est pas tracé n’existe pas.\n• Vous savez tenir votre position et bloquer un lot non conforme, même sous pression de délai.\n• Vous avez un niveau d’anglais suffisant pour lire des spécifications techniques et échanger par écrit avec nos fournisseurs et nos collègues aux États-Unis.\n\nSouhaitable\n\n• Vous connaissez les exigences de l’ISO 13485 et/ou du 21 CFR Part 820 appliquées au contrôle à réception.\n• Vous avez déjà travaillé sur des dispositifs médicaux ou en environnement à atmosphère contrôlée.\n• Vous êtes à l’aise avec un ERP et avec la gestion documentaire électronique.\n• Vous connaissez les plans d’échantillonnage (ISO 2859-1) et les bases du contrôle statistique.\n• Vous savez lire un plan et interpréter une cotation fonctionnelle (tolérancement GPS / ISO 1101), et vous maîtrisez les instruments de métrologie dimensionnelle (pied à coulisse, micromètre, comparateur, colonne de mesure).\n• Vous avez pratiqué la mesure sur MMT ou sur machine de mesure optique.\n\nTravailler chez Quantum Surgical (Precision IO Group) c’est :\n\n• Rejoindre une équipe multiculturelle talentueuse et créative, et participer à l’aventure technologique et humaine d’une entreprise en pleine ébullition.\n• Partager nos valeurs d’innovation, d’esprit d’équipe et de culture du résultat.\n• Relever des challenges techniques stimulants.\n• Bénéficier d’une rémunération compétitive et d’avantages (Salaire fixe + variable, titres-restaurant Swile, WellPass).\n\nLe Process De Recrutement\n\n• Entretien de présélection (Teams visio) - RH – 30/45 minutes\n• Entretien technique (Teams visio) – Responsable SMQ & Qualité Production & RH – 30/45 minutes\n• Entretien dans nos locaux – Directrice QARA, Responsable SMQ & Qualité Production & & RH - 1h/1h30\n\nLa Diversité fait partie intégrante de nos valeurs. Aussi, nous étudions avec intérêt toutes les candidatures sans distinction pouvant être liée à une caractéristique physiq",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/technicien%C2%B7ne-qualit%C3%A9-%E2%80%93-incoming-inspection-h-f-x-at-quantum-surgical-4494126522"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "ae4003961fdc",
+   "titre": "Auditeur(rice) Qualité",
+   "entreprise": "Eurofins ADME BIOANALYSES",
+   "lieu": "Vergèze",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "Vous êtes rattaché(e) à la Responsable Assurance Qualité sur le plan hiérarchique.\n\nMissions\nDans le cadre de vos missions,\n• vous assistez la Responsable Assurance Qualité dans l’application des principes des Bonnes Pratiques de Laboratoire et référentiels réglementaires internationaux ; européens et français dans le domaine de la pharmacie, la cosmétique et les médicaments vétérinaires.\n• vous réalisez les audits des dossiers d’études, des procédés et d’installation.\n• vous sensibilisez le personnel à l’assurance qualité.\n• vous participez activement au maintien et à l’amélioration du système de management de la qualité.\n• vous informez régulièrement le Responsable Assurance Qualité de l’avancement de votre travail et de toute déviation constatée.\n• vous proposez la création ou la modification des modes opératoires normalisés (procédures opératoires) en concertation avec le responsable Assurance Qualité.\n\nVotre parcours\nVous justifiez d’une expérience réussie dans une fonction similaire dans le domaine de la bioanalyse et des BPL.\n\nVotre formation\nVous avez une formation scientifique (bac+2 minimum) en immunochimie ou en chimie analytique avec une forte appétence pour le domaine de la Qualité\nLa maîtrise de l’anglais parlé et écrit et du Pack Office est indispensable.\n\nVos aptitudes et qualités personnelles\n• Vous êtes rigoureux(se) et avez le sens de l’éthique pour travailler dans un cadre réglementaire (BPL),\n• Vous avez une aisance relationnelle pour interagir avec différents interlocuteurs et aimez le travail en équipe,\n• Autonome, vous savez gérer votre temps pour déterminer les priorités des activités qui vous sont confiées,\n• Vous disposez d’un niveau d’énergie élevé et d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n• Vous disposez d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n\nContact\nSi vous êtes intéressé(e), merci d’adresser votre dossier candidature à : Catherine MAURY (catherine.maury@ba.eurofinseu.com)",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/auditeur-rice-qualit%C3%A9-at-eurofins-adme-bioanalyses-4494151491"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
+  },
+  {
+   "id": "f881c2f4cf58",
+   "titre": "Agent de contrôle qualité H/F",
+   "entreprise": "Jubil MONTPELLIER",
+   "lieu": "34 - Montpellier",
+   "contrat": "Intérim - 6 Mois",
+   "salaire": "Horaire de 12.31 Euros à 13.0 Euros - primes",
+   "date_pub": "2026-11-24",
+   "extrait": "Jubil intérim est une agence d'emploi de 30 ans d'expérience avec plus de 70 agences. Nous proposons des contrats intérim, CDD, CDI et saisonnier. Nous recherchons pour un de nos clients situé à Montpellier UN AGENT DE CONTROLE QUALITE H/F pour une mission sur le long terme. Contrôle et identification de la conformité et des non-conformités de certains produits, mise en oeuvre des modes opératoire",
+   "description": "Jubil intérim est une agence d'emploi de 30 ans d'expérience avec plus de 70 agences.\nNous proposons des contrats intérim, CDD, CDI et saisonnier.\n\nNous recherchons pour un de nos clients situé à Montpellier UN AGENT DE CONTROLE QUALITE H/F pour une mission sur le long terme.\nContrôle et identification de la conformité et des non-conformités de certains produits, mise en oeuvre des modes opératoires, vérification de la qualité (liste non exhaustive).\n\nNous recherchons une personne autonome avec le sens de l'organisation, de la rigueur et sérieuse",
+   "liens": [
+    {
+     "source": "France Travail",
+     "url": "https://candidat.francetravail.fr/offres/recherche/detail/9138888"
+    }
+   ],
+   "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
   {
    "id": "a4d1d8efd114",
    "titre": "Pharmaceutical Quality Coordinator (F/M) 12 months contract",
@@ -490,29 +559,6 @@
    "commune": "Nîmes"
   },
   {
-   "id": "f881c2f4cf58",
-   "titre": "Agent de contrôle qualité H/F",
-   "entreprise": "Jubil MONTPELLIER",
-   "lieu": "34 - Montpellier",
-   "contrat": "Intérim - 6 Mois",
-   "salaire": "Horaire de 12.31 Euros à 13.0 Euros - primes",
-   "date_pub": "2026-11-09",
-   "extrait": "Jubil intérim est une agence d'emploi de 30 ans d'expérience avec plus de 70 agences. Nous proposons des contrats intérim, CDD, CDI et saisonnier. Nous recherchons pour un de nos clients situé à Montpellier UN AGENT DE CONTROLE QUALITE H/F pour une mission sur le long terme. Contrôle et identification de la conformité et des non-conformités de certains produits, mise en oeuvre des modes opératoire",
-   "description": "Jubil intérim est une agence d'emploi de 30 ans d'expérience avec plus de 70 agences.\nNous proposons des contrats intérim, CDD, CDI et saisonnier.\n\nNous recherchons pour un de nos clients situé à Montpellier UN AGENT DE CONTROLE QUALITE H/F pour une mission sur le long terme.\nContrôle et identification de la conformité et des non-conformités de certains produits, mise en oeuvre des modes opératoires, vérification de la qualité (liste non exhaustive).\n\nNous recherchons une personne autonome avec le sens de l'organisation, de la rigueur et sérieuse",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8676108"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-22",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
    "id": "bd71f0c5573c",
    "titre": "Technical Quality Leader (H/F/X)",
    "entreprise": "IT Link",
@@ -674,29 +720,6 @@
    "commune": "Nîmes"
   },
   {
-   "id": "8f1ace7c2af2",
-   "titre": "stage 6 mois support qualité",
-   "entreprise": "Sanofi",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "",
-   "description": "Intitulé du poste : stage 6 mois support qualité\n\n• Lieu : Montpellier\n• A partir de : mars 2027\n\nÀ propos du poste\n\nEn tant que stagiaire support qualité au sein de notre département qualité, tu vas contribuer à l'harmonisation des processus de revue et de libération des médicaments expérimentaux fabriqués par des sous-traitants internationaux. Prêt à commencer ?\n\nPrêt(e) à développer tes compétences tout en participant à l’avenir de la santé ? Chez Sanofi, tu auras la liberté d’apprendre, de poser des questions et de donner vie à tes idées, le tout soutenu par des mentors inspirants et des équipes collaboratives.\n\nÀ Propos De Sanofi \n\nSanofi est une entreprise biopharmaceutique qui innove en R&D et exploite l'IA à grande échelle pour améliorer la vie des gens et créer de la croissance à long terme. Notre compréhension approfondie du système immunitaire – et notre pipeline innovant – nous permet d’inventer des médicaments et des vaccins qui traitent et protègent des millions de personnes dans le monde entier. Ensemble, nous poursuivons les miracles de la science pour améliorer la vie des gens.\n\nPrincipales Responsabilités \n\n• Participer à l'analyse des pratiques actuelles de revue et de libération des lots de médicaments expérimentaux sous-traités à des partenaires aux États-Unis, en Chine, au Royaume-Uni et en Suisse\n• Prendre part à l'identification des écarts entre sites et proposer un processus harmonisé et conforme à la réglementation\n• Prendre part à la rédaction et à la mise à jour de la documentation qualité associée\n• Être force de proposition sur l'harmonisation du programme de formation des équipes qualité US et Canada, en s'appuyant sur le référentiel de formation\n• Contribuer à la conception des supports de formation\n• S'impliquer dans la dispensation de la formation aux équipes US et Canada, en coordination avec les responsables locaux\n\nÀ propos de toi\n\n• Compétences techniques et relationnelles : communication, rigueur, esprit de synthèse. Connaissance en assurance qualité et BPF\n• Éducation : bac+5 en pharmacie\n• Langues : anglais courant\n\nPourquoi nous choisir ?\n\n• Lance ta carrière dans une entreprise qui investit en toi, et te donne les moyens de réinventer ce qui est possible.\n• Construis ton avenir avec les outils les plus récents, l’innovation digitale et un apprentissage continu pour toujours garder une longueur d’avance.\n• Évolue dans une entreprise engagée où ta voix compte et où ton travail améliore la vie de millions de personnes.\n• Épanouis-toi dans des environnements inclusifs et flexibles qui soutiennent ton bien-être personnel et professionnel.\n• Une gratification de stage attractive.           \n• Selon votre site de rattachement, l’accès à un restaurant d’entreprise avec une participation de Sanofi. \n• Notre processus de recrutement a été pensé pour être rapide et efficace. Si votre candidature est retenue, vous recevrez un appel de notre recruteur.se pour un premier échange téléphonique puis pour rencontrer rapidement le ou la manager.   \n\nToujours Progresser. Découvrir l’extraordinaire.\n\nRejoins Sanofi et entre dans une nouvelle ère de la science – où ton parcours peut être aussi transformateur que le travail que nous accomplissons. Nous investissons en toi pour que tu ailles plus loin, tu accélères ta réflexion et tu accomplisses ce qui n’a jamais été fait auparavant. Tu contribueras à repousser les limites, à bousculer les conventions et à concevoir des solutions plus intelligentes pour les communautés que nous servons. Prêt·e à poursuivre les miracles de la science et à améliorer la vie des gens ? Poursuivons le progrès et découvrons l’extraordinaire – ensemble.\n\nChez Sanofi, nous croyons dans l’égalité des chances, sans distinction de race, de couleur, d’ascendance, de religion, de sexe, d’origine, d’orientation sexuelle, d’âge, de citoyenneté, d’état civil, de handicap, d’identité de genre ou de tout autre critère protégé par la loi.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-support-qualit%C3%A9-at-sanofi-4488160033"
-    }
-   ],
-   "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-24",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
    "id": "c9dcb33af41b",
    "titre": "Technicien de production - Productivité et Qualité (H/F)",
    "entreprise": "",
@@ -718,6 +741,29 @@
    "lat": 43.7706,
    "lon": 4.4397,
    "commune": "Garons"
+  },
+  {
+   "id": "8f1ace7c2af2",
+   "titre": "stage 6 mois support qualité",
+   "entreprise": "Sanofi",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-06",
+   "extrait": "",
+   "description": "Intitulé du poste : stage 6 mois support qualité\n\n• Lieu : Montpellier\n• A partir de : mars 2027\n\nÀ propos du poste\n\nEn tant que stagiaire support qualité au sein de notre département qualité, tu vas contribuer à l'harmonisation des processus de revue et de libération des médicaments expérimentaux fabriqués par des sous-traitants internationaux. Prêt à commencer ?\n\nPrêt(e) à développer tes compétences tout en participant à l’avenir de la santé ? Chez Sanofi, tu auras la liberté d’apprendre, de poser des questions et de donner vie à tes idées, le tout soutenu par des mentors inspirants et des équipes collaboratives.\n\nÀ Propos De Sanofi \n\nSanofi est une entreprise biopharmaceutique qui innove en R&D et exploite l'IA à grande échelle pour améliorer la vie des gens et créer de la croissance à long terme. Notre compréhension approfondie du système immunitaire – et notre pipeline innovant – nous permet d’inventer des médicaments et des vaccins qui traitent et protègent des millions de personnes dans le monde entier. Ensemble, nous poursuivons les miracles de la science pour améliorer la vie des gens.\n\nPrincipales Responsabilités \n\n• Participer à l'analyse des pratiques actuelles de revue et de libération des lots de médicaments expérimentaux sous-traités à des partenaires aux États-Unis, en Chine, au Royaume-Uni et en Suisse\n• Prendre part à l'identification des écarts entre sites et proposer un processus harmonisé et conforme à la réglementation\n• Prendre part à la rédaction et à la mise à jour de la documentation qualité associée\n• Être force de proposition sur l'harmonisation du programme de formation des équipes qualité US et Canada, en s'appuyant sur le référentiel de formation\n• Contribuer à la conception des supports de formation\n• S'impliquer dans la dispensation de la formation aux équipes US et Canada, en coordination avec les responsables locaux\n\nÀ propos de toi\n\n• Compétences techniques et relationnelles : communication, rigueur, esprit de synthèse. Connaissance en assurance qualité et BPF\n• Éducation : bac+5 en pharmacie\n• Langues : anglais courant\n\nPourquoi nous choisir ?\n\n• Lance ta carrière dans une entreprise qui investit en toi, et te donne les moyens de réinventer ce qui est possible.\n• Construis ton avenir avec les outils les plus récents, l’innovation digitale et un apprentissage continu pour toujours garder une longueur d’avance.\n• Évolue dans une entreprise engagée où ta voix compte et où ton travail améliore la vie de millions de personnes.\n• Épanouis-toi dans des environnements inclusifs et flexibles qui soutiennent ton bien-être personnel et professionnel.\n• Une gratification de stage attractive.           \n• Selon votre site de rattachement, l’accès à un restaurant d’entreprise avec une participation de Sanofi. \n• Notre processus de recrutement a été pensé pour être rapide et efficace. Si votre candidature est retenue, vous recevrez un appel de notre recruteur.se pour un premier échange téléphonique puis pour rencontrer rapidement le ou la manager.   \n\nToujours Progresser. Découvrir l’extraordinaire.\n\nRejoins Sanofi et entre dans une nouvelle ère de la science – où ton parcours peut être aussi transformateur que le travail que nous accomplissons. Nous investissons en toi pour que tu ailles plus loin, tu accélères ta réflexion et tu accomplisses ce qui n’a jamais été fait auparavant. Tu contribueras à repousser les limites, à bousculer les conventions et à concevoir des solutions plus intelligentes pour les communautés que nous servons. Prêt·e à poursuivre les miracles de la science et à améliorer la vie des gens ? Poursuivons le progrès et découvrons l’extraordinaire – ensemble.\n\nChez Sanofi, nous croyons dans l’égalité des chances, sans distinction de race, de couleur, d’ascendance, de religion, de sexe, d’origine, d’orientation sexuelle, d’âge, de citoyenneté, d’état civil, de handicap, d’identité de genre ou de tout autre critère protégé par la loi.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-support-qualit%C3%A9-at-sanofi-4488160033"
+    }
+   ],
+   "premiere_vue": "2026-11-19",
+   "derniere_vue": "2026-11-24",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
   },
   {
    "id": "e36f2b7ec3bd",
