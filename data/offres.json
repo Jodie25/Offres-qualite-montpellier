@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T20:47+00:00",
+ "maj": "2026-11-25T01:00+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,7 +23,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -46,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -69,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -92,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -115,7 +115,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -138,7 +138,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -161,7 +161,7 @@
     }
    ],
    "premiere_vue": "2026-11-23",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -184,7 +184,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -207,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -230,7 +230,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -253,7 +253,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.6341,
    "lon": 3.97,
@@ -276,7 +276,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -299,7 +299,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -391,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -414,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -437,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -460,7 +460,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -529,7 +529,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -552,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -575,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -598,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -621,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.7924,
    "lon": 4.3919,
@@ -644,7 +644,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -690,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
@@ -713,7 +713,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -736,7 +736,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -759,7 +759,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -782,7 +782,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -805,7 +805,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-25",
    "agro": false,
    "lat": 43.7706,
    "lon": 4.4397,
@@ -833,52 +833,6 @@
    "lat": 43.61,
    "lon": 3.8742,
    "commune": "Montpellier"
-  },
-  {
-   "id": "e36f2b7ec3bd",
-   "titre": "Technicien de Laboratoire d'anatomie pathologique H/F (H/F)",
-   "entreprise": "INSTITUT REGIONAL DU CANCER DE MONTPELLI",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-04",
-   "extrait": "",
-   "description": "Les missions principales : - Préparer et procéder à l'analyse à des fins médicales et/ou de recherche des prélèvements dans le respect des normes de qualité des règles d'hygiène, de sécurité, et de déontologie liées à la profession (accréditation...) - Contrôler le déroulement des procédures d'analyses et transmettre les résultats pour validation biologique après confirmation technique dans le respect des normes de qualité (accréditation...) - Mettre en œuvre des techniques d'analyses et/ ou d'investigation Les activités : - Réceptionner, vérifier la conformité des demandes, valider et classer les prélèvements et les demandes d'examen et/ou d'investigation - Effectuer les analyses et/ou les investigations à l'aide des techniques appropriées et assurer la validation technique ; Réaliser les contrôles qualité - Contrôler la fiabilité et la cohérence des résultats et les soumettre au médecin pathologiste - Participer à la conservation des prélèvements après analyse - Assurer la saisie informatique, la sauvegarde et l'archivage des résultats ; préparer les solutions stock et/ou les solutions de travail, Evaluer le niveau des stocks et inscrire les demandes de commandes - Surveiller la date de péremption des réactifs et les conditions de stockage - Réaliser la vérification, l'entretien et la maintenance courante du matériel utilisé - Participer à la rédaction des protocoles et procédures ; maîtriser les outils informatiques liés aux techniques de laboratoire ; appliquer les procédures d'élimination des déchets et d'hygiène Les activités Anapath : - Examens extemporanés/ prise en charge des pièces fraiches - Biopsies - Cytologie - Enrobage / Mégacassettes - Automates - Coupe en paraffine (et Coloration standard) - Immunohistochimie de routine (et Colorations spéciales) Les compétences requises : - Connaître les processus d'analyse et/ou d'investigation, les maintenances des appareils - Connaitre les risques présents au laboratoire, Connaitre l'anglais technique - Connaitre les moyens de protection personnelle et de l'environnement - Connaitre les aspects règlementaires des certifications liées au laboratoire (COFRAC, HAS...) - Connaitre les logiciels métier, Connaitre les procédures d'élimination des déchets et d'hygiène Le profil : (diplôme, expérience.)\n• Diplômes d'État ou autres diplômes permettant d'exercer l'emploi de technicien de laboratoire médical selon la réglementation en vigueur\n• Enregistrement au registre ADELI\n• Salaires et avantages :\nSalaire à partir de 2 450 euros brut/mois (mesures Ségur incluses)\n• Poste à pourvoir en 7h15\n• RTT, flexibilité horaires, temps de doublure, aide à la mobilité, journée d'accueil des nouveaux arrivants, restaurant du personnel, prestations CSE, mutuelle\n• Pour postuler/ se renseigner :\n• Toute candidature est à envoyer accompagnée d'une lettre de motivation et d'un CV\nProfil recherché Compétences : Désinfecter et décontaminer un équipement (exigé) ; Préparer les analyseurs, les réactifs et l'échantillon biologique (fractionnement, répartition, etc.) selon le type d'analyse (exigé) ; Procéder au traitement de l'échantillon par centrifugation, dilution, chauffage, surveiller le déroulement de l'analyse et consigner les données (exigé) ; Réaliser un prélèvement biologique (exigé) Qualités professionnelles : Faire preuve de rigueur et de précision ; Organiser son travail selon les priorités et les objectifs ; Faire preuve de curiosité, d'ouverture d'esprit Formation : Bac+2 ou équivalents (souhaité) Expérience : Débutant accepté",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-de-laboratoire-d-anatomie-pathologique-h-f-h-f-4486976988"
-    }
-   ],
-   "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-24",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "d085171b2321",
-   "titre": "Contrôleur qualité industrie (H/F)",
-   "entreprise": "Randstad",
-   "lieu": "34 - Lavérune",
-   "contrat": "Intérim - 2 Mois",
-   "salaire": "Mensuel de 1809.57 Euros",
-   "date_pub": "2026-11-04",
-   "extrait": "Description du poste : Souhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante ? Vous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue - Vous contrôlez les matières premières et les produits finis au sein des ateliers - Vous gérez les non-conformités et ana",
-   "description": "Description du poste :\n\nSouhaitez-vous valoriser votre expertise en tant que Technicien qualité (F/H) au sein d'une organisation exigeante ?\nVous garantissez la conformité des productions en assurant des contrôles rigoureux et en contribuant activement à l'amélioration continue\n- Vous contrôlez les matières premières et les produits finis au sein des ateliers\n- Vous gérez les non-conformités et analysez leurs causes profondes afin de définir des actions correctives\n- Vous rédigez les documents de suivi qualité et veillez au respect des normes de production\n\nEt voici les modalités de l'offre Contrat: Intérim\n\n- Durée: 2/mois\n\n- Salaire: 12.31 euros/heure\n\nDe plus, nous offrons un ensemble complet d'avantages aux intérimaires, y compris Fast TT, pour assurer leur succès professionnel et personnel.\n\nDescription du profil :\n\nVous êtes une technicienne ou un technicien qualité rigoureux, justifiant d'une première expérience en environnement industriel\n\n- Vous maîtrisez le contrôle des matières premières et des produits finis en usine\n\nProcessus de recrutement\nVous êtes intéressé(e) par cette offre d'emploi ? C'est très simple, postulez en quelques clics ! Notre équipe de consultant(e)s prendra contact avec vous pour valider vos compétences et objectifs de carrière. Si votre candidature est acceptée, nous vous fournirons tous les éléments nécessaires pour votre mission. À très bientôt !",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8527231"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-18",
-   "agro": false,
-   "lat": 43.5848,
-   "lon": 3.8003,
-   "commune": "Lavérune"
   }
  ]
 }
