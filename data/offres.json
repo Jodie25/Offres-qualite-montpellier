@@ -1,11 +1,34 @@
 {
- "maj": "2026-11-27T00:46+00:00",
+ "maj": "2026-11-27T15:29+00:00",
  "centre": [
   43.5732,
   3.8329
  ],
  "rayon_km": 50,
  "offres": [
+  {
+   "id": "177e152e92b6",
+   "titre": "Technicien(ne) QHSE (H/F)",
+   "entreprise": "GROUPE GAZECHIM COMPOSITES",
+   "lieu": "34 - BEZIERS",
+   "contrat": "CDI",
+   "salaire": "",
+   "date_pub": "2026-11-27",
+   "extrait": "Le Groupe Gazechim, acteur majeur dans la distribution industrielle, est organisé autour de trois pôles d'activités : - Pôle Gaz : conditionnement et distribution de gaz liquéfiés - Pôle Froid : conditionnement et distribution de fluides frigorigènes - Pôle Composites : distribution de matériaux composites Groupe Gazechim Composites, recrute un(e) Technicien(ne) QHSE F/H en CDI, basé(e) à Béziers ",
+   "description": "Le Groupe Gazechim, acteur majeur dans la distribution industrielle, est organisé autour de trois pôles d'activités :\n- Pôle Gaz : conditionnement et distribution de gaz liquéfiés\n- Pôle Froid : conditionnement et distribution de fluides frigorigènes\n- Pôle Composites : distribution de matériaux composites\nGroupe Gazechim Composites, recrute un(e) Technicien(ne) QHSE F/H en CDI, basé(e) à Béziers (34).\nVos missions :\nRattaché(e) à la Responsable QHSE Pole Composites, vous participerez au déploiement la politique QSE du Groupe, d'animer les actions d'amélioration continue et de garantir la conformité réglementaire des produits et des services.\nVéritable relais terrain, vous contribuerez activement à diffuser une culture QHSE au sein de l'entreprise.\nVos principales responsabilités :\n- Élaborer et mettre à jour la documentation du système de management QSE (procédures, instructions, manuel qualité.) ;\n- Suivre la qualité fournisseurs et la satisfaction client ;\n- Gérer les non-conformités et réclamations, et assurer leur traitement ;\n- Réaliser des audits internes et inspections régulières pour prévenir les risques ;\n- Mettre à jour le Document Unique et l'évaluation des risques chimiques via l'outil Seirich ;\n- Analyser les Fiches de Données de Sécurité (FDS) et sensibiliser les collaborateurs aux risques associés ;\n- Participer à l'analyse des incidents/accidents, proposer des actions correctives et suivre leur mise en œuvre ;\n- Assurer la formation du personnel sur les thématiques QSE ;\n- Contribuer à l'amélioration continue des processus et à la performance QHSE de l'entreprise.\nProfil recherché :\nDe formation Bac+3 minimum en QSE, vous bénéficiez d'une expérience significative de 5 ans minimum dans un environnement industriel exigeant.\nVous avez une bonne connaissance des référentiels qualité, notamment ISO 9001, vous maîtrisez des outils qualité (5S, 5P, 8D), avez de solides connaissances en réglementation sécurité et environnement\nBon niveau d'anglais (B2)\nVos qualités personnelles :\n- Sens de l'organisation, rigueur et autonomie ;\n- Excellent relationnel, esprit d'équipe ;\n- Esprit d'analyse et réactivité.\n\nOutils maîtrisés\n- Pack Office\n- Logiciel de traitement des réclamations\n- Logiciel de gestion électronique des documents (GED)\n\nToutes les candidatures sont étudiées avec attention dans le respect de l'égalité des chances et de la diversité.",
+   "liens": [
+    {
+     "source": "France Travail",
+     "url": "https://candidat.francetravail.fr/offres/recherche/detail/216XZMP"
+    }
+   ],
+   "premiere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-27",
+   "agro": false,
+   "lat": 43.3481,
+   "lon": 3.2342,
+   "commune": "Béziers"
+  },
   {
    "id": "03b472897fe8",
    "titre": "Assistant QSE H/F - Languedoc Restauration",
@@ -53,6 +76,29 @@
    "commune": "Montpellier"
   },
   {
+   "id": "d9dc886f3358",
+   "titre": "Aide de Laboratoire - Laboratoire Contaminants",
+   "entreprise": "Eurofins",
+   "lieu": "Vergèze",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-25",
+   "extrait": "",
+   "description": "Description de l'entreprise\n\nAvec plus de 55 000 collaborateurs dans 50 pays, Eurofins fournit des prestations d'analyses aux industries pharmaceutiques, alimentaires et dans le domaine de l'environnement. A la pointe des derniers développements en biotechnologies, en très forte croissance et leader dans son domaine d'activité, Eurofins est une société dynamique et ambitieuse avec la vision de devenir le leader mondial du marché de la bio-analyse.\n\nDescription du poste\n\nBasé(e) à Vergèze (Gard), vous renforcerez notre équipe dans l'unité Pesticides pour l'analyse des fruits et légumes.\n\nSous la responsabilité du responsable de laboratoire, l'aide de laboratoire :\n\n• Assure l'homogénéisation et le broyage des échantillons de fruits et légumes\n• Gère l'expédition des échantillons en sous traitance\n• Respecte et applique le système de management de la qualité\n\nAu sein d'une petite structure en pleine expansion, vous faites preuve de polyvalence et d'esprit d'initiatives. Organisé(e), autonome et rigoureux (se), vous souhaitez mettre votre professionnalisme et vos aptitudes au service d'un groupe moderne en développement rapide\n\nQualifications\n\nVous êtes titulaire d'un BAC ou expérience équivalente,\n\nInformations complémentaires\n\nContrat en CDD à 50 % du 1 juillet jusqu'au 28 août sur 5 jours semaine (de 11H30 à 15H environ)",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/aide-de-laboratoire-laboratoire-contaminants-at-eurofins-4494668785"
+    }
+   ],
+   "premiere_vue": "2026-11-25",
+   "derniere_vue": "2026-11-27",
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
+  },
+  {
    "id": "f28462b0cca8",
    "titre": "Technicien de laboratoire Sète multi-sites F/H",
    "entreprise": "EFS",
@@ -74,29 +120,6 @@
    "lat": 43.3844,
    "lon": 3.6441,
    "commune": "Sète"
-  },
-  {
-   "id": "d9dc886f3358",
-   "titre": "Aide de Laboratoire - Laboratoire Contaminants",
-   "entreprise": "Eurofins",
-   "lieu": "Vergèze",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-25",
-   "extrait": "",
-   "description": "Description de l'entreprise\n\nAvec plus de 55 000 collaborateurs dans 50 pays, Eurofins fournit des prestations d'analyses aux industries pharmaceutiques, alimentaires et dans le domaine de l'environnement. A la pointe des derniers développements en biotechnologies, en très forte croissance et leader dans son domaine d'activité, Eurofins est une société dynamique et ambitieuse avec la vision de devenir le leader mondial du marché de la bio-analyse.\n\nDescription du poste\n\nBasé(e) à Vergèze (Gard), vous renforcerez notre équipe dans l'unité Pesticides pour l'analyse des fruits et légumes.\n\nSous la responsabilité du responsable de laboratoire, l'aide de laboratoire :\n\n• Assure l'homogénéisation et le broyage des échantillons de fruits et légumes\n• Gère l'expédition des échantillons en sous traitance\n• Respecte et applique le système de management de la qualité\n\nAu sein d'une petite structure en pleine expansion, vous faites preuve de polyvalence et d'esprit d'initiatives. Organisé(e), autonome et rigoureux (se), vous souhaitez mettre votre professionnalisme et vos aptitudes au service d'un groupe moderne en développement rapide\n\nQualifications\n\nVous êtes titulaire d'un BAC ou expérience équivalente,\n\nInformations complémentaires\n\nContrat en CDD à 50 % du 1 juillet jusqu'au 28 août sur 5 jours semaine (de 11H30 à 15H environ)",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/aide-de-laboratoire-laboratoire-contaminants-at-eurofins-4494668785"
-    }
-   ],
-   "premiere_vue": "2026-11-25",
-   "derniere_vue": "2026-11-26",
-   "agro": false,
-   "lat": 43.7341,
-   "lon": 4.2332,
-   "commune": "Vergèze"
   },
   {
    "id": "f70a39a10062",
