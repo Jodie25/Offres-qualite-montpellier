@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T19:46+00:00",
+ "maj": "2026-11-27T00:46+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,7 +23,7 @@
     }
    ],
    "premiere_vue": "2026-11-26",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -46,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-25",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -69,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-25",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.3844,
    "lon": 3.6441,
@@ -138,7 +138,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
@@ -161,7 +161,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -184,7 +184,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -207,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -299,7 +299,7 @@
     }
    ],
    "premiere_vue": "2026-11-23",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -322,7 +322,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -345,7 +345,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -391,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.6341,
    "lon": 3.97,
@@ -414,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -437,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -506,7 +506,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -529,7 +529,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -552,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -575,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -598,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -667,7 +667,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -690,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -713,7 +713,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -736,7 +736,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -759,7 +759,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -805,7 +805,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
@@ -828,7 +828,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -851,103 +851,11 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
+   "derniere_vue": "2026-11-27",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
    "commune": "Nîmes"
-  },
-  {
-   "id": "e64f45a9ee33",
-   "titre": "Technicien Contrôle Qualité (H/F)",
-   "entreprise": "IDEXX",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "",
-   "description": "Type de contrat : CDD remplacement congé maternité\n\nTemps de travail : 35 heures\n\nChez IDEXX, nous sommes tous passionnés par notre mission. Chaque jour, nous contribuons à améliorer les standards de soins des animaux, à garantir la qualité de l'eau pour des milliards de personnes et à soutenir la santé des élevages dans le monde entier.\n\nEn tant que Technicien.ne Contrôle Qualité , vous apporterez une contribution essentielle à l'une des plus grandes entreprises mondiales de diagnostic vétérinaire. Vous réaliserez des analyses complexes visant à évaluer la qualité de nos produits à l'aide de techniques telles que PCR et ELISA , dans le respect des exigences réglementaires et des règles d'hygiène et de sécurité en vigueur chez IDEXX.\n\nVous rejoindrez un environnement dynamique favorisant le travail d'équipe, l'autonomie et le développement des compétences.\n\nÀ propos de la division LPD\n\nLa Division Livestock, Poultry And Dairy (LPD) D'IDEXX Développe Des Tests Diagnostiques Et Des Services Destinés à Améliorer La Santé Des Animaux D'élevage à Travers Le Monde. Nous Collaborons Avec Des Laboratoires Publics, Privés Et Gouvernementaux Afin De Fournir Des Résultats Fiables Permettant\n\n• d'améliorer la santé animale,\n• de protéger la santé publique,\n• d'optimiser la productivité des élevages,\n• de garantir la qualité des aliments.\n\nCe poste est basé au sein de notre laboratoire de Montpellier et est à pourvoir dès que possible dans le cadre d'un CDD de remplacement de congé maternité .\n\nVos missions\n\nContrôle qualité aux différents stades de la production\n\n• Contrôle des matières premières, composants, réactifs intermédiaires (semi-finis) et produits finis.\n• Réalisation des inspections (avant libération, échantillonnage, environnement de production).\n• Suivi des études de stabilité des produits finis.\n• Analyse et investigation des anomalies détectées lors des activités de contrôle qualité.\n\nGestion documentaire\n\n• Rédaction des comptes rendus d'analyses de contrôle.\n• Vérification de la traçabilité des dossiers de lots.\n• Archivage de la documentation qualité.\n\nContribution à l'efficacité du système de management\n\n• Participer à la rédaction et à la mise à jour des procédures qualité.\n• Contribuer à l'amélioration continue des activités de contrôle qualité et des processus existants.\n• Mettre en place et suivre des indicateurs qualité.\n• Participer aux démarches QHSE (Qualité, Hygiène, Sécurité et Environnement) du laboratoire.\n\nProfil recherché\n\n• Formation de type BTS (Bac+2) ou Licence (Bac+3) en Biologie, Sciences Biomédicales, Biotechnologies ou Chimie.\n• Première expérience significative en laboratoire d'analyse, de recherche ou de contrôle qualité.\n• Maîtrise des techniques PCR et/ou ELISA.\n• La connaissance des normes ISO 9001, ISO 14001 et/ou des référentiels GMP constitue un atout.\n• Excellentes capacités rédactionnelles et relationnelles en français ; l'anglais est un plus.\n• Rigueur, sens de l'organisation, autonomie, esprit d'équipe et capacité d'adaptation.\n\nPourquoi rejoindre IDEXX ?\n\nEn rejoignant IDEXX, vous intégrerez un environnement de travail stimulant où votre contribution aura un impact direct sur la santé animale et la sécurité alimentaire.\n\nNous Proposons\n\n• Un environnement collaboratif et bienveillant.\n• Des opportunités de développement professionnel.\n• Une culture favorisant l'innovation, la responsabilisation et l'amélioration continue.\n• La possibilité de contribuer à la croissance d'une entreprise leader sur un marché en forte expansion.\n\nRejoignez une équipe engagée, innovante et passionnée, qui œuvre chaque jour à améliorer la santé des animaux et des personnes.\n\nDécouvrez toutes nos opportunités sur : careers.idexx.com\n\nIDEXX valorise la diversité et l'inclusion. Nous encourageons toutes les personnes qualifiées à postuler, quelles que soient leur origine, leur genre, leur orientation sexuelle, leur handicap, leur âge ou toute autre caractéristique protégée par la loi.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-contr%C3%B4le-qualit%C3%A9-h-f-at-idexx-4469717914"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-26",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "3c7650919a52",
-   "titre": "Technicien qualité en industrie (H/F)",
-   "entreprise": "Talents Industrie",
-   "lieu": "Nîmes",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "",
-   "description": "Talents Industrie, cabinet de recrutement spécialisé dans les métiers techniques, vous propose des offres d’emploi dans l'Industrie, en CDI / CDD ou intérim.\n\nNous recherchons, pour une industrie basée proche de Nîmes, un(e) technicien Contrôle Qualité.\n\nRattaché(e) au service Qualité, vous veillez à la conformité des produits et des processus de fabrication, dans le respect des exigences réglementaires et des normes en vigueur, notamment l'ISO 13485.\n\nÀ Ce Titre, Vos Principales Missions Seront\n\n• Contrôle qualité : Réaliser les contrôles qualité à réception, en cours et en fin de production (dimensionnels, visuels et fonctionnels). Rédiger les rapports de contrôle et statuer sur la conformité des lots (libération ou blocage).\n• Gestion des non-conformités : Identifier, enregistrer et analyser les non-conformités, rechercher les causes racines à l'aide d'outils méthodologiques (5M, Ishikawa, 5 Pourquoi) et assurer le suivi des plans d'actions correctives et préventives (CAPA).\n• Gestion documentaire : Rédiger, mettre à jour et assurer le suivi des procédures, instructions et plans de contrôle, dans le respect des exigences de l'ISO 13485.\n• Métrologie : Assurer le suivi du parc d'équipements de mesure et de contrôle, planifier les étalonnages et gérer les équipements présentant des écarts de conformité.\n• Audits : Participer aux audits internes et contribuer à la préparation des audits externes (clients, organismes notifiés et autorités compétentes).\n• Amélioration continue : Contribuer aux qualifications de procédés (IQ/OQ/PQ), aux revues qualité ainsi qu'au suivi des indicateurs de performance.\n\nIssu(e) d'une formation en qualité industrielle, vous justifiez d'une expérience de 3 à 5 ans sur un poste similaire, idéalement dans un environnement industriel réglementé.\n\nVous maîtrisez les outils d'analyse et de résolution de problèmes ainsi que les méthodes de gestion des non-conformités. La connaissance de la norme ISO 13485 constitue un véritable atout.\n\nEn déposant votre CV, vous acceptez que les informations recueillies à partir de votre CV fassent l’objet d’un traitement informatique destiné au Groupe LINKING TALENTS. Nous collectons vos données afin d’étudier votre candidature, vous intégrer à notre vivier de candidats et/ou vous adresser du contenu en lien avec votre recherche d’emploi.\n\nVous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité des données personnelles vous concernant, et de définition des directives relatives au sort de vos données après votre décès. Vous pouvez exercer ces droits en cliquant ici. En cas de contestation, une réclamation peut être introduite auprès de la CNIL. Pour en savoir plus sur notre politique de protection de vos données personnelles, cliquez ici.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/technicien-qualit%C3%A9-en-industrie-h-f-at-talents-industrie-4487318406"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
-   "agro": false,
-   "lat": 43.8322,
-   "lon": 4.3429,
-   "commune": "Nîmes"
-  },
-  {
-   "id": "8f1ace7c2af2",
-   "titre": "stage 6 mois support qualité",
-   "entreprise": "Sanofi",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "",
-   "description": "Intitulé du poste : stage 6 mois support qualité\n\n• Lieu : Montpellier\n• A partir de : mars 2027\n\nÀ propos du poste\n\nEn tant que stagiaire support qualité au sein de notre département qualité, tu vas contribuer à l'harmonisation des processus de revue et de libération des médicaments expérimentaux fabriqués par des sous-traitants internationaux. Prêt à commencer ?\n\nPrêt(e) à développer tes compétences tout en participant à l’avenir de la santé ? Chez Sanofi, tu auras la liberté d’apprendre, de poser des questions et de donner vie à tes idées, le tout soutenu par des mentors inspirants et des équipes collaboratives.\n\nÀ Propos De Sanofi \n\nSanofi est une entreprise biopharmaceutique qui innove en R&D et exploite l'IA à grande échelle pour améliorer la vie des gens et créer de la croissance à long terme. Notre compréhension approfondie du système immunitaire – et notre pipeline innovant – nous permet d’inventer des médicaments et des vaccins qui traitent et protègent des millions de personnes dans le monde entier. Ensemble, nous poursuivons les miracles de la science pour améliorer la vie des gens.\n\nPrincipales Responsabilités \n\n• Participer à l'analyse des pratiques actuelles de revue et de libération des lots de médicaments expérimentaux sous-traités à des partenaires aux États-Unis, en Chine, au Royaume-Uni et en Suisse\n• Prendre part à l'identification des écarts entre sites et proposer un processus harmonisé et conforme à la réglementation\n• Prendre part à la rédaction et à la mise à jour de la documentation qualité associée\n• Être force de proposition sur l'harmonisation du programme de formation des équipes qualité US et Canada, en s'appuyant sur le référentiel de formation\n• Contribuer à la conception des supports de formation\n• S'impliquer dans la dispensation de la formation aux équipes US et Canada, en coordination avec les responsables locaux\n\nÀ propos de toi\n\n• Compétences techniques et relationnelles : communication, rigueur, esprit de synthèse. Connaissance en assurance qualité et BPF\n• Éducation : bac+5 en pharmacie\n• Langues : anglais courant\n\nPourquoi nous choisir ?\n\n• Lance ta carrière dans une entreprise qui investit en toi, et te donne les moyens de réinventer ce qui est possible.\n• Construis ton avenir avec les outils les plus récents, l’innovation digitale et un apprentissage continu pour toujours garder une longueur d’avance.\n• Évolue dans une entreprise engagée où ta voix compte et où ton travail améliore la vie de millions de personnes.\n• Épanouis-toi dans des environnements inclusifs et flexibles qui soutiennent ton bien-être personnel et professionnel.\n• Une gratification de stage attractive.           \n• Selon votre site de rattachement, l’accès à un restaurant d’entreprise avec une participation de Sanofi. \n• Notre processus de recrutement a été pensé pour être rapide et efficace. Si votre candidature est retenue, vous recevrez un appel de notre recruteur.se pour un premier échange téléphonique puis pour rencontrer rapidement le ou la manager.   \n\nToujours Progresser. Découvrir l’extraordinaire.\n\nRejoins Sanofi et entre dans une nouvelle ère de la science – où ton parcours peut être aussi transformateur que le travail que nous accomplissons. Nous investissons en toi pour que tu ailles plus loin, tu accélères ta réflexion et tu accomplisses ce qui n’a jamais été fait auparavant. Tu contribueras à repousser les limites, à bousculer les conventions et à concevoir des solutions plus intelligentes pour les communautés que nous servons. Prêt·e à poursuivre les miracles de la science et à améliorer la vie des gens ? Poursuivons le progrès et découvrons l’extraordinaire – ensemble.\n\nChez Sanofi, nous croyons dans l’égalité des chances, sans distinction de race, de couleur, d’ascendance, de religion, de sexe, d’origine, d’orientation sexuelle, d’âge, de citoyenneté, d’état civil, de handicap, d’identité de genre ou de tout autre critère protégé par la loi.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-6-mois-support-qualit%C3%A9-at-sanofi-4488160033"
-    }
-   ],
-   "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-26",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "c9dcb33af41b",
-   "titre": "Technicien de production - Productivité et Qualité (H/F)",
-   "entreprise": "",
-   "lieu": "30 - GARONS",
-   "contrat": "CDI",
-   "salaire": "",
-   "date_pub": "2026-11-06",
-   "extrait": "SUCLO CARTONNAGE, spécialisée dans la fabrication d'emballages en carton ondulé, recherche un(e) Technicien(ne) de production pour accompagner ses équipes et contribuer à l'amélioration de la productivité et de la qualité. Vos missions - Accompagner les conducteurs de machines dans les réglages et la résolution des problèmes techniques. - Optimiser les cadences, les temps de réglage et limiter les",
-   "description": "SUCLO CARTONNAGE, spécialisée dans la fabrication d'emballages en carton ondulé, recherche un(e) Technicien(ne) de production pour accompagner ses équipes et contribuer à l'amélioration de la productivité et de la qualité.\n\nVos missions\n- Accompagner les conducteurs de machines dans les réglages et la résolution des problèmes techniques.\n- Optimiser les cadences, les temps de réglage et limiter les rebuts.\n- Contrôler la qualité des fabrications et mettre en place des actions correctives.\n- Proposer des améliorations des méthodes et de l'organisation de la production.\n- Former et accompagner les équipes dans leurs pratiques.\n- Participer à la production et assurer ponctuellement le remplacement des conducteurs.\n- Assurer un relais opérationnel en l'absence du Directeur d'exploitation.\n\nProfil recherché\n- Expérience confirmée en production industrielle, idéalement dans le carton ondulé ou l'emballage.\n- Bonne maîtrise des réglages de machines et des processus de fabrication.\n- Autonomie, rigueur, réactivité et esprit d'équipe.\n- Capacité à transmettre ses connaissances et à proposer des solutions concrètes.\n\nConditions\n- Lieu : Garons (30)\n- Temps de travail : 39 h/semaine\n- Horaires : 5 h - 13 h 30 / 5 h - 12 h 30\n- Salaire : 2 600 - 2800€ brut/mois selon expérience\n- Panier repas : 7 € par jour travaillé\n\nRejoignez une entreprise à taille humaine et participez activement à l'amélioration des performances de notre atelier.",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/216DRWZ"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-26",
-   "agro": false,
-   "lat": 43.7706,
-   "lon": 4.4397,
-   "commune": "Garons"
   }
  ]
 }
