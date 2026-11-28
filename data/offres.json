@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-28T00:14+00:00",
+ "maj": "2026-11-28T14:29+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -145,29 +145,6 @@
    "commune": "Caissargues"
   },
   {
-   "id": "626bda309a0c",
-   "titre": "Stage Ingénieur Qualité, Conformité d'Emballage & Écoconception (H/F)",
-   "entreprise": "AdVini",
-   "lieu": "Saint-Félix-de-Lodez",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-24",
-   "extrait": "",
-   "description": "À propos de nous\n\nGroupe viticole international fondé en 1872, AdVini (270 M€ de CA, 950 collaborateurs), embrasse tous les métiers de la filière vin. A la fois vigneron et producteur, expert de la supply-chain et distributeur dans le monde, AdVini perpétue un savoir-faire d’excellence et des traditions culturelles, en partageant sa passion du vin avec ses partenaires et en révélant les terroirs qui la compose.\n\nEnraciné au cœur du vignoble en France et en Afrique du Sud, AdVini cultive l’autonomie de ses maisons, fédérées autour d’une raison d’être : « Agir chaque jour avec humanité, unis dans la diversité, pour la valorisation des Vignobles et des Hommes. »\n\nRésolument engagé pour la durabilité de ses activités, AdVini s’évertue au quotidien à réduire l’impact environnemental de ses activités.\n\nPlus d’informations sur www.advini.com\n\nMission\n\nCette offre concerne exclusivement les candidatures pour un stage (les contrats en alternance ne sont pas acceptés).\n\nPour toute candidature en CDI, CDD ou alternance, nous vous invitons à consulter notre site carrière : https://advini.recrutement-talents.fr/\n\nActeur majeur du secteur vitivinicole, AdVini engage un projet structurant pour renforcer la maîtrise des données techniques, environnementales et réglementaires de ses emballages.\n\nCes données conditionnent aujourd'hui notre capacité à répondre aux nouvelles réglementations emballages, aux demandes de nos clients, aux déclarations environnementales, au calcul de l'empreinte carbone de nos produits et aux projets d'écoconception du Groupe.\n\nDans ce contexte, nous recherchons un.e stagiaire de fin d'études en tant qu' Ingénieur Qualité, Conformité d'Emballage & Écoconception , pour contribuer au projet visant à créer et fiabiliser une base de données centralisée de l'ensemble de nos emballages : bouteilles, capsules, bouchons, étiquettes, cartons, palettes, …\n\nRattaché.e à la Responsable Qualité, Sécurité et Conformité, vous travaillerez en étroite collaboration avec les services Achats, Développement Durable et Opérations commerciales.\n\nVos Missions Principales S'articulent Autour De 3 Axes\n\n• Construire et fiabiliser la base de données emballages\n• Participer à la cartographie des données manquantes dans les cahiers des charges emballages, les mettre à jour avec les référents matières sèches et les rediffuser aux fournisseurs ;\n• Collecter auprès des fournisseurs les données techniques, environnementales et réglementaires, et en contrôler la cohérence ;\n• Réaliser un benchmark des solutions de gestion de données adaptée à l'entreprise et proposer une gouvernance pour ces données.\n\n• Dresser un état des lieux réglementaire et ouvrir les pistes d'écoconception\n• Contribuer à l'analyse de conformité de nos emballages au regard des exigences du règlement européen sur les emballages et déchets d'emballages (PPWR) et de la loi française dite AGEC (loi Anti-Gaspillage pour une Economie Circulaire) ;\n• Participer à l'évaluation des impacts des évolutions réglementaires sur nos produits et nos processus internes ;\n• Identifier et proposer des pistes d'écoconception, d’amélioration de la recyclabilité et d'optimisation de nos packagings, puis participer à leur mise en œuvre et leurs suivis jusqu'aux essais et validations en conditions industrielles.\n\n• Structurer l'exploitation des données et reporting\n• Contribuer à l'évolution de SAP et du process de création articles avec l'équipe dédiée (création de nouveaux articles, nouveaux champs de saisie, …) ;\n• Aider à la conception des outils qui rendront ces données exploitables : déclarations Adelphe et CITEO Pro, calculs d’empreinte carbone, questionnaires et portails clients, tableaux de bord.\nProfil\n\nVous préparez un diplôme Bac+5 (école d'ingénieur ou Master 2) en packaging, agroalimentaire ou qualité, sécurité, environnement et recherchez un stage de fin d'études de 6 mois.\n\nVous Possédez Idéalement\n\n• Sensibilité environnementale et réglementaire : intérêt pour les enjeux PPWR, AGEC, économie circulaire et REP.\n• Compétences en analyse de données : très bonne maîtrise d'Excel et des outils d'analyse, capacité à structurer et fiabiliser des bases de données.\n• Gestion de projet : appétence pour le pilotage de projet transverse, coordination de multiples interlocuteurs internes et externes.\n• Capacité d'analyse et de synthèse : rigueur, esprit critique et aptitude à hiérarchiser les priorités.\n• Aisance relationnelle : facilité à dialoguer avec les achats, la qualité, le développement durable, les opérations commerciales et les fournisseurs.\n• Qualités personnelles : autonomie, organisation, curiosité et fiabilité dans le suivi des actions.\n• Atouts supplémentaires : connaissance des emballages, du secteur vitivinicole, de SAP ou des réglementations environnementales.\n\nPourquoi ce stage ?\n\n• Une mission à fort impact stratégique pour l'entreprise.\n• Une vision transverse des enjeux qualité, réglementaires, packaging et développement durable.\n• Une montée en compétence ",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-conformit%C3%A9-d-emballage-%C3%A9coconception-h-f-at-advini-4488122892"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-28",
-   "agro": false,
-   "lat": 43.6595,
-   "lon": 3.4682,
-   "commune": "Saint-Félix-de-Lodez"
-  },
-  {
    "id": "f700940127d3",
    "titre": "AUDITEUR QUALITE",
    "entreprise": "Eurofins",
@@ -189,6 +166,29 @@
    "lat": 43.7341,
    "lon": 4.2332,
    "commune": "Vergèze"
+  },
+  {
+   "id": "626bda309a0c",
+   "titre": "Stage Ingénieur Qualité, Conformité d'Emballage & Écoconception (H/F)",
+   "entreprise": "AdVini",
+   "lieu": "Saint-Félix-de-Lodez",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "À propos de nous\n\nGroupe viticole international fondé en 1872, AdVini (270 M€ de CA, 950 collaborateurs), embrasse tous les métiers de la filière vin. A la fois vigneron et producteur, expert de la supply-chain et distributeur dans le monde, AdVini perpétue un savoir-faire d’excellence et des traditions culturelles, en partageant sa passion du vin avec ses partenaires et en révélant les terroirs qui la compose.\n\nEnraciné au cœur du vignoble en France et en Afrique du Sud, AdVini cultive l’autonomie de ses maisons, fédérées autour d’une raison d’être : « Agir chaque jour avec humanité, unis dans la diversité, pour la valorisation des Vignobles et des Hommes. »\n\nRésolument engagé pour la durabilité de ses activités, AdVini s’évertue au quotidien à réduire l’impact environnemental de ses activités.\n\nPlus d’informations sur www.advini.com\n\nMission\n\nCette offre concerne exclusivement les candidatures pour un stage (les contrats en alternance ne sont pas acceptés).\n\nPour toute candidature en CDI, CDD ou alternance, nous vous invitons à consulter notre site carrière : https://advini.recrutement-talents.fr/\n\nActeur majeur du secteur vitivinicole, AdVini engage un projet structurant pour renforcer la maîtrise des données techniques, environnementales et réglementaires de ses emballages.\n\nCes données conditionnent aujourd'hui notre capacité à répondre aux nouvelles réglementations emballages, aux demandes de nos clients, aux déclarations environnementales, au calcul de l'empreinte carbone de nos produits et aux projets d'écoconception du Groupe.\n\nDans ce contexte, nous recherchons un.e stagiaire de fin d'études en tant qu' Ingénieur Qualité, Conformité d'Emballage & Écoconception , pour contribuer au projet visant à créer et fiabiliser une base de données centralisée de l'ensemble de nos emballages : bouteilles, capsules, bouchons, étiquettes, cartons, palettes, …\n\nRattaché.e à la Responsable Qualité, Sécurité et Conformité, vous travaillerez en étroite collaboration avec les services Achats, Développement Durable et Opérations commerciales.\n\nVos Missions Principales S'articulent Autour De 3 Axes\n\n• Construire et fiabiliser la base de données emballages\n• Participer à la cartographie des données manquantes dans les cahiers des charges emballages, les mettre à jour avec les référents matières sèches et les rediffuser aux fournisseurs ;\n• Collecter auprès des fournisseurs les données techniques, environnementales et réglementaires, et en contrôler la cohérence ;\n• Réaliser un benchmark des solutions de gestion de données adaptée à l'entreprise et proposer une gouvernance pour ces données.\n\n• Dresser un état des lieux réglementaire et ouvrir les pistes d'écoconception\n• Contribuer à l'analyse de conformité de nos emballages au regard des exigences du règlement européen sur les emballages et déchets d'emballages (PPWR) et de la loi française dite AGEC (loi Anti-Gaspillage pour une Economie Circulaire) ;\n• Participer à l'évaluation des impacts des évolutions réglementaires sur nos produits et nos processus internes ;\n• Identifier et proposer des pistes d'écoconception, d’amélioration de la recyclabilité et d'optimisation de nos packagings, puis participer à leur mise en œuvre et leurs suivis jusqu'aux essais et validations en conditions industrielles.\n\n• Structurer l'exploitation des données et reporting\n• Contribuer à l'évolution de SAP et du process de création articles avec l'équipe dédiée (création de nouveaux articles, nouveaux champs de saisie, …) ;\n• Aider à la conception des outils qui rendront ces données exploitables : déclarations Adelphe et CITEO Pro, calculs d’empreinte carbone, questionnaires et portails clients, tableaux de bord.\nProfil\n\nVous préparez un diplôme Bac+5 (école d'ingénieur ou Master 2) en packaging, agroalimentaire ou qualité, sécurité, environnement et recherchez un stage de fin d'études de 6 mois.\n\nVous Possédez Idéalement\n\n• Sensibilité environnementale et réglementaire : intérêt pour les enjeux PPWR, AGEC, économie circulaire et REP.\n• Compétences en analyse de données : très bonne maîtrise d'Excel et des outils d'analyse, capacité à structurer et fiabiliser des bases de données.\n• Gestion de projet : appétence pour le pilotage de projet transverse, coordination de multiples interlocuteurs internes et externes.\n• Capacité d'analyse et de synthèse : rigueur, esprit critique et aptitude à hiérarchiser les priorités.\n• Aisance relationnelle : facilité à dialoguer avec les achats, la qualité, le développement durable, les opérations commerciales et les fournisseurs.\n• Qualités personnelles : autonomie, organisation, curiosité et fiabilité dans le suivi des actions.\n• Atouts supplémentaires : connaissance des emballages, du secteur vitivinicole, de SAP ou des réglementations environnementales.\n\nPourquoi ce stage ?\n\n• Une mission à fort impact stratégique pour l'entreprise.\n• Une vision transverse des enjeux qualité, réglementaires, packaging et développement durable.\n• Une montée en compétence ",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/stage-ing%C3%A9nieur-qualit%C3%A9-conformit%C3%A9-d-emballage-%C3%A9coconception-h-f-at-advini-4488122892"
+    }
+   ],
+   "premiere_vue": "2026-11-16",
+   "derniere_vue": "2026-11-28",
+   "agro": false,
+   "lat": 43.6595,
+   "lon": 3.4682,
+   "commune": "Saint-Félix-de-Lodez"
   },
   {
    "id": "f881c2f4cf58",
@@ -352,29 +352,6 @@
    "commune": "Montpellier"
   },
   {
-   "id": "422e2b61b208",
-   "titre": "Quality Assurance Engineer",
-   "entreprise": "Matooma",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-20",
-   "extrait": "",
-   "description": "QA Engineer\n\nWho are we?\n\n👋 Founded in June 2012, Matooma is a company based in Montpellier that provides SIM card connectivity services and IoT (Internet of Things) management solutions.\n\nToday, we serve over 10,000 customers worldwide and manage more than one million SIM cards.\n\nSince July 2019, we have been part of the Wireless Logic Ltd group, forming the European market leader.\n\nWith 60 employees, Matooma places great importance on customer and employee satisfaction, teamwork, and embraces values such as simplicity, integrity, and collaboration.\n\nMatooma is an equal opportunity employer and actively encourages applications from qualified candidates regardless of gender, ethnicity, disability, age, marital status, or pregnancy and maternity.\n\nJoining Matooma Means\n\n🤝 Joining Matooma means:\n\n• Becoming part of a supportive and caring team that listens and believes in you\n• Working with clear processes and a variety of digital tools\n• Enjoying hybrid remote work options\n• Taking part in regular after-work events and team-building activities\n• Benefiting from a pleasant working environment with great office spaces\n\n👉 Meet the team → https://www.matooma.com/fr/qui-sommes-nous/matooteam\n\nThe Role\n\n🎯 You will join a 20-person IT team and be part of the QA (testing) team, currently composed of two testers.\n\nOur information system is composed of around ten microservices using different programming languages, high-volume databases (ElasticSearch and PostgreSQL), two front-end applications (Angular), and an API available to our clients. Each microservice is deployed using a continuous integration process (CI/CD, automated testing) on an AWS-based ecosystem (Terraform, K8S).\n\nAs a QA Engineer, you will be responsible for ensuring the quality and reliability of our applications. You will work closely with the development and product teams to design, execute, and automate tests while ensuring an optimal user experience.\n\nMain Responsibilities\n\n📌 Main Responsibilities\n\n• Design and execute test plans (manual and automated) for web applications\n• Identify, document, and track bugs through to resolution\n• Develop and maintain automated test scripts (Playwright and Claude AI)\n• Contribute to the continuous improvement of QA processes and testing methodologies\n• Collaborate with developers to embed quality best practices from the earliest stages of development\n\nDesired Profile\n\n• Education: Ideally a Bachelor's or Master's degree in Computer Science or equivalent (Bac+3 to Bac+5)\n• Experience: Ideally 2 years in software quality assurance or a similar position\n\nTechnical Skills\n\n🔧 Technical Skills\n\n• Knowledge of Agile/Scrum methodologies\n• Familiarity with test management tools (JIRA or similar)\n• Proficiency with Playwright and Claude AI automated testing tools\n• Scripting skills (JavaScript, or another relevant language)\n• Knowledge of databases (SQL) and APIs (Postman, REST, etc.)\n• Professional working proficiency in English\n\nSoft Skills\n\n💡 Soft Skills\n\n• Detail-oriented, rigorous, and analytical mindset\n• Strong communication and teamwork skills\n• Adaptability to a fast-paced environment\n• Eagerness to learn and share knowledge\n• Proactive and open to constructive feedback\n• Team spirit: ready to support your colleagues and be supported in return\n• Comfortable taking initiatives and executing independently\n\nWhat We Offer\n\n🔥 What We Offer\n\n• A collaborative and innovative work environment\n• Ongoing training and professional development opportunities\n• Company profit-sharing\n• Meal vouchers (SWILE)\n• Health insurance (ALAN)\n• Sustainable mobility allowance\n• Employee perks via Leeto\n\nJob Details\n\n💼 Job Details\n\n• Contract Type: Permanent (CDI)\n• Location: Montpellier, France\n• Start Date: As soon as possible\n\nJoin us and help shape the future of technology!\n\nWe value diversity and encourage all qualified candidates to apply, regardless of background, gender, or disability.\n\nSee you soon? 😁",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/quality-assurance-engineer-at-matooma-4491939319"
-    }
-   ],
-   "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-28",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
    "id": "988d0ba8e1e7",
    "titre": "Technicien de Contrôle Qualité (h/f) (H/F)",
    "entreprise": "ADECCO INDUSTRIE TERTIAIRE",
@@ -388,6 +365,29 @@
     {
      "source": "France Travail",
      "url": "https://candidat.francetravail.fr/offres/recherche/detail/216RCBV"
+    }
+   ],
+   "premiere_vue": "2026-11-20",
+   "derniere_vue": "2026-11-28",
+   "agro": false,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "422e2b61b208",
+   "titre": "Quality Assurance Engineer",
+   "entreprise": "Matooma",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-20",
+   "extrait": "",
+   "description": "QA Engineer\n\nWho are we?\n\n👋 Founded in June 2012, Matooma is a company based in Montpellier that provides SIM card connectivity services and IoT (Internet of Things) management solutions.\n\nToday, we serve over 10,000 customers worldwide and manage more than one million SIM cards.\n\nSince July 2019, we have been part of the Wireless Logic Ltd group, forming the European market leader.\n\nWith 60 employees, Matooma places great importance on customer and employee satisfaction, teamwork, and embraces values such as simplicity, integrity, and collaboration.\n\nMatooma is an equal opportunity employer and actively encourages applications from qualified candidates regardless of gender, ethnicity, disability, age, marital status, or pregnancy and maternity.\n\nJoining Matooma Means\n\n🤝 Joining Matooma means:\n\n• Becoming part of a supportive and caring team that listens and believes in you\n• Working with clear processes and a variety of digital tools\n• Enjoying hybrid remote work options\n• Taking part in regular after-work events and team-building activities\n• Benefiting from a pleasant working environment with great office spaces\n\n👉 Meet the team → https://www.matooma.com/fr/qui-sommes-nous/matooteam\n\nThe Role\n\n🎯 You will join a 20-person IT team and be part of the QA (testing) team, currently composed of two testers.\n\nOur information system is composed of around ten microservices using different programming languages, high-volume databases (ElasticSearch and PostgreSQL), two front-end applications (Angular), and an API available to our clients. Each microservice is deployed using a continuous integration process (CI/CD, automated testing) on an AWS-based ecosystem (Terraform, K8S).\n\nAs a QA Engineer, you will be responsible for ensuring the quality and reliability of our applications. You will work closely with the development and product teams to design, execute, and automate tests while ensuring an optimal user experience.\n\nMain Responsibilities\n\n📌 Main Responsibilities\n\n• Design and execute test plans (manual and automated) for web applications\n• Identify, document, and track bugs through to resolution\n• Develop and maintain automated test scripts (Playwright and Claude AI)\n• Contribute to the continuous improvement of QA processes and testing methodologies\n• Collaborate with developers to embed quality best practices from the earliest stages of development\n\nDesired Profile\n\n• Education: Ideally a Bachelor's or Master's degree in Computer Science or equivalent (Bac+3 to Bac+5)\n• Experience: Ideally 2 years in software quality assurance or a similar position\n\nTechnical Skills\n\n🔧 Technical Skills\n\n• Knowledge of Agile/Scrum methodologies\n• Familiarity with test management tools (JIRA or similar)\n• Proficiency with Playwright and Claude AI automated testing tools\n• Scripting skills (JavaScript, or another relevant language)\n• Knowledge of databases (SQL) and APIs (Postman, REST, etc.)\n• Professional working proficiency in English\n\nSoft Skills\n\n💡 Soft Skills\n\n• Detail-oriented, rigorous, and analytical mindset\n• Strong communication and teamwork skills\n• Adaptability to a fast-paced environment\n• Eagerness to learn and share knowledge\n• Proactive and open to constructive feedback\n• Team spirit: ready to support your colleagues and be supported in return\n• Comfortable taking initiatives and executing independently\n\nWhat We Offer\n\n🔥 What We Offer\n\n• A collaborative and innovative work environment\n• Ongoing training and professional development opportunities\n• Company profit-sharing\n• Meal vouchers (SWILE)\n• Health insurance (ALAN)\n• Sustainable mobility allowance\n• Employee perks via Leeto\n\nJob Details\n\n💼 Job Details\n\n• Contract Type: Permanent (CDI)\n• Location: Montpellier, France\n• Start Date: As soon as possible\n\nJoin us and help shape the future of technology!\n\nWe value diversity and encourage all qualified candidates to apply, regardless of background, gender, or disability.\n\nSee you soon? 😁",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/quality-assurance-engineer-at-matooma-4491939319"
     }
    ],
    "premiere_vue": "2026-11-20",
@@ -674,6 +674,29 @@
    "commune": "Montpellier"
   },
   {
+   "id": "8b966e84e61a",
+   "titre": "Global Quality and Food Safety Specialist H/F/X",
+   "entreprise": "Mars",
+   "lieu": "Nîmes",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-12",
+   "extrait": "",
+   "description": "Job Description\n\nGlobal Quality and Food Safety Specialist (H/F/X)\n\nLocation: Aimargues (near Montpellier)\n\nType of contract: Permanent (CDI)\n\nJoin Royal Canin as a Global Quality and Food Safety ! Drive excellence in distribution quality and traceability across our global network. In this role, you’ll lead compliance initiatives, standardize processes, and enhance end-to-end traceability capabilities—ensuring our products meet the highest standards from plant to pet.\n\nWhat are we looking for?\n\n• B.S. or M.S. in Food Science, Quality, or Supply Chain.\n• 5-10 years of experience in Quality and Food Safety Management or Supply Chain, with strong knowledge of distribution quality and traceability standards.\n• Familiarity with ISO 9001, ISO 22000/FSSC, or BRC Storage & Distribution standards.\n• Proficiency in IT systems such as WMS, Agnostic, and SAP.\n• Excellent communication skills (oral and written).\n• Proven ability to lead and influence across regions and functions.\n• Strong understanding of business processes, systems, and change management.\n• Excellent networking skills and ability to deliver projects through others remotely.\n\nWhat will be your key responsibilities?\n\n• Act as the global Quality &Food Safety Specialist for standards and procedures related to Distribution Quality Management, Traceability, Hold & Release, and Product Disposal.\n• Lead global compliance roadmaps for these standards across the distribution network and manufacturing sites where applicable.\n• Ensure calibration and efficiency of gap assessments and define concession needs.\n• Facilitate the RC QiD/QiM Community of Practice (COP), driving collaboration, knowledge sharing, training, and continuous improvement.\n• Provide functional expertise in market traceability IT systems (e.g., Agnostic Corp system) and support global deployment.\n• Offer technical guidance for risk assessments, development, evaluation, and validation of new requirements and capabilities.\n• Serve as the key liaison with Petcare and corporate teams on distribution quality and traceability matters.\n• Maintain regular communication with VCO and R&D/QFS leadership teams and manage escalations when necessary.\n\nWhat can you expect from Mars?\n\n• You will work in a unique campus, which gathers more than 800 Associates working for: the international HQ, the French subsidiary, two laboratories, a kennel and a cattery with more than 200 cats & dogs, and finally the most important factory of the Royal Canin group.\n• Flexible working opportunities.\n• Join a purpose driven company, where we’re striving to build the world we want tomorrow, today.\n• Best-in-class learning and development support from day one, including access to our in-house Mars University.\n\n#mars #royalcanin #bettertogether",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454463487"
+    }
+   ],
+   "premiere_vue": "2026-10-21",
+   "derniere_vue": "2026-11-28",
+   "agro": true,
+   "lat": 43.8322,
+   "lon": 4.3429,
+   "commune": "Nîmes"
+  },
+  {
    "id": "debfbb5b43c0",
    "titre": "Global Quality and Food Safety Specialist H/F/X",
    "entreprise": "Mars",
@@ -692,6 +715,29 @@
    "premiere_vue": "2026-10-19",
    "derniere_vue": "2026-11-28",
    "agro": true,
+   "lat": 43.61,
+   "lon": 3.8742,
+   "commune": "Montpellier"
+  },
+  {
+   "id": "3753f4018ed4",
+   "titre": "Ingénieur Assurance Qualité Pharmaceutique (H/F)",
+   "entreprise": "Efor",
+   "lieu": "Montpellier",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-12",
+   "extrait": "",
+   "description": "Nous recrutons un Ingénieur Assurance Qualité Opérationnelle (H/F) pour intervenir auprès d’industries pharmaceutiques & de biotechnologies.\n\nVous serez chargé(e) de garantir la conformité des opérations au sein des sites de production, en veillant à l'application des normes et réglementations (GMP, ICH, FDA, etc.).\n\nMissions principales :\nSupport opérationnel qualité :\n• Veiller à la conformité des processus de fabrication et des flux de production aux réglementations.\n• Réaliser la revue et la gestion des documents opérationnels (protocoles, rapports, dossiers de lot).\n• Apporter un support qualité auprès des équipes de production pour résoudre les non-conformités.\n• Garantir la gestion de l’intégrité et la traçabilité des données.\n\nGestion des déviations et CAPA :\n• Investiguer les déviations en collaboration avec les équipes terrain.\n• Identifier les actions correctives et préventives (CAPA) et en suivre la mise en œuvre.\n\nAudits internes et externes :\n• Préparer, participer, et accompagner les audits qualité (internes, clients, autorités).\n• Assurer le suivi et la mise en œuvre des actions correctives suite aux observations.\n\n👀🔎\nFormation : Bac+5 : Ingénieur ou Master spécialisé en chimie, biologie, biotechnologie, pharmacie, ou équivalent.\n\nExpérience : Première expérience ou expérience significative en assurance qualité opérationnelle dans un contexte pharmaceutique ou biotechnologique.\n\nCompétences techniques :\n• Bonne connaissance des Bonnes Pratiques de Fabrication (GMP), des normes internationales (ICH, FDA), et des processus qualité pharmaceutiques.\n• Expérience dans la gestion des déviations, CAPA, et la documentation qualité.\n• Maitrise des outils informatiques et des logiciels liés à la gestion qualité (ERP, Trackwise, etc.).\n• Anglais professionnel requis.\n\nAptitudes personnelles :\n• Organisation et rigueur dans l’application des processus qualité.\n• Esprit analytique et capacité à résoudre les problématiques qualité.\n• Bon relationnel et aptitude à collaborer avec des équipes pluridisciplinaires (production, engineering, supply chain, etc.).\n\nCette offre d'emploi est ouverte à tous les profils.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-assurance-qualit%C3%A9-pharmaceutique-h-f-at-efor-4454258038"
+    }
+   ],
+   "premiere_vue": "2026-10-19",
+   "derniere_vue": "2026-11-28",
+   "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
    "commune": "Montpellier"
@@ -718,52 +764,6 @@
    "lat": 43.6667,
    "lon": 4.201,
    "commune": "Aimargues"
-  },
-  {
-   "id": "3753f4018ed4",
-   "titre": "Ingénieur Assurance Qualité Pharmaceutique (H/F)",
-   "entreprise": "Efor",
-   "lieu": "Montpellier",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-12",
-   "extrait": "",
-   "description": "Nous recrutons un Ingénieur Assurance Qualité Opérationnelle (H/F) pour intervenir auprès d’industries pharmaceutiques & de biotechnologies.\n\nVous serez chargé(e) de garantir la conformité des opérations au sein des sites de production, en veillant à l'application des normes et réglementations (GMP, ICH, FDA, etc.).\n\nMissions principales :\nSupport opérationnel qualité :\n• Veiller à la conformité des processus de fabrication et des flux de production aux réglementations.\n• Réaliser la revue et la gestion des documents opérationnels (protocoles, rapports, dossiers de lot).\n• Apporter un support qualité auprès des équipes de production pour résoudre les non-conformités.\n• Garantir la gestion de l’intégrité et la traçabilité des données.\n\nGestion des déviations et CAPA :\n• Investiguer les déviations en collaboration avec les équipes terrain.\n• Identifier les actions correctives et préventives (CAPA) et en suivre la mise en œuvre.\n\nAudits internes et externes :\n• Préparer, participer, et accompagner les audits qualité (internes, clients, autorités).\n• Assurer le suivi et la mise en œuvre des actions correctives suite aux observations.\n\n👀🔎\nFormation : Bac+5 : Ingénieur ou Master spécialisé en chimie, biologie, biotechnologie, pharmacie, ou équivalent.\n\nExpérience : Première expérience ou expérience significative en assurance qualité opérationnelle dans un contexte pharmaceutique ou biotechnologique.\n\nCompétences techniques :\n• Bonne connaissance des Bonnes Pratiques de Fabrication (GMP), des normes internationales (ICH, FDA), et des processus qualité pharmaceutiques.\n• Expérience dans la gestion des déviations, CAPA, et la documentation qualité.\n• Maitrise des outils informatiques et des logiciels liés à la gestion qualité (ERP, Trackwise, etc.).\n• Anglais professionnel requis.\n\nAptitudes personnelles :\n• Organisation et rigueur dans l’application des processus qualité.\n• Esprit analytique et capacité à résoudre les problématiques qualité.\n• Bon relationnel et aptitude à collaborer avec des équipes pluridisciplinaires (production, engineering, supply chain, etc.).\n\nCette offre d'emploi est ouverte à tous les profils.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-assurance-qualit%C3%A9-pharmaceutique-h-f-at-efor-4454258038"
-    }
-   ],
-   "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-28",
-   "agro": false,
-   "lat": 43.61,
-   "lon": 3.8742,
-   "commune": "Montpellier"
-  },
-  {
-   "id": "8b966e84e61a",
-   "titre": "Global Quality and Food Safety Specialist H/F/X",
-   "entreprise": "Mars",
-   "lieu": "Nîmes",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-12",
-   "extrait": "",
-   "description": "Job Description\n\nGlobal Quality and Food Safety Specialist (H/F/X)\n\nLocation: Aimargues (near Montpellier)\n\nType of contract: Permanent (CDI)\n\nJoin Royal Canin as a Global Quality and Food Safety ! Drive excellence in distribution quality and traceability across our global network. In this role, you’ll lead compliance initiatives, standardize processes, and enhance end-to-end traceability capabilities—ensuring our products meet the highest standards from plant to pet.\n\nWhat are we looking for?\n\n• B.S. or M.S. in Food Science, Quality, or Supply Chain.\n• 5-10 years of experience in Quality and Food Safety Management or Supply Chain, with strong knowledge of distribution quality and traceability standards.\n• Familiarity with ISO 9001, ISO 22000/FSSC, or BRC Storage & Distribution standards.\n• Proficiency in IT systems such as WMS, Agnostic, and SAP.\n• Excellent communication skills (oral and written).\n• Proven ability to lead and influence across regions and functions.\n• Strong understanding of business processes, systems, and change management.\n• Excellent networking skills and ability to deliver projects through others remotely.\n\nWhat will be your key responsibilities?\n\n• Act as the global Quality &Food Safety Specialist for standards and procedures related to Distribution Quality Management, Traceability, Hold & Release, and Product Disposal.\n• Lead global compliance roadmaps for these standards across the distribution network and manufacturing sites where applicable.\n• Ensure calibration and efficiency of gap assessments and define concession needs.\n• Facilitate the RC QiD/QiM Community of Practice (COP), driving collaboration, knowledge sharing, training, and continuous improvement.\n• Provide functional expertise in market traceability IT systems (e.g., Agnostic Corp system) and support global deployment.\n• Offer technical guidance for risk assessments, development, evaluation, and validation of new requirements and capabilities.\n• Serve as the key liaison with Petcare and corporate teams on distribution quality and traceability matters.\n• Maintain regular communication with VCO and R&D/QFS leadership teams and manage escalations when necessary.\n\nWhat can you expect from Mars?\n\n• You will work in a unique campus, which gathers more than 800 Associates working for: the international HQ, the French subsidiary, two laboratories, a kennel and a cattery with more than 200 cats & dogs, and finally the most important factory of the Royal Canin group.\n• Flexible working opportunities.\n• Join a purpose driven company, where we’re striving to build the world we want tomorrow, today.\n• Best-in-class learning and development support from day one, including access to our in-house Mars University.\n\n#mars #royalcanin #bettertogether",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/global-quality-and-food-safety-specialist-h-f-x-at-mars-4454463487"
-    }
-   ],
-   "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-28",
-   "agro": true,
-   "lat": 43.8322,
-   "lon": 4.3429,
-   "commune": "Nîmes"
   },
   {
    "id": "3bf6f53fde4f",
