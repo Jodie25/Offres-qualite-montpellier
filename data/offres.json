@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T19:39+00:00",
+ "maj": "2026-11-28T00:14+00:00",
  "centre": [
   43.5732,
   3.8329
@@ -23,7 +23,7 @@
     }
    ],
    "premiere_vue": "2026-11-27",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.3481,
    "lon": 3.2342,
@@ -46,7 +46,7 @@
     }
    ],
    "premiere_vue": "2026-11-26",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -69,7 +69,7 @@
     }
    ],
    "premiere_vue": "2026-11-25",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -92,7 +92,7 @@
     }
    ],
    "premiere_vue": "2026-11-25",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.3844,
    "lon": 3.6441,
@@ -145,29 +145,6 @@
    "commune": "Caissargues"
   },
   {
-   "id": "f700940127d3",
-   "titre": "AUDITEUR QUALITE",
-   "entreprise": "Eurofins",
-   "lieu": "Vergèze",
-   "contrat": "",
-   "salaire": "",
-   "date_pub": "2026-11-24",
-   "extrait": "",
-   "description": "Description de l'entreprise\n\nEurofins ADME BIOANALYSES est une société de recherche sous contrat, située entre Montpellier et Nîmes, avec plus de 2000 m2 de laboratoire et près d’une centaine de collaborateurs très qualifiés.\n\nDepuis près de 40 ans, la société propose à ses clients des industries pharmaceutiques, cosmétiques et vétérinaires, une large gamme de services et de prestations de qualité pour optimiser la découverte et assurer l’évaluation et la sécurité de nouveaux médicaments ou produits cosmétiques.\n\nLes valeurs de la société reposent sur une solide expertise scientifique en bioanalyse, pharmacocinétique et métabolisme, un haut niveau de qualité et une éthique rigoureuse pour assurer la satisfaction de ses clients.\n\nEurofins ADME BIOANALYSES fait partie du Groupe Eurofins, l’un des leaders mondiaux dans les prestations analytiques et de conseils.\n\nDescription du poste\n\nVous êtes rattaché(e) à la Responsable Assurance Qualité sur le plan hiérarchique.\n\nMissions\n\nDans le cadre de vos missions,\n\n• vous assistez la Responsable Assurance Qualité dans l’application des principes des Bonnes Pratiques de Laboratoire et référentiels réglementaires internationaux; européens et français dans le domaine de la pharmacie, la cosmétique et les médicaments vétérinaires.\n• vous réalisez les audits des dossiers d’études, des procédés et d’installation.\n• vous sensibilisez le personnel à l’assurance qualité.\n• vous participez activement au maintien et à l’amélioration du système de management de la qualité.\n• vous informez régulièrement le Responsable Assurance Qualité de l’avancement de votre travail et de toute déviation constatée.\n• vous proposez la création ou la modification des modes opératoires normalisés (procédures opératoires) en concertation avec le responsable Assurance Qualité.\n\nQualifications\n\nVous avez une formation scientifique (bac+2 minimum) en immunochimie ou en chimie analytique avec une forte appétence pour le domaine de la Qualité\n\nLa maîtrise de l’anglais parlé et écrit et du Pack Office est indispensable.\n\nVous justifiez idéalement d’une expérience réussie dans une fonction similaire dans le domaine de la bioanalyse et des BPL.\n\nInformations complémentaires\n\nVos aptitudes et qualités personnelles\n\n• Vous êtes rigoureux(se) et avez le sens de l’éthique pour travailler dans un cadre réglementaire (BPL),\n• Vous avez une aisance relationnelle pour interagir avec différents interlocuteurs et aimez le travail en équipe,\n• Autonome, vous savez gérer votre temps pour déterminer les priorités des activités qui vous sont confiées,\n• Vous disposez d’un niveau d’énergie élevé et d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n• Vous disposez d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n\nCe que nous offrons\n\n• Un environnement de travail agréable.\n• Des avantages sociaux attractifs (titre restaurant, mutuelle, prévoyance, participation, intéressement).\n• La possibilité de contribuer activement à des projets ayant un impact sur la santé globale.\n\nComment postuler\n\nSi vous êtes passionné(e) par les sciences de la vie et que vous souhaitez rejoindre une équipe dynamique et engagée, veuillez nous adresser votre lettre de motivation et CV à : [email protected]\n\nEurofins ADME BIOANALYSES est engagée en faveur de la diversité et de l'inclusion. Toutes les candidatures seront examinées sans distinction d'origine, de sexe, d'âge, de handicap ou de toute autre caractéristique.\n\nRejoignez-nous pour contribuer à la création d'un nouveau pôle d'excellence dédié à l'évaluation et au contrôle qualité des produits topiques pharmaceutiques.",
-   "liens": [
-    {
-     "source": "LinkedIn",
-     "url": "https://fr.linkedin.com/jobs/view/auditeur-qualite-at-eurofins-4494178724"
-    }
-   ],
-   "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-27",
-   "agro": false,
-   "lat": 43.7341,
-   "lon": 4.2332,
-   "commune": "Vergèze"
-  },
-  {
    "id": "626bda309a0c",
    "titre": "Stage Ingénieur Qualité, Conformité d'Emballage & Écoconception (H/F)",
    "entreprise": "AdVini",
@@ -184,11 +161,34 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.6595,
    "lon": 3.4682,
    "commune": "Saint-Félix-de-Lodez"
+  },
+  {
+   "id": "f700940127d3",
+   "titre": "AUDITEUR QUALITE",
+   "entreprise": "Eurofins",
+   "lieu": "Vergèze",
+   "contrat": "",
+   "salaire": "",
+   "date_pub": "2026-11-24",
+   "extrait": "",
+   "description": "Description de l'entreprise\n\nEurofins ADME BIOANALYSES est une société de recherche sous contrat, située entre Montpellier et Nîmes, avec plus de 2000 m2 de laboratoire et près d’une centaine de collaborateurs très qualifiés.\n\nDepuis près de 40 ans, la société propose à ses clients des industries pharmaceutiques, cosmétiques et vétérinaires, une large gamme de services et de prestations de qualité pour optimiser la découverte et assurer l’évaluation et la sécurité de nouveaux médicaments ou produits cosmétiques.\n\nLes valeurs de la société reposent sur une solide expertise scientifique en bioanalyse, pharmacocinétique et métabolisme, un haut niveau de qualité et une éthique rigoureuse pour assurer la satisfaction de ses clients.\n\nEurofins ADME BIOANALYSES fait partie du Groupe Eurofins, l’un des leaders mondiaux dans les prestations analytiques et de conseils.\n\nDescription du poste\n\nVous êtes rattaché(e) à la Responsable Assurance Qualité sur le plan hiérarchique.\n\nMissions\n\nDans le cadre de vos missions,\n\n• vous assistez la Responsable Assurance Qualité dans l’application des principes des Bonnes Pratiques de Laboratoire et référentiels réglementaires internationaux; européens et français dans le domaine de la pharmacie, la cosmétique et les médicaments vétérinaires.\n• vous réalisez les audits des dossiers d’études, des procédés et d’installation.\n• vous sensibilisez le personnel à l’assurance qualité.\n• vous participez activement au maintien et à l’amélioration du système de management de la qualité.\n• vous informez régulièrement le Responsable Assurance Qualité de l’avancement de votre travail et de toute déviation constatée.\n• vous proposez la création ou la modification des modes opératoires normalisés (procédures opératoires) en concertation avec le responsable Assurance Qualité.\n\nQualifications\n\nVous avez une formation scientifique (bac+2 minimum) en immunochimie ou en chimie analytique avec une forte appétence pour le domaine de la Qualité\n\nLa maîtrise de l’anglais parlé et écrit et du Pack Office est indispensable.\n\nVous justifiez idéalement d’une expérience réussie dans une fonction similaire dans le domaine de la bioanalyse et des BPL.\n\nInformations complémentaires\n\nVos aptitudes et qualités personnelles\n\n• Vous êtes rigoureux(se) et avez le sens de l’éthique pour travailler dans un cadre réglementaire (BPL),\n• Vous avez une aisance relationnelle pour interagir avec différents interlocuteurs et aimez le travail en équipe,\n• Autonome, vous savez gérer votre temps pour déterminer les priorités des activités qui vous sont confiées,\n• Vous disposez d’un niveau d’énergie élevé et d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n• Vous disposez d’une capacité à travailler sous pression pour faire face aux situations changeantes.\n\nCe que nous offrons\n\n• Un environnement de travail agréable.\n• Des avantages sociaux attractifs (titre restaurant, mutuelle, prévoyance, participation, intéressement).\n• La possibilité de contribuer activement à des projets ayant un impact sur la santé globale.\n\nComment postuler\n\nSi vous êtes passionné(e) par les sciences de la vie et que vous souhaitez rejoindre une équipe dynamique et engagée, veuillez nous adresser votre lettre de motivation et CV à : [email protected]\n\nEurofins ADME BIOANALYSES est engagée en faveur de la diversité et de l'inclusion. Toutes les candidatures seront examinées sans distinction d'origine, de sexe, d'âge, de handicap ou de toute autre caractéristique.\n\nRejoignez-nous pour contribuer à la création d'un nouveau pôle d'excellence dédié à l'évaluation et au contrôle qualité des produits topiques pharmaceutiques.",
+   "liens": [
+    {
+     "source": "LinkedIn",
+     "url": "https://fr.linkedin.com/jobs/view/auditeur-qualite-at-eurofins-4494178724"
+    }
+   ],
+   "premiere_vue": "2026-11-24",
+   "derniere_vue": "2026-11-28",
+   "agro": false,
+   "lat": 43.7341,
+   "lon": 4.2332,
+   "commune": "Vergèze"
   },
   {
    "id": "f881c2f4cf58",
@@ -207,7 +207,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -322,7 +322,7 @@
     }
    ],
    "premiere_vue": "2026-11-23",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -345,7 +345,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -368,7 +368,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -391,7 +391,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -414,7 +414,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.6341,
    "lon": 3.97,
@@ -437,7 +437,7 @@
     }
    ],
    "premiere_vue": "2026-11-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -460,7 +460,7 @@
     }
    ],
    "premiere_vue": "2026-11-24",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -529,7 +529,7 @@
     }
    ],
    "premiere_vue": "2026-11-17",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.3178,
    "lon": 3.2909,
@@ -552,7 +552,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -575,7 +575,7 @@
     }
    ],
    "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.7341,
    "lon": 4.2332,
@@ -598,7 +598,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.6667,
    "lon": 4.201,
@@ -621,7 +621,7 @@
     }
    ],
    "premiere_vue": "2026-11-20",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -690,7 +690,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": true,
    "lat": 43.61,
    "lon": 3.8742,
@@ -713,7 +713,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": true,
    "lat": 43.6667,
    "lon": 4.201,
@@ -736,7 +736,7 @@
     }
    ],
    "premiere_vue": "2026-10-19",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.61,
    "lon": 3.8742,
@@ -759,7 +759,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": true,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -782,7 +782,7 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.8322,
    "lon": 4.3429,
@@ -828,57 +828,11 @@
     }
    ],
    "premiere_vue": "2026-10-21",
-   "derniere_vue": "2026-11-27",
+   "derniere_vue": "2026-11-28",
    "agro": false,
    "lat": 43.6503,
    "lon": 3.7894,
    "commune": "Grabels"
-  },
-  {
-   "id": "ab6fe9d3f775",
-   "titre": "Technicien qualité en industrie (H/F)",
-   "entreprise": "Talents Industrie",
-   "lieu": "30 - Nîmes",
-   "contrat": "CDI",
-   "salaire": "Annuel de 25000.0 Euros à 30000.0 Euros - TR, participation, intéressement",
-   "date_pub": "2026-11-07",
-   "extrait": "Nous accompagnons les entreprises et les candidats au travers de prestations de Recrutement et Intérim spécialisées sur les fonctions Techniques et Scientifiques liées à l'Industrie. Nous recherchons, pour une industrie basée proche de Nîmes, un(e) technicien Contrôle Qualité. Rattaché(e) au service Qualité, vous veillez à la conformité des produits et des processus de fabrication, dans le respect",
-   "description": "Nous accompagnons les entreprises et les candidats au travers de prestations de Recrutement et Intérim spécialisées sur les fonctions Techniques et Scientifiques liées à l'Industrie.\n\nNous recherchons, pour une industrie basée proche de Nîmes, un(e)\ntechnicien Contrôle Qualité.\n\nRattaché(e) au service Qualité, vous veillez à la conformité des\nproduits et des processus de fabrication, dans le respect des\nexigences réglementaires et des normes en vigueur, notamment l'ISO\n13485.\n\nÀ CE TITRE, VOS PRINCIPALES MISSIONS SERONT :\n\n* CONTRÔLE QUALITÉ : Réaliser les contrôles qualité à\nréception, en cours et en fin de production (dimensionnels, visuels\net fonctionnels). Rédiger les rapports de contrôle et statuer sur la\nconformité des lots (libération ou blocage).\n* GESTION DES NON-CONFORMITÉS : Identifier, enregistrer et analyser\nles non-conformités, rechercher les causes racines à l'aide d'outils\nméthodologiques (5M, Ishikawa, 5 Pourquoi) et assurer le suivi des\nplans d'actions correctives et préventives (CAPA).\n* GESTION DOCUMENTAIRE : Rédiger, mettre à jour et assurer le suivi\ndes procédures, instructions et plans de contrôle, dans le respect\ndes exigences de l'ISO 13485.\n* MÉTROLOGIE : Assurer le suivi du parc d'équipements de mesure et\nde contrôle, planifier les étalonnages et gérer les équipements\nprésentant des écarts de conformité.\n* AUDITS : Participer aux audits internes et contribuer à la\npréparation des audits externes (clients, organismes notifiés et\nautorités compétentes).\n* AMÉLIORATION CONTINUE : Contribuer aux qualifications de\nprocédés (IQ/OQ/PQ), aux revues qualité ainsi qu'au suivi des\nindicateurs de performance.\n\nIssu(e) d'une formation en qualité industrielle, vous justifiez d'une\nexpérience de 3 à 5 ans sur un poste similaire, idéalement dans un\nenvironnement industriel réglementé.\n\nVous maîtrisez les outils d'analyse et de résolution de problèmes\nainsi que les méthodes de gestion des non-conformités. La\nconnaissance de la norme ISO 13485 constitue un véritable atout.",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8646598"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
-   "agro": false,
-   "lat": 43.8322,
-   "lon": 4.3429,
-   "commune": "Nîmes"
-  },
-  {
-   "id": "d19b6ff88587",
-   "titre": "Contrôleur qualité industrie (H/F)",
-   "entreprise": "Talents Industrie",
-   "lieu": "30 - Nîmes",
-   "contrat": "CDI",
-   "salaire": "Annuel de 25000.0 Euros à 30000.0 Euros - TR, participation, intéressement",
-   "date_pub": "2026-11-07",
-   "extrait": "Description du poste : Nous recherchons, pour une industrie basée proche de Nîmes, un(e) technicien Contrôle Qualité. Rattaché(e) au service Qualité, vous veillez à la conformité des produits et des processus de fabrication, dans le respect des exigences réglementaires et des normes en vigueur, notamment l'ISO 13485. À CE TITRE, VOS PRINCIPALES MISSIONS SERONT CONTRÔLE QUALITÉ : Réaliser les contr",
-   "description": "Description du poste :\n\nNous recherchons, pour une industrie basée proche de Nîmes, un(e)\ntechnicien Contrôle Qualité.\n\nRattaché(e) au service Qualité, vous veillez à la conformité des\nproduits et des processus de fabrication, dans le respect des\nexigences réglementaires et des normes en vigueur, notamment l'ISO\n13485.\n\nÀ CE TITRE, VOS PRINCIPALES MISSIONS SERONT CONTRÔLE QUALITÉ : Réaliser les contrôles qualité à\nréception, en cours et en fin de production (dimensionnels, visuels\net fonctionnels). Rédiger les rapports de contrôle et statuer sur la\nconformité des lots (libération ou blocage GESTION DES NON-CONFORMITÉS : Identifier, enregistrer et analyser\nles non-conformités, rechercher les causes racines à l'aide d'outils\nméthodologiques (5M, Ishikawa, 5 Pourquoi) et assurer le suivi des\nplans d'actions correctives et préventives (CAPA GESTION DOCUMENTAIRE : Rédiger, mettre à jour et assurer le suivi\ndes procédures, instructions et plans de contrôle, dans le respect\ndes exigences de l'ISO 13485.\n* MÉTROLOGIE : Assurer le suivi du parc d'équipements de mesure et\nde contrôle, planifier les étalonnages et gérer les équipements\nprésentant des écarts de conformité.\n* AUDITS : Participer aux audits internes et contribuer à la\npréparation des audits externes (clients, organismes notifiés et\nautorités compétentes AMÉLIORATION CONTINUE : Contribuer aux qualifications de\nprocédés (IQ/OQ/PQ), aux revues qualité ainsi qu'au suivi des\nindicateurs de performance.\n\nDescription du profil :\n\nIssu(e) d'une formation en qualité industrielle, vous justifiez d'une\nexpérience de 3 à 5 ans sur un poste similaire, idéalement dans un\nenvironnement industriel réglementé.\n\nVous maîtrisez les outils d'analyse et de résolution de problèmes\nainsi que les méthodes de gestion des non-conformités. La\nconnaissance de la norme ISO 13485 constitue un véritable atout.",
-   "liens": [
-    {
-     "source": "France Travail",
-     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8630758"
-    }
-   ],
-   "premiere_vue": "2026-11-16",
-   "derniere_vue": "2026-11-27",
-   "agro": false,
-   "lat": 43.8322,
-   "lon": 4.3429,
-   "commune": "Nîmes"
   }
  ]
 }
